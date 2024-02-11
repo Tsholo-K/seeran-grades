@@ -13,8 +13,8 @@ const LoginPage = () => {
         </div>
       </div>
       {/* form */}
-      <div className="min-h-screen w-full grid grid-cols-1 place-content-center px-7">
-        <p className="w-full text-center text-4xl mb-4">Sign in</p>
+      <div className="min-h-screen w-full grid grid-cols-1 place-content-center px-10">
+        <p className="w-full text-center text-3xl mb-4">Sign in</p>
         <Image src={'/signin-hero.svg'} alt="hero image" width={0} height={0} className="h-fit w-fit"/>
         <div className="mx-auto w-full rounded-md">
           <div className="my-4">
@@ -47,7 +47,7 @@ const LoginPage = () => {
           </div>
         </div>  
       </div>
-      <div className="h-10"></div>
+      <div className="h-6"></div>
     </>
   )
 };
