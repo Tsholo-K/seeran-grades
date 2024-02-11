@@ -16,8 +16,8 @@ const ParentSignin = () => {
             </div>
         </div>
         {/* form */}
-        <div className="f-fit w-full grid grid-cols-1 mb-10 place-content-center px-4 max-w-4xl pt-12 mx-auto">
-            <p className="w-full text-center text-gray-400 text-4xl">parent sign in page</p>
+        <div className="h-fit w-full grid grid-cols-1 mb-10 place-content-center px-4 max-w-4xl pt-16 mx-auto">
+            <p className="w-full text-center text-gray-400 text-xl">parent sign in page</p>
             <Image src={'/parent-signin.svg'} alt="hero image" width={0} height={0} className="h-fit w-fit mx-auto"/>
             <form className="mx-auto w-full rounded-md">
                 <div className="my-4">

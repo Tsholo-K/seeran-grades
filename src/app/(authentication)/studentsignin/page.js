@@ -16,8 +16,8 @@ const SigninPage = () => {
         </div>
       </div>
       {/* form */}
-      <div className="h-fit w-full grid grid-cols-1 place-content-center px-4 max-w-4xl mx-auto max-sm:mb-14 pt-12">
-      <p className="w-full text-center text-gray-400 text-4xl">student sign in page</p>
+      <div className="h-fit w-full grid grid-cols-1 place-content-center px-4 max-w-4xl mx-auto max-md:mb-10 pt-16">
+      <p className="w-full text-center text-gray-400 text-xl">student sign in page</p>
         <Image src={'/signin-hero.svg'} alt="hero image" width={0} height={0} className="h-fit w-fit mx-auto"/>
         <div className="mx-auto w-full rounded-md">
           <div className="my-4">
