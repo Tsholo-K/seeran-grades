@@ -88,27 +88,27 @@ export default function Home() {
         {/* opening paragraph section */}
         <h2 className="mb-10 text-[40px] text-center">seeran <span className="text-blue-700">grades</span></h2>
         <p className="w-full text-center mb-10">A Comprehensive School Management System</p>
-        <Image src={'/second-hero.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4"/>
+        <Image src={'/second-hero.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4 max-h-[700px]"/>
         <p className="w-full text-center">
           In today&apos;s digital age, effective communication between schools, students, parents and teachers is vital for academic success. 
           Seeran Grades bridges this gap, offering a robust platform for seamless interaction and academic monitoring.
         </p>
         {/* key features section */}
         <h2 className="my-10 text-3xl text-center"><span className="text-blue-700">Key </span>Features</h2>
-        <Image src={'/key-features.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4"/>
+        <Image src={'/key-features.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4 max-h-[700px]"/>
         <p className="w-full text-center my-4">Student and Parent Portal: Access to grades, assignments, announcements, and school events.</p>
         <p className="w-full text-center my-4">Teacher Dashboard: Grade submissions, communication with students and parents, and assignment tracking.</p>
         <p className="w-full text-center my-4">Mobile Accessibility: Accessible anytime, anywhere</p>
         {/* Student and Parent Portal section */}
         <h2 className="my-10 text-3xl text-center">Student and Parent <br></br><span className="text-blue-700">Portal</span></h2> 
-        <Image src={'/student-parent-portal.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4"/>
+        <Image src={'/student-parent-portal.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4 max-h-[700px]"/>
         <p className="w-full text-center my-4">Students and parents can log in to view:</p>
         <p className="w-full text-center my-4">Assignments: Details of upcoming assignments, deadlines, and submission status.</p>
         <p className="w-full text-center my-4">Announcements: Important updates and announcements from the school..</p>
         <p className="w-full text-center my-4">Messaging: Direct communication with teachers and school administrators.</p>
         {/* teacher dashboard section */}
         <h2 className="my-10 text-3xl text-center">Teacher <span className="text-blue-700">Dashboard</span></h2>
-        <Image src={'/teacher-dashboard.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4"/>      
+        <Image src={'/teacher-dashboard.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4 max-h-[700px]"/>      
         <p className="w-full text-center my-4">Empowering teachers with tools to streamline academic management:</p>
         <p className="w-full text-center my-4">Grade Submission: Effortless submission and tracking of grades for each student.</p>
         <p className="w-full text-center my-4">Communication: Direct messaging with parents for feedback and updates.</p>
@@ -117,7 +117,7 @@ export default function Home() {
         <h2 className="my-10 text-3xl text-center">
           But... why <br></br>seeran <span className="text-blue-700">grades</span>
         </h2>
-        <Image src={'/why-seeran.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4"/>
+        <Image src={'/why-seeran.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4 max-h-[700px]"/>
         <p className="w-full text-center my-4">
           seeran grades offers a transformative solution to the age-old challenge of effective communication and academic management in educational
           institutions. 

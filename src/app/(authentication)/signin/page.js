@@ -16,8 +16,8 @@ const SigninPage = () => {
         </div>
       </div>
       {/* form */}
-      <div className="min-h-screen w-full grid grid-cols-1 place-content-center px-4 max-w-4xl mx-auto">
-        <Image src={'/signin-hero.svg'} alt="hero image" width={0} height={0} className="h-fit w-fit mx-auto"/>
+      <div className="min-h-screen w-full grid grid-cols-1 place-content-center px-4 max-w-4xl mx-auto mb-14">
+        <Image src={'/signin-hero.svg'} alt="hero image" width={0} height={0} className="h-fit mt-12 w-fit mx-auto"/>
         <div className="mx-auto w-full rounded-md">
           <div className="my-4">
             <input type="text" placeholder="email" className="border rounded-md px-5 py-1 w-full"/>
@@ -49,7 +49,7 @@ const SigninPage = () => {
               <option></option>
             </select>
           </div>
-          <button className="w-full border border-white rounded-xl bg-black active:bg-blue-700 text-white hover:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">submit</button>
+          <button className="w-full border border-white rounded-xl bg-black active:bg-blue-700 text-white hover:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">sign in</button>
           <p className="text-sm w-full text-center pt-3 text-gray-400">Already have an account? <Link href={'/login'} className=" text-blue-700 ">login</Link></p>
         </div>  
       </div>
