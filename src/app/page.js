@@ -49,7 +49,7 @@ export default function Home() {
           <Link href="/">seeran <span className="text-blue-700">grades</span></Link>
         </div>
         <div className="w-full text-end">
-          <Link href="/login" class="text-gray-400 transition-all duration-300 hover:text-blue-700">try it</Link>
+          <Link href="/login" className="text-gray-400 transition-all duration-300 hover:text-blue-700">try it</Link>
         </div>
       </div>
       <p className="text-gray-300 hover:text-gray-700 w-full text-center pt-10">prototype v1</p>
@@ -63,7 +63,7 @@ export default function Home() {
               <span className="text-blue-700">Track </span>everything... <br></br><span className="text-6xl"> important</span>
             </h1>
             {/* sign in button */}
-            <Link href="/" className="flex w-fit py-2 pl-4 pr-3 lg:hover:scale-[1.2] transition-all duration-500 ease-in-out gap-2 rounded-full text-white bg-black hover:bg-blue-700 mb-2">
+            <Link href={"/login"} className="flex w-fit py-2 pl-4 pr-3 lg:hover:scale-[1.2] transition-all duration-500 ease-in-out gap-2 rounded-full text-white bg-black hover:bg-blue-700 mb-2">
               <p className="" >try it out</p>
               <Image src={'/chevron-right.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
             </Link>
