@@ -52,8 +52,9 @@ export default function Home() {
           <Link href="/login" class="text-gray-400 transition-all duration-300 hover:text-blue-700">try it</Link>
         </div>
       </div>
+      <p className="text-gray-300 hover:text-gray-700 w-full text-center pt-10">prototype v1</p>
       {/* body */}
-      <div className="w-full px-5 pt-20 mb-10">
+      <div className="w-full px-5 pt-10 mb-10">
         {/* hero section */}
         <div className="w-full sm:flex mb-4">
           {/* left/top side hero section */}
