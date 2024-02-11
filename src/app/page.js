@@ -44,17 +44,22 @@ export default function Home() {
   return (
     <main className="text-base">
       {/* navigation bar */}
-      <div className="fixed flex w-full py-3 px-4 bg-white">
-        <div className="w-full">
-          <Link href="/">seeran <span className="text-blue-700">grades</span></Link>
-        </div>
-        <div className="w-full text-end">
-          <Link href="/login" className="text-gray-400 transition-all duration-300 hover:text-blue-700">try it</Link>
+      <div className="fixed flex justify-center w-full py-3 bg-white">
+        <div className="flex w-full px-4 mx-auto max-w-7xl">
+          <div className="w-full">
+            <Link href="/">seeran <span className="text-blue-700">grades</span></Link>
+          </div>
+          <div className="w-full text-end">
+            <Link href="/parentsignin" className="text-gray-400 transition-all duration-300 hover:text-blue-700">try it</Link>
+          </div>
         </div>
       </div>
-      <p className="text-gray-300 hover:text-gray-700 w-full text-center pt-10">prototype v1</p>
+      <div className="w-full flex justify-center pt-12 ">
+        <p className="text-gray-300 hover:text-gray-500 w-fit cursor-pointer transition-all duration-500 ease-in-out">prototype v1</p>
+      </div>
+      
       {/* body */}
-      <div className="w-full px-5 pt-10 mb-10">
+      <div className="w-full px-5 pt-10 mb-10 max-w-6xl mx-auto">
         {/* hero section */}
         <div className="w-full sm:flex mb-4">
           {/* left/top side hero section */}
@@ -63,7 +68,7 @@ export default function Home() {
               <span className="text-blue-700">Track </span>everything... <br></br><span className="text-6xl"> important</span>
             </h1>
             {/* sign in button */}
-            <Link href={"/login"} className="flex w-fit py-2 pl-4 pr-3 lg:hover:scale-[1.2] transition-all duration-500 ease-in-out gap-2 rounded-full text-white bg-black hover:bg-blue-700 mb-2">
+            <Link href={"/parentsignin"} className="flex w-fit py-2 pl-4 pr-3 lg:hover:scale-[1.2] transition-all duration-500 ease-in-out gap-2 rounded-full text-white bg-black hover:bg-blue-700 mb-2">
               <p className="" >try it out</p>
               <Image src={'/chevron-right.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
             </Link>
@@ -134,7 +139,7 @@ export default function Home() {
         </p>
       </div>
       {/* footer */}
-      <div className="w-full bottom-0 border-t-2 border-opacity-30 border-gray-200 py-7 px-7">
+      <div className="w-full flex justify-center bottom-0 border-t-2 border-opacity-30 border-gray-200 py-7 px-7">
         <div className="max-w-[1450px] w-full">
           <div className="lg:flex w-full ">
             <div className="w-full mb-7 max-lg:text-center">
@@ -154,7 +159,7 @@ export default function Home() {
               <p className="w-full text-gray-500">the latest news, articles, and updates, sent directly to your inbox.</p>
             </div>
             <div className="flex w-full justify-center lg:justify-end">
-              <input type="text" placeholder="enter your email" className="transition duration-300 ease-in-out bg-none border-2 border-blue-700 hover:border-blue-700 pl-4 lg:pr-28 py-1 rounded-lg"/>
+              <input type="text" placeholder="enter your email" className=" max-h-[36px] transition duration-300 ease-in-out bg-none border-2 border-blue-700 hover:border-blue-700 pl-4 lg:pr-28 py-1 rounded-lg"/>
             </div>
           </div>
           <div className="lg:flex px-5">
