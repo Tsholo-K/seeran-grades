@@ -8,7 +8,8 @@ const ParentSignin = () => {
         <div className="fixed flex justify-center w-full pt-3 bg-white">
             <div className="flex w-full px-4 mx-auto max-w-7xl">
                 <div className="w-full">
-                    <Link href="/">seeran <span className="text-blue-700">grades</span></Link>
+                    <Link href={"/"} className="md:block hidden">seeran <span className="text-blue-700">grades</span></Link>
+                    <Link href={'/'} className="md:hidden"><Image src={'/favicon.svg'} alt="hero image" width={0} height={0} className="h-[35px] w-[35px]"/></Link>
                 </div>
                 <div className="w-full text-end">
                     <Link href={'/studentsignin'} className="text-gray-400 hover:text-blue-700">I&apos;m a <span className=" text-blue-700 transition-all duration-300 ease-in-out"></span>student</Link>
@@ -16,9 +17,8 @@ const ParentSignin = () => {
             </div>
         </div>
         {/* form */}
-        <div className="h-fit w-full grid grid-cols-1 mb-10 place-content-center px-4 max-w-4xl pt-16 mx-auto">
-            <p className="w-full text-center text-gray-400 text-xl">parent sign in page</p>
-            <Image src={'/parent-signin.svg'} alt="hero image" width={0} height={0} className="h-fit w-fit mx-auto"/>
+        <div className="min-h-screen w-full grid grid-cols-1 place-content-center px-4 max-w-4xl mx-auto">
+            <p className="w-full text-center text-gray-400 text-xl"><span className=" text-blue-700">parent</span> sign in area</p>
             <form className="mx-auto w-full rounded-md">
                 <div className="my-4">
                     <input type="text" placeholder="email" className="border rounded-md px-5 py-1 w-full"/>
