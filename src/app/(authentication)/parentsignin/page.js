@@ -23,7 +23,7 @@ const ParentSignin = () => {
                     <Link href={'/'} className="md:hidden"><Image src={'/favicon.svg'} alt="hero image" width={0} height={0} className="h-[35px] w-[35px]"/></Link>
                 </div>
                 <div className="w-full text-end">
-                    <Link href={'/studentsignin'} className="text-gray-400 hover:text-blue-700 transition-all duration-500 ease-in-out">I&apos;m a <span className=" text-blue-700 transition-all duration-300 ease-in-out"></span>student</Link>
+                    <Link href={'/studentsignin'} className="text-gray-400 lg:hover:text-blue-700 active:text-blue-700 transition-all duration-500 ease-in-out">I&apos;m a <span className=" text-blue-700 transition-all duration-300 ease-in-out"></span>student</Link>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@ const ParentSignin = () => {
                         <option></option>
                     </select>
                 </div>
-                <button type="submit" className="w-full border border-white rounded-xl bg-black active:bg-blue-700 text-white lg:hover:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">sign in</button>
+                <button type="submit" className="w-full border focus:bg-blue-700 border-white rounded-xl bg-black active:bg-blue-700 text-white lg:hover:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">sign in</button>
                 <p className="text-base w-full text-center pt-3 text-gray-400">Already have an account? <Link href={'/login'} className=" text-blue-700 ">login</Link></p>
             </form>  
         </div>
