@@ -6,20 +6,20 @@ const LoginPage = () => {
     <>
       {/* navigation bar */}
       <div className="fixed flex justify-center w-full pt-3 bg-white">
-        <div className="flex w-full px-4 mx-auto max-w-7xl">
+        <div className="flex w-full px-4 mx-auto max-w-[1700px]">
           <div className="w-full">
             <Link href={"/"} className="md:block hidden">seeran <span className="text-blue-700">grades</span></Link>
             <Link href={'/'} className="md:hidden"><Image src={'/favicon.svg'} alt="hero image" width={0} height={0} className="h-[35px] w-[35px]"/></Link>
           </div>
           <div className="w-full text-end">
-            <Link href={'/parentsignin'} className="text-gray-400 hover:text-blue-700">sign in</Link>
+            <Link href={'/parentsignin'} className="text-gray-400 hover:text-blue-700 transition-all duration-500 ease-in-out">sign in</Link>
           </div>
         </div>
       </div>
       {/* form */}
       <div className="min-h-screen w-full grid grid-cols-1 place-content-center px-4 max-w-4xl mx-auto">
         <div className="mx-auto w-full rounded-md">
-          <p className=" text-blue-700 w-full text-center">login</p>
+          <p className=" text-blue-700 text-2xl w-full text-center">welcome back</p>
           <div className="my-4">
             <input type="text" placeholder="email" className="border rounded-md px-5 py-1 w-full"/>
           </div>
