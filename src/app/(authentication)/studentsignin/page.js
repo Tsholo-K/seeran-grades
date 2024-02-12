@@ -62,7 +62,7 @@ const SigninPage = () => {
                 <option></option>
               </select>
             </div>
-            <button type="submit" className="w-full border border-white rounded-xl bg-black active:bg-blue-700 text-white hover:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">sign in</button>
+            <button type="submit" className="w-full border border-white rounded-xl bg-black active:bg-blue-700 text-white lg:hover:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">sign in</button>
             <p className="text-base w-full text-center pt-3 text-gray-400">Already have an account? <Link href={'/login'} className=" text-blue-700 ">login</Link></p>
           </div> 
         </form>  

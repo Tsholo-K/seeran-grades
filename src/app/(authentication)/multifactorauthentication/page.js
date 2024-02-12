@@ -27,8 +27,8 @@ const MultiFactorAuthentication = () => {
       </div>
       {/* form */}
       <div className="min-h-screen w-full grid grid-cols-1 place-content-center px-4 max-w-4xl mx-auto">
-        <p className="w-full text-center">we sent a one time passcode to your corresponding number/email</p>
         <Image src={'/multifactorauthentication.svg'} alt="hero image" width={0} height={0} className="h-fit w-fit mx-auto"/>
+        <p className="w-full text-center">we sent a one time <span className="text-blue-700">passcode </span>to your corresponding number/email</p>
         <form onSubmit={authenticate}>
           <div className="mx-auto w-full">
             <div className="my-4">
@@ -45,7 +45,7 @@ const MultiFactorAuthentication = () => {
                   <label form="yes">yes</label>
               </div>
             </div>
-            <button className="w-full border border-white rounded-xl bg-black active:bg-blue-700 text-white hover:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">authenticate</button>
+            <button className="w-full border border-white rounded-xl bg-black active:bg-blue-700 text-white lg:hover:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">authenticate</button>
           </div> 
         </form>
       </div>
