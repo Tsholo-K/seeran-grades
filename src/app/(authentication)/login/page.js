@@ -38,7 +38,7 @@ const LoginPage = () => {
             <div className="my-4">
               <input type="text" placeholder="password" className="border rounded-md px-5 py-1 w-full"/>
             </div>
-            <button className="w-full border border-white rounded-xl bg-black active:bg-blue-700 text-white lg:hover:bg-blue-700 focus:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">login</button>
+            <button type="submit" className="w-full border border-white rounded-xl bg-black active:bg-blue-700 text-white lg:hover:bg-blue-700 focus:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">login</button>
           </div> 
         </form>
          
