@@ -27,7 +27,7 @@ const MultiFactorAuthentication = () => {
       </div>
       {/* form */}
       <div className="min-h-screen w-full grid grid-cols-1 place-content-center px-4 max-w-4xl mx-auto">
-        <Image src={'/multifactorauthentication.svg'} alt="hero image" width={0} height={0} className="h-fit w-fit mx-auto"/>
+        <Image src={'/multifactorauthentication.svg'} alt="hero image" width={0} height={0} className="h-fit w-fit mx-auto  max-sm:max-h-[350px]"/>
         <p className="w-full text-center">we sent a one time <span className="text-blue-700">passcode </span>to your corresponding number/email</p>
         <form onSubmit={authenticate}>
           <div className="mx-auto w-full">

@@ -2,59 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-const categorySubHeadings = {
-  heading1: {
-    title: 'suite',
-    subheadings: [ 'lists', 'mail', 'jobs', 'network', ],
-  },
-  heading2: {
-    title: 'support',
-    subheadings: [ 'help', 'report bug' ],
-  },
-  heading3: {
-    title: 'about',
-    subheadings: [ 'seeran', ],
-  },
-  heading4: {
-    title: 'legal',
-    subheadings: [ 'terms', 'privacy', 'security', ],
-  },
-}
+{/* components */}
+import Footer from "@/components/footer";
+import NavigationBar from "@/components/navigationbar";
 
-
-const MenuColoumnSections = ({subHeadings}) => {
-
-  const title = subHeadings.title
-  const subheadings = subHeadings.subheadings
-
-  return (
-      <div>
-          <h1 className="pb-5 text-gray-400 font-normal flex gap-3">{title}</h1>
-          {subheadings.map( subheading => (
-              <div key={subheading} className=" text-start">
-                  <Link href={`/${subheading}`} className="hover:text-blue-700" >{subheading}</Link><br/>
-                  
-              </div>
-          ))}
-      </div>
-  )
-}
 
 export default function Home() {
   return (
-    <main className="text-base sm:text-xl">
+    <main>
       {/* navigation bar */}
-      <div className="fixed flex justify-center w-full py-3 bg-white">
-        <div className="flex w-full px-4 sm:px-7 mx-auto max-w-[1700px]">
-          <div className="w-full">
-            <Link href={"/"} className="md:block hidden">seeran <span className="text-blue-700">grades</span></Link>
-            <Link href={'/'} className="md:hidden"><Image src={'/favicon.svg'} alt="hero image" width={0} height={0} className="h-[35px] w-[35px]"/></Link>
-          </div>
-          <div className="w-full text-end">
-            <Link href="/parentsignin" className="text-gray-400 transition-all duration-300 hover:text-blue-700">try it</Link>
-          </div>
-        </div>
-      </div>
+      <NavigationBar/>
       {/* body */}
       <div className="w-full px-5 sm:px-10 md:px-14 mb-10 max-w-screen-2xl pt-24 mx-auto">
         <div className="">
@@ -69,7 +26,7 @@ export default function Home() {
               <div>
                 <Link href={"/parentsignin"} className="flex w-fit py-2 pl-6 pr-3 lg:hover:scale-[1.2] transition-all duration-500 ease-in-out gap-2 rounded-full text-white bg-black hover:bg-blue-700 mb-2">
                   <p className="" >try it out</p>
-                  <Image src={'/chevron-right.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit sm:mt-1"/>
+                  <Image src={'/chevron-right.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
                 </Link>
               </div>
               <p className="mb-8 text-base">Already have an account? <a className=" text-blue-700" href="/login">login</a></p>
@@ -166,53 +123,7 @@ export default function Home() {
         </p>
       </div>
       {/* footer */}
-      <div className="w-full flex justify-center bottom-0 border-t-2 border-opacity-30 border-gray-200 py-7 px-7">
-        <div className=" max-w-[1600px] w-full">
-          <div className="lg:flex w-full ">
-            <div className="w-full mb-7 max-lg:text-center">
-              <p className="font-bold text-6xl mb-4">seeran</p>
-              <p>Where <span className="text-blue-700">innovation</span> meets opportunity</p>
-            </div>
-            <div className="w-full flex justify-center max-sm:grid max-sm:grid-cols-2 lg:justify-end place-items-center font-extrabold sm:gap-20 gap-5">
-              <MenuColoumnSections subHeadings={categorySubHeadings.heading1}/>
-              <MenuColoumnSections subHeadings={categorySubHeadings.heading2}/>
-              <MenuColoumnSections subHeadings={categorySubHeadings.heading3}/>
-              <MenuColoumnSections subHeadings={categorySubHeadings.heading4}/>
-            </div>
-          </div>
-          <div className="lg:flex border-y-2 border-gray-200 border-opacity-50 my-10 py-10 lg:px-16">
-            <div className="w-full mb-4 max-lg:text-center">
-              <p className="text-2xl mb-3">Subscribe to our <span className="text-blue-700">newsletter</span></p>
-              <p className="w-full text-gray-500">the latest news, articles, and updates, sent directly to your inbox.</p>
-            </div>
-            <div className="flex w-full justify-center lg:justify-end">
-              <input type="text" placeholder="enter your email" className=" max-h-[36px] transition duration-300 ease-in-out bg-none border-2 border-blue-700 hover:border-blue-700 pl-4 lg:pr-28 py-1 rounded-lg"/>
-            </div>
-          </div>
-          <div className="lg:flex px-5">
-            <div className="lg:w-full flex mb-5 gap-10 max-lg:justify-center">
-              <Link href={''} >
-                <Image src={'/youtube.svg'} alt="youtube logo" height={0} width={0} className="hover:opacity-60 w-full h-full" />
-              </Link>
-              <Link href={''}>
-                <Image src={'/instagram.svg'} alt="youtube logo" height={0} width={0} className="hover:opacity-60 w-full h-full"/>
-              </Link>
-              <Link href={''}>
-                <Image src={'/twitter.svg'} alt="youtube logo" height={0} width={0} className="hover:opacity-60 w-full h-full"/>
-              </Link>
-              <Link href={''}>
-                <Image src={'/github.svg'} alt="youtube logo" height={0} width={0} className="hover:opacity-60 w-full h-full"/>
-              </Link>
-              <Link href={''}>
-                <Image src={'/facebook.svg'} alt="youtube logo" height={0} width={0} className="hover:opacity-60 w-full h-full" />
-              </Link>          
-            </div>
-            <div className="lg:w-full flex lg:justify-end justify-center">
-              <p className="text-gray-500">© 2020 Seeran, Inc. All rights reserved.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Footer/>
     </main>
   );
 }
