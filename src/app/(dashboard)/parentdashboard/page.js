@@ -20,36 +20,48 @@ const ParentDashboard = () => {
         <div className="w-full px-5 pt-16 ">
           <h1 className="text-4xl">Parent Dashboard</h1>
           {/* accounts section */}
-          <div className="px-6 border rounded-xl my-10">
-            <div className="flex py-2 gap-5 justify-start">
-              <Image src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16" />
+          <div className="px-6 border rounded-xl my-7">
+            <div className="flex py-2 gap-5 justify-start w-full">
+              <Image src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
               <p className="pt-3 w-full">profile settings</p>
             </div>
             <hr></hr>
-            <div className="flex py-2 gap-5 justify-start">
+            <div className="flex py-2 gap-5 justify-start w-full">
               <div className="flex w-fit">
-                <Image src={'/profile-icon-2.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
-                <Image src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
-                <Image src={'/profile-icon-4.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
+                <Image src={'/profile-icon-2.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
+                <Image src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
+                <Image src={'/profile-icon-4.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
               </div>
               <p className="pt-2 w-full">children</p>
             </div>
           </div>
           {/* school section */}
-          <div className="px-6 border rounded-xl my-10">
-            <div className="flex gap-6 py-3 justify-start">
+          <div className="px-6 border rounded-xl my-7">
+            <div className="flex gap-6 py-3 justify-start w-full">
               <Image src={'/wallet.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
               <p>school fees</p>
             </div>
             <hr></hr>
-            <div className="flex gap-6 py-3 justify-start">
+            <div className="flex gap-6 py-3 justify-start w-full">
               <Image src={'/bell-ring.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
               <p>notifications</p>
             </div>
             <hr></hr>
-            <div className="flex gap-6 py-3 justify-start">
+            <div className="flex gap-6 py-3 justify-start w-full">
               <Image src={'/megaphone.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
               <p>announcements</p>
+            </div>
+          </div>
+          {/* school section */}
+          <div className="px-6 border rounded-xl my-7">
+            <div className="flex gap-6 py-3 justify-start w-full">
+              <Image src={'/teacher.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
+              <p>teachers</p>
+            </div>
+            <hr></hr>
+            <div className="flex gap-6 py-3 justify-start w-full">
+              <Image src={'/admin.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
+              <p>school administrator</p>
             </div>
           </div>
         </div>
