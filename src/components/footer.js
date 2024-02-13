@@ -65,7 +65,7 @@ const SocialLinks = {
 const SocialsColomn = ({Socials}) => {
     return (
         <>
-            <Link href={`${Socials.url}`} >
+            <Link href={`/pagenotfound`} >
                 <Image src={`/${Socials.icon}.svg`} alt={`${Socials.alt}`} height={0} width={0} className="hover:opacity-60 w-full h-full" />
             </Link>
         </>
