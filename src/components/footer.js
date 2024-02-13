@@ -31,7 +31,7 @@ const MenuColoumn = ({Heading}) => {
           <h1 className="pb-5 text-gray-400 font-normal flex gap-3">{title}</h1>
           {subheadings.map( subheading => (
               <div key={subheading} className=" text-start">
-                  <Link href={`${subheading[1]}`} className="hover:text-blue-700" >{subheading[0]}</Link>
+                  <Link href={`/pagenotfound`} className="hover:text-blue-700" >{subheading[0]}</Link>
               </div>
           ))}
       </div>

@@ -16,7 +16,7 @@ const ParentSignin = () => {
   return (
     <>
         {/* navigation bar */}
-        <div className="fixed flex justify-center w-full pt-3 bg-white">
+        <div className="fixed flex justify-center w-full pt-3">
             <div className="flex w-full px-4 mx-auto max-w-[1700px]">
                 <div className="w-full">
                     <Link href={"/"} className="md:block hidden">seeran <span className="text-blue-700">grades</span></Link>
