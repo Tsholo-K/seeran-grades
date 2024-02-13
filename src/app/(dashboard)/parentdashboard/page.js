@@ -17,7 +17,7 @@ const ParentDashboard = () => {
           </div>
         </div>
         {/* dashboard */}
-        <div className="w-full px-5 pt-16 bg-gray-100">
+        <div className="w-full px-5 pt-16 min-h-screen bg-gray-100">
           {/* accounts section */}
           <div className="px-6 border rounded-xl my-7 bg-white">
             <div className="flex py-2 gap-5 justify-start w-full">
