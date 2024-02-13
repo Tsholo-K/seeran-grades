@@ -21,12 +21,12 @@ const ParentDashboard = () => {
           <h1 className="text-4xl">Parent Dashboard</h1>
           {/* accounts section */}
           <div className="px-6 border rounded-xl my-10">
-            <div className="flex py-2 gap-5">
+            <div className="flex py-2 gap-5 justify-start">
               <Image src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16" />
-              <p className="pt-3">profile settings</p>
+              <p className="pt-3 w-full">profile settings</p>
             </div>
             <hr></hr>
-            <div className="flex py-2 gap-5">
+            <div className="flex py-2 gap-5 justify-start">
               <div className="flex">
                 <Image src={'/profile-icon-2.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
                 <Image src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
@@ -35,18 +35,19 @@ const ParentDashboard = () => {
               <p className="pt-2">children</p>
             </div>
           </div>
+          {/* school section */}
           <div className="px-6 border rounded-xl my-10">
-            <div className="flex gap-6 py-3">
+            <div className="flex gap-6 py-3 justify-start">
               <Image src={'/wallet.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
               <p>school fees</p>
             </div>
             <hr></hr>
-            <div className="flex gap-6 py-3">
+            <div className="flex gap-6 py-3 justify-start">
               <Image src={'/bell-ring.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
               <p>notifications</p>
             </div>
             <hr></hr>
-            <div className="flex gap-6 py-3">
+            <div className="flex gap-6 py-3 justify-start">
               <Image src={'/megaphone.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
               <p>announcements</p>
             </div>
