@@ -59,11 +59,11 @@ export default function Home() {
       <div className="w-full px-5 sm:px-10 md:px-14 mb-10 max-w-screen-2xl pt-24 mx-auto">
         <div className="">
           {/* hero section */}
-          <div className="w-full sm:flex mb-4">
+          <div className="w-full md:flex mb-4">
             {/* left/top side hero section */}
-            <div className="w-full sm:w-2/5 lg:pt-8">
+            <div className="w-full md:w-2/5 lg:pt-8">
               <h1 className="mb-10 text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-                <span className="text-blue-700">Track </span>everything... <br></br><span className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"> important</span>
+                <span className="text-blue-700">Track </span>everything... <br></br><span className="text-6xl sm:text-8xl md:text-7xl lg:text-8xl xl:text-9xl"> important</span>
               </h1>
               {/* sign in button */}
               <div>
@@ -75,8 +75,8 @@ export default function Home() {
               <p className="mb-8 text-base">Already have an account? <a className=" text-blue-700" href="/login">login</a></p>
             </div>
             {/* right/bottom side hero section */}
-            <div className="w-full sm:w-3/5">
-              <Image src={'/second-hero.svg'} alt="hero image" width={0} height={0} className="h-full w-full"/>
+            <div className="w-full md:w-3/5">
+              <Image priority src={'/second-hero.svg'} alt="hero image" width={0} height={0} className="h-full w-full"/>
             </div>
           </div>
         </div>

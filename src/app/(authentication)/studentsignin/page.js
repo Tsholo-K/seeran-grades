@@ -29,9 +29,10 @@ const SigninPage = () => {
       </div>
       {/* form */}
       <div className="min-h-screen w-full grid grid-cols-1 place-content-center px-4 max-w-4xl mx-auto">
+        <Image src={'/signin-hero.svg'} alt="login page hero image" width={0} height={0} className="mx-auto w-fit h-fit"/>
         <p className="w-full text-gray-400 text-center text-2xl"><span className=" text-blue-700">student </span>sign in area</p>
         <form onSubmit={authenticate}>
-          <div className="mx-auto w-full rounded-md">
+          <div className="mx-auto w-full">
             <div className="my-4">
               <input type="text" placeholder="email" className="border rounded-md px-5 py-1 w-full"/>
             </div>

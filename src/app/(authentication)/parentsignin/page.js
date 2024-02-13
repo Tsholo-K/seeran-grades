@@ -29,8 +29,9 @@ const ParentSignin = () => {
         </div>
         {/* form */}
         <div className="min-h-screen w-full grid grid-cols-1 place-content-center px-4 max-w-4xl mx-auto">
+            <Image src={'/parent-signin.svg'} alt="login page hero image" width={350} height={350} className="mx-auto w-fit h-fit"/>
             <p className="w-full text-center text-gray-400 text-2xl"><span className=" text-blue-700">parent</span> sign in area</p>
-            <form className="mx-auto w-full rounded-md" onSubmit={authenticate}>
+            <form className="mx-auto w-full" onSubmit={authenticate}>
                 <div className="my-4">
                     <input type="text" placeholder="email" className="border rounded-md px-5 py-1 w-full"/>
                 </div>
