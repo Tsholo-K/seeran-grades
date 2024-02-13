@@ -27,12 +27,12 @@ const ParentDashboard = () => {
             </div>
             <hr></hr>
             <div className="flex py-2 gap-5 justify-start">
-              <div className="flex">
+              <div className="flex w-fit">
                 <Image src={'/profile-icon-2.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
                 <Image src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
                 <Image src={'/profile-icon-4.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
               </div>
-              <p className="pt-2">children</p>
+              <p className="pt-2 w-full">children</p>
             </div>
           </div>
           {/* school section */}
