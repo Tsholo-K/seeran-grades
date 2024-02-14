@@ -60,7 +60,7 @@ const MenuLink = ({Menu}) => {
 
 const SmallDevices = () => {
   return (
-    <div className="w-full h-full md:hidden">
+    <div className="w-full h-full md:hidden mb-20">
       {/* accounts section */}
       <div className="border rounded-xl bg-white">
         <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
