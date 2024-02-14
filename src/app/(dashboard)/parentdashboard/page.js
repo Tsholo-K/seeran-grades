@@ -5,8 +5,6 @@ import Image from "next/image";
 import ParentDashboardSidemenu from "@/components/parentdashboardsidemenu";
 
 
-
-
 export default function ParentDashboard() {
     return (
       <div>
