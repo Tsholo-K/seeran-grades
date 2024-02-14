@@ -8,7 +8,7 @@ import NavigationBar from "@/components/navigationbar";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`font-semibold antialiased bg-gray-100`}>
+      <body className={`font-semibold antialiased`}>
         {/* navigation bar */}  
         <div className="fixed top-0 flex justify-center w-full pt-3 pb-1 bg-gray-100 z-10">
             <div className="flex w-full px-4 sm:px-7 mx-auto">

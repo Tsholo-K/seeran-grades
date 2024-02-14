@@ -31,7 +31,7 @@ const page = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       <div className="fixed top-0 pt-16 ">
-        <Link href={'/parentdashboard'} className="flex w-full"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
+        <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
       </div>
       <div >
           <h1 className="w-full text-center pb-16 pt-10 text-4xl">Family</h1>
