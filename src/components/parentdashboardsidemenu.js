@@ -63,8 +63,11 @@ const ParentDashboardSidemenu = () => {
   return (
     <div className="flex w-full px-3 lg:px-4 h-full gap-2">
       <div className="w-full 2xl:w-4/12 lg:w-5/12 md:w-9/12">
+        <div className="my-1">
+          <Link href={'/'} className=""><Image priority src={'/favicon.svg'} alt="hero image" width={0} height={0} className="h-[40px] w-[40px]"/></Link>
+        </div>
         {/* accounts section */}
-        <div className="border rounded-xl my-7 bg-white">
+        <div className="border rounded-xl mb-7 bg-white">
           <div className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer hover:text-blue-700">
             <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
             <p className="pt-3 w-full">profile settings</p>
