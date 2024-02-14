@@ -24,7 +24,7 @@ export default function ParentDashboard() {
         <NavigationBar/>
         {/* dashboard */}
         <ParentDashboardSidemenu/>
-        <p className="w-full text-center text-gray-400">seeran limited</p>
+        <p className="w-full text-center text-gray-400 text-sm">seeran limited</p>
       </div>
     )
 }
