@@ -62,7 +62,7 @@ const MenuLink = ({Menu}) => {
 const ParentDashboardSidemenu = () => {
   return (
     <div className="flex w-full px-3 lg:px-4 h-full gap-2">
-      <div className="w-full 2xl:w-4/12 lg:w-5/12 md:w-9/12">
+      <div className="w-full h-full 2xl:w-4/12 lg:w-5/12 md:w-9/12">
         {/* accounts section */}
         <div className="border rounded-xl my-7 bg-white">
           <div className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer hover:text-blue-700">
@@ -108,16 +108,6 @@ const ParentDashboardSidemenu = () => {
         {/* settings section */}
         <div className="border rounded-xl my-7 bg-white">
           <MenuLink Menu={Menu.settings}/>
-        </div>
-      </div>
-      {/* large screen  */}
-      <div className="hidden md:block lg:px-2 w-full h-full">
-        <div className="border rounded-xl my-7 bg-white h-full">
-          <div className="flex gap-6 py-3 justify-start w-full px-3">
-            <Image src={'/admin.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
-            <p className="w-full">administrator</p>
-            <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit sm:mt-1"/>
-          </div>
         </div>
       </div>
     </div>

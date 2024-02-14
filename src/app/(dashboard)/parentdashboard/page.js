@@ -19,7 +19,7 @@ const NavigationBar = () => {
 
 export default function ParentDashboard() {
     return (
-      <div className="text-black bg-gray-100 pt-10 max-h-screen min-h-screen w-full">
+      <div className="text-black bg-gray-100 pt-10 min-h-screen w-full">
         {/* navigation bar */}
         <NavigationBar/>
         {/* dashboard */}
