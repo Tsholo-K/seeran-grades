@@ -6,25 +6,45 @@ import { useState } from "react";
 
 
 const Menu = {
-  fees: {
-    title: 'fees',
-    icon: 'wallet',
+  grades : {
+    title: 'grades',
+    icon: 'graduation-cap',
   },
-  notifications: {
-    title: 'notifications',
-    icon: 'bell-ring',
+  assessments : {
+    title: 'assessments',
+    icon: 'calendar-clock',
   },
-  announcements: {
-    title: 'announcements',
-    icon: 'megaphone',
+  achievements : {
+    title: 'achievements',
+    icon: 'award',
   },
   teachers: {
     title: 'teachers',
     icon: 'teacher',
   },
-  administrator: {
-    title: 'administrator',
+  notifications: {
+    title: 'notifications',
+    icon: 'bell-ring',
+  },
+  activities : {
+    title: 'activities',
+    icon: 'eye',
+  },
+  attendance: {
+    title: 'attendance',
+    icon: 'calendar-days',
+  },
+  fees: {
+    title: 'fees',
+    icon: 'wallet',
+  },
+  helpdesk: {
+    title: 'help desk',
     icon: 'admin',
+  },
+  settings: {
+    title: 'settings',
+    icon: 'settings',
   },
 }
 
@@ -61,19 +81,33 @@ const ParentDashboardSidemenu = () => {
             <Image src={'/chevron-right-black.svg'} alt='try it button' width={50} height={50} className="w-fit h-fit pt-2"/>
           </div>
         </div>
-        {/* school section */}
+        {/* children section */}
         <div className="border rounded-xl my-7 bg-white">
-          <MenuLink Menu={Menu.fees}/>
+          <MenuLink Menu={Menu.grades}/>
           <hr className="mx-5"></hr>
-          <MenuLink Menu={Menu.notifications}/>
+          <MenuLink Menu={Menu.assessments}/>
           <hr className="mx-5"></hr>
-          <MenuLink Menu={Menu.announcements}/>
+          <MenuLink Menu={Menu.achievements}/>
         </div>
-        {/* talk to someone section */}
+        {/* notifications section */}
         <div className="border rounded-xl my-7 bg-white">
           <MenuLink Menu={Menu.teachers}/>
           <hr className="mx-5"></hr>
-          <MenuLink Menu={Menu.administrator}/>
+          <MenuLink Menu={Menu.notifications}/>
+          <hr className="mx-5"></hr>
+          <MenuLink Menu={Menu.activities}/>
+          <hr className="mx-5"></hr>
+          <MenuLink Menu={Menu.attendance}/>
+        </div>
+        {/* help section */}
+        <div className="border rounded-xl my-7 bg-white">
+          <MenuLink Menu={Menu.fees}/>
+          <hr className="mx-5"></hr>
+          <MenuLink Menu={Menu.helpdesk}/>
+        </div>
+        {/* settings section */}
+        <div className="border rounded-xl my-7 bg-white">
+          <MenuLink Menu={Menu.settings}/>
         </div>
       </div>
       {/* large screen  */}
