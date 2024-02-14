@@ -29,20 +29,19 @@ const MenuLink = ({Menu}) => {
 
 const page = () => {
   return (
-    <div className="w-full">
-      <Link href={'/parentdashboard'} className="flex text-blue-700"><Image src={'/chevron-left.svg'} alt="back" width={30} height={30} className="w-fit h-fit max-h-6 max-w-6"/>Dashboard</Link>
+    <div className="w-full grid grid-cols-1 place-content-center ">
       <div>
-        <h1 className="w-full text-center my-10 text-4xl">Profile Settings</h1>
+        <h1 className="w-full text-center pb-5 text-4xl">Profile Settings</h1>
       </div>
       <div className="w-fit my-10 mx-auto">
-          <div className="mx-auto w-fit mb-4">
+          <div className="mx-auto w-fit pb-4">
               <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
           </div>
           <h2 className="w-full text-center">Surname Name</h2>
           <p className="w-full text-center">email</p>
       </div>
-      {/* children section */}
-      <div className="border rounded-xl my-7 bg-white">
+      {/* menu section */}
+      <div className="border rounded-xl bg-white">
         <MenuLink Menu={Menu.personalinformation}/>
         <hr className="mx-5"></hr>
         <MenuLink Menu={Menu.signinandsecurity}/>

@@ -62,7 +62,7 @@ const SmallDevices = () => {
   return (
     <div className="w-full h-full md:hidden">
       {/* accounts section */}
-      <div className="border rounded-xl mb-7 bg-white">
+      <div className="border rounded-xl pb-7 bg-white">
         <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
           <p className="pt-3 w-full"> Surname Name</p>
@@ -104,7 +104,7 @@ const SmallDevices = () => {
         <MenuLink Menu={Menu.helpdesk}/>
       </div>
       {/* settings section */}
-      <div className="border rounded-xl my-7 bg-white">
+      <div className="border rounded-xl mt-7 bg-white">
         <MenuLink Menu={Menu.settings}/>
       </div>
     </div>
