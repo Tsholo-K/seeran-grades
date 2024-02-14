@@ -1,8 +1,6 @@
-'use client'
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 
 const Menu = {
@@ -117,7 +115,6 @@ const ParentDashboardSidemenu = () => {
     <div className="h-full">
       <div className="w-full">
         <SmallDevices/>
-        
       </div>
     </div>
     
