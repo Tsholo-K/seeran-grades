@@ -7,50 +7,50 @@ import { useState } from "react";
 
 const Menu = {
   grades : {
-    title: 'grades',
+    title: 'Grades',
     icon: 'graduation-cap',
   },
   assessments : {
-    title: 'assessments',
+    title: 'Assessments',
     icon: 'calendar-clock',
   },
   achievements : {
-    title: 'achievements',
+    title: 'Achievements',
     icon: 'award',
   },
   teachers: {
-    title: 'teachers',
+    title: 'Teachers',
     icon: 'teacher',
   },
   notifications: {
-    title: 'notifications',
+    title: 'Notifications',
     icon: 'bell-ring',
   },
   activities : {
-    title: 'activities',
+    title: 'Activities',
     icon: 'eye',
   },
   attendance: {
-    title: 'attendance',
+    title: 'Attendance',
     icon: 'calendar-days',
   },
   fees: {
-    title: 'fees',
+    title: 'Fees',
     icon: 'wallet',
   },
   helpdesk: {
-    title: 'help desk',
+    title: 'Help Desk',
     icon: 'admin',
   },
   settings: {
-    title: 'settings',
+    title: 'Settings',
     icon: 'settings',
   },
 }
 
 const MenuLink = ({Menu}) => {
   return (
-    <div className="flex gap-6 py-3 justify-start w-full px-3 cursor-pointer hover:text-blue-700">
+    <div className="flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
       <Image src={`/${Menu.icon}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
       <p className={`w-full`}>{Menu.title}</p>
       <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
@@ -58,59 +58,69 @@ const MenuLink = ({Menu}) => {
   )
 }
 
+const SmallDevices = () => {
+  return (
+    <div className="w-full h-full md:hidden">
+      {/* accounts section */}
+      <div className="border rounded-xl mb-7 bg-white">
+        <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+          <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
+          <p className="pt-3 w-full"> Surname Name</p>
+          <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
+        </Link>
+        <hr className="mx-5"></hr>
+        <div className="flex py-2 px-3 gap-5 justify-start w-full cursor-pointer md:hover:text-blue-700">
+          <div className="flex w-fit">
+            <Image src={'/profile-icon-2.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
+            <Image src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
+            <Image src={'/profile-icon-4.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
+          </div>
+          <p className="pt-2 w-full">Family</p>
+          <Image src={'/chevron-right-black.svg'} alt='try it button' width={50} height={50} className="w-fit h-fit pt-2"/>
+        </div>
+      </div>
+      {/* children section */}
+      <div className="border rounded-xl my-7 bg-white">
+        <MenuLink Menu={Menu.grades}/>
+        <hr className="mx-5"></hr>
+        <MenuLink Menu={Menu.assessments}/>
+        <hr className="mx-5"></hr>
+        <MenuLink Menu={Menu.achievements}/>
+      </div>
+      {/* notifications section */}
+      <div className="border rounded-xl my-7 bg-white">
+        <MenuLink Menu={Menu.teachers}/>
+        <hr className="mx-5"></hr>
+        <MenuLink Menu={Menu.notifications}/>
+        <hr className="mx-5"></hr>
+        <MenuLink Menu={Menu.activities}/>
+        <hr className="mx-5"></hr>
+        <MenuLink Menu={Menu.attendance}/>
+      </div>
+      {/* help section */}
+      <div className="border rounded-xl my-7 bg-white">
+        <MenuLink Menu={Menu.fees}/>
+        <hr className="mx-5"></hr>
+        <MenuLink Menu={Menu.helpdesk}/>
+      </div>
+      {/* settings section */}
+      <div className="border rounded-xl my-7 bg-white">
+        <MenuLink Menu={Menu.settings}/>
+      </div>
+    </div>
+  )
+}
+
 
 const ParentDashboardSidemenu = () => {
   return (
-    <div className="flex w-full px-3 lg:px-4 h-full gap-2">
-      <div className="w-full h-full 2xl:w-4/12 lg:w-5/12 md:w-9/12">
-        {/* accounts section */}
-        <div className="border rounded-xl my-7 bg-white">
-          <div className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer hover:text-blue-700">
-            <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
-            <p className="pt-3 w-full">profile settings</p>
-            <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
-          </div>
-          <hr className="mx-5"></hr>
-          <div className="flex py-2 px-3 gap-5 justify-start w-full cursor-pointer hover:text-blue-700">
-            <div className="flex w-fit">
-              <Image src={'/profile-icon-2.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
-              <Image src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
-              <Image src={'/profile-icon-4.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
-            </div>
-            <p className="pt-2 w-full">children</p>
-            <Image src={'/chevron-right-black.svg'} alt='try it button' width={50} height={50} className="w-fit h-fit pt-2"/>
-          </div>
-        </div>
-        {/* children section */}
-        <div className="border rounded-xl my-7 bg-white">
-          <MenuLink Menu={Menu.grades}/>
-          <hr className="mx-5"></hr>
-          <MenuLink Menu={Menu.assessments}/>
-          <hr className="mx-5"></hr>
-          <MenuLink Menu={Menu.achievements}/>
-        </div>
-        {/* notifications section */}
-        <div className="border rounded-xl my-7 bg-white">
-          <MenuLink Menu={Menu.teachers}/>
-          <hr className="mx-5"></hr>
-          <MenuLink Menu={Menu.notifications}/>
-          <hr className="mx-5"></hr>
-          <MenuLink Menu={Menu.activities}/>
-          <hr className="mx-5"></hr>
-          <MenuLink Menu={Menu.attendance}/>
-        </div>
-        {/* help section */}
-        <div className="border rounded-xl my-7 bg-white">
-          <MenuLink Menu={Menu.fees}/>
-          <hr className="mx-5"></hr>
-          <MenuLink Menu={Menu.helpdesk}/>
-        </div>
-        {/* settings section */}
-        <div className="border rounded-xl my-7 bg-white">
-          <MenuLink Menu={Menu.settings}/>
-        </div>
+    <div className="h-full">
+      <div className="w-full">
+        <SmallDevices/>
+        
       </div>
     </div>
+    
   )
 }
 
