@@ -62,14 +62,14 @@ const SmallDevices = () => {
   return (
     <div className="w-full h-full md:hidden">
       {/* accounts section */}
-      <div className="border rounded-xl pb-7 bg-white">
+      <div className="border rounded-xl bg-white">
         <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
           <p className="pt-3 w-full"> Surname Name</p>
           <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
         </Link>
         <hr className="mx-5"></hr>
-        <div className="flex py-2 px-3 gap-5 justify-start w-full cursor-pointer md:hover:text-blue-700">
+        <Link href={'/parentdashboard/family'} className="flex py-2 px-3 gap-5 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <div className="flex w-fit">
             <Image src={'/profile-icon-2.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
             <Image src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
@@ -77,7 +77,7 @@ const SmallDevices = () => {
           </div>
           <p className="pt-2 w-full">Family</p>
           <Image src={'/chevron-right-black.svg'} alt='try it button' width={50} height={50} className="w-fit h-fit pt-2"/>
-        </div>
+        </Link>
       </div>
       {/* children section */}
       <div className="border rounded-xl my-7 bg-white">

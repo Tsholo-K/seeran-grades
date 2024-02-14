@@ -37,8 +37,8 @@ const page = () => {
           <div className="mx-auto w-fit pb-4">
               <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
           </div>
-          <h2 className="w-full text-center">Surname Name</h2>
-          <p className="w-full text-center">email</p>
+          <h2 className="w-full text-center text-2xl">Surname Name</h2>
+          <p className="w-full text-center text-gray-500">email</p>
       </div>
       {/* menu section */}
       <div className="border rounded-xl bg-white">
