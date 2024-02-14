@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
                 </div>
             </div>
         </div>
-        <div className="min-h-screen relative max-h-screen bg-gray-100 z-0">
+        <div className="min-h-screen relative bg-gray-100 z-0">
           {/* body */}
           <div className="text-black pt-16 w-full px-3 lg:px-4">
               {children}
