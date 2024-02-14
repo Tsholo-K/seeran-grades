@@ -30,7 +30,7 @@ const MenuLink = ({Menu}) => {
 const page = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
-      <div className="absolute top-0 bg-gray-100 w-full">
+      <div className="fixed top-0 pt-16">
         <Link href={'/parentdashboard'} className="flex w-full"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
       </div>
       <div>
