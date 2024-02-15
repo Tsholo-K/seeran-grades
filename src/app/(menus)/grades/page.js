@@ -38,9 +38,12 @@ const Grades = () => {
       </div>
       {/* accounts section */}
       <div className="py-4">
-        <p className=" text-sm pl-2 pb-2 text-gray-500">monday 14 jan</p>
+        <div className="flex pl-2">
+          <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">tuesday, 7 febuary</p>
+        </div>
         <div className="border rounded-xl bg-white pt">
-          <Link href={'/parentdashboard/profile'} className="flex py-2 gap-1 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+          <Link href={'/pagenotfound'} className="flex py-2 gap-1 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
               <Image priority src={'/life-science.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
               <div className="w-full pt-1 pl-2">
                   <p>Life Science</p>
@@ -49,9 +52,13 @@ const Grades = () => {
           </Link>
         </div>
       </div><div className="py-4">
-        <p className=" text-sm pl-2 pb-2 text-gray-500">monday 14 jan</p>
+        <div className="flex pl-2">
+          <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">monday, 14 febuary</p>
+        </div>
+
         <div className="border rounded-xl bg-white pt">
-          <Link href={'/parentdashboard/profile'} className="flex py-2 gap-1 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+          <Link href={'/pagenotfound'} className="flex py-2 gap-1 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
               <Image priority src={'/maths.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
               <div className="w-full pt-1 pl-2">
                   <p>Maths</p>
@@ -61,9 +68,12 @@ const Grades = () => {
           </Link>
         </div>
       </div><div className="py-4">
-        <p className=" text-sm pl-2 pb-2 text-gray-500">monday 14 jan</p>
+        <div className="flex pl-2">
+          <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">moday, 30 january</p>
+        </div>
         <div className="border rounded-xl bg-white pt">
-          <Link href={'/parentdashboard/profile'} className="flex py-2 gap-1 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+          <Link href={'/pagenotfound'} className="flex py-2 gap-1 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
               <Image priority src={'/geography.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
               <div className="w-full pt-1 pl-2">
                   <p>Geography</p>
@@ -74,9 +84,12 @@ const Grades = () => {
         </div>
       </div>
       <div className="py-4">
-        <p className=" text-sm pl-2 pb-2 text-gray-500">monday 14 jan</p>
+        <div className="flex pl-2">
+          <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">friday, 21 january</p>
+        </div>
         <div className="border rounded-xl bg-white pt">
-          <Link href={'/parentdashboard/profile'} className="flex py-2 gap-1 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+          <Link href={'/pagenotfound'} className="flex py-2 gap-1 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
               <Image priority src={'/language.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
               <div className="w-full pt-1 pl-2">
                   <p>English</p>
