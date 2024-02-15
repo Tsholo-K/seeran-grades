@@ -19,7 +19,7 @@ const MultiFactorAuthentication = () => {
       <div className="fixed flex justify-center w-full pt-3">
         <div className="flex w-full px-4 mx-auto max-w-[1700px]">
           <div className="w-full">
-            <p >seeran</p>
+            <p className="font-bold">seeran</p>
           </div>
           <div className="w-full text-end">
           </div>

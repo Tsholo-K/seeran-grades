@@ -30,17 +30,17 @@ const MenuLink = ({Menu}) => {
 const Achievements = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
-      <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100">
+      <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100 z-10">
         <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
       </div>
       <div >
-          <h1 className="w-full text-center pb-10 pt-10 text-4xl">Achievements</h1>
+          <h1 className="w-full text-center pb-10 pt-10 text-4xl z-0">Achievements</h1>
       </div>
       {/* accounts section */}
-      <div className="py-4">
+      <div className="py-4 z-0">
         <div className="flex pl-2">
-          <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 opacity-50"/>
-          <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: Koketso</p>
+          <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: name</p>
         </div>
         <div className="border rounded-xl bg-white py-1">
           <div>
@@ -55,14 +55,14 @@ const Achievements = () => {
           <div className="flex w-full pl-3 pt-2 relative">
             <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
             <p className=" text-sm pl-2 pb-2 text-gray-500">Granted:  tuesday, 7 febuary</p>
-            <Image src={'/gold-medal.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 absolute right-5"/>
+            <Image src={'/gold-medal.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 absolute right-3"/>
           </div>
         </div>
       </div>
-      <div className="py-4">
+      <div className="py-4 z-0">
         <div className="flex pl-2">
-          <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 opacity-50"/>
-          <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: Karabo</p>
+          <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: name</p>
         </div>
         <div className="border rounded-xl bg-white py-1">
           <div>
@@ -80,10 +80,10 @@ const Achievements = () => {
           </div>
         </div>
       </div>
-      <div className="py-4">
+      <div className="py-4 z-0">
         <div className="flex pl-2">
-          <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 opacity-50"/>
-          <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: Lebohang</p>
+          <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: name</p>
         </div>
         <div className="border rounded-xl bg-white py-1">
           <div>
@@ -101,10 +101,10 @@ const Achievements = () => {
           </div>
         </div>
       </div>
-      <div className="py-4">
+      <div className="py-4 z-0">
         <div className="flex pl-2">
-          <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 opacity-50"/>
-          <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: Karabo</p>
+          <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 "/>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: name</p>
         </div>
         <div className="border rounded-xl bg-white py-1">
           <div>
@@ -119,10 +119,12 @@ const Achievements = () => {
           <div className="flex pl-3 pt-2 relative">
             <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
             <p className=" text-sm pl-2 pb-2 text-gray-500">Granted:  wednesday, 14 febuary</p>
-            <Image src={'/distinction.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 absolute right-5"/>
+            <Image src={'/distinction.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 absolute right-3"/>
           </div>
         </div>
       </div>
+   
+
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto pt-2">all caught up..</p>
     </div>
   )

@@ -26,27 +26,33 @@ const Menu = {
   },
   notifications: {
     title: 'Notifications',
-    icon: 'bell-ring',url: '',
+    icon: 'bell-ring',
+    url: 'notifications',
   },
   activities : {
     title: 'Activities',
-    icon: 'eye',url: '',
+    icon: 'eye',
+    url: 'activities',
   },
   attendance: {
     title: 'Attendance',
-    icon: 'calendar-days',url: '',
+    icon: 'calendar-days',
+    url: 'attendance',
   },
   fees: {
     title: 'Fees',
-    icon: 'wallet',url: '',
+    icon: 'wallet',
+    url: 'fees',
   },
   helpdesk: {
     title: 'Help Desk',
-    icon: 'admin',url: '',
+    icon: 'admin',
+    url: 'helpdesk',
   },
   settings: {
     title: 'Settings',
-    icon: 'settings',url: '',
+    icon: 'settings',
+    url: 'settings',
   },
 }
 
