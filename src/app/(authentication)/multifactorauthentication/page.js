@@ -34,11 +34,11 @@ const MultiFactorAuthentication = () => {
             <div className="my-4">
               <input type="text" placeholder="OTP" className="border rounded-md px-5 py-1 w-full"/>
             </div>
-            <div className="flex w-full gap-4 justify-center my-4 mx-7">
-              <div className="w-full">
+            <div className="flex w-fit gap-4 pb-2 pl-1 mx-auto">
+              <div>
                   <p>keep me signed in..</p>
               </div>
-              <div className="flex w-full gap-4">
+              <div className="flex gap-4">
                   <input type="radio" id="no" className=""/>
                   <label form="no">no</label>
                   <input type="radio" id="yes" className=""/>

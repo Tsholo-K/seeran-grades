@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`font-semibold antialiased bg-gray-100`}>
+      <body className={` bg-gray-100 antialiased`}>
         {/* navigation bar */}  
         <div className="fixed top-0 flex justify-center w-full pt-3 pb-1 bg-gray-100 z-10">
             <div className="flex w-full px-4 sm:px-7 mx-auto">
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
                 </div>
             </div>
         </div>
-        <div className="min-h-screen relative bg-gray-100 z-0">
+        <div className="min-h-screen relative bg-gray-100 z-0 font-semibold">
           {/* body */}
           <div className="text-black pt-16 w-full px-3 lg:px-4">
               {children}
