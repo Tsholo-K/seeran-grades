@@ -48,15 +48,16 @@ const Grades = () => {
               <div className="w-full pt-1 pl-2">
                   <p>Life Science</p>
               </div>
-              <Image src={'/grades-pending.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-1 pr-3"/>
+              <Image src={'/grades-pending.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-1 "/>
+              <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-4 m-0"/>
           </Link>
         </div>
-      </div><div className="py-4">
+      </div>
+      <div className="py-4">
         <div className="flex pl-2">
           <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
           <p className=" text-sm pl-2 pb-2 text-gray-500">monday, 14 febuary</p>
         </div>
-
         <div className="border rounded-xl bg-white pt">
           <Link href={'/pagenotfound'} className="flex py-2 gap-1 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
               <Image priority src={'/maths.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
@@ -67,7 +68,8 @@ const Grades = () => {
               <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-4 m-0"/>
           </Link>
         </div>
-      </div><div className="py-4">
+      </div>
+      <div className="py-4">
         <div className="flex pl-2">
           <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
           <p className=" text-sm pl-2 pb-2 text-gray-500">moday, 30 january</p>
@@ -83,6 +85,55 @@ const Grades = () => {
           </Link>
         </div>
       </div>
+      <div className="py-4">
+        <div className="flex pl-2">
+          <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">tuesday, 7 febuary</p>
+        </div>
+        <div className="border rounded-xl bg-white pt">
+          <Link href={'/pagenotfound'} className="flex py-2 gap-1 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+              <Image priority src={'/life-science.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
+              <div className="w-full pt-1 pl-2">
+                  <p>Life Science</p>
+              </div>
+              <Image src={'/grades-pending.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-1 "/>
+              <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-4 m-0"/>
+          </Link>
+        </div>
+      </div>
+      <div className="py-4">
+        <div className="flex pl-2">
+          <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">monday, 14 febuary</p>
+        </div>
+        <div className="border rounded-xl bg-white pt">
+          <Link href={'/pagenotfound'} className="flex py-2 gap-1 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+              <Image priority src={'/maths.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
+              <div className="w-full pt-1 pl-2">
+                  <p>Maths</p>
+              </div>
+              <Image src={'/grades-ready-passed.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-1"/>
+              <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-4 m-0"/>
+          </Link>
+        </div>
+      </div>
+      <div className="py-4">
+        <div className="flex pl-2">
+          <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">moday, 30 january</p>
+        </div>
+        <div className="border rounded-xl bg-white pt">
+          <Link href={'/pagenotfound'} className="flex py-2 gap-1 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+              <Image priority src={'/geography.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
+              <div className="w-full pt-1 pl-2">
+                  <p>Geography</p>
+              </div>
+              <Image src={'/grades-ready-passed.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-1"/>
+              <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-4 m-0"/>
+          </Link>
+        </div>
+      </div>
+      
       <div className="py-4">
         <div className="flex pl-2">
           <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>

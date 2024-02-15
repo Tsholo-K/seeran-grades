@@ -16,11 +16,13 @@ const Menu = {
   },
   achievements : {
     title: 'Achievements',
-    icon: 'award',url: '',
+    icon: 'award',
+    url: 'achievements',
   },
   teachers: {
     title: 'Teachers',
-    icon: 'teacher',url: '',
+    icon: 'teacher',
+    url: 'teachers',
   },
   notifications: {
     title: 'Notifications',
