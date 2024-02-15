@@ -7,52 +7,53 @@ const Menu = {
   grades : {
     title: 'Grades',
     icon: 'graduation-cap',
+    url: '/grades',
   },
   assessments : {
     title: 'Assessments',
-    icon: 'calendar-clock',
+    icon: 'calendar-clock',url: '',
   },
   achievements : {
     title: 'Achievements',
-    icon: 'award',
+    icon: 'award',url: '',
   },
   teachers: {
     title: 'Teachers',
-    icon: 'teacher',
+    icon: 'teacher',url: '',
   },
   notifications: {
     title: 'Notifications',
-    icon: 'bell-ring',
+    icon: 'bell-ring',url: '',
   },
   activities : {
     title: 'Activities',
-    icon: 'eye',
+    icon: 'eye',url: '',
   },
   attendance: {
     title: 'Attendance',
-    icon: 'calendar-days',
+    icon: 'calendar-days',url: '',
   },
   fees: {
     title: 'Fees',
-    icon: 'wallet',
+    icon: 'wallet',url: '',
   },
   helpdesk: {
     title: 'Help Desk',
-    icon: 'admin',
+    icon: 'admin',url: '',
   },
   settings: {
     title: 'Settings',
-    icon: 'settings',
+    icon: 'settings',url: '',
   },
 }
 
 const MenuLink = ({Menu}) => {
   return (
-    <div className="flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
+    <Link href={`${Menu.url}`} className="flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
       <Image src={`/${Menu.icon}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
       <p className={`w-full`}>{Menu.title}</p>
       <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
-    </div>
+    </Link>
   )
 }
 
@@ -61,7 +62,7 @@ const SmallDevices = () => {
     <div className="w-full h-full md:hidden mb-20">
       {/* accounts section */}
       <div className="border rounded-xl bg-white">
-        <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+        <Link href={'/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
           <p className="pt-3 w-full"> Surname Name</p>
           <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
