@@ -34,7 +34,7 @@ const page = () => {
       </div>
       <div className="w-fit my-10 mx-auto">
           <div className="mx-auto w-fit pb-4">
-            <Image priority src={'/favicon.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
+            <Image priority src={'/favicon.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-[250px] max-w-[250px] " />
           </div>
           <h2 className="w-full text-center text-xl">seeran grades</h2>
       </div>

@@ -38,7 +38,7 @@ const page = () => {
       </div>
       <div className="w-fit my-10 mx-auto">
           <div className="mx-auto w-fit pb-4">
-            <Image priority src={'/help-desk.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
+            <Image priority src={'/help-desk.svg'} alt="profile icon" width={60} height={60} className="w-fit h-fit max-h-[250px] max-w-[250px]" />
             <p className="w-fit mx-auto text-gray-500 text-sm">/school logo</p>
           </div>
           <h2 className="w-full text-center text-xl">School Name</h2>
