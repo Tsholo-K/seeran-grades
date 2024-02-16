@@ -38,8 +38,8 @@ const Children = () => {
       </div>
       {/* accounts section */}
       <div className="border rounded-xl bg-white p-3 my-7">
-          <p className="text-sm text-gray-500">outstanding balance :</p>
-          <p className="mx-auto w-fit text-5xl py-6 text-blue-700">R3487.87</p>
+          <p className="text-sm text-gray-500 pl-3">outstanding balance :</p>
+          <p className="mx-auto w-fit text-5xl pt-4 pb-2 text-blue-700 font-black">R3 487.87</p>
           <p className="text-sm text-gray-500 w-fit mx-auto">next debit order: 1st march</p>
       </div>
       <div className="border rounded-xl bg-white mt-10">
