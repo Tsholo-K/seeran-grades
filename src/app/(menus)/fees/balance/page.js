@@ -37,10 +37,13 @@ const Children = () => {
           <h1 className="w-full text-center pb-16 pt-10 text-4xl">Balance</h1>
       </div>
       {/* accounts section */}
-      <div className="border rounded-xl bg-white p-3 mb-7">
-          <p className="text-sm text-gray-500 pl-3">outstanding balance :</p>
-          <p className="mx-auto w-fit text-5xl pt-4 pb-2 text-blue-700 font-extrabold">R3 487.87</p>
-          <p className="text-sm text-gray-500 w-fit mx-auto">next debit order: 1st march</p>
+      <div className="border rounded-xl bg-white p-3  mb-7">
+          <p className="text-sm text-gray-500 pl-3 pb-3">outstanding balance :</p>
+          <p className="mx-auto w-fit text-5xl pt-4 pb-3 text-blue-700 font-extrabold">R3 487.87</p>
+          <div className="flex w-fit mx-auto">
+            <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+            <p className=" text-sm pl-2 text-gray-500">next debit order date : 1st march</p>
+          </div>
       </div>
       <div className="border rounded-xl bg-white mt-10">
         <Link href={`/`} className="relative flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
