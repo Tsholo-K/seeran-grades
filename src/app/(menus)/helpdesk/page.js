@@ -1,21 +1,21 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
 
 const Menu = {
-  personalinformation : {
-    title: 'Personal Information',
-    icon: 'book-lock',
+  help : {
+    title: 'help',
+    icon: 'headset',
   },
-  signinandsecurity : {
-    title: 'Sign-in And Security',
-    icon: 'fingerprint',
+  contactinfo : {
+    title: 'contact info',
+    icon: 'phone',
   },
-  signout : {
-    title: 'Sign Out',
-    icon: 'log-out',
+  complaints : {
+    title: 'log a complaint',
+    icon: 'badge-alert',
   }
-};
+}
 
 const MenuLink = ({Menu}) => {
   return (
@@ -25,20 +25,34 @@ const MenuLink = ({Menu}) => {
       <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
     </div>
   )
-};
+}
 
-const Grades = () => {
+const page = () => {
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
-      <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100">
+    <div className="w-full relative grid grid-cols-1 place-content-center ">
+      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
         <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
       </div>
-      <div >
-          <h1 className="w-full text-center pb-10 pt-10 text-4xl">Messages</h1>
+      <div>
+        <h1 className="w-full text-center pb-5 pt-16 text-4xl">Help desk</h1>
       </div>
-      <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto pt-2">all caught up..</p>
+      <div className="w-fit my-10 mx-auto">
+          <div className="mx-auto w-fit pb-4">
+            <Image priority src={'/help-desk.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
+            <p className="w-fit mx-auto text-gray-500 text-sm">/school logo</p>
+          </div>
+          <h2 className="w-full text-center text-xl">School Name</h2>
+      </div>
+      {/* menu section */}
+      <div className="border rounded-xl bg-white">
+        <MenuLink Menu={Menu.help}/>
+        <hr className="mx-5"></hr>
+        <MenuLink Menu={Menu.contactinfo}/>
+        <hr className="mx-5"></hr>
+        <MenuLink Menu={Menu.complaints}/>
+      </div>
     </div>
   )
-};
+}
 
-export default Grades;
+export default page

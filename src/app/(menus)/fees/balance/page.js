@@ -31,7 +31,7 @@ const Children = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100">
-        <Link href={'/fees'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>children</Link>
+        <Link href={'/fees'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>fees</Link>
       </div>
       <div >
           <h1 className="w-full text-center pb-16 pt-10 text-4xl">Balance</h1>
