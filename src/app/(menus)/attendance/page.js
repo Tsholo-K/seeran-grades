@@ -1,5 +1,5 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 
 const Menu = {
@@ -15,7 +15,7 @@ const Menu = {
     title: 'Sign Out',
     icon: 'log-out',
   }
-}
+};
 
 const MenuLink = ({Menu}) => {
   return (
@@ -25,9 +25,9 @@ const MenuLink = ({Menu}) => {
       <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
     </div>
   )
-}
+};
 
-const page = () => {
+const Children = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100">
@@ -68,6 +68,6 @@ const page = () => {
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto pt-2">check attendances</p>
     </div>
   )
-}
+};
 
-export default page
+export default Children;
