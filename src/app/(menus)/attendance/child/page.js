@@ -93,6 +93,7 @@ const page = () => {
         </div>
         <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-4 m-0"/>
       </Link>
+      <p className="text-center text-sm text-gray-500">this will reset every term</p>
     </div>
   )
 }
