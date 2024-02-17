@@ -32,8 +32,10 @@ const Teachers = () => {
     <div className="w-full min-h-full relative">
       <div className="flex top-16 w-full fixed">
         <Link href={'/teachers'}  className="flex text-blue-700">
+          <div className="grid grid-cols-1 place-content-center">
             <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>
-            <p className="grid grid-cols-1 place-content-center">3</p>
+          </div>
+          <p className="grid grid-cols-1 place-content-center">3</p>
         </Link>
         <div className="flex w-full justify-center">
           <div className="flex gap-3">
