@@ -30,7 +30,7 @@ const MenuLink = ({Menu}) => {
 const Teachers = () => {
   return (
     <div className="w-full min-h-full relative">
-      <div className="flex top-16 w-full fixed">
+      <div className="flex top-16 w-full fixed bg-gray-100">
         <Link href={'/teachers'}  className="flex text-blue-700">
           <div className="grid grid-cols-1 place-content-center">
             <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>

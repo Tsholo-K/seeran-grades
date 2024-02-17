@@ -3,13 +3,13 @@ import Link from "next/link";
 
 
 const Menu = {
-  personalinformation : {
-    title: 'Personal Information',
-    icon: 'book-lock',
+  sender : {
+    title: 'Sender',
+    info: 'Principal',
   },
-  signinandsecurity : {
-    title: 'Sign-in And Security',
-    icon: 'fingerprint',
+  date : {
+    title: 'Date',
+    info: '12 febuary 2024',
   },
   signout : {
     title: 'Sign Out',
@@ -19,69 +19,47 @@ const Menu = {
 
 const MenuLink = ({Menu}) => {
   return (
-    <div className="flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
-      <Image src={`/${Menu.icon}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
-      <p className={`w-full`}>{Menu.title}</p>
-      <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
+    <div className="relative flex py-3 gap-1 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
+      <p>{Menu.title}</p>
+      <p className="text-gray-400 absolute right-4">{Menu.info}</p>
     </div>
   )
-};
+}
+
 
 const Notifications = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100">
-        <Link href={'/parentdashboard'} className="flex w-full text-blue-700">
-          <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard
+        <Link href={'/notifications'} className="flex w-full text-blue-700">
+          <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>messages
         </Link>
       </div>
-      <div >
-        <h1 className="w-full text-center pb-10 text-4xl">Messages</h1>
-        <Link href={'/profile'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-          <div className="absolute top-7 left-1 bg-blue-600 w-3 h-3 text-center rounded-full text-white"></div>
-          <div className="pl-5 w-full">
-            <p className="font-bold">Surname Name</p>
-            <p className="text-sm text-gray-500">your child is having...</p>
-          </div>
-          <div>
-            <p className="text-sm text-blue-700">13:00</p>
-          </div>
-        </Link>
-        <hr className="ml-7 py-1"></hr>
-        <Link href={'/profile'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-          <div className="absolute top-7 left-1 bg-blue-500 w-3 h-3 text-center rounded-full text-white"></div>
-          <div className="pl-5 w-full">
-            <p className="font-bold">Surname Name</p>
-            <p className="text-sm text-gray-500">your child is having...</p>
-          </div>
-          <div>
-            <p className="text-sm text-blue-700">13:00</p>
-          </div>
-        </Link>
-        <hr className="ml-7 py-1"></hr>
-        <Link href={'/profile'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-          <div className="pl-5 w-full">
-            <p className="font-bold">Surname Name</p>
-            <p className="text-sm text-gray-500">your child is having...</p>
-          </div>
-          <div>
-            <p className="text-sm ">13:00</p>
-          </div>
-        </Link>
-        <hr className="ml-7 py-1"></hr>
-        <Link href={'/profile'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-          <div className="absolute top-7 left-1 bg-blue-600 w-3 h-3 text-center rounded-full text-white"></div>
-          <div className="pl-5 w-full">
-            <p className="font-bold">Surname Name</p>
-            <p className="text-sm text-gray-500">your child is having...</p>
-          </div>
-          <div>
-            <p className="text-sm text-blue-700">13:00</p>
-          </div>
-        </Link>
-        <hr className="ml-7 py-1"></hr>
+      <div className="mb-16">
+        <div className="w-full mx-auto">
+          <Image src={'/mail-open.svg'} alt='back to main menu' height={100} width={100} className="mx-auto"/>
+          <p className="text-xl text-center pt-6 w-[95%] mx-auto">seeran grades our new school management system</p>
+        </div>
       </div>
-      <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto pt-2">all caught up..</p>
+      <div className="py-4 mb-10">
+        <div className="flex">
+          <p className=" text-sm pl-2 pb-1 text-gray-400">message</p>
+        </div>
+        <div className="relative border rounded-xl bg-white py-1">
+          <p className="w-full py-1 px-2">
+            We understand the importance of staying connected and informed about your child&apos;s education journey. 
+            That&apos;s why we&apos;re excited to introduce Seeran Grades, a user-friendly platform designed to empower you with
+            real-time insights into your child&apos;s academic progress and well-being
+          </p>
+        </div>
+      </div>
+      <div>
+        <div className="border rounded-xl bg-white">
+          <MenuLink Menu={Menu.sender}/>
+          <hr className="mx-5"></hr>
+          <MenuLink Menu={Menu.date}/>
+        </div>
+      </div>
     </div>
   )
 };
