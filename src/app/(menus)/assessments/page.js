@@ -40,7 +40,7 @@ const Grades = () => {
       <div className="py-4">
         <div className="flex pl-2">
           <Image src={'/user-round.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-          <p className=" text-sm pl-2 pb-2 text-gray-500">for : name</p>
+          <p className=" text-sm pl-2 pb-1 text-gray-500">for : name</p>
         </div>
         <div className="border rounded-xl bg-white py-1">
           <div>
@@ -62,7 +62,7 @@ const Grades = () => {
       <div className="py-4">
         <div className="flex pl-2">
           <Image src={'/user-round.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-          <p className=" text-sm pl-2 pb-2 text-gray-500">for : name</p>
+          <p className=" text-sm pl-2 pb-1 text-gray-500">for : name</p>
         </div>
         <div className="border rounded-xl bg-white py-1">
           <div>
@@ -84,7 +84,7 @@ const Grades = () => {
       <div className="py-4">
         <div className="flex pl-2">
           <Image src={'/user-round.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-          <p className=" text-sm pl-2 pb-2 text-gray-500">for : name</p>
+          <p className=" text-sm pl-2 pb-1 text-gray-500">for : name</p>
         </div>
         <div className="border rounded-xl bg-white py-1">
           <div>
