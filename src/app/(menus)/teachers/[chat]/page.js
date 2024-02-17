@@ -44,6 +44,32 @@ const Teachers = () => {
           </div>
         </div>
       </div>
+      <div className="chat text-base text-white">
+        <div className="mine messages">
+          <div className="message last">
+            Dude
+          </div>
+        </div>
+        <div className="yours messages">
+          <div className="message">
+            Hey!
+          </div>
+          <div className="message">
+            You there?
+          </div>
+          <div className="message last">
+            Hello, how&apos;s it going?
+          </div>
+        </div>
+        <div className="mine messages">
+          <div className="message">
+            Great thanks!
+          </div> 
+          <div className="message last">
+            How about you?
+          </div>
+        </div>
+      </div>
       <div className="fixed w-full bottom-0 left-0">
           <div className="w-full flex justify-center gap-3 px-3 py-2">
               <input type="text" className="w-full  border-[1px] p-1 border-gray-300 rounded-full bg-white" />

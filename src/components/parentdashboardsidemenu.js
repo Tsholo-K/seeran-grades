@@ -99,8 +99,7 @@ const SmallDevices = () => {
       {/* notifications section */}
       <div className="border rounded-xl my-7 bg-white">
         <MenuLink Menu={Menu.teachers}/>
-        <hr className="mx-5"></hr>
-        <MenuLink Menu={Menu.notifications}/>
+        
         <hr className="mx-5"></hr>
         <MenuLink Menu={Menu.activities}/>
         <hr className="mx-5"></hr>
@@ -109,6 +108,8 @@ const SmallDevices = () => {
       {/* help section */}
       <div className="border rounded-xl my-7 bg-white">
         <MenuLink Menu={Menu.fees}/>
+        <hr className="mx-5"></hr>
+        <MenuLink Menu={Menu.notifications}/>
         <hr className="mx-5"></hr>
         <MenuLink Menu={Menu.helpdesk}/>
       </div>
