@@ -44,7 +44,6 @@ const page = () => {
       <div>
         <h1 className="w-full text-center pb-20 text-4xl">ID</h1>
       </div>
-
       {/* menu section */}
       <div className="border rounded-xl bg-white">
         <MenuLink Menu={Menu.name}/>

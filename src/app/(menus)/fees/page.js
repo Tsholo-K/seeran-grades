@@ -38,7 +38,7 @@ const Children = () => {
       </div>
       {/* accounts section */}
       <div className="border rounded-xl bg-white pt">
-          <Link href={'/fees/balance'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+          <Link href={'/fees/child'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
               <Image priority src={'/profile-icon-2.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
               <div className="pt-3 w-full">
                   <p> Surname Name</p>
@@ -47,7 +47,7 @@ const Children = () => {
               <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
           </Link>
           <hr className="mx-5"></hr>
-          <Link href={'/fees/balance'} className="relative flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+          <Link href={'/fees/child'} className="relative flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
             <p className=" absolute right-12 text-blue-700 font-extrabold pt-5">1</p>
               <Image priority src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
               <div className="pt-3 w-full">
@@ -57,7 +57,7 @@ const Children = () => {
               <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
           </Link>
           <hr className="mx-5"></hr>
-          <Link href={'/fees/balance'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+          <Link href={'/fees/child'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
               <Image priority src={'/profile-icon-4.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
               <div className="pt-3 w-full">
                   <p> Surname Name</p>

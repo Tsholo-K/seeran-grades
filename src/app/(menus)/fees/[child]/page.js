@@ -46,22 +46,20 @@ const Children = () => {
           </div>
       </div>
       <div className="border rounded-xl bg-white mt-10">
-        <Link href={`/`} className="relative flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
-          <p className=" absolute right-12 text-blue-700 font-extrabold"></p>
+        <Link href={`/fees/child/pay`} className="relative flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
           <Image src={`/credit-card.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
           <p className={`w-full`}>pay</p>
           <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
         </Link>
         <hr className="mx-5"></hr>
-        <Link href={`/`} className="relative flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
-          <p className=" absolute right-12 text-blue-700 font-extrabold"></p>
+        <Link href={`/fees/child/structure`} className="relative flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
           <Image src={`/layers.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
           <p className={`w-full`}>fees structure</p>
           <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
         </Link>
       </div>
       <div className="border rounded-xl bg-white mt-10">
-        <Link href={`/`} className="relative flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
+        <Link href={`/fees/child/invoices`} className="relative flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
           <p className=" absolute right-12 text-blue-700 font-extrabold"></p>
           <Image src={`/coins.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
           <p className={`w-full`}>invoices</p>

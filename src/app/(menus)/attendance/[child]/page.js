@@ -41,7 +41,7 @@ const page = () => {
       {/* counter section */}
       <div className="w-full pb-10">
         <div className="mx-auto w-fit">
-          <p className="bg-blue-700 text-center w-24 h-24 text-white rounded-full pt-6 text-5xl">5</p>
+          <p className="bg-blue-700 text-center w-[150px] h-[150px] text-white rounded-full pt-[41px] text-7xl">5</p>
         </div>
         <p className="w-full text-center pt-3 text-gray-500 text-sm">days absent so far..</p>
       </div>
@@ -49,9 +49,9 @@ const page = () => {
         <div className="absolute top-6 left-0 text-center rounded-full text-white">
           <Image src={'/alert-circle.svg'} alt='try it button' width={10} height={10} className="w-6 m-0"/>
         </div>
-        <div className="pl-5 w-full">
+        <div className="pl-7 w-full">
           <p className="font-bold">tuesday, 21 febuary</p>
-          <p className="text-sm text-gray-500">febuary</p>
+          <p className="text-sm text-gray-500">2024</p>
         </div>
         <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-4 m-0"/>
       </Link>
@@ -59,9 +59,9 @@ const page = () => {
         <div className="absolute top-6 left-0 text-center rounded-full text-white">
           <Image src={'/alert-circle.svg'} alt='try it button' width={10} height={10} className="w-6 m-0"/>
         </div>
-        <div className="pl-5 w-full">
+        <div className="pl-7 w-full">
           <p className="font-bold">thursday, 12 febuary</p>
-          <p className="text-sm text-gray-500">febuary</p>
+          <p className="text-sm text-gray-500">2024</p>
         </div>
         <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-4 m-0"/>
       </Link>
@@ -69,9 +69,9 @@ const page = () => {
         <div className="absolute top-6 left-0 text-center rounded-full text-white">
           <Image src={'/alert-circle.svg'} alt='try it button' width={10} height={10} className="w-6 m-0"/>
         </div>
-        <div className="pl-5 w-full">
+        <div className="pl-7 w-full">
           <p className="font-bold">monday, 10 febuary</p>
-          <p className="text-sm text-gray-500">febuary</p>
+          <p className="text-sm text-gray-500">2024</p>
         </div>
         <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-4 m-0"/>
       </Link>
@@ -79,9 +79,9 @@ const page = () => {
         <div className="absolute top-6 left-0 text-center rounded-full text-white">
           <Image src={'/alert-circle.svg'} alt='try it button' width={10} height={10} className="w-6 m-0"/>
         </div>
-        <div className="pl-5 w-full">
+        <div className="pl-7 w-full">
           <p className="font-bold">friday, 8 febuary</p>
-          <p className="text-sm text-gray-500">febuary</p>
+          <p className="text-sm text-gray-500">2024</p>
         </div>
         <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-4 m-0"/>
       </Link>
@@ -89,9 +89,9 @@ const page = () => {
         <div className="absolute top-6 left-0 text-center rounded-full text-white">
           <Image src={'/alert-circle.svg'} alt='try it button' width={10} height={10} className="w-6 m-0"/>
         </div>
-        <div className="pl-5 w-full">
+        <div className="pl-7 w-full">
           <p className="font-bold">thursday, 2 febuary</p>
-          <p className="text-sm text-gray-500">febuary</p>
+          <p className="text-sm text-gray-500">2024</p>
         </div>
         <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-4 m-0"/>
       </Link>

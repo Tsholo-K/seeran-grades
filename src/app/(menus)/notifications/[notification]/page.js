@@ -37,7 +37,7 @@ const Notifications = () => {
       </div>
       <div >
         <h1 className="w-full text-center pb-10 text-4xl">Messages</h1>
-        <Link href={'/notifications/id'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+        <Link href={'/profile'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <div className="absolute top-7 left-1 bg-blue-600 w-3 h-3 text-center rounded-full text-white"></div>
           <div className="pl-5 w-full">
             <p className="font-bold">Surname Name</p>
@@ -48,7 +48,7 @@ const Notifications = () => {
           </div>
         </Link>
         <hr className="ml-7 py-1"></hr>
-        <Link href={'/notifications/id'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+        <Link href={'/profile'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <div className="absolute top-7 left-1 bg-blue-500 w-3 h-3 text-center rounded-full text-white"></div>
           <div className="pl-5 w-full">
             <p className="font-bold">Surname Name</p>
@@ -59,7 +59,7 @@ const Notifications = () => {
           </div>
         </Link>
         <hr className="ml-7 py-1"></hr>
-        <Link href={'/notifications/id'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+        <Link href={'/profile'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <div className="pl-5 w-full">
             <p className="font-bold">Surname Name</p>
             <p className="text-sm text-gray-500">your child is having...</p>
@@ -69,7 +69,7 @@ const Notifications = () => {
           </div>
         </Link>
         <hr className="ml-7 py-1"></hr>
-        <Link href={'/notifications/id'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+        <Link href={'/profile'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <div className="absolute top-7 left-1 bg-blue-600 w-3 h-3 text-center rounded-full text-white"></div>
           <div className="pl-5 w-full">
             <p className="font-bold">Surname Name</p>
