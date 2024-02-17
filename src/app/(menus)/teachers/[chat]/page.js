@@ -69,6 +69,11 @@ const Teachers = () => {
             How about you?
           </div>
         </div>
+        <div className="yours messages">
+          <div className="message last">
+            im alright just been busy lately 😮‍💨
+          </div>
+        </div>
       </div>
       <div className="fixed w-full bottom-0 left-0">
           <div className="w-full flex justify-center gap-3 px-3 py-2">
