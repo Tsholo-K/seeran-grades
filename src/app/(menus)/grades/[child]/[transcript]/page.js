@@ -41,7 +41,7 @@ const page = () => {
       </div>
       <div className="w-full pb-10">
         <div className="mx-auto w-fit">
-          <p className="bg-orange-400 text-center w-[150px] h-[150px] text-white rounded-full pt-[50px] text-5xl">52%</p>
+          <p className="bg-orange-500 text-center w-[150px] h-[150px] text-white rounded-full pt-[50px] text-5xl">52%</p>
         </div>
         <p className="w-full text-center pt-3 text-gray-400 text-sm">score</p>
       </div>
