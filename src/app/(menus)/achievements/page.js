@@ -30,14 +30,14 @@ const MenuLink = ({Menu}) => {
 const Achievements = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
-      <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100 z-10">
+      <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100">
         <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
       </div>
       <div >
-          <h1 className="w-full text-center pb-10 pt-10 text-4xl z-0">Achievements</h1>
+          <h1 className="w-full text-center pb-10 text-4xl z-0">Achievements</h1>
       </div>
       {/* accounts section */}
-      <div className="py-4 z-0">
+      <div className="py-4">
         <div className="flex pl-2">
           <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
           <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: name</p>

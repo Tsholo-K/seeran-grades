@@ -31,10 +31,12 @@ const Notifications = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100">
-        <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
+        <Link href={'/parentdashboard'} className="flex w-full text-blue-700">
+          <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard
+        </Link>
       </div>
       <div >
-        <h1 className="w-full text-center pb-10 pt-10 text-4xl">Messages</h1>
+        <h1 className="w-full text-center pb-10 text-4xl">Messages</h1>
         <Link href={'/profile'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <div className="absolute top-7 left-1 bg-blue-600 w-3 h-3 text-center rounded-full text-white"></div>
           <div className="pl-5 w-full">

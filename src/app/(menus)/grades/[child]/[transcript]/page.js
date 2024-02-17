@@ -37,7 +37,7 @@ const page = () => {
         <Link href={'/grades/child-2'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>transcripts</Link>
       </div>
       <div>
-        <h1 className="w-full text-center pb-16 pt-16 text-4xl">Transcript</h1>
+        <h1 className="w-full text-center pb-16 text-4xl">Transcript</h1>
       </div>
       <div className="w-full pb-10">
         <div className="mx-auto w-fit">

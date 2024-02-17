@@ -34,7 +34,7 @@ const Children = () => {
         <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
       </div>
       <div >
-          <h1 className="w-full text-center pb-16 pt-10 text-4xl">Children</h1>
+          <h1 className="w-full text-center pb-16 text-4xl">Children</h1>
       </div>
       {/* accounts section */}
       <div className="border rounded-xl bg-white pt">

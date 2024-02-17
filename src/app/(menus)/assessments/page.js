@@ -34,7 +34,7 @@ const Grades = () => {
         <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
       </div>
       <div >
-          <h1 className="w-full text-center pb-10 pt-10 text-4xl">Assessments</h1>
+          <h1 className="w-full text-center pb-10 text-4xl">Assessments</h1>
       </div>
       {/* accounts section */}
       <div className="py-4">

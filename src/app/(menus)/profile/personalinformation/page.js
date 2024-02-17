@@ -42,7 +42,7 @@ const page = () => {
         <Link href={'/profile'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>profile</Link>
       </div>
       <div>
-        <h1 className="w-full text-center pb-20 pt-16 text-4xl">ID</h1>
+        <h1 className="w-full text-center pb-20 text-4xl">ID</h1>
       </div>
 
       {/* menu section */}

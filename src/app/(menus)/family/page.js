@@ -34,10 +34,10 @@ const page = () => {
         <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
       </div>
       <div >
-          <h1 className="w-full text-center pb-16 pt-10 text-4xl">Family</h1>
+          <h1 className="w-full text-center pb-16 text-4xl">Family</h1>
       </div>
       {/* accounts section */}
-      <div className="border rounded-xl bg-white pt">
+      <div className="border rounded-xl bg-white">
           <Link href={'/family/child-1'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
               <Image priority src={'/profile-icon-2.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
               <div className="pt-3 w-full">
