@@ -37,7 +37,7 @@ const Teachers = () => {
       </div>
       <div>
         <h1 className="w-full text-center pb-10 text-4xl">Chats</h1>
-        <Link href={'/profile'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+        <Link href={'/teachers/teacher'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <p className="absolute top-0 left-3 bg-blue-600 w-6 text-center rounded-full text-white">1</p>
           <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-12 max-w-12" />
           <div className=" w-full">
@@ -49,7 +49,7 @@ const Teachers = () => {
           </div>
         </Link>
         <hr className="ml-16 py-1"></hr>
-        <Link href={'/profile'} className="relative flex py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+        <Link href={'/teachers/teacher'} className="relative flex py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <p className="absolute top-0 left-3 bg-blue-600 w-6 text-center rounded-full text-white">3</p>
           <Image priority src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-12 max-w-12" />
           <div className=" w-full">
@@ -61,7 +61,7 @@ const Teachers = () => {
           </div>
         </Link>
         <hr className="ml-16 py-1"></hr>
-        <Link href={'/profile'} className="flex py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+        <Link href={'/teachers/teacher'} className="flex py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <Image priority src={'/profile-icon-2.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-12 max-w-12" />
           <div className=" w-full">
             <p className="font-bold">Surname Name</p>
@@ -72,7 +72,7 @@ const Teachers = () => {
           </div>
         </Link>
         <hr className="ml-16 py-1"></hr>
-        <Link href={'/profile'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+        <Link href={'/teachers/teacher'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <p className="absolute top-0 left-3 bg-blue-600 w-6 text-center rounded-full text-white">1</p>
           <Image priority src={'/profile-icon-4.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-12 max-w-12" />
           <div className=" w-full">
@@ -82,7 +82,6 @@ const Teachers = () => {
           <div>
             <p className="text-sm text-blue-700">09:00</p>
           </div>
-          
         </Link>
         <hr className="ml-16 py-1"></hr>
       </div>

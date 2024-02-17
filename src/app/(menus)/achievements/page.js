@@ -40,91 +40,97 @@ const Achievements = () => {
       <div className="py-4">
         <div className="flex pl-2">
           <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-          <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: name</p>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">name</p>
         </div>
-        <div className="border rounded-xl bg-white py-1">
-          <div>
-            <p className="text-sm text-gray-500 pt-1 w-full text-center">gold medal</p>
+        <Link href={'/achievements/award'}>
+          <div className="border rounded-xl bg-white py-1">
+            <div>
+              <p className="text-sm text-gray-500 pt-1 w-full text-center">gold medal</p>
+            </div>
+            <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
+                <Image priority src={'/basketball.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
+                <div className="pt-1 pl-2">
+                    <p>Basketball</p>
+                </div>
+            </div>
+            <div className="flex w-full pl-3 pt-2 relative">
+              <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+              <p className=" text-sm pl-2 pb-2 text-gray-500">tuesday, 7 febuary</p>
+              <Image src={'/gold-medal.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 absolute right-3"/>
+            </div>
           </div>
-          <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
-              <Image priority src={'/basketball.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
-              <div className="pt-1 pl-2">
-                  <p>Basketball</p>
-              </div>
-          </div>
-          <div className="flex w-full pl-3 pt-2 relative">
-            <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-            <p className=" text-sm pl-2 pb-2 text-gray-500">Granted:  tuesday, 7 febuary</p>
-            <Image src={'/gold-medal.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 absolute right-3"/>
-          </div>
-        </div>
+        </Link>
       </div>
       <div className="py-4 z-0">
         <div className="flex pl-2">
           <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-          <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: name</p>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">name</p>
         </div>
-        <div className="border rounded-xl bg-white py-1">
-          <div>
-            <p className="text-sm text-gray-500 pt-1 w-full text-center">top 10</p>
+        <Link href={'/achievements/award'}>
+          <div className="border rounded-xl bg-white py-1">
+            <div>
+              <p className="text-sm text-gray-500 pt-1 w-full text-center">top 10</p>
+            </div>
+            <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
+                <Image priority src={'/geography.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
+                <div className="pt-1 pl-2">
+                    <p>Geaography</p>
+                </div>
+            </div>
+            <div className="flex pl-3 pt-2">
+              <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+              <p className=" text-sm pl-2 pb-2 text-gray-500">wednesday, 14 febuary</p>
+            </div>
           </div>
-          <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
-              <Image priority src={'/geography.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
-              <div className="pt-1 pl-2">
-                  <p>Geaography</p>
-              </div>
-          </div>
-          <div className="flex pl-3 pt-2">
-            <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-            <p className=" text-sm pl-2 pb-2 text-gray-500">Granted:  wednesday, 14 febuary</p>
-          </div>
-        </div>
+        </Link>
       </div>
       <div className="py-4 z-0">
         <div className="flex pl-2">
           <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-          <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: name</p>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">name</p>
         </div>
-        <div className="border rounded-xl bg-white py-1">
-          <div>
-            <p className="text-sm text-gray-500 pt-1 w-full text-center">1st position</p>
+        <Link href={'/achievements/award'}>
+          <div className="border rounded-xl bg-white py-1">
+            <div>
+              <p className="text-sm text-gray-500 pt-1 w-full text-center">1st position</p>
+            </div>
+            <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
+                <Image priority src={'/maths.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
+                <div className="pt-1 pl-2">
+                    <p>Mathematics</p>
+                </div>
+            </div>
+            <div className="flex pl-3 pt-2">
+              <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+              <p className=" text-sm pl-2 pb-2 text-gray-500">friday, 21 febuary</p>
+            </div>
           </div>
-          <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
-              <Image priority src={'/maths.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
-              <div className="pt-1 pl-2">
-                  <p>Mathematics</p>
-              </div>
-          </div>
-          <div className="flex pl-3 pt-2">
-            <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-            <p className=" text-sm pl-2 pb-2 text-gray-500">Granted:  friday, 21 febuary</p>
-          </div>
-        </div>
+        </Link>
       </div>
       <div className="py-4 z-0">
         <div className="flex pl-2">
           <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 "/>
-          <p className=" text-sm pl-2 pb-2 text-gray-500">Granted to: name</p>
+          <p className=" text-sm pl-2 pb-2 text-gray-500">name</p>
         </div>
-        <div className="border rounded-xl bg-white py-1">
-          <div>
-            <p className="text-sm text-gray-500 pt-1 w-full text-center">distinction</p>
+        <Link href={'/achievements/award'}>
+          <div className="border rounded-xl bg-white py-1">
+            <div>
+              <p className="text-sm text-gray-500 pt-1 w-full text-center">distinction</p>
+            </div>
+            <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
+                <Image priority src={'/maths.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
+                <div className="pt-1 pl-2">
+                    <p>Mathematics</p>
+                </div>
+            </div>
+            <div className="flex pl-3 pt-2 relative">
+              <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+              <p className=" text-sm pl-2 pb-2 text-gray-500">Granted:  wednesday, 14 febuary</p>
+              <Image src={'/distinction.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 absolute right-3"/>
+            </div>
           </div>
-          <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
-              <Image priority src={'/maths.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
-              <div className="pt-1 pl-2">
-                  <p>Mathematics</p>
-              </div>
-          </div>
-          <div className="flex pl-3 pt-2 relative">
-            <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-            <p className=" text-sm pl-2 pb-2 text-gray-500">Granted:  wednesday, 14 febuary</p>
-            <Image src={'/distinction.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 absolute right-3"/>
-          </div>
-        </div>
+        </Link>
       </div>
-   
-
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto pt-2">all caught up..</p>
     </div>
   )
