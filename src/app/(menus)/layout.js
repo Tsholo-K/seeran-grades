@@ -15,12 +15,12 @@ export default function RootLayout({ children }) {
                 </div>
             </div>
         </div>
-        <div className="min-h-screen relative bg-gray-100 z-0">
+        <div className="h-screen relative bg-gray-100 z-0">
           {/* body */}
-          <div className="text-black pt-16 w-full px-3 lg:px-4">
+          <div className="text-black pt-16 w-full px-3 h-full">
               {children}
           </div>
-          <p className=" absolute bottom-0 w-full text-center text-gray-400 text-sm bg-gray-100 pb-3">seeran limited</p>
+          <p className="absolute bottom-1 w-full text-center text-gray-400 text-sm bg-gray-100">seeran limited</p>
         </div>
       </body>
     </html>

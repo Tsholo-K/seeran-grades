@@ -29,7 +29,7 @@ const MenuLink = ({Menu}) => {
   return (
     <div className="relative flex py-3 gap-1 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
       <p>{Menu.title}</p>
-      <p className="text-gray-500 absolute right-9">{Menu.info}</p>
+      <p className="text-gray-400 absolute right-9">{Menu.info}</p>
       <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit absolute right-3"/>
     </div>
   )

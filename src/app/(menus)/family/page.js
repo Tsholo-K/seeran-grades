@@ -65,7 +65,7 @@ const page = () => {
               <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
           </Link>
       </div>
-      <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto pt-2">these are all the children linked to your account</p>
+      <p className=" text-sm w-[90%] text-gray-400 text-center mx-auto pt-2">these are all the children linked to your account</p>
     </div>
   )
 }
