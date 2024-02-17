@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
             </div>
         </div>
         {/* body */}
-        <div className="text-black pt-16 pb-10 w-full px-3 lg:px-4 bg-gray-100">
+        <div className="text-black font-bold pt-16 pb-10 w-full px-3 lg:px-4 bg-gray-100">
             {children}
         </div>
       </body>

@@ -15,13 +15,10 @@ export default function RootLayout({ children }) {
                 </div>
             </div>
         </div>
-        <div className="relative bg-gray-100 z-0 ">
-          {/* body */}
-          <div className="text-black pt-16 w-full pb-20 px-3">
-              {children}
-          </div>
+        {/* body */}
+        <div className="text-black pt-16 w-full pb-20 px-3 bg-gray-100">
+            {children}
         </div>
-        <p className="absolute bottom-1 w-full text-center text-gray-400 text-sm bg-gray-100">seeran limited</p>
       </body>
     </html>
   );
