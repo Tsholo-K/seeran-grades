@@ -32,7 +32,7 @@
 
 .yours .message {
     margin-right: 25%;
-    background-color: #808080;
+    background-color: #36454F;
     position: relative;
 }
 
@@ -44,7 +44,7 @@
     left: -7px;
     height: 20px;
     width: 20px;
-    background: #808080;
+    background: #36454F;
     border-bottom-right-radius: 15px;
 }
 
