@@ -89,7 +89,7 @@ const SmallDevices = () => {
         </Link>
       </div>
       {/* children section */}
-      <div className="border rounded-xl my-7 bg-white">
+      <div className="rounded-xl my-7 bg-white">
         <MenuLink Menu={Menu.grades}/>
         <hr className="mx-5"></hr>
         <MenuLink Menu={Menu.assessments}/>
@@ -97,7 +97,7 @@ const SmallDevices = () => {
         <MenuLink Menu={Menu.achievements}/>
       </div>
       {/* notifications section */}
-      <div className="border rounded-xl my-7 bg-white">
+      <div className="rounded-xl my-7 bg-white">
         <MenuLink Menu={Menu.teachers}/>
         
         <hr className="mx-5"></hr>
@@ -106,7 +106,7 @@ const SmallDevices = () => {
         <MenuLink Menu={Menu.attendance}/>
       </div>
       {/* help section */}
-      <div className="border rounded-xl my-7 bg-white">
+      <div className="rounded-xl my-7 bg-white">
         <MenuLink Menu={Menu.fees}/>
         <hr className="mx-5"></hr>
         <MenuLink Menu={Menu.notifications}/>
@@ -114,7 +114,7 @@ const SmallDevices = () => {
         <MenuLink Menu={Menu.helpdesk}/>
       </div>
       {/* settings section */}
-      <div className="border rounded-xl mt-7 bg-white">
+      <div className="rounded-xl mt-7 bg-white">
         <MenuLink Menu={Menu.settings}/>
       </div>
     </div>
