@@ -1,5 +1,5 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 
 const Menu = {
@@ -7,11 +7,6 @@ const Menu = {
     title: 'Name',
     icon: false,
     info: 'surname name',
-  },
-  dateofbirth : {
-    title: 'Date of birth',
-    icon: false,
-    info: '23/08/87',
   },
   phonenumber : {
     title: 'Phone Number',
@@ -49,20 +44,20 @@ const MenuLink = ({Menu}) => {
 }
 
 
-const page = () => {
+const ID = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
+      {/* back link */}
       <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
         <Link href={'/profile'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>profile</Link>
       </div>
+      {/* page heading */}
       <div>
         <h1 className="w-full text-center pb-20 text-4xl">ID</h1>
       </div>
       {/* personal infomation */}
       <div className="rounded-xl bg-white">
         <MenuLink Menu={Menu.name}/>
-        <hr className="mx-5"></hr>
-        <MenuLink Menu={Menu.dateofbirth}/>
         <hr className="mx-5"></hr>
         <MenuLink Menu={Menu.phonenumber}/>
         <hr className="mx-5"></hr>
@@ -76,6 +71,6 @@ const page = () => {
       </Link>
     </div>
   )
-}
+};
 
-export default page
+export default ID;

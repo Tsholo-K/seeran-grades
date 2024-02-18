@@ -1,73 +1,67 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 
-const Menu = {
-  personalinformation : {
-    title: 'Personal Information',
-    icon: 'book-lock',
+const Children = {
+  child1 : {
+    id: 'child-1',
+    name: 'Mochaki Lethabo',
+    grade: '5',
+    img: 'profile-icon-2',
+    
   },
-  signinandsecurity : {
-    title: 'Sign-in And Security',
-    icon: 'fingerprint',
+  child2 : {
+    id: 'child-2',
+    name: 'Tsholo Koketso',
+    grade: '7',
+    img: 'profile-icon-3',
   },
-  signout : {
-    title: 'Sign Out',
-    icon: 'log-out',
-  }
+  child3 : {
+    id: 'child-3',
+    name: 'Munyoro Godwill',
+    grade: '2',
+    img: 'profile-icon-4',
+  },
 }
 
-const MenuLink = ({Menu}) => {
+const ChildMenu = ({ child }) => {
   return (
-    <div className="flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
-      <Image src={`/${Menu.icon}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
-      <p className={`w-full`}>{Menu.title}</p>
-      <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
-    </div>
+    <>
+      <Link href={`/family/${child.id}`} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+        <Image priority src={`/${child.img}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
+        <div className="pt-3 w-full">
+            <p className="font-bold">{child.name}</p>
+            <p className="text-sm text-gray-500">grade: {child.grade}</p>
+        </div>
+        <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
+      </Link>
+    </>
   )
 }
 
-const page = () => {
+
+const Family = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
+      {/* back link */}
       <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100">
         <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
       </div>
+      {/* page heading */}
       <div >
-          <h1 className="w-full text-center pb-16 text-4xl">Family</h1>
+        <h1 className="w-full text-center pb-16 text-4xl">Family</h1>
       </div>
-      {/* accounts section */}
-      <div className="border rounded-xl bg-white">
-          <Link href={'/family/child-1'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-              <Image priority src={'/profile-icon-2.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
-              <div className="pt-3 w-full">
-                  <p> Surname Name</p>
-                  <p className=" text-sm text-gray-500">grade: 5</p>
-              </div>
-              <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
-          </Link>
-          <hr className="mx-5"></hr>
-          <Link href={'/family/child-2'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-              <Image priority src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
-              <div className="pt-3 w-full">
-                  <p> Surname Name</p>
-                  <p className=" text-sm text-gray-500">grade: 7</p>
-              </div>
-              <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
-          </Link>
-          <hr className="mx-5"></hr>
-          <Link href={'/family/child-3'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-              <Image priority src={'/profile-icon-4.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
-              <div className="pt-3 w-full">
-                  <p> Surname Name</p>
-                  <p className=" text-sm text-gray-500">grade: 2</p>
-              </div>
-              <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
-          </Link>
+      {/* children menu */}
+      <div className="rounded-xl bg-white">
+        <ChildMenu child={Children.child1}/>
+        <hr className="mx-5"></hr>
+        <ChildMenu child={Children.child2}/>
+        <hr className="mx-5"></hr>
+        <ChildMenu child={Children.child3}/>
       </div>
       <p className=" text-sm w-[90%] text-gray-400 text-center mx-auto pt-2">these are all the children linked to your account</p>
     </div>
   )
-}
+};
 
-export default page
+export default Family;

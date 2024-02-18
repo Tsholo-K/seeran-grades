@@ -1,0 +1,35 @@
+import Image from "next/image";
+import Link from "next/link";
+
+
+const RemoveChild = () => {
+  return (
+    <div className="w-full relative grid grid-cols-1 place-content-center ">
+      {/* back link */}
+      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
+        <Link href={'/family/child'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>child id</Link>
+      </div>
+      {/* page heading */}
+      <div>
+        <h1 className="w-full text-center pb-3 text-4xl">Remove Child</h1>
+      </div>
+      {/* child id */}
+      <div className="w-fit my-7 mx-auto">
+          <div className="mx-auto w-fit pb-4">
+              <Image priority src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
+          </div>
+          <h2 className="w-full text-center text-2xl">Surname Name</h2>
+      </div>
+      <p className="text-center text-gray-400 text-sm w-[90%] mx-auto mb-24">
+        you are about to remove this child from your account, to reverse this you&apos;d need to go to school to have it relinked
+      </p>
+      {/* button */}
+      <button type="submit" className="w-full border border-white rounded-xl bg-black active:bg-red-500 mt-7 text-white lg:hover:bg-blue-700 focus:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">confirm</button>
+      <p className="text-center text-red-500 text-sm w-[90%] mx-auto mb-24">
+        this cannot be reversed on the platform
+      </p>
+    </div>
+  )
+}
+
+export default RemoveChild;

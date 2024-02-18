@@ -1,5 +1,5 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 
 const MenuLinks = {
@@ -18,7 +18,7 @@ const MenuLinks = {
     icon: 'log-out',
     url: 'loggedout',
   }
-}
+};
 
 const MenuLink = ({ menu }) => {
   return (
@@ -28,14 +28,14 @@ const MenuLink = ({ menu }) => {
       <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
     </Link>
   )
-}
+};
 
 
 const User = {
   img: 'profile-icon-1.svg',
   names: 'Surname Name',
   email: 'Email'
-}
+};
 
 const ProfileInfo = ({ user }) => {
   return (
@@ -47,17 +47,19 @@ const ProfileInfo = ({ user }) => {
       <p className="w-full text-center text-gray-400">{user.email}</p>
     </div>
   )
-}
+};
 
 
 const ProfileSettings = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
+      {/* back link */}
       <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
         <Link href={'/parentdashboard'} className="flex w-full text-blue-700">
           <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard
         </Link>
       </div>
+      {/* page heading */}
       <div>
         <h1 className="w-full text-center pb-5 text-4xl">Profile Settings</h1>
       </div>
@@ -69,11 +71,12 @@ const ProfileSettings = () => {
         <hr className="mx-5"></hr>
         <MenuLink menu={MenuLinks.signinandsecurity}/>
       </div>
+      {/* sign out */}
       <div className="rounded-xl bg-white mt-12">
         <MenuLink menu={MenuLinks.signout}/>
       </div>
     </div>
   )
-}
+};
 
 export default ProfileSettings;
