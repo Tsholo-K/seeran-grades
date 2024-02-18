@@ -50,7 +50,7 @@ const Grade = ({ transcript }) => {
           <p className=" text-sm pl-2 pb-2 text-gray-500">{transcript.name}</p>
         </div>
         <Link href={`/grades/${transcript.id}`}>
-          <div className="relative border rounded-xl bg-white py-1" >
+          <div className="relative rounded-xl bg-white py-1" >
             <Image src={`/${transcript.score}.svg`} alt='try it button' width={10} height={10} className="absolute w-fit h-fit top-2 right-3"/>
             <div>
               <p className="text-sm text-gray-500 pt-1 w-full text-center">{transcript.assessment}</p>
@@ -63,7 +63,7 @@ const Grade = ({ transcript }) => {
             </div>
             <div className="flex pl-3 pt-2">
               <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-              <p className=" text-sm pl-2 pb-2 text-gray-500">written : {transcript.date}</p>
+              <p className=" text-sm pl-2 pb-2 text-gray-500">released : {transcript.date}</p>
               <p className=" text-sm pl-2 pb-2 text-gray-500"></p>
             </div>
           </div>

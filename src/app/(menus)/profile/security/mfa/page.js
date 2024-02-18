@@ -42,12 +42,12 @@ const MultiFactorAuthentication = () => {
       <div className="relative">
         {/* phone number */}
         <p className="text-sm text-gray-400 pl-2 pb-1">phone number</p>
-        <div className="border rounded-xl bg-white">
+        <div className="rounded-xl bg-white">
           <MenuLink Menu={Menu.phonenumber}/>
         </div>
         {/* email */}
         <p className="text-sm text-gray-400 pl-2 mt-5 pb-1">email</p>
-        <div className="border rounded-xl bg-white">
+        <div className="rounded-xl bg-white">
           <MenuLink Menu={Menu.email}/>
         </div>
       </div>

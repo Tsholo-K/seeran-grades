@@ -23,7 +23,7 @@ const Subject = ({ subject }) => {
         <div className="flex">
           <p className=" text-sm pl-2 pb-1 text-gray-400">subject</p>
         </div>
-        <div className="relative border rounded-xl bg-white py-1">
+        <div className="relative rounded-xl bg-white py-1">
           <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
               <Image priority src={'/life-science.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
               <div className="pt-1 pl-2">
@@ -48,7 +48,7 @@ const Menu = {
     info: '26/50',
   },
   date : {
-    title: 'Date Released',
+    title: 'Date Submitted',
     info: '7 febuary 2024',
   },
   teacher : {
@@ -84,7 +84,7 @@ const Transcript = () => {
       {/* subject */}
       <Subject/>
       {/* info */}
-      <div className="border rounded-xl bg-white mb-8">
+      <div className="rounded-xl bg-white mb-8">
         <MenuLink Menu={Menu.assessment}/>
         <hr className="mx-5"></hr>
         <MenuLink Menu={Menu.grade}/>
@@ -95,7 +95,7 @@ const Transcript = () => {
       <div className="flex">
         <Link href={'/teachers/teacher'} className="pb-1 w-full text-end pr-3 text-blue-700">message</Link>
       </div>
-      <div className="border rounded-xl bg-white">
+      <div className="rounded-xl bg-white">
         <MenuLink Menu={Menu.teacher}/>
       </div>
     </div>

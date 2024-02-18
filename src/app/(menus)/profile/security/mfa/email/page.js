@@ -26,7 +26,7 @@ const EmailAuthentication = () => {
         <h1 className="w-full text-center pb-32 text-4xl">Multi-Factor<br></br> Authentication</h1>
       </div>
       {/* input area */}
-      <InputArea title='One Time Password'/>
+      <InputArea title='One Time Passcode'/>
       <p className="text-sm text-gray-400 mx-auto">we sent an OTP to your email address</p>
       <button type="submit" className="w-full border border-white mt-24 rounded-xl bg-black active:bg-blue-700 text-white lg:hover:bg-blue-700 focus:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">authenticate</button>
     </div>
