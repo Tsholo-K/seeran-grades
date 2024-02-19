@@ -74,7 +74,7 @@ const SmallDevices = () => {
       <div className="rounded-xl bg-white">
         <Link href={'/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
           <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
-          <p className="pt-3 w-full"> Surname Name</p>
+          <p className="pt-3 w-full">Seeran Dion</p>
           <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
         </Link>
         <hr className="mx-5"></hr>

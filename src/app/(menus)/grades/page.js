@@ -88,6 +88,9 @@ const Grades = () => {
           <h1 className="w-full text-center pb-10 text-4xl">Transcripts</h1>
       </div>
       {/* transcripts */}
+      {
+        
+      }
       <Grade transcript={Transcripts.mark1}/>
       <Grade transcript={Transcripts.mark2}/>
       <Grade transcript={Transcripts.mark4}/>

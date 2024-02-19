@@ -55,14 +55,11 @@ const ChildId = () => {
   const student_id = params.child_id
 
   let student = ''
-
-  if ( student_id === '220212349') {
-    student = data.students.student_1
-  } if ( student_id === '220212348' ) {
-    student = data.students.student_2
-  } if ( student_id === '220212350' ) {
-    student = data.students.student_3
-  } 
+  data.students.forEach( child => {
+    if ( child.student_number === student_id ) {
+      student = child
+    }
+  });
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
@@ -79,14 +76,10 @@ const ChildId = () => {
           <div className="mx-auto w-fit pb-4">
               <Image priority src={`/${student.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
           </div>
-          <h2 className="w-full text-center text-2xl">Surname Name</h2>
+          <h2 className="w-full text-center text-2xl">{student.name.charAt(0).toUpperCase() + student.name.slice(1)} {student.surname.charAt(0).toUpperCase() + student.surname.slice(1)}</h2>
       </div>
       {/* child information */}
       <div className="rounded-xl bg-white">
-        <MenuLink Menu={Menus.name} student_info={student.name.charAt(0).toUpperCase() + student.name.slice(1)}/>
-        <hr className="mx-5"></hr>
-        <MenuLink Menu={Menus.surname} student_info={student.surname.charAt(0).toUpperCase() + student.surname.slice(1)}/>
-        <hr className="mx-5"></hr>
         <MenuLink Menu={Menus.dateofbirth} student_info={student.date_of_birth}/>
         <hr className="mx-5"></hr>
         <MenuLink Menu={Menus.grade} student_info={student.grade}/>

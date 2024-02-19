@@ -39,8 +39,8 @@
         }
     },
 
-    "students": {
-        "student_1" : {
+    "students": [
+        {
             "name" : "koketso",
             "surname" : "tsholo",
             "date_of_birth" : "28/08/2002",
@@ -48,7 +48,7 @@
             "student_number" : "220212349",
             "image" : "profile-icon-3"
         },
-        "student_2" : {
+        {
             "name" : "lethabo",
             "surname" : "mochaki",
             "date_of_birth" : "07/06/2003",
@@ -56,7 +56,7 @@
             "student_number" : "220212348",
             "image" : "profile-icon-2"
         },
-        "student_3" : {
+        {
             "name" : "godwill",
             "surname" : "munyoro",
             "date_of_birth" : "24/08/2002",
@@ -64,7 +64,7 @@
             "student_number" : "220212350",
             "image" : "profile-icon-4"
         }
-    },
+    ],
 
     "classes" : {
         "class_1" : {
@@ -129,8 +129,8 @@
 
     },
 
-    "grades" : {
-        "grade_1" : {
+    "grades" : [
+        {
             "subject" : "mathematics",
             "class": "45356345",
             "assessment" : "exam",
@@ -141,7 +141,7 @@
             "submitted_by" : "220212349",
             "teacher" : "1029341029"
         },
-        "grade_2" : {
+        {
             "subject" : "physical sciences",
             "class" : "34563345",
             "assessment" : "assigment",
@@ -152,7 +152,7 @@
             "submitted_by" : "220212350",
             "teacher" : "3456345633"
         },
-        "grade_3" : {
+        {
             "subject" : "mathematics",
             "class" : "45678453",
             "assessment" : "class test",
@@ -163,7 +163,7 @@
             "submitted_by" : "220212348",
             "teacher" : "6785678565"
         },
-        "grade_4" : {
+        {
             "subject" : "english",
             "class" : "12547485",
             "assessment" : "prepared speech",
@@ -174,7 +174,7 @@
             "submitted_by" : "220212348",
             "teacher" : "6785678565"
         },
-        "grade_5" : {
+        {
             "subject" : "life orientation",
             "class" : "34563456",
             "assessment" : "practical",
@@ -185,7 +185,7 @@
             "submitted_by" : "220212348",
             "teacher" : "2938438420"
         },
-        "grade_6" : {
+        {
             "subject" : "physical sciences",
             "class" : "34562356",
             "assessment" : "exam",
@@ -196,7 +196,7 @@
             "submitted_by" : "220212349",
             "teacher" : "2938438420"
         }
-    },
+    ],
 
     "assessments" : {
         "assessment_1" : {

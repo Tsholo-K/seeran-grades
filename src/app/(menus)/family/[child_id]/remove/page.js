@@ -14,14 +14,11 @@ const RemoveChild = () => {
   const student_id = params.child_id
 
   let student = ''
-
-  if ( student_id === '220212349') {
-    student = data.students.student_1
-  } if ( student_id === '220212348' ) {
-    student = data.students.student_2
-  } if ( student_id === '220212350' ) {
-    student = data.students.student_3
-  } 
+  data.students.forEach( child => {
+    if ( child.student_number === student_id ) {
+      student = child
+    }
+  });
   
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
