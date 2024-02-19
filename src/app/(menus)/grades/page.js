@@ -54,7 +54,7 @@ const Grade = ({ transcript }) => {
             <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
                 <Image priority src={`/${transcript.icon}.svg`} alt="profile icon" width={30} height={30} className="h-8 w-8" />
                 <div className="pt-1 pl-2">
-                    <p>{transcript.subject.charAt(0).toUpperCase() + transcript.subject.slice(1)}</p>
+                    <p>{transcript.subject}</p>
                 </div>
             </div>
             <div className="flex pl-3 pt-2">

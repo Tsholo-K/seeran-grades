@@ -114,7 +114,7 @@ const Transcript = () => {
         <hr className="mx-5"></hr>
         <MenuLink menu={'Grade'} info={`${transcript.score} / ${transcript.total }`}/>
         <hr className="mx-5"></hr>
-        <MenuLink menu={'Date'} info={transcript.submitted_by}/>
+        <MenuLink menu={'Date'} info={transcript.date_submitted}/>
       </div>
       {/* teacher */}
       <div className="flex">
