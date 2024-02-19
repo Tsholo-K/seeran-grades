@@ -1,30 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// dummy data
+import data from '@/app/(menus)/dummydata.json'
 
-const Children = {
-  child1 : {
-    id: 'child-1',
+
+const Children = [
+  {
+    id: '220212348',
     name: 'Mochaki Lethabo',
-    grade: '5',
+    grade: '8',
     img: 'profile-icon-2',
-    
   },
-  child2 : {
-    id: 'child-2',
+  {
+    id: '220212349',
     name: 'Tsholo Koketso',
-    grade: '7',
+    grade: '12',
     img: 'profile-icon-3',
   },
-  child3 : {
-    id: 'child-3',
+  {
+    id: '220212350',
     name: 'Munyoro Godwill',
-    grade: '2',
+    grade: '10',
     img: 'profile-icon-4',
   },
-}
+]
 
-const ChildMenu = ({ child }) => {
+const ChildMenu = ({ child, bottom_border=false }) => {
   return (
     <>
       <Link href={`/family/${child.id}`} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
@@ -35,6 +37,9 @@ const ChildMenu = ({ child }) => {
         </div>
         <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
       </Link>
+      {
+        bottom_border && <hr className="mx-5"></hr>
+      }
     </>
   )
 }
@@ -53,11 +58,16 @@ const Family = () => {
       </div>
       {/* children menu */}
       <div className="rounded-xl bg-white">
-        <ChildMenu child={Children.child1}/>
-        <hr className="mx-5"></hr>
-        <ChildMenu child={Children.child2}/>
-        <hr className="mx-5"></hr>
-        <ChildMenu child={Children.child3}/>
+        { Children.map( (child, index) => (
+          <>
+            {
+              ( Children.length > 1  &&  index !== Children.length - 1) 
+                ? <ChildMenu child={child} bottom_border={true}/>
+                : <ChildMenu child={child}/>
+            }
+          </>
+        ))
+        }
       </div>
       <p className=" text-sm w-[90%] text-gray-400 text-center mx-auto pt-2">these are all the children linked to your account</p>
     </div>

@@ -1,40 +1,47 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
+
+import { useParams } from "next/navigation";
+
+
+// dummy data
+import data from '@/app/(menus)/dummydata.json'
 
 
 const Menu = {
   name : {
     title: 'Name',
     icon: false,
-    info: 'surname name',
+  },
+  surname : {
+    title: 'Surname',
+    icon: false,
   },
   phonenumber : {
     title: 'Phone Number',
     icon: false,
-    info: '0711740824',
   },
   email : {
     title: 'Email',
     icon: false,
-    info: 'email@example.com',
   },
   children : {
     title: 'Children',
     icon: false,
-    info: '3',
   },
   communication : {
     title: 'Communication preferance',
     icon: true,
-    info: '',
   },
 }
 
-const MenuLink = ({Menu}) => {
+const MenuLink = ({ Menu, User_info }) => {
   return (
     <div className="relative flex py-3 gap-1 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
       <p>{Menu.title}</p>
-      <p className="text-gray-400 absolute right-4">{Menu.info}</p>
+      <p className="text-gray-400 absolute right-4">{ User_info }</p>
       {Menu.icon 
         ? (<Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit absolute right-3"/>)
         : null
@@ -45,6 +52,14 @@ const MenuLink = ({Menu}) => {
 
 
 const ID = () => {
+
+  const searchParams = useParams();
+
+  let parent_user = null
+  if( data.parent.id === searchParams.id ){
+    parent_user = data.parent
+  }
+
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
@@ -57,16 +72,18 @@ const ID = () => {
       </div>
       {/* personal infomation */}
       <div className="rounded-xl bg-white">
-        <MenuLink Menu={Menu.name}/>
+        <MenuLink Menu={Menu.name} User_info={parent_user.name.charAt(0).toUpperCase() + parent_user.name.slice(1)} />
         <hr className="mx-5"></hr>
-        <MenuLink Menu={Menu.phonenumber}/>
+        <MenuLink Menu={Menu.surname} User_info={parent_user.surname.charAt(0).toUpperCase() + parent_user.surname.slice(1)}  />
         <hr className="mx-5"></hr>
-        <MenuLink Menu={Menu.email}/>
+        <MenuLink Menu={Menu.phonenumber} User_info={parent_user.phone_number}  />
         <hr className="mx-5"></hr>
-        <MenuLink Menu={Menu.children}/>
+        <MenuLink Menu={Menu.email} User_info={parent_user.email}  />
+        <hr className="mx-5"></hr>
+        <MenuLink Menu={Menu.children} User_info={parent_user.children.length}  />
       </div>
       {/* communication preferance */}
-      <Link href={'/profile/id/communication'} className="rounded-xl bg-white mt-20">
+      <Link href={'/profile/user/1928742173/communication'} className="rounded-xl bg-white mt-20">
         <MenuLink Menu={Menu.communication}/>
       </Link>
     </div>

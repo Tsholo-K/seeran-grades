@@ -1,40 +1,45 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
+import { useParams } from "next/navigation";
+
+// dummy data
+import data from '@/app/(menus)/dummydata.json'
 
 
 const Menus = {
   name : {
     title: 'Name',
     icon: false,
-    info: 'surname name',
+  },
+  surname : {
+    title: 'Surname',
+    icon: false,
   },
   dateofbirth : {
     title: 'Date of birth',
     icon: false,
-    info: '23/08/87',
   },
   grade : {
     title: 'Grade',
     icon: false,
-    info: '7',
   },
   studentnumber : {
     title: 'Student Number',
     icon: false,
-    info: '220212349',
   },
   removechild : {
     title: 'Remove Child From Account',
     icon: true,
-    info: '',
   },
 };
 
-const MenuLink = ({Menu}) => {
+const MenuLink = ({ Menu, student_info=null }) => {
   return (
     <div className="relative flex py-3 gap-1 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
       <p>{Menu.title}</p>
-      <p className="text-gray-400 absolute right-4">{Menu.info}</p>
+      <p className="text-gray-400 absolute right-4">{student_info}</p>
       {Menu.icon 
         ? (<Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit absolute right-3"/>)
         : null
@@ -45,6 +50,20 @@ const MenuLink = ({Menu}) => {
 
 
 const ChildId = () => {
+
+  const params = useParams();
+  const student_id = params.child_id
+
+  let student = ''
+
+  if ( student_id === '220212349') {
+    student = data.students.student_1
+  } if ( student_id === '220212348' ) {
+    student = data.students.student_2
+  } if ( student_id === '220212350' ) {
+    student = data.students.student_3
+  } 
+
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
@@ -58,22 +77,24 @@ const ChildId = () => {
       {/* child id */}
       <div className="w-fit my-7 mx-auto">
           <div className="mx-auto w-fit pb-4">
-              <Image priority src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
+              <Image priority src={`/${student.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
           </div>
           <h2 className="w-full text-center text-2xl">Surname Name</h2>
       </div>
       {/* child information */}
       <div className="rounded-xl bg-white">
-        <MenuLink Menu={Menus.name}/>
+        <MenuLink Menu={Menus.name} student_info={student.name.charAt(0).toUpperCase() + student.name.slice(1)}/>
         <hr className="mx-5"></hr>
-        <MenuLink Menu={Menus.dateofbirth}/>
+        <MenuLink Menu={Menus.surname} student_info={student.surname.charAt(0).toUpperCase() + student.surname.slice(1)}/>
         <hr className="mx-5"></hr>
-        <MenuLink Menu={Menus.grade}/>
+        <MenuLink Menu={Menus.dateofbirth} student_info={student.date_of_birth}/>
         <hr className="mx-5"></hr>
-        <MenuLink Menu={Menus.studentnumber}/>
+        <MenuLink Menu={Menus.grade} student_info={student.grade}/>
+        <hr className="mx-5"></hr>
+        <MenuLink Menu={Menus.studentnumber} student_info={student.student_number}/>
       </div>
       {/* remove child */}
-      <Link href={'/family/child/remove'} className="rounded-xl bg-white text-red-500 mt-10">
+      <Link href={`/family/${student.student_number}/remove`} className="rounded-xl bg-white text-red-500 mt-10">
         <MenuLink Menu={Menus.removechild}/>
       </Link>
       <p className="text-center text-gray-400 text-sm w-[90%] mx-auto mb-24">to reverse this you&apos;d need to go to school to have it relinked</p>

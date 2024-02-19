@@ -2,11 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 
+// dummy data
+import data from '@/app/(menus)/dummydata.json'
+
+
 const MenuLinks = {
   personalinformation : {
     title: 'Personal Information',
     icon: 'book-lock',
-    url: 'profile/id',
+    url: 'profile/user/1928742173',
   },
   signinandsecurity : {
     title: 'Sign-in And Security',
@@ -31,20 +35,17 @@ const MenuLink = ({ menu }) => {
 };
 
 
-const User = {
-  img: 'profile-icon-1.svg',
-  names: 'Surname Name',
-  email: 'Email'
-};
+const ProfileInfo = () => {
 
-const ProfileInfo = ({ user }) => {
+  const parent_user = data.parent
+
   return (
     <div className="w-fit my-10 mx-auto">
       <div className="mx-auto w-fit pb-4">
-          <Image priority src={`/${user.img}`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
+          <Image priority src={`/${parent_user.img}`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
       </div>
-      <h2 className="w-full text-center text-2xl">{user.names}</h2>
-      <p className="w-full text-center text-gray-400">{user.email}</p>
+      <h2 className="w-full text-center text-2xl">{parent_user.name.charAt(0).toUpperCase() + parent_user.name.slice(1)} {parent_user.surname.charAt(0).toUpperCase() + parent_user.surname.slice(1)}</h2>
+      <p className="w-full text-center text-gray-400">{parent_user.email}</p>
     </div>
   )
 };
@@ -64,7 +65,7 @@ const ProfileSettings = () => {
         <h1 className="w-full text-center pb-5 text-4xl">Profile Settings</h1>
       </div>
       {/* profile info section */}
-      <ProfileInfo user={User}/>
+      <ProfileInfo/>
       {/* menulinks section */}
       <div className="rounded-xl bg-white">
         <MenuLink menu={MenuLinks.personalinformation}/>

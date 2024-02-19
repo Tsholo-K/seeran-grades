@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// dummy data
+import data from '@/app/(menus)/dummydata.json'
+
 
 const Menu = {
   email : {
@@ -17,7 +20,7 @@ const Menu = {
   },
 };
 
-const MenuLink = ({Menu}) => {
+const MenuLink = ({ Menu}) => {
   return (
     <Link href={`${Menu.url}`} className="relative flex py-3 gap-1 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
       <p>{Menu.title}</p>
@@ -29,6 +32,9 @@ const MenuLink = ({Menu}) => {
 
 
 const MultiFactorAuthentication = () => {
+
+  const user = data.parent
+
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}

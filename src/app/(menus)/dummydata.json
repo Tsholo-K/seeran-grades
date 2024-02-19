@@ -1,0 +1,262 @@
+{
+    "princpal" : {
+        "id" : "2394087584",
+        "name" : "",
+        "surname" : ""
+    },
+
+    "parent": { 
+        "id" : "1928742173",
+        "name": "seeran",
+        "surname" : "dion",
+        "children": ["220212349","1289374","9812734"],
+        "phone_number":"0711740824",
+        "email": "seeran.dion@icloud.com",
+        "img" : "profile-icon-1.svg",
+        "sms_communication" : true,
+        "email_communication" : false,
+        "mfa_enabled" : "Off"
+    },
+
+    "teachers" : {
+        "teacher_1" : {
+            "id" : "2938438420",
+            "name" : "silvia",
+            "surname" : "berningham",
+            "classes" : ["45356345","34563456","34562356"]
+        },
+        "teacher_2" : {
+            "id" : "3456345633",
+            "name" : "silvia",
+            "surname" : "berningham",
+            "classes" : ["34563345","23452342"]
+        },
+        "teacher_3" : {
+            "id" : "6785678565",
+            "name" : "silvia",
+            "surname" : "berningham",
+            "classes" : ["45678453","94567834","12547485"]
+        }
+    },
+
+    "students": {
+        "student_1" : {
+            "name" : "koketso",
+            "surname" : "tsholo",
+            "date_of_birth" : "28/08/2002",
+            "grade" : "12",
+            "student_number" : "220212349",
+            "image" : "profile-icon-3"
+        },
+        "student_2" : {
+            "name" : "lethabo",
+            "surname" : "mochaki",
+            "date_of_birth" : "07/06/2003",
+            "grade" : "8",
+            "student_number" : "220212348",
+            "image" : "profile-icon-2"
+        },
+        "student_3" : {
+            "name" : "godwill",
+            "surname" : "munyoro",
+            "date_of_birth" : "24/08/2002",
+            "grade" : "10",
+            "student_number" : "220212350",
+            "image" : "profile-icon-4"
+        }
+    },
+
+    "classes" : {
+        "class_1" : {
+            "class_id" : "45356345",
+            "teacher" : "2938438420",
+            "subject" : "mathematics",
+            "students" : ["220212349"],
+            "grade" : "12"
+        },
+        "class_2" : {
+            "class_id" : "34563456",
+            "teacher" : "2938438420",
+            "subject" : "life orientation",
+            "students" : ["220212348"],
+            "grade" : "8"
+        },
+        "class_3" : {
+            "class_id" : "34562356",
+            "teacher" : "2938438420",
+            "subject" : "physical sciences",
+            "students" : ["220212349"],
+            "grade" : "12"
+        },
+        "class_4" : {
+            "class_id" : "34563345",
+            "teacher" : "3456345633",
+            "subject" : "physical sciences",
+            "students" : ["220212350"],
+            "grade" : "10"
+        },
+        "class_5" : {
+            "class_id" : "23452342",
+            "teacher" : "3456345633",
+            "subject" : "life sciences",
+            "students" : ["220212349"],
+            "grade" : "12"
+        },
+        "class_6" : {
+            "class_id" : "45678453",
+            "teacher" : "6785678565",
+            "subject" : "mathematics",
+            "students" : ["220212348"],
+            "grade" : "8"
+        },
+        "class_7" : {
+            "class_id" : "94567834",
+            "teacher" : "6785678565",
+            "subject" : "mathematics",
+            "students" : ["220212350"],
+            "grade" : "10"
+        },
+        "class_8" : {
+            "class_id" : "12547485",
+            "teacher" : "6785678565",
+            "subject" : "english",
+            "students" : ["220212348"],
+            "grade" : "8"
+        }
+    },
+
+    "subject_icons" : {
+
+    },
+
+    "grades" : {
+        "grade_1" : {
+            "subject" : "mathematics",
+            "class": "45356345",
+            "assessment" : "exam",
+            "date_submitted" : "monday, 09 febuary",
+            "date_released" : "tuesday, 14 febuary",
+            "score" : "124",
+            "total" : "150",
+            "submitted_by" : "220212349",
+            "teacher" : "1029341029"
+        },
+        "grade_2" : {
+            "subject" : "physical sciences",
+            "class" : "34563345",
+            "assessment" : "assigment",
+            "date_submitted" : "monday, 09 febuary",
+            "date_released" : "tuesday, 14 febuary",
+            "score" : "87",
+            "total" : "150",
+            "submitted_by" : "220212350",
+            "teacher" : "3456345633"
+        },
+        "grade_3" : {
+            "subject" : "mathematics",
+            "class" : "45678453",
+            "assessment" : "class test",
+            "date_submitted" : "monday, 09 febuary",
+            "date_released" : "tuesday, 14 febuary",
+            "score" : "41",
+            "total" : "50",
+            "submitted_by" : "220212348",
+            "teacher" : "6785678565"
+        },
+        "grade_4" : {
+            "subject" : "english",
+            "class" : "12547485",
+            "assessment" : "prepared speech",
+            "date_submitted" : "monday, 09 febuary",
+            "date_released" : "tuesday, 14 febuary",
+            "score" : "12",
+            "total" : "20",
+            "submitted_by" : "220212348",
+            "teacher" : "6785678565"
+        },
+        "grade_5" : {
+            "subject" : "life orientation",
+            "class" : "34563456",
+            "assessment" : "practical",
+            "date_submitted" : "monday, 09 febuary",
+            "date_released" : "tuesday, 14 febuary",
+            "score" : "18",
+            "total" : "20",
+            "submitted_by" : "220212348",
+            "teacher" : "2938438420"
+        },
+        "grade_6" : {
+            "subject" : "physical sciences",
+            "class" : "34562356",
+            "assessment" : "exam",
+            "date_submitted" : "monday, 09 febuary",
+            "date_released" : "tuesday, 14 febuary",
+            "score" : "142",
+            "total" : "150",
+            "submitted_by" : "220212349",
+            "teacher" : "2938438420"
+        }
+    },
+
+    "assessments" : {
+        "assessment_1" : {
+            "class" : "45356345",
+            "total" : "50",
+            "assessment" : "test",
+            "due_date" : "wednsday, 13 febuary"
+        },
+        "assessment_2" : {
+            "class" : "34563345",
+            "total" : "50",
+            "assessment" : "practical",
+            "due_date" : "friday, 13 march"
+        },
+        "assessment_3" : {
+            "class" : "45356345",
+            "total" : "75",
+            "assessment" : "assignment",
+            "due_date" : "tuesday, 21 febuary"
+        },
+        "assessment_4" : {
+            "class" : "45678453",
+            "total" : "50",
+            "assessment" : "expirement",
+            "due_date" : "wednsday, 20 febuary"
+        }
+    },
+
+    "achievements" : {
+        "achievement_1" : {
+            "student" : "220212349",
+            "for" : "mathematics",
+            "field" : "subject",
+            "score" : "3rd place",
+            "date_granted" : "monday, 7 febuary 2024",
+            "authority" : "2394087584"
+        },
+        "achievement_2" : {
+            "student" : "220212349",
+            "for" : "basket ball",
+            "assessment" : "sports",
+            "score" : "1st",
+            "date_granted" : "wednesday, 5 april 2024",
+            "authority" : "2394087584"
+        },
+        "achievement_3" : {
+            "student" : "220212349",
+            "for" : "mathematics",
+            "assessment" : "subjects",
+            "score" : "highest mark",
+            "date_granted" : "thursday, 14 march 2024",
+            "authority" : "2394087584"
+        },
+        "achievement_4" : {
+            "student" : "220212349",
+            "for" : "physical sciences",
+            "assessment" : "subjects",
+            "score" : "top 10",
+            "date_granted" : "tuesday, 23 febuary 2024",
+            "authority" : "2394087584"
+        }
+    }
+}

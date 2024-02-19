@@ -1,31 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// dummy data
+import data from '@/app/(menus)/dummydata.json'
 
-const Menus = {
-  email : {
-    title: 'Email',
-    info: 'email@example.com',
-  },
-  phonenumber : {
-    title: 'Phone number',
-    info: '0711740824',
-  },
-  twofactorauthentication : {
-    title: 'Two-Factor Authentication',
-    info: 'Off',
-  },
-  password : {
-    title: 'Change password',
-    info: '',
-  },
-};
 
-const MenuLink = ({Menu}) => {
+const MenuLink = ({ menu, user_info=null }) => {
   return (
     <div className="relative flex py-3 gap-1 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
-      <p>{Menu.title}</p>
-      <p className="text-gray-400 absolute right-9">{Menu.info}</p>
+      <p>{menu}</p>
+      <p className="text-gray-400 absolute right-9">{user_info}</p>
       <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit absolute right-3"/>
     </div>
   )
@@ -33,6 +17,9 @@ const MenuLink = ({Menu}) => {
 
 
 const Security = () => {
+
+  const user = data.parent
+
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
@@ -49,12 +36,12 @@ const Security = () => {
         <div className="rounded-xl bg-white">
           {/* email */}
           <Link href={'/profile/security/email'}>
-            <MenuLink Menu={Menus.email}/>
+            <MenuLink menu={'Email'} user_info={user.email}/>
           </Link>
           <hr className="mx-5"></hr>
           {/* phone number */}
           <Link href={'/profile/security/phonenumber'}>
-            <MenuLink Menu={Menus.phonenumber}/>
+            <MenuLink menu={'Phone Number'} user_info={user.phone_number}/>
           </Link>
         </div>
         <p className="text-gray-400 mx-auto text-center text-sm pt-1">these can be used to sign-in to your account</p>
@@ -62,12 +49,12 @@ const Security = () => {
       <div className="rounded-xl bg-white mt-20 ">
         {/* two factor authentication */}
         <Link href={'/profile/security/mfa'} >
-          <MenuLink Menu={Menus.twofactorauthentication}/>
+          <MenuLink menu={'Two Factor Authentication'} user_info={user.mfa_enabled}/>
         </Link>
         <hr className="mx-5"></hr>
         {/* password change */}
         <Link href={'/profile/security/password'} className="text-blue-700">
-          <MenuLink Menu={Menus.password}/>
+          <MenuLink menu={'Password'}/>
         </Link>
       </div>
     </div>
