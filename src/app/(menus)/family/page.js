@@ -32,8 +32,9 @@ const Family = () => {
         <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
       </div>
       {/* page heading */}
-      <div >
-        <h1 className="w-full text-center pb-16 text-4xl">Family</h1>
+      <div className="pb-16 " >
+        <h1 className="w-full text-center text-4xl mb-3">Family</h1>
+        <p className=" text-sm w-[90%] text-gray-400 text-center mx-auto pt-2">these are all the children linked to your account</p>
       </div>
       {/* children menu */}
       <div className="rounded-xl bg-white">
@@ -48,7 +49,7 @@ const Family = () => {
         ))
         }
       </div>
-      <p className=" text-sm w-[90%] text-gray-400 text-center mx-auto pt-2">these are all the children linked to your account</p>
+      
     </div>
   )
 };

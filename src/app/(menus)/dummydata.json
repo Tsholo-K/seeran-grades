@@ -125,10 +125,6 @@
         }
     },
 
-    "subject_icons" : {
-
-    },
-
     "grades" : [
         {
             "id" : "0367926839",
@@ -210,32 +206,68 @@
         }
     ],
 
-    "assessments" : {
-        "assessment_1" : {
-            "class" : "45356345",
+    "assessments" : [
+        {
+            "id" : "4782908467",
+            "subject" : "mathematics",
+            "icon" : "maths",
+            "student" : "Tsholo Koketso",
             "total" : "50",
             "assessment" : "test",
+            "teacher" : "Silvia Berningham",
             "due_date" : "wednsday, 13 febuary"
         },
-        "assessment_2" : {
-            "class" : "34563345",
+        {
+            "id" : "3476735243",
+            "subject" : "life science",
+            "icon" : "life-science",
+            "student" : "Munyoro Godwill",
             "total" : "50",
             "assessment" : "practical",
+            "teacher" : "Franklin Buck",
             "due_date" : "friday, 13 march"
         },
-        "assessment_3" : {
-            "class" : "45356345",
+        {
+            "id" : "9825364789",
+            "subject" : "mathematics",
+            "icon" : "maths",
+            "student" : "Mochaki Lethabo",
             "total" : "75",
             "assessment" : "assignment",
+            "teacher" : "Tessa Moldy",
             "due_date" : "tuesday, 21 febuary"
         },
-        "assessment_4" : {
-            "class" : "45678453",
+        {
+            "id" : "0897263746",
+            "subject" : "physical sciences",
+            "icon" : "physics",
+            "student" : "Tsholo Koketso",
             "total" : "50",
             "assessment" : "expirement",
+            "teacher" : "Rose Tsholo",
             "due_date" : "wednsday, 20 febuary"
+        },
+        {
+            "id" : "2718292736",
+            "subject" : "life orientation",
+            "icon" : "life-orientation",
+            "student" : "Mochaki Lethabo",
+            "total" : "20",
+            "assessment" : "practical",
+            "teacher" : "Tessa Moldy",
+            "due_date" : "wednsday, 3 march"
+        },
+        {
+            "id" : "5738192736",
+            "subject" : "life science",
+            "icon" : "life-science",
+            "student" : "Tsholo Koketso",
+            "total" : "150",
+            "assessment" : "exam",
+            "teacher" : "Silvia Berningham",
+            "due_date" : "monday, 28 febuary"
         }
-    },
+    ],
 
     "achievements" : {
         "achievement_1" : {

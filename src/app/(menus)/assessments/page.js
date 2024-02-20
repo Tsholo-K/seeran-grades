@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// dummy data
+import data from '@/app/(menus)/dummydata.json'
 
-const Assessments = {
-
-}
 
 const Assessment = ({ assessment }) => {
   return (
@@ -12,7 +11,7 @@ const Assessment = ({ assessment }) => {
       <div className="py-4">
         <div className="flex pl-2">
           <Image src={'/user-round.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-          <p className=" text-sm pl-2 pb-1 text-gray-500">for : {assessment.name}</p>
+          <p className=" text-sm pl-2 pb-1 text-gray-500">{assessment.student}</p>
         </div>
         <Link href={`/assessments/${assessment.id}`}>
           <div className="border rounded-xl bg-white py-1">
@@ -27,7 +26,7 @@ const Assessment = ({ assessment }) => {
             </div>
             <div className="flex pl-3 pt-2">
               <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-              <p className=" text-sm pl-2 pb-2 text-gray-500">{assessment.date}</p>
+              <p className=" text-sm pl-2 pb-2 text-gray-500">{assessment.due_date}</p>
             </div>
           </div>
         </Link>
@@ -37,6 +36,9 @@ const Assessment = ({ assessment }) => {
 }
 
 const Grades = () => {
+
+  const assessments = data.assessments
+
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       {/* back link */}
@@ -46,82 +48,18 @@ const Grades = () => {
         </Link>
       </div>
       {/* page heading */}
-      <div >
-          <h1 className="w-full text-center pb-10 text-4xl">Assessments</h1>
+      <div className="pb-10 " >
+          <h1 className="w-full text-center text-4xl mb-3">Assessments</h1>
+          <p className=" text-sm w-[90%] text-gray-400 text-center mx-auto pt-2">due assessments</p>
       </div>
-      {/* accounts section */}
-      <div className="py-4">
-        <div className="flex pl-2">
-          <Image src={'/user-round.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-          <p className=" text-sm pl-2 pb-1 text-gray-500">for : name</p>
-        </div>
-        <Link href={'/assessments/assessment-1'}>
-          <div className="border rounded-xl bg-white py-1">
-            <div>
-              <p className="text-sm text-gray-500 pt-1 w-full text-center">project</p>
-            </div>
-            <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
-                <Image priority src={'/life-science.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
-                <div className="pt-1 pl-2">
-                    <p>Life Science</p>
-                </div>
-            </div>
-            <div className="flex pl-3 pt-2">
-              <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-              <p className=" text-sm pl-2 pb-2 text-gray-500">tuesday, 7 febuary</p>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div className="py-4">
-        <div className="flex pl-2">
-          <Image src={'/user-round.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-          <p className=" text-sm pl-2 pb-1 text-gray-500">for : name</p>
-        </div>
-        <Link href={'/assessments/assessment-1'}>
-          <div className="border rounded-xl bg-white py-1">
-            <div>
-              <p className="text-sm text-gray-500 pt-1 w-full text-center">survey</p>
-            </div>
-            <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
-                <Image priority src={'/geography.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
-                <div className="pt-1 pl-2">
-                    <p>Geaography</p>
-                </div>
-            </div>
-            <div className="flex pl-3 pt-2">
-              <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-              <p className=" text-sm pl-2 pb-2 text-gray-500">wednesday, 14 febuary</p>
-              <p className=" text-sm pl-2 pb-2 text-gray-500"></p>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div className="py-4">
-        <div className="flex pl-2">
-          <Image src={'/user-round.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-          <p className=" text-sm pl-2 pb-1 text-gray-500">for : name</p>
-        </div>
-        <Link href={'/assessments/assessment-1'}>
-          <div className="border rounded-xl bg-white py-1">
-            <div>
-              <p className="text-sm text-gray-500 pt-1 w-full text-center">assignment</p>
-            </div>
-            <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
-                <Image priority src={'/maths.svg'} alt="profile icon" width={30} height={30} className="h-8 w-8" />
-                <div className="pt-1 pl-2">
-                    <p>Mathematics</p>
-                </div>
-            </div>
-            <div className="flex pl-3 pt-2">
-              <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
-              <p className=" text-sm pl-2 pb-2 text-gray-500">friday, 21 febuary</p>
-              <p className=" text-sm pl-2 pb-2 text-gray-500"></p>
-            </div>
-          </div>
-        </Link>
-       
-      </div>
+      {/* assesments */}
+      {
+        assessments.map( ( assessment, index ) => (
+          <>
+            <Assessment key={index} assessment={assessment}/>
+          </>
+        ))
+      }
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto pt-2">all caught up..</p>
     </div>
   )

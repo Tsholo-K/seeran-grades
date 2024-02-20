@@ -80,8 +80,9 @@ const Grades = () => {
         </Link>
       </div>
       {/* page heading */}
-      <div >
-          <h1 className="w-full text-center pb-10 text-4xl">Transcripts</h1>
+      <div className="pb-10 " >
+          <h1 className="w-full text-center text-4xl mb-3">Transcripts</h1>
+          <p className=" text-sm w-[90%] text-gray-400 text-center mx-auto pt-2">assessment results</p>
       </div>
       {/* transcripts */}
       {
