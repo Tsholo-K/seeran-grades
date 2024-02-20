@@ -48,6 +48,13 @@ const Assessment = () => {
     }
   });
 
+  let teacher
+  data.teachers.forEach( teach => {
+    if ( teach.id === assessment.teacher_id ) {
+      teacher = teach
+    }
+  })
+
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100 z-[2]">
@@ -71,7 +78,7 @@ const Assessment = () => {
           <Link href={`/teachers/${assessment.teacher_id}`} className="pb-1 w-full text-end pr-3 text-blue-700">message</Link>
         </div>
         <div className="rounded-xl bg-white">
-          <MenuLink menu={'Teacher'} info={assessment.teacher_id}/>
+          <MenuLink menu={'Teacher'} info={`${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} ${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`}/>
         </div>
       </div>
     </div>
