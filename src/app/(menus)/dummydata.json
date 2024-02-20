@@ -18,26 +18,26 @@
         "mfa_enabled" : "Off"
     },
 
-    "teachers" : {
-        "teacher_1" : {
+    "teachers" : [
+        {
             "id" : "2938438420",
-            "name" : "silvia",
-            "surname" : "berningham",
+            "name" : "Silvia",
+            "surname" : "Berningham",
             "classes" : ["45356345","34563456","34562356"]
         },
-        "teacher_2" : {
+        {
             "id" : "3456345633",
-            "name" : "silvia",
-            "surname" : "berningham",
+            "name" : "Franklin",
+            "surname" : "Buck",
             "classes" : ["34563345","23452342"]
         },
-        "teacher_3" : {
+        {
             "id" : "6785678565",
-            "name" : "silvia",
-            "surname" : "berningham",
+            "name" : "Tessa",
+            "surname" : "Moldy",
             "classes" : ["45678453","94567834","12547485"]
         }
-    },
+    ],
 
     "students": [
         {
@@ -214,7 +214,7 @@
             "student" : "Tsholo Koketso",
             "total" : "50",
             "assessment" : "test",
-            "teacher" : "Silvia Berningham",
+            "teacher_id" : "2938438420",
             "due_date" : "wednsday, 13 febuary"
         },
         {
@@ -224,7 +224,7 @@
             "student" : "Munyoro Godwill",
             "total" : "50",
             "assessment" : "practical",
-            "teacher" : "Franklin Buck",
+            "teacher_id" : "3456345633",
             "due_date" : "friday, 13 march"
         },
         {
@@ -234,7 +234,7 @@
             "student" : "Mochaki Lethabo",
             "total" : "75",
             "assessment" : "assignment",
-            "teacher" : "Tessa Moldy",
+            "teacher_id" : "6785678565",
             "due_date" : "tuesday, 21 febuary"
         },
         {
@@ -244,7 +244,7 @@
             "student" : "Tsholo Koketso",
             "total" : "50",
             "assessment" : "expirement",
-            "teacher" : "Rose Tsholo",
+            "teacher_id" : "2938438420",
             "due_date" : "wednsday, 20 febuary"
         },
         {
@@ -254,7 +254,7 @@
             "student" : "Mochaki Lethabo",
             "total" : "20",
             "assessment" : "practical",
-            "teacher" : "Tessa Moldy",
+            "teacher_id" : "6785678565",
             "due_date" : "wednsday, 3 march"
         },
         {
@@ -264,7 +264,7 @@
             "student" : "Tsholo Koketso",
             "total" : "150",
             "assessment" : "exam",
-            "teacher" : "Silvia Berningham",
+            "teacher_id" : "3456345633",
             "due_date" : "monday, 28 febuary"
         }
     ],

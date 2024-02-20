@@ -1,33 +1,27 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
+// dummy data
+import data from '@/app/(menus)/dummydata.json'
 
-const Menu = {
-  personalinformation : {
-    title: 'Personal Information',
-    icon: 'book-lock',
-  },
-  signinandsecurity : {
-    title: 'Sign-in And Security',
-    icon: 'fingerprint',
-  },
-  signout : {
-    title: 'Sign Out',
-    icon: 'log-out',
-  }
-};
-
-const MenuLink = ({Menu}) => {
-  return (
-    <div className="flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
-      <Image src={`/${Menu.icon}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
-      <p className={`w-full`}>{Menu.title}</p>
-      <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
-    </div>
-  )
-};
+const Chat = ({ chats }) => {
+  
+}
 
 const Teachers = () => {
+
+  const params = useParams()
+  const teacher_id = params.chat
+
+  let teacher = null
+  data.teachers.forEach( teach => {
+    if ( teach.id === teacher_id )
+      teacher = teach
+  });
+
   return (
     <div className="w-full min-h-full relative">
       <div className="flex top-0 pt-16 w-full fixed bg-gray-100">
@@ -44,6 +38,7 @@ const Teachers = () => {
           </div>
         </div>
       </div>
+      {/* chats */}
       <div className="chat text-base text-white">
         <div className="mine messages">
           <div className="message last">

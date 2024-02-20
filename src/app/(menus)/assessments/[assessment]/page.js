@@ -70,7 +70,7 @@ const Assessment = () => {
         <Link href={`/teachers/${assessment.teacher_id}`} className="pb-1 w-full text-end pr-3 text-blue-700">message</Link>
       </div>
       <div className="border rounded-xl bg-white">
-        <MenuLink menu={'Teacher'} info={assessment.teacher}/>
+        <MenuLink menu={'Teacher'} info={assessment.teacher_id}/>
       </div>
     </div>
   )
