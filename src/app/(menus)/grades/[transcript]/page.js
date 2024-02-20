@@ -35,7 +35,6 @@ const Score = ({ score, total }) => {
   )
 };
 
-
 const SubmittedBy = ({ student_id }) => {
 
   let submitter = ''
@@ -95,33 +94,35 @@ const Transcript = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
+      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100 z-[2]">
         <Link href={'/grades'} className="flex w-full text-blue-700">
           <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>grades
         </Link>
       </div>
-      {/* page heading */}
-      <div>
-        <h1 className="w-full text-center pb-16 text-4xl">Transcript</h1>
-      </div>
-      {/* score */}
-      <Score score={transcript.score} total={transcript.total}/>
-      {/* subject */}
-      <Subject subject={transcript.subject} icon={transcript.icon} submitter={transcript.submitted_by}/>
-      {/* info */}
-      <div className="rounded-xl bg-white mb-8">
-        <MenuLink menu={'Assessment'} info={transcript.assessment}/>
-        <hr className="mx-5"></hr>
-        <MenuLink menu={'Grade'} info={`${transcript.score} / ${transcript.total }`}/>
-        <hr className="mx-5"></hr>
-        <MenuLink menu={'Date'} info={transcript.date_submitted}/>
-      </div>
-      {/* teacher */}
-      <div className="flex">
-        <Link href={'/teachers/teacher'} className="pb-1 w-full text-end pr-3 text-blue-700">message</Link>
-      </div>
-      <div className="rounded-xl bg-white">
-        <MenuLink menu={'Teacher ID'} info={transcript.teacher}/>
+      <div className="z-[1]">
+        {/* page heading */}
+        <div>
+          <h1 className="w-full text-center pb-16 text-4xl">Transcript</h1>
+        </div>
+        {/* score */}
+        <Score score={transcript.score} total={transcript.total}/>
+        {/* subject */}
+        <Subject subject={transcript.subject} icon={transcript.icon} submitter={transcript.submitted_by}/>
+        {/* info */}
+        <div className="rounded-xl bg-white mb-8">
+          <MenuLink menu={'Assessment'} info={transcript.assessment}/>
+          <hr className="mx-5"></hr>
+          <MenuLink menu={'Grade'} info={`${transcript.score} / ${transcript.total}`}/>
+          <hr className="mx-5"></hr>
+          <MenuLink menu={'Date Submitted'} info={transcript.date_submitted}/>
+        </div>
+        {/* teacher */}
+        <div className="flex">
+          <Link href={'/teachers/teacher'} className="pb-1 w-full text-end pr-3 text-blue-700">message</Link>
+        </div>
+        <div className="rounded-xl bg-white">
+          <MenuLink menu={'Teacher'} info={transcript.teacher}/>
+        </div>
       </div>
     </div>
   )

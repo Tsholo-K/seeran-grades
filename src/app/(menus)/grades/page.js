@@ -69,28 +69,30 @@ const Grade = ({ transcript }) => {
   )
 };
 
-
 const Grades = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       {/* back link */}
-      <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100">
+      <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100 z-[2]">
         <Link href={'/parentdashboard'} className="flex w-full text-blue-700">
           <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard
         </Link>
       </div>
-      {/* page heading */}
-      <div className="pb-10 " >
-          <h1 className="w-full text-center text-4xl mb-3">Transcripts</h1>
-          <p className=" text-sm w-[90%] text-gray-400 text-center mx-auto pt-2">assessment results</p>
+      <div className="z-[1]">
+        {/* page heading */}
+        <div className="pb-10 " >
+            <h1 className="w-full text-center text-4xl mb-3">Transcripts</h1>
+            <p className=" text-sm w-[90%] text-gray-400 text-center mx-auto pt-2">assessment results</p>
+        </div>
+        {/* transcripts */}
+        {
+          data.grades.map( (transcript, index) => (
+            <Grade key={index} transcript={transcript} />
+          ))
+        }
+        <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto pt-5">all caught up..</p>
       </div>
-      {/* transcripts */}
-      {
-        data.grades.map( (transcript, index) => (
-          <Grade key={index} transcript={transcript} />
-        ))
-      }
-      <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto pt-5">all caught up..</p>
+      
     </div>
   )
 };

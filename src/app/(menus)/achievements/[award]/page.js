@@ -78,7 +78,7 @@ const Award = () => {
         <For award={award.for} icon={award.icon} student_id={award.student}/>
         {/* award info */}
         <div className="rounded-xl bg-white mb-8">
-          <MenuLink menu={'Field'} info={award.field}/>
+          <MenuLink menu={'assessment'} info={award.assessment}/>
           <hr className="mx-5"></hr>
           <MenuLink menu={'Score'} info={award.score}/>
           <hr className="mx-5"></hr>

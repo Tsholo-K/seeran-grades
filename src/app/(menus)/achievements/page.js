@@ -54,7 +54,6 @@ const Achievement = ({ achievement }) => {
   )
 }
 
-
 const Achievements = () => {
 
   const achievements = data.achievements
