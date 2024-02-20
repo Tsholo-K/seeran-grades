@@ -11,7 +11,7 @@ import data from '@/app/(menus)/dummydata.json';
 
 const Days = ({ day }) => {
   return (
-    <Link href={'/profile'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+    <p className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
       <div className="absolute top-6 left-0 text-center rounded-full text-white">
         <Image src={'/alert-circle.svg'} alt='try it button' width={10} height={10} className="w-6 m-0"/>
       </div>
@@ -19,7 +19,7 @@ const Days = ({ day }) => {
         <p className="font-bold">{day}</p>
         <p className="text-sm text-gray-500">2024</p>
       </div>
-    </Link>
+    </p>
   )
 }
 
