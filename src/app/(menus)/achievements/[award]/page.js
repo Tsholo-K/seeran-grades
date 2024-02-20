@@ -65,33 +65,36 @@ const Award = () => {
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
+      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100 z-[2]">
         <Link href={'/achievements'} className="flex w-full text-blue-700">
           <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>achievements
         </Link>
       </div>
-      {/* page heading */}
-      <div>
-        <h1 className="w-full text-center pb-16 text-4xl">Award</h1>
-      </div>
-      <For award={award.for} icon={award.icon} student_id={award.student}/>
-      {/* award info */}
-      <div className="border rounded-xl bg-white mb-8">
-        <MenuLink menu={'Field'} info={award.field}/>
-        <hr className="mx-5"></hr>
-        <MenuLink menu={'Score'} info={award.score}/>
-        <hr className="mx-5"></hr>
-        <MenuLink menu={'Date Granted'} info={award.date_granted}/>
-      </div>
-      {/* authority */}
-      <div>
-        <div className="flex">
-          <p className="pb-1 w-full pr-3 text-gray-400 text-sm pl-2">awarded by</p>
+      <div className="z-[1]">
+        {/* page heading */}
+        <div>
+          <h1 className="w-full text-center pb-16 text-4xl">Award</h1>
         </div>
-        <div className="border rounded-xl bg-white">
-          <MenuLink menu={'Authority'} info={award.authority}/>
+        <For award={award.for} icon={award.icon} student_id={award.student}/>
+        {/* award info */}
+        <div className="rounded-xl bg-white mb-8">
+          <MenuLink menu={'Field'} info={award.field}/>
+          <hr className="mx-5"></hr>
+          <MenuLink menu={'Score'} info={award.score}/>
+          <hr className="mx-5"></hr>
+          <MenuLink menu={'Date Granted'} info={award.date_granted}/>
+        </div>
+        {/* authority */}
+        <div>
+          <div className="flex">
+            <p className="pb-1 w-full pr-3 text-gray-400 text-sm pl-2">awarded by</p>
+          </div>
+          <div className="rounded-xl bg-white">
+            <MenuLink menu={'Authority'} info={award.authority}/>
+          </div>
         </div>
       </div>
+      
     </div>
   )
 };

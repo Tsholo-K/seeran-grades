@@ -29,7 +29,7 @@ const Achievement = ({ achievement }) => {
         <Student student_id={achievement.student}/>
       </div>
       <Link href={`/achievements/${achievement.id}`}>
-        <div className="border rounded-xl bg-white py-1">
+        <div className="rounded-xl bg-white py-1">
           <div>
             <p className="text-sm text-gray-500 pt-1 w-full text-center">{achievement.score}</p>
           </div>
