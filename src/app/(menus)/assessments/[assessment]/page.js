@@ -67,7 +67,7 @@ const Assessment = () => {
         <MenuLink menu={'Due Date'} info={assessment.due_date}/>
       </div>
       <div className="flex">
-        <p className="pb-1 w-full text-end pr-3 text-blue-700">message</p>
+        <Link href={`/teachers/${assessment.teacher_id}`} className="pb-1 w-full text-end pr-3 text-blue-700">message</Link>
       </div>
       <div className="border rounded-xl bg-white">
         <MenuLink menu={'Teacher'} info={assessment.teacher}/>
