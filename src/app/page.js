@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 {/* components */}
 import Footer from "@/components/footer";
 import NavigationBar from "@/components/navigationbar";
@@ -106,21 +105,23 @@ export default function Home() {
         </div>
         <hr className="my-10"></hr>
         {/* but why seeran section */}
-        <h2 className="my-10 text-3xl text-center sm:text-4xl">
-          But... why <br className="md:hidden"></br>seeran <span className="text-blue-700">grades</span>
-        </h2>
-        <Image src={'/why-seeran.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4 max-h-[400px] lg:max-h-[600px]"/>
-        <p className="w-full text-center my-4">
-          seeran grades offers a transformative solution to the age-old challenge of effective communication and academic management in educational
-          institutions. 
-          By providing a centralized platform accessible to students, parents, teachers, and school administrators.
-          seeran grades revolutionizes the way we interact, collaborate, and monitor academic progress. Parents are empowered with real-time access
-          to their child&apos;s grades and assignments, fostering active involvement in their educational journey.
-          Teachers benefit from streamlined administrative tasks and enhanced 
-          communication channels, enabling them to provide timely feedback and support to students and parents.
-          With Seeran Grades, education becomes a collaborative effort where
-          communication meets academic achievement, laying the foundation for a brighter future for students and schools alike.
-        </p>
+        <div>
+          <h2 className="my-10 text-3xl text-center sm:text-4xl">
+            But... why <br className="md:hidden"></br>seeran <span className="text-blue-700">grades</span>
+          </h2>
+          <Image src={'/why-seeran.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4 max-h-[400px] lg:max-h-[600px]"/>
+          <p className="w-full text-center my-4">
+            seeran grades offers a transformative solution to the age-old challenge of effective communication and academic management in educational
+            institutions. 
+            By providing a centralized platform accessible to students, parents, teachers, and school administrators.
+            seeran grades revolutionizes the way we interact, collaborate, and monitor academic progress. Parents are empowered with real-time access
+            to their child&apos;s grades and assignments, fostering active involvement in their educational journey.
+            Teachers benefit from streamlined administrative tasks and enhanced 
+            communication channels, enabling them to provide timely feedback and support to students and parents.
+            With Seeran Grades, education becomes a collaborative effort where
+            communication meets academic achievement, laying the foundation for a brighter future for students and schools alike.
+          </p>
+        </div>
       </div>
       {/* footer */}
       <Footer/>

@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-{/* components */}
-
 
 export default function RootLayout({ children }) {
   return (
