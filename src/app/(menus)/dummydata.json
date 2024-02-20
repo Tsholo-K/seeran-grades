@@ -269,38 +269,72 @@
         }
     ],
 
-    "achievements" : {
-        "achievement_1" : {
+    "achievements" : [
+        {
+            "id" : "7202648398",
             "student" : "220212349",
             "for" : "mathematics",
+            "icon" : "maths",
             "field" : "subject",
             "score" : "3rd place",
             "date_granted" : "monday, 7 febuary 2024",
-            "authority" : "2394087584"
+            "authority" : "2394087584",
+            "medal" : null
         },
-        "achievement_2" : {
-            "student" : "220212349",
+        {
+            "id" : "8291627384",
+            "student" : "220212350",
             "for" : "basket ball",
+            "icon" : "basketball",
             "assessment" : "sports",
-            "score" : "1st",
+            "score" : "2st",
             "date_granted" : "wednesday, 5 april 2024",
-            "authority" : "2394087584"
+            "authority" : "2394087584",
+            "medal" : "silver-medal"
         },
-        "achievement_3" : {
+        {
+            "id" : "4827364592",
             "student" : "220212349",
             "for" : "mathematics",
+            "icon" : "maths",
             "assessment" : "subjects",
             "score" : "highest mark",
             "date_granted" : "thursday, 14 march 2024",
-            "authority" : "2394087584"
+            "authority" : "2394087584",
+            "medal" : null
         },
-        "achievement_4" : {
+        {
+            "id" : "0182637456",
             "student" : "220212349",
             "for" : "physical sciences",
+            "icon" : "physics",
             "assessment" : "subjects",
             "score" : "top 10",
             "date_granted" : "tuesday, 23 febuary 2024",
-            "authority" : "2394087584"
+            "authority" : "2394087584",
+            "medal" : null
+        },
+        {
+            "id" : "8192847635",
+            "student" : "220212348",
+            "for" : "life orientation",
+            "icon" : "life-orientation",
+            "assessment" : "subjects",
+            "score" : "top 5",
+            "date_granted" : "tuesday, 23 febuary 2024",
+            "authority" : "2394087584",
+            "medal" : null
+        },
+        {
+            "id" : "01728364756",
+            "student" : "220212349",
+            "for" : "chess",
+            "icon" : "chess",
+            "assessment" : "subjects",
+            "score" : "tournament winner",
+            "date_granted" : "tuesday, 23 febuary 2024",
+            "authority" : "2394087584",
+            "medal" : "gold-medal"
         }
-    }
+    ]
 }
