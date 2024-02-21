@@ -45,7 +45,7 @@ const Notifications = () => {
         <div className="flex">
           <p className=" text-sm pl-2 pb-1 text-gray-400">message</p>
         </div>
-        <div className="relative border rounded-xl bg-white py-1">
+        <div className="relative rounded-xl bg-white py-1">
           <p className="w-full py-1 px-2">
             We understand the importance of staying connected and informed about your child&apos;s education journey. 
             That&apos;s why we&apos;re excited to introduce Seeran Grades, a user-friendly platform designed to empower you with
@@ -54,7 +54,7 @@ const Notifications = () => {
         </div>
       </div>
       <div>
-        <div className="border rounded-xl bg-white">
+        <div className="rounded-xl bg-white">
           <MenuLink Menu={Menu.sender}/>
           <hr className="mx-5"></hr>
           <MenuLink Menu={Menu.date}/>

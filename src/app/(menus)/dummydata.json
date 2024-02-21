@@ -395,5 +395,71 @@
             "student" : "220212350",
             "days_absent" : ["tuesday, 15 febuary"]
         }
+    ],
+
+    "fees" : [
+        {
+            "id" : "7290263527",
+            "outstanding_blalnce" : "4 875",
+            "student" : "220212350",
+            "fee_structure" : [
+                {
+                    "description" : "tuition Fee",
+                    "amount" : "4500"
+                },
+                {
+                    "description" : "Sports Fee",
+                    "amount" : "375"
+                }
+            ],
+            "invoices" : [
+                {
+                    "january" : "paid"
+                }
+            ],
+            "debit_order" : "1"
+        },
+        {
+            "id" : "0278364758",
+            "outstanding_blalnce" : "2 800",
+            "student" : "220212349",
+            "fee_structure" : [
+                {
+                    "description" : "Tuition Fee",
+                    "amount" : "5300"
+                },
+                {
+                    "description" : "Sports Fee",
+                    "amount" : "375"
+                }
+            ],
+            "invoices" : [
+                {
+                    "january" : "paid"
+                }
+            ],
+            "debit_order" : "7"
+        },
+        {
+            "id" : "9172836475",
+            "outstanding_blalnce" : "400",
+            "student" : "220212348",
+            "fee_structure" : [
+                {
+                    "description" : "Tuition Fee",
+                    "amount" : "3700"
+                },
+                {
+                    "description" : "Sports Fee",
+                    "amount" : "375"
+                }
+            ],
+            "invoices" : [
+                {
+                    "january" : "paid"
+                }
+            ],
+            "debit_order" : "15"
+        }
     ]
 }

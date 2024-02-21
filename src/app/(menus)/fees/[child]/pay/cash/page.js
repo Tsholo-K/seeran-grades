@@ -16,7 +16,7 @@ const Menu = ({ menu, url, icon }) => {
   )
 }
 
-const Pay = () => {
+const Cash = () => {
 
   const params = useParams();
   const student_id = params.child
@@ -24,23 +24,23 @@ const Pay = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100 z-[2]">
-        <Link href={`/fees/${student_id}`} className="flex w-full text-blue-700">
-          <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>balance
+        <Link href={`/fees/${student_id}/pay`} className="flex w-full text-blue-700">
+          <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>pay
         </Link>
       </div>
       <div className="z-[1]">
-        <div >
-            <h1 className="w-full text-center pb-20 text-4xl">Pay</h1>
+        <div className="pb-10 ">
+          <h1 className="w-full text-center pb-20 text-4xl">Cash</h1>
+          <Image src={'/cash-pay.svg'} alt="pay in cash"  height={100} width={100} className="mx-auto"/>
+          <p className="text-center mx-auto text-gray-400 text-sm pt-3">You can go to the office to settle any outstanding balance with cash</p>
         </div>
         <div className="rounded-xl bg-white mt-10">
-          <Menu menu={'cash'} url={`/fees/${student_id}/pay/cash`} icon={'credit-card'} />
-          <hr className="mx-5"></hr>
-          <Menu menu={'eft/deposit'} url={`/fees/${student_id}/pay/card`} icon={'layers'} />
+          <Menu menu={'Give Notice'} url={`/fees/${student_id}/pay/cash/notice`} icon={'speech-black'} />
         </div>
-        <p className="w-[90%] mx-auto text-center text-sm text-gray-400 pt-3">choose method</p>
+        <p className="w-[90%] mx-auto text-center text-sm text-gray-400 pt-3">Or you could give notice and we&apos;ll notify the register teacher to collect the amount from the child during register class</p>
       </div>
-    </div>
+         </div>
   )
 };
 
-export default Pay;
+export default Cash;

@@ -39,14 +39,13 @@ const page = () => {
         <h1 className="w-full text-center pb-5 text-4xl">Help desk</h1>
       </div>
       <div className="w-fit my-10 mx-auto">
-          <div className="mx-auto w-fit pb-4">
-            <Image priority src={'/help-desk.svg'} alt="profile icon" width={60} height={60} className="w-fit h-fit max-h-[250px] max-w-[250px]" />
-            <p className="w-fit mx-auto text-gray-500 text-sm">/school logo</p>
+          <div className="mx-auto w-fit py-7">
+            <p className="w-fit mx-auto text-gray-500 text-sm">school logo</p>
           </div>
           <h2 className="w-full text-center text-xl">School Name</h2>
       </div>
       {/* menu section */}
-      <div className="border rounded-xl bg-white">
+      <div className="rounded-xl bg-white">
         <MenuLink Menu={Menu.help}/>
         <hr className="mx-5"></hr>
         <MenuLink Menu={Menu.contactinfo}/>

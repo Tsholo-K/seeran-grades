@@ -27,7 +27,7 @@ const Student = ({ student_id }) => {
 
   return (
     <>
-      <p className=" text-sm pt-1 text-gray-500 text-center mx-auto">awarded to : {user.name.charAt(0).toUpperCase() + user.name.slice(1)} {user.surname.charAt(0).toUpperCase() + user.surname.slice(1)}</p>
+      <p className=" text-sm pt-1 text-gray-400 text-center mx-auto">awarded to : {user.name.charAt(0).toUpperCase() + user.name.slice(1)} {user.surname.charAt(0).toUpperCase() + user.surname.slice(1)}</p>
     </>
   )
 }
@@ -38,7 +38,7 @@ const For = ({ award, icon, student_id }) => {
         <div className="flex">
           <p className=" text-sm pl-2 pb-1 text-gray-400">for</p>
         </div>
-        <div className="relative border rounded-xl bg-white py-1">
+        <div className="relative rounded-xl bg-white py-1">
           <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
               <Image priority src={`/${icon}.svg`} alt="profile icon" width={30} height={30} className="h-8 w-8" />
               <div className="pt-1 pl-2">

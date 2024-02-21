@@ -64,7 +64,7 @@ const Activity = () => {
               <div className="flex">
               <p className=" text-sm pl-2 pb-1 text-gray-400">record</p>
               </div>
-              <div className="relative rounded-xl opacity-75 bg-white py-1">
+              <div className="relative rounded-xl bg-white py-1">
               <p className="w-full py-1 px-3 opacity-80">
                 {log.record}
               </p>
