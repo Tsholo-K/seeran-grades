@@ -19,7 +19,7 @@ const Section = ({ heading, paragraph, image, side }) => {
           <Image src={`/${image}.svg`} alt="seeran grades hero image" height={0} width={0} className={`h-full w-fit absolute ${ side === 'left' ? 'left-0' : 'right-0'} bottom-0 z-[1]`}/>
         </div>
       </div>
-      <hr className="my-10"></hr>
+      <hr className="my-10 max-w-screen-xl mx-5 sm:mx-auto"></hr>
     </>
   )
 }
@@ -71,34 +71,6 @@ export default function Home() {
           side={'right'} 
 
         />
-        {/* key features section */}
-        <div className="">
-          <div>
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl text-center pt-10"></h1>
-          </div>
-          <div className="max-w-screen-xl mx-auto ">
-            <div className="lg:grid grid-cols-1 place-content-center">
-              <p className="w-full text-center my-4">Student and Parent Portal: Access to grades, assignments, announcements, and school events.</p>
-              <p className="w-full text-center my-4">Teacher Dashboard: Grade submissions, communication with students and parents, and assignment tracking.</p>
-              <p className="w-full text-center my-4">Mobile Accessibility: Accessible anytime, anywhere</p>
-            </div>
-            <Image src={'/.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4 max-h-[400px] lg:max-h-[600px]"/>
-          </div>
-        </div>
-        {/* Student and Parent Portal section */}
-        <div>
-          <div>
-            <h2 className="my-10 text-3xl text-center sm:text-4xl">Student and Parent <br className="md:hidden"></br><span className="text-blue-700">Portal</span></h2> 
-          </div>
-          <div className="lg:flex w-full">
-            <Image src={'/student-parent-portal.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4 max-h-[400px] lg:max-h-[600px]"/>
-            <div className="lg:grid grid-cols-1 place-content-center">
-              <p className="w-full text-center my-4">Assignments: Details of upcoming assignments, deadlines, and submission status.</p>
-              <p className="w-full text-center my-4">Announcements: Important updates and announcements from the school..</p>
-              <p className="w-full text-center my-4">Messaging: Direct communication with teachers and school administrators.</p>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
   );
