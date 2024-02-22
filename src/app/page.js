@@ -36,7 +36,7 @@ export default function Home() {
             <p className="text-sm text-center text-gray-500 pt-3 lg:text-base">a comprehensive school management system</p>
           </div>
           {/* sign in section */}
-          <div className="md:hidden">
+          <div className="">
             <div className="mt-10">
               <Link href={"/signin"} className="flex cursor-pointer w-fit mx-auto py-2 pl-6 pr-3 lg:hover:scale-[1.2] transition-all duration-500 ease-in-out gap-2 rounded-full text-white bg-black hover:bg-blue-700 mb-2">
                 <p>try it out</p>
