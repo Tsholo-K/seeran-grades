@@ -8,31 +8,44 @@ import Footer from "@/components/footer";
 export default function Home() {
   return (
     <main className="bg-gray-100">
-      {/* landing section */}
-      <div className="h-screen relative max-w-screen-2xl mx-auto">
-        <div className="w-full pt-32">
-          <h1 className="text-5xl sm:text-8xl lg:text-9xl text-center">seeran grades</h1>
-          <p className="text-sm text-center text-gray-500 pt-3 lg:text-base">a comprehensive school management system</p>
-        </div>
-        {/* sign in section */}
-        <div className="sm:hidden">
-          <div className="mt-10">
-            <Link href={"/parentsignin"} className="flex w-fit mx-auto py-2 pl-6 pr-3 lg:hover:scale-[1.2] transition-all duration-500 ease-in-out gap-2 rounded-full text-white bg-black hover:bg-blue-700 mb-2">
-              <p>try it out</p>
-              <Image src={'/chevron-right.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
-            </Link>
+      <div className="">
+        {/* landing section */}
+        <div className="h-screen relative max-w-screen-xl mx-auto">
+          <div className="w-full pt-32">
+            <h1 className="text-5xl sm:text-8xl lg:text-9xl text-center">seeran grades</h1>
+            <p className="text-sm text-center text-gray-500 pt-3 lg:text-base">a comprehensive school management system</p>
           </div>
-          <p className="mb-8 text-base text-center">Already have an account? <a className=" text-blue-700" href="/login">login</a></p>
+          {/* sign in section */}
+          <div className="sm:hidden">
+            <div className="mt-10">
+              <Link href={"/parentsignin"} className="flex w-fit mx-auto py-2 pl-6 pr-3 lg:hover:scale-[1.2] transition-all duration-500 ease-in-out gap-2 rounded-full text-white bg-black hover:bg-blue-700 mb-2">
+                <p>try it out</p>
+                <Image src={'/chevron-right.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
+              </Link>
+            </div>
+            <p className="mb-8 text-base text-center">Already have an account? <a className=" text-blue-700" href="/login">login</a></p>
+          </div>
+          <Image priority src={'/main-hero.svg'} alt="hero image" width={1000} height={1000} className="md:h-[80%] w-full md:w-fit absolute bottom-0 right-0"/>
         </div>
-        <Image priority src={'/main-hero.svg'} alt="hero image" width={1000} height={1000} className="md:h-[80%] w-full md:w-fit absolute bottom-0 right-0"/>
-      </div>
-      <div className="w-full pt-3">
-        {/* how it works section */}
-        <p className="w-full text-center text-base">how it works</p>
-        <div className="flex w-full justify-center">
-          <Image src={'/chevron-down.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
+        <div className="w-full pt-3 max-w-screen-xl mx-auto">
+          {/* how it works section */}
+          <p className="w-full text-center text-base">how it works</p>
+          <div className="flex w-full justify-center">
+            <Image src={'/chevron-down.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
+          </div>
+          <hr className="mx-5 my-3"></hr>
         </div>
-        <hr className="mx-5 my-3"></hr>
+        <div className="w-full h-screen relative">
+          <div className="max-w-screen-xl mx-auto relative">
+            <div className="absolute top-[90px] max-w-[300px] right-7">
+              <p className="w-full mx-auto text-center lg:text-xl ">
+                In today&apos;s digital age, effective communication between schools, students, parents and teachers is vital for academic success. 
+                Seeran Grades bridges this gap, offering a robust platform for seamless interaction and academic monitoring.
+              </p>
+            </div>
+          </div>
+          <Image src={'/second-hero.svg'} alt="seeran grades hero image" height={0} width={0} className="h-full w-fit absolute left-0 bottom-0"/>
+        </div>
       </div>
     </main>
   );
