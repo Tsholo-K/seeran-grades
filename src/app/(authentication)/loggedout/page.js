@@ -15,16 +15,6 @@ const MultiFactorAuthentication = () => {
 
   return (
     <>
-      {/* navigation bar */}
-      <div className="fixed flex justify-center w-full pt-3">
-        <div className="flex w-full px-4 mx-auto max-w-[1700px]">
-          <div className="w-full">
-            <p className="font-bold">seeran</p>
-          </div>
-          <div className="w-full text-end">
-          </div>
-        </div>
-      </div>
       <div className="w-full max-w-4xl mx-auto pt-40">
         <Image src={'/loggedout.svg'} alt="hero image" width={0} height={0} className="h-fit w-fit max-w-[250px] mx-auto  max-sm:max-h-[350px]"/>
       </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-const Menu = {
+const menu = {
   grades : {
     title: 'Grades',
     icon: 'graduation-cap',
@@ -67,7 +67,7 @@ const MenuLink = ({Menu}) => {
   )
 }
 
-const SmallDevices = () => {
+const DashboardMenu = () => {
   return (
     <div className="w-full mb-20">
       {/* accounts section */}
@@ -93,32 +93,32 @@ const SmallDevices = () => {
       </div>
       {/* children section */}
       <div className="rounded-xl my-7 bg-white">
-        <MenuLink Menu={Menu.grades}/>
+        <MenuLink Menu={menu.grades}/>
         <hr className="mx-5"></hr>
-        <MenuLink Menu={Menu.assessments}/>
+        <MenuLink Menu={menu.assessments}/>
         <hr className="mx-5"></hr>
-        <MenuLink Menu={Menu.achievements}/>
+        <MenuLink Menu={menu.achievements}/>
       </div>
       {/* notifications section */}
       <div className="rounded-xl my-7 bg-white">
-        <MenuLink Menu={Menu.teachers}/>
+        <MenuLink Menu={menu.teachers}/>
         
         <hr className="mx-5"></hr>
-        <MenuLink Menu={Menu.activities}/>
+        <MenuLink Menu={menu.activities}/>
         <hr className="mx-5"></hr>
-        <MenuLink Menu={Menu.attendance}/>
+        <MenuLink Menu={menu.attendance}/>
       </div>
       {/* help section */}
       <div className="rounded-xl my-7 bg-white">
-        <MenuLink Menu={Menu.fees}/>
+        <MenuLink Menu={menu.fees}/>
         <hr className="mx-5"></hr>
-        <MenuLink Menu={Menu.notifications}/>
+        <MenuLink Menu={menu.notifications}/>
         <hr className="mx-5"></hr>
-        <MenuLink Menu={Menu.helpdesk}/>
+        <MenuLink Menu={menu.helpdesk}/>
       </div>
       {/* settings section */}
       <div className="rounded-xl mt-7 bg-white">
-        <MenuLink Menu={Menu.settings}/>
+        <MenuLink Menu={menu.settings}/>
       </div>
     </div>
   )
@@ -127,8 +127,25 @@ const SmallDevices = () => {
 
 const ParentDashboardSidemenu = () => {
   return (
-    <div className="h-full">
-      <SmallDevices/>
+    <div className="min-h-screen flex ">
+      <div className="md:w-[55%] w-full lg:w-[35%] 2xl:w-[22%]">
+        <DashboardMenu/>
+      </div>
+      <div className="hidden md:block w-full mt-16 px-7 lg:px-10 xl:px-14">
+        <div className="h-full">
+          <Image src={'/welcome.svg'} alt='try it button' width={400} height={400} className="mx-auto"/>
+          {/* children section */}
+          <div className="rounded-xl my-7 bg-white">
+            <MenuLink Menu={menu.grades}/>
+          </div>
+          <div className="rounded-xl my-7 bg-white">
+            <MenuLink Menu={menu.assessments}/>
+          </div>
+          <div className="rounded-xl my-7 bg-white">
+            <MenuLink Menu={menu.achievements}/>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

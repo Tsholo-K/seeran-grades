@@ -38,7 +38,6 @@ const MenuColoumn = ({Heading}) => {
   )
 }
 
-
 const SocialLinks = {
     youtube : {
         url: '',
@@ -75,7 +74,7 @@ const SocialsColomn = ({Socials}) => {
 // eslint-disable-next-line react/display-name
 export default function Footer() {
     return (
-        <div className="w-full flex justify-center bottom-0 border-t-2 border-opacity-30 border-gray-200 py-7 px-7">
+        <div className="w-full flex justify-center bottom-0 border-t-2 border-opacity-70 border-gray-200 py-7 px-7">
             <div className=" max-w-[1600px] w-full">
                 <div className="lg:flex w-full ">
                     <div className="w-full mb-7 max-lg:text-center">

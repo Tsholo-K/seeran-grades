@@ -47,10 +47,10 @@ const Card = () => {
         </Link>
       </div>
       <div className="z-[1]">
-        <div className="pb-10 ">
-          <h1 className="w-full text-center pb-20 text-4xl">Card</h1>
+        <div className="pb-10">
+          <h1 className="w-full text-center pb-10 text-4xl">Card</h1>
           <Image src={'/card-pay.svg'} alt="pay in cash"  height={100} width={100} className="mx-auto"/>
-          <p className="text-center mx-auto text-gray-400 text-sm pt-3">Once the deposit or transfer has been made please email the payment confirmation to school@email.co.za directly from the app or fax payment confirmation to 000 000 0000.</p>
+          <p className="text-center mx-auto text-gray-400 text-sm pt-3">Once the deposit or transfer has been made please email the payment confirmation to school@email.co.za directly from the app.</p>
         </div>
         <Subject subject={'FNB'} />
         <div className="rounded-xl bg-white">
