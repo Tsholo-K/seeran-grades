@@ -8,15 +8,15 @@ import Footer from "@/components/footer";
 const Section = ({ heading, paragraph, image, side }) => {
   return (
     <>
-      <div className="w-full relative">
-        <div className="min-h-screen">
+      <div className="w-full">
+        <div className="min-h-screen relative">
           <h1 className="text-3xl sm:text-6xl lg:text-7xl text-center pt-10">{heading}</h1>
           <div className="max-w-screen-xl mx-auto relative pt-5">
             <div className="max-w-[600px] mx-auto text-gray-400 px-3">
               <p className="w-full text-center">{paragraph}</p>
             </div>
           </div>
-          <Image src={`/${image}.svg`} alt="seeran grades hero image" height={0} width={0} className={`h-full w-fit absolute ${ side === 'left' ? 'left-0' : 'right-0'} bottom-0 z-[1]`}/>
+          <Image src={`/${image}.svg`} alt="seeran grades hero image" height={0} width={0} className={`h-full w-fit absolute ${ side === 'left' ? 'lg:left-0' : 'lg:right-0'} bottom-0 z-[1] mx-auto`}/>
         </div>
       </div>
       <hr className="my-10 max-w-screen-xl mx-5 sm:mx-auto"></hr>
