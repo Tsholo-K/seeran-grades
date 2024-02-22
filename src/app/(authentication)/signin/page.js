@@ -15,7 +15,7 @@ const Signin = () => {
     
   return (
     <>
-        <div className="h-screen">
+        <div className="h-screen relative">
             <div className="w-full h-[60%] max-w-screen-xl mx-auto grid grid-cols-1 place-content-center">
                 <h1 className="text-center">sign in</h1>
                 <form className="mx-auto w-[80%] lg:w-[60%]" onSubmit={authenticate}>
