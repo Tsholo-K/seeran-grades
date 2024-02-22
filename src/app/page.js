@@ -16,7 +16,7 @@ const Section = ({ heading, paragraph, image, side }) => {
           </div>
         </div>
       </div>
-      <div className= {`flex ${ side === 'right' ? 'justify-end' : 'justify-start'}`}>
+      <div className= {`flex ${ side === 'right' ? 'justify-end' : 'justify-start'} my-7 mx-2`}>
         <Image src={`/${image}.svg`} alt="seeran grades hero image" height={0} width={0} className={`h-fit w-full md:w-[50%]`}/>
       </div>
       <hr className="max-w-screen-xl mx-5 sm:mx-auto"></hr>
