@@ -29,7 +29,7 @@ const Signin = () => {
                     <p className="text-base w-full text-center pt-3 text-gray-400">Already have an account? <Link href={'/login'} className=" text-blue-700 ">login</Link></p>
                 </form>
             </div>
-            <Image priority src={'/signin.svg'} alt="hero image" width={1000} height={1000} className="sm:h-[60%] w-full sm:w-fit absolute bottom-1 left-1"/>
+            <Image priority src={'/signin.svg'} alt="hero image" width={1000} height={1000} className="h-[50%] sm:h-[60%] w-full sm:w-fit absolute bottom-1 left-1"/>
         </div>
     </>
   )
