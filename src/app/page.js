@@ -11,7 +11,7 @@ const Section = ({ heading, paragraph, image, side }) => {
       <div className="w-full">
         <div className="min-h-screen relative">
           <h1 className="text-3xl sm:text-6xl lg:text-7xl text-center pt-10">{heading}</h1>
-          <div className="max-w-screen-xl mx-auto relative pt-5">
+          <div className="max-w-screen-xl mx-auto pt-5">
             <div className="max-w-[600px] mx-auto text-gray-400 px-3">
               <p className="w-full text-center">{paragraph}</p>
             </div>
