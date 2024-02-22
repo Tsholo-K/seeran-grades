@@ -9,17 +9,17 @@ const Section = ({ heading, paragraph, image, side }) => {
   return (
     <>
       <div className="w-full">
-        <div className="min-h-screen relative">
-          <h1 className="text-3xl sm:text-6xl lg:text-7xl text-center pt-10">{heading}</h1>
-          <div className="max-w-screen-xl mx-auto pt-5">
-            <div className="max-w-[600px] mx-auto text-gray-400 px-3">
-              <p className="w-full text-center">{paragraph}</p>
-            </div>
+        <h1 className="text-3xl sm:text-6xl lg:text-7xl text-center pt-10">{heading}</h1>
+        <div className="max-w-screen-xl mx-auto pt-5">
+          <div className="max-w-[600px] mx-auto text-gray-400 px-3">
+            <p className="w-full text-center">{paragraph}</p>
           </div>
-          <Image src={`/${image}.svg`} alt="seeran grades hero image" height={0} width={0} className={`h-full w-fit absolute ${ side === 'left' ? 'lg:left-0' : 'lg:right-0'} bottom-0 z-[1] mx-auto`}/>
         </div>
       </div>
-      <hr className="my-10 max-w-screen-xl mx-5 sm:mx-auto"></hr>
+      <div className= {`flex ${ side === 'right' ? 'justify-end' : 'justify-start'}`}>
+        <Image src={`/${image}.svg`} alt="seeran grades hero image" height={0} width={0} className={`h-fit w-full md:w-[50%]`}/>
+      </div>
+      <hr className="max-w-screen-xl mx-5 sm:mx-auto"></hr>
     </>
   )
 }
@@ -36,8 +36,7 @@ export default function Home() {
             <p className="text-sm text-center text-gray-500 pt-3 lg:text-base">a comprehensive school management system</p>
           </div>
           {/* sign in section */}
-          
-          <div className="sm:hidden">
+          <div className="md:hidden">
             <div className="mt-10">
               <Link href={"/parentsignin"} className="flex w-fit mx-auto py-2 pl-6 pr-3 lg:hover:scale-[1.2] transition-all duration-500 ease-in-out gap-2 rounded-full text-white bg-black hover:bg-blue-700 mb-2">
                 <p>try it out</p>
