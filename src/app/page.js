@@ -5,6 +5,26 @@ import Link from "next/link";
 import Footer from "@/components/footer";
 
 
+const Section = ({ heading, paragraph, image, side }) => {
+  return (
+    <>
+      <div className="w-full relative">
+        <div className="min-h-screen">
+          <h1 className="text-3xl sm:text-6xl lg:text-7xl text-center pt-10">{heading}</h1>
+          <div className="max-w-screen-xl mx-auto relative pt-5">
+            <div className="max-w-[600px] mx-auto text-gray-400 px-3">
+              <p className="w-full text-center">{paragraph}</p>
+            </div>
+          </div>
+          <Image src={`/${image}.svg`} alt="seeran grades hero image" height={0} width={0} className={`h-full w-fit absolute ${ side === 'left' ? 'left-0' : 'right-0'} bottom-0 z-[1]`}/>
+        </div>
+      </div>
+      <hr className="my-10"></hr>
+    </>
+  )
+}
+
+
 export default function Home() {
   return (
     <main className="bg-gray-100">
@@ -16,6 +36,7 @@ export default function Home() {
             <p className="text-sm text-center text-gray-500 pt-3 lg:text-base">a comprehensive school management system</p>
           </div>
           {/* sign in section */}
+          
           <div className="sm:hidden">
             <div className="mt-10">
               <Link href={"/parentsignin"} className="flex w-fit mx-auto py-2 pl-6 pr-3 lg:hover:scale-[1.2] transition-all duration-500 ease-in-out gap-2 rounded-full text-white bg-black hover:bg-blue-700 mb-2">
@@ -36,23 +57,24 @@ export default function Home() {
           <hr className="mx-5 my-3"></hr>
         </div>
         {/* intro section */}
-        <div className="w-full h-screen relative">
-          <h1 className="text-6xl sm:text-7xl lg:text-8xl text-center pt-10">In today&apos;s digital age..</h1>
-          <div className="max-w-screen-xl mx-auto relative pt-5">
-            <div className="max-w-[600px] mx-auto text-gray-400">
-              <p className="w-full mx-auto text-center">
-                Effective communication between schools, students, parents and teachers is vital for academic success. 
-                Seeran Grades bridges this gap, offering a robust platform for seamless interaction and academic monitoring.
-              </p>
-            </div>
-          </div>
-          <Image src={'/second-hero.svg'} alt="seeran grades hero image" height={0} width={0} className="h-full w-fit absolute left-0 bottom-0"/>
-        </div>
-        <hr className="my-10"></hr>
+        <Section 
+          heading={"In today's digital age.."}
+          paragraph={'Effective communication between schools, students, parents and teachers is vital for academic success. Seeran Grades bridges this gap, offering a robust platform for seamless interaction and academic monitoring.'}
+          image={'second-hero'}
+          side={'left'} 
+
+        />
+        <Section 
+          heading={"key features"}
+          paragraph={'Effective communication between schools, students, parents and teachers is vital for academic success. Seeran Grades bridges this gap, offering a robust platform for seamless interaction and academic monitoring.'}
+          image={'key-features'}
+          side={'right'} 
+
+        />
         {/* key features section */}
         <div className="">
           <div>
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl text-center pt-10">key features</h1>
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl text-center pt-10"></h1>
           </div>
           <div className="max-w-screen-xl mx-auto ">
             <div className="lg:grid grid-cols-1 place-content-center">
@@ -60,7 +82,7 @@ export default function Home() {
               <p className="w-full text-center my-4">Teacher Dashboard: Grade submissions, communication with students and parents, and assignment tracking.</p>
               <p className="w-full text-center my-4">Mobile Accessibility: Accessible anytime, anywhere</p>
             </div>
-            <Image src={'/key-features.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4 max-h-[400px] lg:max-h-[600px]"/>
+            <Image src={'/.svg'} alt="seeran grades hero image" height={0} width={0} className="w-full h-full mb-4 max-h-[400px] lg:max-h-[600px]"/>
           </div>
         </div>
         {/* Student and Parent Portal section */}
