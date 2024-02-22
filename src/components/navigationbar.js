@@ -10,7 +10,7 @@ export default function NavigationBar({  }) {
             <Link href={"/"} className="md:block hidden">seeran grades</Link>
             <Link href={'/'} className="md:hidden"><Image src={'/favicon.svg'} alt="hero image" width={0} height={0} className="h-[35px] w-[35px]"/></Link>
           </div>
-          <div className="w-full text-end">
+          <div className="w-full text-end hidden md:block">
           </div>
         </div>
     </div>

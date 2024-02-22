@@ -38,7 +38,7 @@ export default function Home() {
           {/* sign in section */}
           <div className="md:hidden">
             <div className="mt-10">
-              <Link href={"/parentsignin"} className="flex w-fit mx-auto py-2 pl-6 pr-3 lg:hover:scale-[1.2] transition-all duration-500 ease-in-out gap-2 rounded-full text-white bg-black hover:bg-blue-700 mb-2">
+              <Link href={"/signin"} className="flex cursor-pointer w-fit mx-auto py-2 pl-6 pr-3 lg:hover:scale-[1.2] transition-all duration-500 ease-in-out gap-2 rounded-full text-white bg-black hover:bg-blue-700 mb-2">
                 <p>try it out</p>
                 <Image src={'/chevron-right.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
               </Link>
