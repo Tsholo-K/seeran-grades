@@ -15,10 +15,12 @@ const MultiFactorAuthentication = () => {
 
   return (
     <>
-      <div className="w-full max-w-4xl mx-auto pt-40">
-        <Image src={'/loggedout.svg'} alt="hero image" width={0} height={0} className="h-fit w-fit max-w-[250px] mx-auto  max-sm:max-h-[350px]"/>
+      <div className="h-screen grid grid-cols-1 place-content-center">
+        <div className="w-full">
+          <Image src={'/loggedout.svg'} alt="hero image" width={0} height={0} className="h-full w-full max-w-[450px] mx-auto  max-sm:max-h-[350px]"/>
+        </div>
+        <h1 className="text-center pt-3 text-gray-400">You have been logged out, <Link href={'/login'} className="text-blue-700" >login</Link>.</h1>
       </div>
-      <p className="w-[90%] text-center mx-auto pt-4 font-bold">You have been logged out, <Link href={'/login'} className="text-blue-700" >login</Link>.</p>
     </>
   )
 };
