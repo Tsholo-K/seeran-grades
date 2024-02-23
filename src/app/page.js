@@ -159,16 +159,16 @@ export default function Home() {
           </div>
         </div>
         {/* mobile school registration section */}
-        <div className="md:hidden mx-3">
-          <div className="max-w-[350px] mx-auto ">
-          <Link href={'/pagenotfound'} className="h-fit w-fit">
-            <Benefit heading={'Register School'} paragraph={'free intergration,training and ongoing support to ensure successful implementation and user adoption'}  icon={'register-school-icon'} link={true}/>
-          </Link>
-            <p className="text-sm text-gray-400 text-center pt-3 mb-5">we will get back to you in the next 24 hours</p>
+        <div className="md:hidden mx-3 my-7">
+          <div className="max-w-[350px] mx-auto">
+            <Link href={'/pagenotfound'} className="h-fit w-fit">
+              <Benefit heading={'Register School'} paragraph={'free intergration,training and ongoing support to ensure successful implementation and user adoption'}  icon={'register-school-icon'} link={true}/>
+            </Link>
+            <p className="text-sm text-gray-400 text-center pt-3">we will get back to you in the next 24 hours</p>
           </div>
         </div>
       </div>
-      <hr className="mt-10"></hr>
+      <hr></hr>
       {/* footer */}
       <Footer/>
     </main>
