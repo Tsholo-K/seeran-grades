@@ -31,7 +31,7 @@ const Signin = () => {
                         <Input type={'text'} placeholder={'phone number'} />
                     </div>
                     <Button primary_colour={'black'} secondary_colour={'[#fe5244]'} title={'login'} type={'submit'}/>                    
-                    <p className="text-sm w-full text-center pt-3 text-gray-400">Already have an account? <Link href={'/login'} className=" text-[#66b0f0]">login</Link></p>
+                    <p className="text-sm md:text-base w-full text-center pt-3 text-gray-400">Already have an account? <Link href={'/login'} className=" text-[#66b0f0]">login</Link></p>
                 </form>
             </div>
             <Image priority src={'/signin.svg'} alt="hero image" width={1000} height={1000} className="h-[50%] sm:h-[60%] w-full sm:w-fit absolute bottom-1 left-1"/>

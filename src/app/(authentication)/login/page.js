@@ -31,7 +31,7 @@ const Signin = () => {
               <Input type={'text'} placeholder={'password'} />
             </div>
             <Button primary_colour={'black'} secondary_colour={'[#66b0f0]'} title={'login'} type={'submit'}/>
-            <p className="text-sm w-full text-center pt-3 text-gray-400">Don&apos;t have an account? <Link href={'/signin'} className=" text-[#fe5244] ">signin</Link></p>
+            <p className="text-sm md:text-base w-full text-center pt-3 text-gray-400">Don&apos;t have an account? <Link href={'/signin'} className=" text-[#fe5244] ">signin</Link></p>
           </form>
         </div>
         <Image priority src={'/login.svg'} alt="hero image" width={1000} height={1000} className="h-[50%] sm:h-[60%] w-full sm:w-fit absolute bottom-0 right-1"/>
