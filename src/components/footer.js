@@ -75,7 +75,7 @@ const SocialsColomn = ({Socials}) => {
 export default function Footer() {
     return (
         <div className="w-full flex justify-center bottom-0 border-t-2 border-opacity-70 border-gray-200 py-7 px-7">
-            <div className=" max-w-[1600px] w-full">
+            <div className=" max-w-[1600px] w-full sm:px-7 ">
                 <div className="lg:flex w-full ">
                     <div className="w-full mb-7 max-lg:text-center">
                         <p className="font-bold text-6xl mb-4">seeran</p>
@@ -94,7 +94,7 @@ export default function Footer() {
                         <p className="w-full text-gray-500">the latest news, articles, and updates, sent directly to your inbox.</p>
                     </div>
                     <div className="flex w-full justify-center lg:justify-end">
-                        <input type="text" placeholder="enter your email" className=" max-h-[36px] transition duration-300 ease-in-out bg-none border-2 border-blue-700 hover:border-blue-700 pl-4 lg:pr-28 py-1 rounded-lg"/>
+                        <input type="text" placeholder="enter your email" className=" max-h-[36px] transition duration-300 ease-in-out bg-gray-100 border-2 border-blue-700 hover:border-blue-700 pl-4 lg:pr-28 py-1 rounded-lg"/>
                     </div>
                 </div>
                 <div className="lg:flex px-5">
