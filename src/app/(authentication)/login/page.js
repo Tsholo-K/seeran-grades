@@ -4,6 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
+{/* components */}
+import NavigationBar from "@/components/navigationbar";
+
+
 const Signin = () => {
 
     const router = useRouter()

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 
 // dummy data
-import data from '@/app/(menus)/dummydata.json';
+import data from '@/app/(dashboards)/dummydata.json'
 
 const MenuLink = ({ menu, info }) => {
   return (

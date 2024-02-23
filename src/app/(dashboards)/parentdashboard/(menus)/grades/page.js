@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // dummy data
-import data from '@/app/(menus)/dummydata.json'
+import data from '@/app/(dashboards)/dummydata.json'
 
 
 const SubmittedBy = ({ student_id }) => {
