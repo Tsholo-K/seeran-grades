@@ -29,7 +29,7 @@ const Benefit = ({ icon, heading, paragraph, link=false }) => {
   return(
     <div className="h-full w-full grid grid-cols-1 place-content-end">
       <div className={`grid h-[270px] grid-cols-1 w-full place-content-center`}>
-        <div className="h-full w-full drop-shadow-md bg-white cursor-pointer rounded-xl ">
+        <div className="h-full w-full drop-shadow-md bg-white hover hover:drop-shadow-2xl rounded-xl ">
           <div className="w-full h-[100px] grid grid-cols-1 place-items-center py-3 relative">
             {
               link
@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <main className="bg-gray-100">
       {/* navigation bar */}
-      <NavigationBar/>
+      <NavigationBar left_link={false} left_logo_small={''} left_logo_large={'text'} right_link={true} right_link_url={'/login'} right_text={`login`}/>
       {/* body */}
       <div className="">
         {/* landing section */}
@@ -117,7 +117,7 @@ export default function Home() {
           <div className="h-[600px]">
             <div className="max-w-6xl mx-auto h-full w-full relative">
               {/* badge */}
-              <div className="absolute flex border cursor-pointer rounded-lg bg-white py-1 px-3 left-4 top-3 hover:opacity-80">
+              <div className="absolute flex border rounded-lg bg-white py-1 px-3 left-4 top-3 hover:opacity-80">
                 <Image src={'/benefits-icon.gif'} alt="benefits" width={30} height={30} />
                 <p className="grid grid-cols-1 place-content-center px-3 font-bold">Benefits</p>
               </div>
@@ -168,7 +168,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <hr></hr>
+      <hr className="mt-10"></hr>
       {/* footer */}
       <Footer/>
     </main>

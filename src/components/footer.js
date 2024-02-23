@@ -94,7 +94,7 @@ export default function Footer() {
                         <p className="w-full text-gray-500">the latest news, articles, and updates, sent directly to your inbox.</p>
                     </div>
                     <div className="flex w-full px-5 justify-center lg:justify-end max-w-[400px] mx-auto">
-                        <div className="flex max-h-[40px] w-full relative">
+                        <div className="flex max-h-[50px] w-full relative">
                             <input type="text" placeholder="enter your email" className="w-full transition-all duration-300 ease-in-out bg-gray-100 border-2 border-[#66b0f0] hover:border-[#66b0f0] focus:outline-none pl-4 lg:pr-28 py-1 rounded-md lg:hover:scale-[1.02] z-[1]"/>
                             <Image src={'/subscribe-to-newsletter.svg'} alt="subscribe-to-newsletter" width={0} height={0} className="h-full w-fit absolute py-[7px] right-[12px] cursor-pointer lg:hover:scale-[1.2] transition-all duration-500 ease-in-out z-[2]"/>
                         </div>
