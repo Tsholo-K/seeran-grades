@@ -29,7 +29,7 @@ const Benefit = ({ icon, heading, paragraph, link=false }) => {
   return(
     <div className="h-full w-full grid grid-cols-1 place-content-end">
       <div className={`grid h-[270px] grid-cols-1 w-full place-content-center`}>
-        <div className="h-full w-full drop-shadow-md bg-white hover hover:drop-shadow-2xl rounded-xl ">
+        <div className="h-full w-full drop-shadow-md bg-white hover md:hover:drop-shadow-2xl rounded-xl ">
           <div className="w-full h-[100px] grid grid-cols-1 place-items-center py-3 relative">
             {
               link
