@@ -4,6 +4,8 @@ import Link from "next/link";
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
+// components
+import Crumbs from "@/components/crumbs";
 
 const ChildMenu = ({ child, bottom_border=false }) => {
   return (
@@ -28,12 +30,9 @@ const Family = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       {/* back link */}
-      <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100">
-        <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
-      </div>
-      {/* page heading */}
+        <Crumbs title={'dashboard'} url={`parentdashboard`} hide={true}/>       {/* page heading */}
       <div className="pb-16 " >
-        <h1 className="w-full text-center text-4xl mb-3">Family</h1>
+        <h1 className="w-full text-center text-4xl mb-3 lg:text-8xl">Family</h1>
         <p className=" text-sm w-[90%] text-gray-400 text-center mx-auto pt-2">these are all the children linked to your account</p>
       </div>
       {/* children menu */}

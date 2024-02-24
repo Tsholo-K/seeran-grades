@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// components
+import Crumbs from "@/components/crumbs";
+
 
 const InputArea = ({ title }) => {
   return (
@@ -23,7 +26,7 @@ const PasswordChange = () => {
       </div>
       {/* page heading */}
       <div>
-        <h1 className="w-full text-center pb-24 text-4xl">Password<br></br> Change</h1>
+        <h1 className="w-full text-center pb-24 text-4xl lg:text-8xl">Password<br></br> Change</h1>
       </div>
       {/* input areas */}
       <div className="relative mb-20">

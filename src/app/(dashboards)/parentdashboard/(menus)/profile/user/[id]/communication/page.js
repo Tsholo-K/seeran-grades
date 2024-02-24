@@ -9,6 +9,10 @@ import { useParams } from "next/navigation";
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
+// components
+import Crumbs from "@/components/crumbs";
+import Button from "@/components/button";
+
 
 const Menus = {
   sms: {
@@ -50,7 +54,6 @@ const ToggleMenu = ({ menu, checked }) => {
   )
 };
 
-
 const Communication = () => {
 
   const searchParams = useParams();
@@ -65,20 +68,21 @@ const Communication = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
-        <Link href={'/profile/user/1928742173'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>id</Link>
-      </div>
-      {/* page heading */}
+      <Crumbs title={'ID'} url={`parentdashboard/profile/user/1928742173`} hide={false}/>       {/* page heading */}
       <div>
-        <h1 className="w-full text-center pb-24 text-4xl">Communication</h1>
+        <h1 className="w-full text-center text-4xl pb-3 lg:text-8xl">Communication</h1>
+        <p className="text-sm text-gray-400 mx-auto pb-24 text-center">preffered communication</p>
       </div>
       {/* Sms toggle */}
       <ToggleMenu menu={Menus.sms} checked={sms}/>
       {/* email toggle */}
       <ToggleMenu menu={Menus.email} checked={email}/>
-      <p className="text-sm text-gray-400 mx-auto text-center">preffered communication</p>
+      
       {/* save button */}
-      <button type="submit" className="w-full mt-40 border border-white rounded-xl bg-black active:bg-blue-700 text-white lg:hover:bg-blue-700 focus:bg-blue-700 lg:hover:scale-[1.01] transition-all duration-500 py-1">save</button>
+      <div className=" pt-16">
+        <Button primary_colour={'black'} secondary_colour={'[#66b0f0]'} title={'save'} type={'submit'}/>
+      </div>
+      
     </div>
   )
 };

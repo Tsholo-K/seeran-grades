@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// components
+import Crumbs from "@/components/crumbs";
+
 
 const InputArea = ({ title }) => {
   return (
@@ -23,7 +26,7 @@ const PhoneNumber = () => {
       </div>
       {/* page heading */}
       <div>
-        <h1 className="w-full text-center pb-24 text-4xl">Update Phone Number</h1>
+        <h1 className="w-full text-center pb-24 text-4xl lg:text-8xl">Update Phone Number</h1>
       </div>
       {/* input area */}
       <div className="relative mb-32">

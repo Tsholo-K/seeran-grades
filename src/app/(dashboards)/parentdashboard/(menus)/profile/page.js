@@ -3,18 +3,18 @@ import Link from "next/link";
 
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
-
+import Crumbs from "@/components/crumbs";
 
 const MenuLinks = {
   personalinformation : {
     title: 'Personal Information',
     icon: 'book-lock',
-    url: 'profile/user/1928742173',
+    url: 'parentdashboard/profile/user/1928742173',
   },
   signinandsecurity : {
     title: 'Sign-in And Security',
     icon: 'fingerprint',
-    url: 'profile/security',
+    url: 'parentdashboard/profile/security',
   },
   signout : {
     title: 'Sign Out',
@@ -54,14 +54,10 @@ const ProfileSettings = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
-        <Link href={'/parentdashboard'} className="flex w-full text-blue-700">
-          <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard
-        </Link>
-      </div>
+      <Crumbs title={'dashboard'} url={`parentdashboard`} hide={true}/>
       {/* page heading */}
       <div>
-        <h1 className="w-full text-center pb-5 text-4xl">Profile Settings</h1>
+        <h1 className="w-full text-center pb-5 text-4xl lg:text-8xl">Profile Settings</h1>
       </div>
       {/* profile info section */}
       <ProfileInfo/>

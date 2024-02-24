@@ -5,9 +5,12 @@ import Link from "next/link";
 
 import { useParams } from "next/navigation";
 
-
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
+
+// components
+import Crumbs from "@/components/crumbs";
+
 
 
 const Menu = {
@@ -50,7 +53,6 @@ const MenuLink = ({ Menu, User_info }) => {
   )
 }
 
-
 const ID = () => {
 
   const searchParams = useParams();
@@ -63,12 +65,10 @@ const ID = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
-        <Link href={'/profile'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>profile</Link>
-      </div>
+      <Crumbs title={'profile settings'} url={`parentdashboard/profile`} hide={false}/>
       {/* page heading */}
       <div>
-        <h1 className="w-full text-center pb-20 text-4xl">ID</h1>
+        <h1 className="w-full text-center pb-20 text-4xl lg:text-8xl">ID</h1>
       </div>
       {/* personal infomation */}
       <div className="rounded-xl bg-white">
@@ -83,7 +83,7 @@ const ID = () => {
         <MenuLink Menu={Menu.children} User_info={parent_user.children.length}  />
       </div>
       {/* communication preferance */}
-      <Link href={'/profile/user/1928742173/communication'} className="rounded-xl bg-white mt-20">
+      <Link href={'/parentdashboard/profile/user/1928742173/communication'} className="rounded-xl bg-white mt-20">
         <MenuLink Menu={Menu.communication}/>
       </Link>
     </div>

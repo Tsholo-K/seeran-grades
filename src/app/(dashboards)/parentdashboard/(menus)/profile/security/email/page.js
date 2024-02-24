@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// components
+import Crumbs from "@/components/crumbs";
+
 
 const InputArea = ({ title }) => {
   return (
@@ -18,12 +21,13 @@ const Email = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
+      <Crumbs title={''} url={'parentdashboard/profile/security'}/>
       <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
-        <Link href={'/profile/security'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>profile</Link>
+        <Link href={''} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>profile</Link>
       </div>
       {/* page heading */}
       <div>
-        <h1 className="w-full text-center pb-24 text-4xl">Update Email</h1>
+        <h1 className="w-full text-center pb-24 text-4xl lg:text-8xl">Update Email</h1>
       </div>
       {/* input area */}
       <div className="relative mb-32">

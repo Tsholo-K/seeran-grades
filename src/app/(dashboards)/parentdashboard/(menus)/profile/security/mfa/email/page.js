@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// components
+import Crumbs from "@/components/crumbs";
+
 
 const InputArea = ({ title }) => {
   return (
@@ -23,7 +26,7 @@ const EmailAuthentication = () => {
       </div>
       {/* page heading */}
       <div>
-        <h1 className="w-full text-center pb-32 text-4xl">Multi-Factor<br></br> Authentication</h1>
+        <h1 className="w-full text-center pb-32 text-4xl lg:text-8xl">Multi-Factor<br></br> Authentication</h1>
       </div>
       {/* input area */}
       <InputArea title='One Time Passcode'/>

@@ -35,10 +35,10 @@ const Section = ({ left_logo_large, left_logo_small }) => {
   )
 }
 
-export default function NavigationBar({ left_link=false, left_logo_small, left_logo_large, right_link=false, right_link_url, right_text }) {
+export default function NavigationBar({ left_link=false, left_logo_small, left_logo_large, right_link=false, right_link_url, right_text, max=true }) {
   return (
     <div className="fixed flex justify-center w-full py-3 bg-gray-100 z-[3]">
-        <div className="flex w-full px-4 sm:px-7 md:px-10 mx-auto max-w-[1700px]">
+        <div className={`flex w-full px-4 ${ max ? 'sm:px-7 md:px-10 mx-auto max-w-[1700px]' : null }`}>
           {/* left logo section */}
           <div className="w-full">
             {

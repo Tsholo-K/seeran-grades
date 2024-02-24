@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
-
+import Crumbs from "@/components/crumbs";
 
 const Menu = {
   email : {
@@ -43,7 +43,7 @@ const MultiFactorAuthentication = () => {
       </div>
       {/* page heading */}
       <div>
-        <h1 className="w-full text-center pb-32 text-4xl">Multi-Factor<br></br> Authentication</h1>
+        <h1 className="w-full text-center pb-32 text-4xl lg:text-8xl">Multi-Factor<br></br> Authentication</h1>
       </div>
       <div className="relative">
         {/* phone number */}
