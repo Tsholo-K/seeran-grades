@@ -14,7 +14,7 @@ const SubmittedBy = ({ student_id }) => {
     });
 
     return (
-        <p className="lg:text-lg text-sm pl-2 text-gray-500">{submitter.name.charAt(0).toUpperCase() + submitter.name.slice(1)} {submitter.surname.charAt(0).toUpperCase() + submitter.surname.slice(1)}</p>
+        <p className="lg:text-lg text-sm pl-2 text-black">{submitter.name.charAt(0).toUpperCase() + submitter.name.slice(1)} {submitter.surname.charAt(0).toUpperCase() + submitter.surname.slice(1)}</p>
     )
 };
 
@@ -65,7 +65,7 @@ const Transcripts = ({ transcripts }) => {
                                 <div className="flex pl-3 pt-3">
                                     <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 lg:h-6 lg:w-6"/>
                                     <div className="grid grid-cols-1 place-content-center">
-                                        <p className="text-sm pl-2 text-gray-500 lg:text-base">released : {transcript.date_released}</p>
+                                        <p className="text-sm pl-2 text-gray-500 lg:text-base">results released : {transcript.date_released}</p>
                                     </div>
                                 </div>
                             </div>

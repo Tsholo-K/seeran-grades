@@ -12,17 +12,8 @@ import PageHeading from "@/components/pageheading";
 import Subject from "@/components/subject";
 import Menu from "@/components/menu";
 import Score from "@/components/score";
+import MultipleMenu from "@/components/multiplemenu";
  
-
-const MenuLink = ({ menu, info }) => {
-  return (
-    <div className="relative flex py-3 gap-1 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
-      <p>{menu}</p>
-      <p className="text-gray-400 absolute right-4">{info}</p>
-    </div>
-  )
-};
-
 const Transcript = () => {
 
   const params = useParams();
@@ -42,6 +33,21 @@ const Transcript = () => {
     }
   })
 
+  const transcript_info = [
+    {
+      title: 'Assessment',
+      info: transcript.assessment
+    },
+    {
+      title: 'Grade',
+      info: `${transcript.score} / ${transcript.total}`
+    },
+    {
+      title: 'Date Submitted',
+      info: transcript.date_submitted
+    }
+  ]
+
   return (
     <>
       <div className="w-full relative grid grid-cols-1 place-content-center ">
@@ -56,13 +62,7 @@ const Transcript = () => {
         {/* subject */}
         <Subject subject={transcript.subject} icon={transcript.icon} submitter={transcript.submitted_by}/>
         {/* info */}
-        <div className="rounded-xl bg-white mb-8">
-          <MenuLink menu={'Assessment'} info={transcript.assessment}/>
-          <hr className="mx-5"></hr>
-          <MenuLink menu={'Grade'} info={`${transcript.score} / ${transcript.total}`}/>
-          <hr className="mx-5"></hr>
-          <MenuLink menu={'Date Submitted'} info={transcript.date_submitted}/>
-        </div>
+        <MultipleMenu menu={transcript_info} />
         {/* teacher */}
         <div className="relative pt-7">
           <Link href={'/teachers/teacher'} className="w-full text-end pr-2 text-blue-700 absolute top-0 right-4">message</Link>
