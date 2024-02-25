@@ -54,7 +54,7 @@ const Transcripts = ({ transcripts }) => {
                             <div className="relative rounded-xl bg-white py-3" >
                                 <TranscriptScore score={transcript.score} total={transcript.total}/>
                                 <div>
-                                <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{transcript.assessment}</p>
+                                    <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{transcript.assessment}</p>
                                 </div>
                                 <div className="flex justify-center py-2 gap-3 px-3 w-full cursor-pointer md:hover:text-blue-700">
                                     <Image priority src={`/${transcript.icon}.svg`} alt="profile icon" width={30} height={30} className="h-8 w-8 lg:h-12 lg:w-12" />

@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 {/* components */}
-import SingleMenuLink from "@/components/signlemenulink";
 import MultipleMenuLinks from "@/components/multiplemenulinks";
 
 

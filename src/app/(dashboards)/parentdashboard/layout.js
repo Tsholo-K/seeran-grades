@@ -3,71 +3,69 @@ import Image from "next/image";
 
 {/* components */}
 import NavigationBar from "@/components/navigationbar";
+import MultipleMenuLinks from "@/components/multiplemenulinks";
+import SingleMenuLink from "@/components/signlemenulink";
 
 
-const menu = {
-  grades : {
-    title: 'Grades',
-    icon: 'graduation-cap',
-    url: '/parentdashboard/grades',
+const menuitems = [
+  {
+    section : [
+      {
+        title: 'Grades',
+        icon: 'graduation-cap',
+        url: '/parentdashboard/grades',
+      },
+      {
+        title: 'Assessments',
+        icon: 'calendar-clock',
+        url: '/parentdashboard/assessments',
+      },
+      {
+        title: 'Achievements',
+        icon: 'award',
+        url: '/parentdashboard/achievements',
+      }
+    ]
   },
-  assessments : {
-    title: 'Assessments',
-    icon: 'calendar-clock',
-    url: '/parentdashboard/assessments',
+  {
+    section : [
+      {
+        title: 'Teachers',
+        icon: 'teacher',
+        url: '/parentdashboard/teachers',
+      },
+      {
+        title: 'Activities',
+        icon: 'eye',
+        url: '/parentdashboard/activities',
+      },
+      {
+        title: 'Attendance',
+        icon: 'calendar-days',
+        url: '/parentdashboard/attendance',
+      }
+    ]
   },
-  achievements : {
-    title: 'Achievements',
-    icon: 'award',
-    url: '/parentdashboard/achievements',
+  {
+    section : [
+      {
+        title: 'Fees',
+        icon: 'wallet',
+        url: '/parentdashboard/fees',
+      },
+      {
+        title: 'Notifications',
+        icon: 'bell-ring',
+        url: '/parentdashboard/notifications',
+      },
+      {
+        title: 'Help Desk',
+        icon: 'admin',
+        url: '/parentdashboard/helpdesk',
+      }
+    ]
   },
-  teachers: {
-    title: 'Teachers',
-    icon: 'teacher',
-    url: '/parentdashboard/teachers',
-  },
-  notifications: {
-    title: 'Notifications',
-    icon: 'bell-ring',
-    url: '/parentdashboard/notifications',
-  },
-  activities : {
-    title: 'Activities',
-    icon: 'eye',
-    url: '/parentdashboard/activities',
-  },
-  attendance: {
-    title: 'Attendance',
-    icon: 'calendar-days',
-    url: '/parentdashboard/attendance',
-  },
-  fees: {
-    title: 'Fees',
-    icon: 'wallet',
-    url: '/parentdashboard/fees',
-  },
-  helpdesk: {
-    title: 'Help Desk',
-    icon: 'admin',
-    url: '/parentdashboard/helpdesk',
-  },
-  settings: {
-    title: 'Settings',
-    icon: 'settings',
-    url: '/parentdashboard/settings',
-  },
-}
-
-const SingleMenu = ({Menu}) => {
-  return (
-    <Link href={`${Menu.url}`} className="relative flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
-      <p className=" absolute right-12 text-blue-700 font-extrabold"></p>
-      <Image src={`/${Menu.icon}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10" />
-      <p className={`w-full`}>{Menu.title}</p>
-      <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
-    </Link>
-  )
-}
+]
 
 export default function ParentDashboardLayout({ children }) {
   return (
@@ -105,34 +103,16 @@ export default function ParentDashboardLayout({ children }) {
                       </Link>
                     </div>
                   </div>
-                  {/* children section */}
-                  <div className="rounded-xl my-7 w-full bg-white">
-                    <SingleMenu Menu={menu.grades}/>
-                    <hr className="mx-5"></hr>
-                    <SingleMenu Menu={menu.assessments}/>
-                    <hr className="mx-5"></hr>
-                    <SingleMenu Menu={menu.achievements}/>
-                  </div>
-                  {/* notifications section */}
-                  <div className="rounded-xl w-full my-7 bg-white">
-                    <SingleMenu Menu={menu.teachers}/>
-                    
-                    <hr className="mx-5"></hr>
-                    <SingleMenu Menu={menu.activities}/>
-                    <hr className="mx-5"></hr>
-                    <SingleMenu Menu={menu.attendance}/>
-                  </div>
-                  {/* help section */}
-                  <div className="rounded-xl w-full my-7 bg-white">
-                    <SingleMenu Menu={menu.fees}/>
-                    <hr className="mx-5"></hr>
-                    <SingleMenu Menu={menu.notifications}/>
-                    <hr className="mx-5"></hr>
-                    <SingleMenu Menu={menu.helpdesk}/>
-                  </div>
+                  {
+                    menuitems.map( ( item,index ) => (
+                      <>
+                        <MultipleMenuLinks key={index} menu={item} />
+                      </>
+                    ))
+                  }
                   {/* settings section */}
-                  <div className="rounded-xl w-full bg-white xl:absolute bottom-3">
-                    <SingleMenu Menu={menu.settings}/>
+                  <div className="w-full absolute bottom-3">
+                    <SingleMenuLink title={'Settings'} url={'/parentdashboard/settings'} border={true} />
                   </div>
                 </div>
               </div>

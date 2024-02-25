@@ -6,16 +6,16 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 const SubmittedBy = ({ student_id }) => {
 
-    let submitter = ''
+    let submitter 
     data.students.forEach( (student) => {
       if ( student.student_number === student_id ) {
         submitter = student
       }
     });
     return (
-      <p className="w-full text-center pt-1 text-sm text-gray-400">submitted by : {submitter.name.charAt(0).toUpperCase() + submitter.name.slice(1)} {submitter.surname.charAt(0).toUpperCase() + submitter.surname.slice(1)}</p>
+      <p className="w-full text-center pt-2 text-sm text-gray-400">For {submitter.name.charAt(0).toUpperCase() + submitter.name.slice(1)} {submitter.surname.charAt(0).toUpperCase() + submitter.surname.slice(1)}</p>
     )
-  }
+}
   
 const Subject = ({ subject, icon, submitter }) => {
     return (
