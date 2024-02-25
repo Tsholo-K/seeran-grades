@@ -100,7 +100,7 @@ export default function ParentDashboardLandingPage() {
                 </>
               ))
             }
-            <div className="absolute bottom-0 w-full">
+            <div className="absolute bottom-3 w-full">
               <SingleMenuLink title={'Settings'} icon={'settings'} url={'/parentdashboard/settings'} border={true} colour={''}/>
             </div>
           </div>
