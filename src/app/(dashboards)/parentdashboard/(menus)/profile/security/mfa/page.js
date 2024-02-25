@@ -6,6 +6,8 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 //components
 import Crumbs from "@/components/crumbs";
+import PageHeading from "@/components/pageheading";
+import SingleMenuLink from "@/components/signlemenulink";
 
 
 const Menu = {
@@ -13,7 +15,7 @@ const Menu = {
     title: 'Email',
     icon: false,
     info: 'email@example.com',
-    url : '/parentdashboard/profile/security/mfa/email',
+    url : '',
   },
   phonenumber : {
     title: 'Phone number',
@@ -39,22 +41,14 @@ const MultiFactorAuthentication = () => {
       {/* back link */}
       <Crumbs url={'parentdashboard/profile/security'} title={'security'}/>
       {/* page heading */}
-      <div>
-        <h1 className="w-full text-center pb-32 text-4xl lg:text-8xl">Multi-Factor<br></br> Authentication</h1>
-      </div>
-      <div className="relative">
-        {/* phone number */}
-        <p className="text-sm text-gray-400 pl-2 pb-1">phone number</p>
-        <div className="rounded-xl bg-white">
-          <MenuLink Menu={Menu.phonenumber}/>
-        </div>
-        {/* email */}
-        <p className="text-sm text-gray-400 pl-2 mt-5 pb-1">email</p>
-        <div className="rounded-xl bg-white">
-          <MenuLink Menu={Menu.email}/>
-        </div>
-      </div>
-      <p className="text-sm text-gray-400 mx-auto pt-1">select one of the methods above</p>
+      <PageHeading title={'Multi-Factor Authentication'} />
+      {/* phone number */}
+      <p className="text-sm text-gray-400 pl-2 pb-1">phone number</p>
+      <SingleMenuLink title={'Phone number'} url={'/parentdashboard/profile/security/mfa/phonenumber'} border={true}/>
+      {/* email */}
+      <p className="text-sm text-gray-400 pl-2 mt-5 pb-1">email</p>
+      <SingleMenuLink title={'Email'} url={'/parentdashboard/profile/security/mfa/email'} border={true}/>
+      <p className="text-sm text-gray-400 mx-auto pt-3">select one of the methods above</p>
     </div>
   )
 };

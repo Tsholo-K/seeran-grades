@@ -74,7 +74,7 @@ const Communication = () => {
       {/* email toggle */}
       <ToggleMenu menu={menus.email} checked={email}/>
       {/* save button */}
-      <div className=" pt-32">
+      <div className="pt-32">
         <Button primary_colour={'black'} secondary_colour={'[#66b0f0]'} title={'save'} type={'submit'}/>
       </div>
     </div>

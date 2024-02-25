@@ -52,7 +52,7 @@ const ID = () => {
       {/* personal infomation */}
       <MultipleMenu menu={menus}/>
       {/* communication preferance */}
-      <div className="text-red-600">
+      <div className="text-red-600 pt-16">
         <SingleMenuLink title={'Communication Prefferance'} icon={''} url={'/parentdashboard/profile/user/1928742173/communication'} border={true}/>
       </div>
     </div>

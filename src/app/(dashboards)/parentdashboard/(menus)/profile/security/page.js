@@ -1,53 +1,43 @@
-import Image from "next/image";
-import Link from "next/link";
-
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/pageheading";
-import MultipleMenu from "@/components/multiplemenu";
+import SingleMenuLink from "@/components/signlemenulink";
 import Menu from "@/components/menu";
+import Link from 'next/link';
 
 
 const Security = () => {
 
   const user = data.parent
 
-  const userdata = [
-    {
-      title: 'email and phone number',
-      info : `${user.email}`,
-      icon: true
-    },
-    {
-      title: 'Phone Number',
-      info : `${user.phone_number}`,
-      icon: true
-    }
-  ]
-
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
       <Crumbs url={'parentdashboard/profile'} title={'profile settings'}/>
       {/* page heading */}
-      <PageHeading title={'Sign-in and Security'} />
+      <PageHeading title={'Sign-in and Security'} subheading={'these can be used to sign-in into your account'} />
       {/* email and phone number */}
-      <p className="text-center text-sm text-gray-400">these can be used to sign-in into your account</p>
-      <MultipleMenu menu={userdata} />
+      <div className="rounded-xl bg-white mt-20 ">
+        <Link href={'/parentdashboard/profile/security/email'}>
+          <Menu title={'Email'} icon={true} info={`${user.email}`} />
+        </Link>
+        <hr className="mx-5"></hr>
+        <Link href={'/parentdashboard/profile/security/phonenumber'}>
+          <Menu title={'Phone Number'} icon={true} info={`${user.phone_number}`}/>
+        </Link>
+      </div>
       {/* password & mfa */}
       <div className="rounded-xl bg-white mt-20 ">
         {/* two factor authentication */}
-        <Link href={'/parentdashboard/profile/security/mfa'} >
-          <Menu title={'Two Factor Authentication'} icon={true}/>
-        </Link>
+        <SingleMenuLink title={'Two Factor Authentication'} url={'/parentdashboard/profile/security/mfa'} />
         <hr className="mx-5"></hr>
         {/* password change */}
-        <Link href={'/parentdashboard/profile/security/password'} className="text-[#fe5244]">
-          <Menu title={'Change Password'} icon={true}/>
-        </Link>
+        <div className="text-red-600">
+          <SingleMenuLink title={'Change Password'} url={'/parentdashboard/profile/security/password'} />
+        </div>
       </div>
     </div>
   )

@@ -64,6 +64,15 @@ const menuitems = [
       }
     ]
   },
+  {
+    section : [
+      {
+        title: 'Settings',
+        icon: 'settings',
+        url : '/parentdashboard/settings'
+      }
+    ]
+  }
 ]
 
 export default function ParentDashboardLandingPage() {
@@ -71,7 +80,7 @@ export default function ParentDashboardLandingPage() {
       <>
         <div className="h-screen relative">
           {/* parent dashboard for mobile */}
-          <div className="w-full pt-16 lg:hidden block">
+          <div className="w-full pt-16 pb-7 lg:hidden block">
             {/* accounts section */}
             <div className="rounded-xl bg-white ">
               <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
@@ -100,9 +109,6 @@ export default function ParentDashboardLandingPage() {
                 </>
               ))
             }
-            <div className="absolute bottom-3 w-full">
-              <SingleMenuLink title={'Settings'} icon={'settings'} url={'/parentdashboard/settings'} border={true} colour={''}/>
-            </div>
           </div>
           {/* desktop view */}
           <div className="w-full hidden lg:block pt-16">
