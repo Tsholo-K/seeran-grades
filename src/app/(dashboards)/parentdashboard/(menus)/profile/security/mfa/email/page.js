@@ -16,14 +16,11 @@ const InputArea = ({ title }) => {
   )
 };
 
-
 const EmailAuthentication = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
-        <Link href={'/profile/security/mfa'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>security</Link>
-      </div>
+      <Crumbs url={'parentdashboard/profile/security/mfa'} title={'mfa'}/>
       {/* page heading */}
       <div>
         <h1 className="w-full text-center pb-32 text-4xl lg:text-8xl">Multi-Factor<br></br> Authentication</h1>

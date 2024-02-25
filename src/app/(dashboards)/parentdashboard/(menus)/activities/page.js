@@ -4,6 +4,9 @@ import Link from "next/link";
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
+// components
+import Crumbs from "@/components/crumbs";
+
 
 const Student = ({ student_id }) => {
 
@@ -28,7 +31,7 @@ const Activity = ({ activity }) => {
         <Image src={'/cctv.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
         <Student student_id={activity.student}/>
       </div>
-      <Link href={`/activities/${activity.id}`}>
+      <Link href={`/parentdashboard/activities/${activity.id}`}>
         <div className="rounded-xl bg-white py-1">
           <div>
             <p className="text-sm text-gray-500 pt-1 w-full text-center">{activity.activity}</p>
@@ -52,9 +55,7 @@ const Achievements = () => {
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
-      <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100 z-[2]">
-        <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
-      </div>
+    <Crumbs title={'dashboard'} url={'parentdashboard'} hide={true}/>
       <div className="z-[1]">
         <div className="pb-10 ">
             <h1 className="w-full text-center text-4xl">Logs</h1>

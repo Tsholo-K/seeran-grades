@@ -7,6 +7,10 @@ import { useParams } from "next/navigation";
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
+// components 
+import Crumbs from "@/components/crumbs";
+
+
 const MenuLink = ({ menu, info }) => {
   return (
     <div className="relative flex py-3 gap-1 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
@@ -65,11 +69,7 @@ const Award = () => {
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100 z-[2]">
-        <Link href={'/achievements'} className="flex w-full text-blue-700">
-          <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>achievements
-        </Link>
-      </div>
+      <Crumbs url={`parentdashboard/achievements`} title={`achievements`}/>
       <div className="z-[1]">
         {/* page heading */}
         <div>

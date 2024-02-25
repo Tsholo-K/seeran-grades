@@ -7,6 +7,8 @@ import { useParams } from "next/navigation";
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
+// components
+import Crumbs from "@/components/crumbs";
 
 const RemoveChild = () => {
 
@@ -23,8 +25,9 @@ const RemoveChild = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
+      <Crumbs url={`parentdashboard/family/${student.student_number}`} title={'child id'}/>
       <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
-        <Link href={`/family/${student.student_number}`} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>child id</Link>
+        <Link href={`/`} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/></Link>
       </div>
       {/* page heading */}
       <div>

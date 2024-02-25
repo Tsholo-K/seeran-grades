@@ -6,11 +6,13 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
+import PageHeading from "@/components/pageheading";
+
 
 const ChildMenu = ({ child, bottom_border=false }) => {
   return (
     <>
-      <Link href={`/family/${child.student_number}`} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+      <Link href={`/parentdashboard/family/${child.student_number}`} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
         <Image priority src={`/${child.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
         <div className="pt-3 w-full">
             <p className="font-bold">{child.name.charAt(0).toUpperCase() + child.name.slice(1)} {child.surname.charAt(0).toUpperCase() + child.surname.slice(1)}</p>
@@ -25,16 +27,13 @@ const ChildMenu = ({ child, bottom_border=false }) => {
   )
 }
 
-
 const Family = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       {/* back link */}
-        <Crumbs title={'dashboard'} url={`parentdashboard`} hide={true}/>       {/* page heading */}
-      <div className="pb-16 " >
-        <h1 className="w-full text-center text-4xl mb-3 lg:text-8xl">Family</h1>
-        <p className=" text-sm w-[90%] text-gray-400 text-center mx-auto pt-2">these are all the children linked to your account</p>
-      </div>
+      <Crumbs title={'dashboard'} url={`parentdashboard`} hide={true}/>
+      {/* page heading */}
+      <PageHeading title={'Family'} subheading={'these are all the children linked to your account'}/>
       {/* children menu */}
       <div className="rounded-xl bg-white">
         { data.students.map( (child, index) => (
@@ -48,7 +47,6 @@ const Family = () => {
         ))
         }
       </div>
-      
     </div>
   )
 };

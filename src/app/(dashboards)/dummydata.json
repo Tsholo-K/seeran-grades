@@ -12,7 +12,7 @@
         "children": ["220212349","1289374","9812734"],
         "phone_number":"0711740824",
         "email": "seeran.dion@icloud.com",
-        "img" : "profile-icon-1.svg",
+        "img" : "profile-icon-1",
         "sms_communication" : true,
         "email_communication" : false,
         "mfa_enabled" : "Off"

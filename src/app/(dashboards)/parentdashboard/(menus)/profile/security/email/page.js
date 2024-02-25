@@ -21,7 +21,7 @@ const Email = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <Crumbs title={''} url={'parentdashboard/profile/security'}/>
+      <Crumbs title={'security'} url={'parentdashboard/profile/security'}/>
       <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
         <Link href={''} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>profile</Link>
       </div>

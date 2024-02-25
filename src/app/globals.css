@@ -110,7 +110,7 @@ input:checked + .toggle-bg:after {
     @apply border-white;
 }
 input:checked + .toggle-bg {
-    @apply bg-blue-600 border-blue-600;
+    @apply bg-[#66b0f0] border-[#66b0f0];
 }
 
 /* end of toggle switches */

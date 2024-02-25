@@ -1,8 +1,5 @@
 'use client'
 
-import Image from "next/image";
-import Link from "next/link";
-
 import { useState } from "react";
 import { useParams } from "next/navigation";
 
@@ -12,9 +9,10 @@ import data from '@/app/(dashboards)/dummydata.json'
 // components
 import Crumbs from "@/components/crumbs";
 import Button from "@/components/button";
+import PageHeading from "@/components/pageheading";
 
 
-const Menus = {
+const menus = {
   sms: {
     toggle: '1',
     title: 'Sms'
@@ -68,21 +66,17 @@ const Communication = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <Crumbs title={'ID'} url={`parentdashboard/profile/user/1928742173`} hide={false}/>       {/* page heading */}
-      <div>
-        <h1 className="w-full text-center text-4xl pb-3 lg:text-8xl">Communication</h1>
-        <p className="text-sm text-gray-400 mx-auto pb-24 text-center">preffered communication</p>
-      </div>
+      <Crumbs title={'ID'} url={`parentdashboard/profile/user/1928742173`} hide={false}/>
+      {/* page heading */}
+      <PageHeading title={'Communication'} subheading={'preffered communication'} />
       {/* Sms toggle */}
-      <ToggleMenu menu={Menus.sms} checked={sms}/>
+      <ToggleMenu menu={menus.sms} checked={sms}/>
       {/* email toggle */}
-      <ToggleMenu menu={Menus.email} checked={email}/>
-      
+      <ToggleMenu menu={menus.email} checked={email}/>
       {/* save button */}
-      <div className=" pt-16">
+      <div className=" pt-32">
         <Button primary_colour={'black'} secondary_colour={'[#66b0f0]'} title={'save'} type={'submit'}/>
       </div>
-      
     </div>
   )
 };

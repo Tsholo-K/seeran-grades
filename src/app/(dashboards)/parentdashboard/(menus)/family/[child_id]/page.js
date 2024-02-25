@@ -7,6 +7,8 @@ import { useParams } from "next/navigation";
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
+// components
+import Crumbs from "@/components/crumbs";
 
 const Menus = {
   name : {
@@ -48,7 +50,6 @@ const MenuLink = ({ Menu, student_info=null }) => {
   )
 }
 
-
 const ChildId = () => {
 
   const params = useParams();
@@ -64,9 +65,7 @@ const ChildId = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
-        <Link href={'/family'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>family</Link>
-      </div>
+      <Crumbs url={`parentdashboard/family`} title={'family'}/>
       {/* page heading */}
       <div>
         <h1 className="w-full text-center pb-3 text-4xl">ID</h1>
@@ -87,7 +86,7 @@ const ChildId = () => {
         <MenuLink Menu={Menus.studentnumber} student_info={student.student_number}/>
       </div>
       {/* remove child */}
-      <Link href={`/family/${student.student_number}/remove`} className="rounded-xl bg-white text-red-500 mt-10">
+      <Link href={`/parentdashboard/family/${student.student_number}/remove`} className="rounded-xl bg-white text-red-500 mt-10">
         <MenuLink Menu={Menus.removechild}/>
       </Link>
       <p className="text-center text-gray-400 text-sm w-[90%] mx-auto mb-24">to reverse this you&apos;d need to go to school to have it relinked</p>

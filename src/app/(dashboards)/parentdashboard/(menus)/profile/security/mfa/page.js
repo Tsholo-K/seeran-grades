@@ -3,20 +3,23 @@ import Link from "next/link";
 
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
+
+//components
 import Crumbs from "@/components/crumbs";
+
 
 const Menu = {
   email : {
     title: 'Email',
     icon: false,
     info: 'email@example.com',
-    url : '/profile/security/mfa/email',
+    url : '/parentdashboard/profile/security/mfa/email',
   },
   phonenumber : {
     title: 'Phone number',
     icon: false,
     info: '0711740824',
-    url : '/profile/security/mfa/phonenumber',
+    url : '/parentdashboard/profile/security/mfa/phonenumber',
   },
 };
 
@@ -30,17 +33,11 @@ const MenuLink = ({ Menu}) => {
   )
 };
 
-
 const MultiFactorAuthentication = () => {
-
-  const user = data.parent
-
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
-        <Link href={'/profile/security'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>profile</Link>
-      </div>
+      <Crumbs url={'parentdashboard/profile/security'} title={'security'}/>
       {/* page heading */}
       <div>
         <h1 className="w-full text-center pb-32 text-4xl lg:text-8xl">Multi-Factor<br></br> Authentication</h1>

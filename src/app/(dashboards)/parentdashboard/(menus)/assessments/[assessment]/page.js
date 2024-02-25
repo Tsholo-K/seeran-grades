@@ -7,6 +7,9 @@ import { useParams } from "next/navigation";
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
+// components 
+import Crumbs from "@/components/crumbs";
+
 
 const MenuLink = ({ menu, info}) => {
   return (
@@ -57,11 +60,7 @@ const Assessment = () => {
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100 z-[2]">
-        <Link href={'/assessments'} className="flex w-full text-blue-700">
-          <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>assessments
-        </Link>
-      </div>
+      <Crumbs url={`parentdashboard/assessments`} title={`assessments`}/>
       <div className="z-[1]">
         <div>
           <h1 className="w-full text-center pb-16 text-4xl">Assessment</h1>

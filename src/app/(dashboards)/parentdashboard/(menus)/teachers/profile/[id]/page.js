@@ -1,6 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
 
+// components
+import Crumbs from "@/components/crumbs"
+
 
 const Menu = {
   name : {
@@ -37,9 +40,7 @@ const MenuLink = ({Menu}) => {
 const page = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
-        <Link href={'/teachers/teacher'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>chat</Link>
-      </div>
+      <Crumbs title={'chat'} url={'parentdashboard/teahcers/teacher'}/>
       <div>
         <h1 className="w-full text-center pb-5 text-4xl">Teacher ID</h1>
       </div>

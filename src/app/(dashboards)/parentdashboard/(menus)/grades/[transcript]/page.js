@@ -7,6 +7,8 @@ import { useParams } from "next/navigation";
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
+// components
+import Crumbs from "@/components/crumbs";
 
 const Score = ({ score, total }) => {
 
@@ -101,15 +103,11 @@ const Transcript = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100 z-[2]">
-        <Link href={'/grades'} className="flex w-full text-blue-700">
-          <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>grades
-        </Link>
-      </div>
+      <Crumbs url={`parentdashboard/grades`} title={'grades'}/>
       <div className="z-[1]">
         {/* page heading */}
         <div>
-          <h1 className="w-full text-center pb-16 text-4xl">Transcript</h1>
+          <h1 className="w-full text-center pb-16 text-4xl lg:hidden">Transcript</h1>
         </div>
         {/* score */}
         <Score score={transcript.score} total={transcript.total}/>
