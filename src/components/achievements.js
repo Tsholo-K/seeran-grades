@@ -49,7 +49,7 @@ const Achievements = ({ achievements }) => {
                                     </div>
                                     {
                                         achievement.medal
-                                        ? <Image src={`/${achievement.medal}.svg`} alt='try it button' width={10} height={10} className="w-6 lg:w-10 absolute bottom-1 right-5"/>
+                                        ? <Image src={`/${achievement.medal}.svg`} alt='try it button' width={10} height={10} className="w-6 lg:w-8 absolute bottom-1 right-5"/>
                                         : null
                                     }
                                     </div>

@@ -12,6 +12,7 @@ import Crumbs from "@/components/crumbs";
 import Subject from "@/components/subject";
 import Menu from "@/components/menu";
 import MultipleMenu from "@/components/multiplemenu";
+import PageHeading from "@/components/pageheading";
 
 
 const MenuLink = ({ menu, info }) => {
@@ -54,19 +55,14 @@ const Award = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       <Crumbs url={`parentdashboard/achievements`} title={`achievements`}/>
-      <div className="z-[1]">
-        {/* page heading */}
-        <div>
-          <h1 className="w-full text-center pb-16 text-4xl">Award</h1>
-        </div>
-        <Subject subject={award.for} icon={award.icon} submitter={award.student} title="field"/>
-        {/* award info */}
-        <MultipleMenu menu={award_info} />
-        {/* authority */}
-        <p className="pb-1 w-full pr-3 text-gray-400 text-sm pl-2 pt-10">awarded by</p>
-        <Menu title={'Authority'} info={award.authority} border={true} />
-      </div>
-      
+      {/* page heading */}
+      <PageHeading title={'Award'} />
+      <Subject subject={award.for} icon={award.icon} submitter={award.student} title="field"/>
+      {/* award info */}
+      <MultipleMenu menu={award_info} />
+      {/* authority */}
+      <p className="pb-1 w-full pr-3 text-gray-400 text-sm pl-2 pt-10">awarded by</p>
+      <Menu title={'Authority'} info={award.authority} border={true} />
     </div>
   )
 };
