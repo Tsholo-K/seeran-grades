@@ -46,7 +46,7 @@ const Transcripts = ({ transcripts }) => {
                         <div key={index} className="py-4 lg:py-6">
                             <div className="flex pl-2 pb-2">
                                 <div className="grid grid-cols-1 place-content-center">
-                                    <Image src={'/pencil-line.svg'} alt='try it button' width={10} height={10} className="w-5 h-5"/>
+                                    <Image src={'/pencil-line.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-7"/>
                                 </div>
                                 <SubmittedBy student_id={transcript.submitted_by}/>
                             </div>
@@ -56,14 +56,14 @@ const Transcripts = ({ transcripts }) => {
                                 <div>
                                     <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{transcript.assessment}</p>
                                 </div>
-                                <div className="flex justify-center py-2 gap-3 px-3 w-full cursor-pointer md:hover:text-blue-700">
-                                    <Image priority src={`/${transcript.icon}.svg`} alt="profile icon" width={30} height={30} className="h-8 w-8 lg:h-12 lg:w-12" />
+                                <div className="flex justify-center py-2 gap-3 px-3 w-full cursor-pointer">
+                                    <Image priority src={`/${transcript.icon}.svg`} alt="profile icon" width={30} height={30} className="w-8 lg:w-12" />
                                     <div className="grid grid-cols-1 place-content-center">
                                         <p className="lg:text-xl">{transcript.subject}</p>
                                     </div>
                                 </div>
                                 <div className="flex pl-3 pt-3">
-                                    <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 h-5 lg:h-6 lg:w-6"/>
+                                    <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-6"/>
                                     <div className="grid grid-cols-1 place-content-center">
                                         <p className="text-sm pl-2 text-gray-500 lg:text-base">results released : {transcript.date_released}</p>
                                     </div>

@@ -17,12 +17,12 @@ const SubmittedBy = ({ student_id }) => {
     )
 }
   
-const Subject = ({ subject, icon, submitter }) => {
+const Subject = ({ title='Subject', subject, icon, submitter }) => {
     return (
       <>
         <div className="py-4 mb-8 lg:py-6">
           <div className="flex">
-            <p className=" text-sm pl-2 pb-1 text-gray-400">subject</p>
+            <p className=" text-sm pl-2 pb-1 text-gray-400">{title}</p>
           </div>
           <div className="relative rounded-xl bg-white py-1">
             <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
