@@ -4,7 +4,7 @@ import Image from "next/image"
 const SingleMenuLink = ({ title, url, icon=null, border=false }) => {
     return (
         <>
-            <div className={`rounded-xl ${ border ? ' bg-white my-10' : ''}`}>
+            <div className={`rounded-xl ${ border ? ' bg-white' : ''}`}>
                 <>
                 <Link href={`${url}`} className="relative flex gap-6 py-3 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
                     <p className={`absolute right-12 font-extrabold`}></p>
