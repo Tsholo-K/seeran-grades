@@ -131,7 +131,7 @@ export default function ParentDashboardLayout({ children }) {
                     <SingleMenu Menu={menu.helpdesk}/>
                   </div>
                   {/* settings section */}
-                  <div className="rounded-xl w-full bg-white absolute bottom-3">
+                  <div className="rounded-xl w-full bg-white xl:absolute bottom-3">
                     <SingleMenu Menu={menu.settings}/>
                   </div>
                 </div>

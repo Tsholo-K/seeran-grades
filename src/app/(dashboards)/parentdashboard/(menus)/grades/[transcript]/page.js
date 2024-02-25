@@ -1,6 +1,5 @@
 'use client'
 
-import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
@@ -9,67 +8,10 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-
-const Score = ({ score, total }) => {
-
-  let result = score / total * 100
-
-  let colour = null
-  if ( result > 79 ) {
-    colour = 'bg-green-600'
-  } else if ( 39 < result && result < 80 ) {
-    colour = 'bg-orange-500'
-  } else {
-    colour = 'bg-red-600'
-  }
-  
-  result = result.toString().slice(0, 4)
-  
-  return (
-    <>
-      <div className="w-full pb-10">
-        <div className="mx-auto w-fit">
-          <p className={`${colour} text-center w-[180px] h-[180px] text-white rounded-full pt-[67px] text-5xl`}>{result}%</p>
-        </div>
-        <p className="w-full text-center pt-3 text-gray-400 text-sm">score</p>
-      </div>
-    </>
-  )
-};
-
-const SubmittedBy = ({ student_id }) => {
-
-  let submitter = ''
-  data.students.forEach( (student) => {
-    if ( student.student_number === student_id ) {
-      submitter = student
-    }
-  });
-  return (
-    <p className="w-full text-center pt-1 text-sm text-gray-400">submitted by : {submitter.name.charAt(0).toUpperCase() + submitter.name.slice(1)} {submitter.surname.charAt(0).toUpperCase() + submitter.surname.slice(1)}</p>
-  )
-}
-
-const Subject = ({ subject, icon, submitter }) => {
-  return (
-    <>
-      <div className="py-4 mb-8">
-        <div className="flex">
-          <p className=" text-sm pl-2 pb-1 text-gray-400">subject</p>
-        </div>
-        <div className="relative rounded-xl bg-white py-1">
-          <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer md:hover:text-blue-700">
-              <Image priority src={`/${icon}.svg`} alt="profile icon" width={30} height={30} className="h-8 w-8" />
-              <div className="pt-1 pl-2">
-                  <p>{subject}</p>
-              </div>
-          </div>
-        </div>
-        <SubmittedBy student_id={submitter}/>
-      </div>
-    </>
-  )
-}
+import PageHeading from "@/components/pageheading";
+import Subject from "@/components/subject";
+import Menu from "@/components/menu";
+import Score from "@/components/score";
  
 
 const MenuLink = ({ menu, info }) => {
@@ -101,13 +43,13 @@ const Transcript = () => {
   })
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center ">
-      {/* back link */}
-      <Crumbs url={`parentdashboard/grades`} title={'grades'}/>
-      <div className="z-[1]">
+    <>
+      <div className="w-full relative grid grid-cols-1 place-content-center ">
+        {/* back link */}
+        <Crumbs url={`parentdashboard/grades`} title={'grades'}/>
         {/* page heading */}
-        <div>
-          <h1 className="w-full text-center pb-16 text-4xl lg:hidden">Transcript</h1>
+        <div className="lg:hidden">
+          <PageHeading title={'Transcript'} />
         </div>
         {/* score */}
         <Score score={transcript.score} total={transcript.total}/>
@@ -122,14 +64,12 @@ const Transcript = () => {
           <MenuLink menu={'Date Submitted'} info={transcript.date_submitted}/>
         </div>
         {/* teacher */}
-        <div className="flex">
-          <Link href={'/teachers/teacher'} className="pb-1 w-full text-end pr-3 text-blue-700">message</Link>
-        </div>
-        <div className="rounded-xl bg-white">
-          <MenuLink menu={'Teacher'} info={`${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} ${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`}/>
+        <div className="relative pt-7">
+          <Link href={'/teachers/teacher'} className="w-full text-end pr-2 text-blue-700 absolute top-0 right-4">message</Link>
+          <Menu title={'Teacher'} info={`${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} ${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`} border={true}/>
         </div>
       </div>
-    </div>
+    </>
   )
 };
 

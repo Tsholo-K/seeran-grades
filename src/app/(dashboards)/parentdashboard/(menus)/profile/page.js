@@ -37,9 +37,7 @@ const ProfileSettings = () => {
       {/* page heading */}
       <PageHeading title={'Profile Settings'} />
       {/* profile info section */}
-      <UserImage image={parent_user.img} />
-      <h2 className="w-full text-center text-3xl lg:text-4xl">{parent_user.name.charAt(0).toUpperCase() + parent_user.name.slice(1)} {parent_user.surname.charAt(0).toUpperCase() + parent_user.surname.slice(1)}</h2>
-      <p className="w-full text-center text-gray-400 pb-4">{parent_user.email}</p>
+      <UserImage image={parent_user.img} name={parent_user.name} surname={parent_user.surname} email={parent_user.email}/>
       {/* menu links section */}
       {
         menuitems.map( ( item,index ) => (
