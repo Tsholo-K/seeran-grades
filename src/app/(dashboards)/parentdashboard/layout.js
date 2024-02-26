@@ -30,9 +30,9 @@ const menuitems = [
   {
     section : [
       {
-        title: 'Teachers',
+        title: 'Messages',
         icon: 'teacher',
-        url: '/parentdashboard/teachers',
+        url: '/parentdashboard/messages',
       },
       {
         title: 'Activities',

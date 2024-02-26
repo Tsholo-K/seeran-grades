@@ -24,7 +24,7 @@ const Teachers = () => {
 
   return (
     <div className="w-full min-h-full relative">
-      <Crumbs url={`parentdashboard/teachers`} title={`3`}/>
+      <Crumbs url={`parentdashboard/messages`} title={`3`}/>
       {/* chats */}
       <div className="chat text-base text-white">
         <div className="mine messages">

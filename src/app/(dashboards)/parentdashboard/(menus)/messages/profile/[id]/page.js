@@ -40,7 +40,7 @@ const MenuLink = ({Menu}) => {
 const page = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
-      <Crumbs title={'chat'} url={'parentdashboard/teahcers/teacher'}/>
+      <Crumbs title={'chat'} url={'parentdashboard/messages/teacher'}/>
       <div>
         <h1 className="w-full text-center pb-5 text-4xl">Teacher ID</h1>
       </div>

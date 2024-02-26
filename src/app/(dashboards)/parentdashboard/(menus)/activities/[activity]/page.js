@@ -61,7 +61,7 @@ const Activity = () => {
       <p className="text-sm lg:text-base text-gray-500 pt-3 w-full text-center">{log.activity}</p>
       <div className="py-4 mb-10">
           <p className=" text-sm lg:text-base pl-2 pb-1 text-gray-400">record</p>
-          <div className="relative rounded-xl bg-white py-1">
+          <div className="relative rounded-xl bg-white py-4">
             <p className="w-full py-1 px-3 opacity-80">
               {log.record}
             </p>
