@@ -1,21 +1,15 @@
 'use client';
 
-import Image from "next/image";
-import Link from "next/link";
 import { useParams } from "next/navigation";
 
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
-
-const MenuLink = ({ description, amount }) => {
-  return (
-    <div className="relative flex py-3 gap-1 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
-      <p>{description}</p>
-      <p className="text-gray-400 absolute right-4">R {amount}</p>
-    </div>
-  )
-};
+// componenets
+import Crumbs from "@/components/crumbs";
+import PageHeading from "@/components/pageheading";
+import Menu from "@/components/menu";
+import MultipleMenu from "@/components/multiplemenu";
 
 
 const Structure = () => {
@@ -32,33 +26,16 @@ const Structure = () => {
 
   let total = 0
   structure.forEach( fee => {
-    total = total + parseInt(fee.amount)
+    total = total + parseInt(fee.info)
   })
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
-      <div className="fixed top-0 pt-16 w-full pb-1 bg-gray-100 z-[2]">
-        <Link href={`/fees/${student_id}`} className="flex w-full text-blue-700">
-          <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>balance
-        </Link>
-      </div>
-      <div className="z-[1]">
-        <div >
-            <h1 className="w-full text-center pb-20 text-4xl">Structure</h1>
-        </div>
-        <div className="rounded-xl bg-white">
-          {
-            structure.map( ( fee, index )=> (
-              <MenuLink key={index} description={fee.description} amount={fee.amount}/>
-            ))
-          }
-        </div>
-        <div className="rounded-xl bg-white mt-16">
-          <MenuLink description={'total'} amount={total}/>
-        </div>
-        <p className="mx-auto text-sm text-gray-400 py-1">total debitable amount p/m</p>
-      </div>
-      
+      <Crumbs title={'balance'} url={`parentdashboard/fees/${student_id}`} />
+      <PageHeading title={'Structure'} />
+      <MultipleMenu menu={structure} />
+      <Menu title={'total'} info={total} border={true}/>
+      <p className="mx-auto text-sm text-gray-400 py-1">total debitable amount p/m</p>
     </div>
   )
 };

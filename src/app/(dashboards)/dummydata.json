@@ -404,12 +404,12 @@
             "student" : "220212350",
             "fee_structure" : [
                 {
-                    "description" : "tuition Fee",
-                    "amount" : "4500"
+                    "title" : "tuition Fee",
+                    "info" : "4500"
                 },
                 {
-                    "description" : "Sports Fee",
-                    "amount" : "375"
+                    "title" : "Sports Fee",
+                    "info" : "375"
                 }
             ],
             "invoices" : [
@@ -425,12 +425,12 @@
             "student" : "220212349",
             "fee_structure" : [
                 {
-                    "description" : "Tuition Fee",
-                    "amount" : "5300"
+                    "title" : "Tuition Fee",
+                    "info" : "5300"
                 },
                 {
-                    "description" : "Sports Fee",
-                    "amount" : "375"
+                    "title" : "Sports Fee",
+                    "info" : "375"
                 }
             ],
             "invoices" : [
@@ -446,12 +446,12 @@
             "student" : "220212348",
             "fee_structure" : [
                 {
-                    "description" : "Tuition Fee",
-                    "amount" : "3700"
+                    "title" : "Tuition Fee",
+                    "info" : "3700"
                 },
                 {
-                    "description" : "Sports Fee",
-                    "amount" : "375"
+                    "title" : "Sports Fee",
+                    "info" : "375"
                 }
             ],
             "invoices" : [
