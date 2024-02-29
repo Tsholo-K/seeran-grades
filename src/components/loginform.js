@@ -37,6 +37,10 @@ const LoginForm = () => {
 
     fetch(`http://13.244.109.72:8000/api/auth/login`, {
       method: 'post',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRFToken': csrftoken
+      },
       body: JSON.stringify({
         email: email,
         password: password
