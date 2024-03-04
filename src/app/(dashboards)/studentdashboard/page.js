@@ -59,6 +59,15 @@ const studentdashboardmenuitems = [
       }
     ]
   },
+  {
+    section : [
+      {
+        title: 'Settings',
+        icon: 'settings',
+        url : '/parentdashboard/settings'
+      }
+    ]
+  }
 ]
 
 export default function ParentDashboardLandingPage() {
@@ -85,9 +94,6 @@ export default function ParentDashboardLandingPage() {
                 </>
               ))
             }
-            <div className={'absolute bottom-7 w-full'}>
-              <SingleMenuLink title={'Settings'} icon={'settings'} url={'/studentdashboard/settings'} border={true}/>
-            </div>
           </div>
           {/* desktop view */}
           <div className="w-full hidden lg:block pt-16">

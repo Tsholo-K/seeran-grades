@@ -3,7 +3,6 @@ import Image from "next/image";
 
 {/* components */}
 import MultipleMenuLinks from "@/components/multiplemenulinks";
-import SingleMenuLink from "@/components/signlemenulink";
 
 
 const menuitems = [
@@ -64,6 +63,15 @@ const menuitems = [
       }
     ]
   },
+  {
+    section : [
+      {
+        title: 'Settings',
+        icon: 'settings',
+        url : '/parentdashboard/settings'
+      }
+    ]
+  }
 ]
 
 export default function ParentDashboardLandingPage() {
@@ -100,9 +108,6 @@ export default function ParentDashboardLandingPage() {
                 </>
               ))
             }
-            <div className={'absolute bottom-7 w-full'}>
-              <SingleMenuLink title={'Settings'} icon={'settings'} url={'/studentdashboard/settings'} border={true}/>
-            </div>
           </div>
           {/* desktop view */}
           <div className="w-full hidden lg:block pt-16">
