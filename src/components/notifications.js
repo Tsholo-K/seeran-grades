@@ -8,9 +8,9 @@ const Notifications = ({ subject_line, first_sentance, time, read=false}) => {
             <Link href={'/parentdashboard/notifications/id'} className="flex relative pb-7 pt-2 gap-5 px-3 justify-start w-full cursor-pointer">
                 {
                     read === false &&
-                    <Image src={`/notification-icon.svg`} alt="notification" width={35} height={35} className="absolute top-6"/>
+                    <Image src={`/notification-icon.svg`} alt="notification" width={25} height={25} className="absolute top-6"/>
                 }
-                <div className="pl-12 w-full">
+                <div className="pl-10 w-full">
                     <p className="font-bold text-xl lg:text-2xl">{subject_line}something</p>
                     <p className="text-sm text-gray-500 lg:text-base">{first_sentance}something</p>
                 </div>

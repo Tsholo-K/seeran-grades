@@ -7,7 +7,7 @@ import MultipleMenuLinks from "@/components/multiplemenulinks";
 import SingleMenuLink from "@/components/signlemenulink";
 
 
-const menuitems = [
+const parentdashboardmenuitems = [
   {
     section : [
       {
@@ -74,12 +74,12 @@ export default function ParentDashboardLayout({ children }) {
         {/* navigation bar */}
         <NavigationBar left_link={false} left_logo_small={''} left_logo_large={''} right_link={false} max={false}/>
         <div className="mx-3 lg:mx-5">
-          <div className="lg:flex gap-10">         
+          <div className="lg:flex gap-10">
             {/* side menu for large screens */}
-            <div className="hidden lg:block w-[40%] max-w-[400px] min-h-screen">
+            <div className="hidden lg:block relative w-[40%] max-w-[400px] h-screen">
               {/* parent dashboard */}
-              <div className="h-full w-[28%] fixed max-w-[400px]">
-                <div className="relative h-full ">
+              <div className="min-h-full fixed w-[28%] max-w-[400px]">
+                <div className="min-h-full ">
                   {/* accounts section */}
                   <div className="pt-16">
                     <div className="rounded-xl bg-white">
@@ -104,21 +104,21 @@ export default function ParentDashboardLayout({ children }) {
                     </div>
                   </div>
                   {
-                    menuitems.map( ( item,index ) => (
+                    parentdashboardmenuitems.map( ( item,index ) => (
                       <>
                         <MultipleMenuLinks key={index} menu={item} />
                       </>
                     ))
                   }
                   {/* settings section */}
-                  <div className="w-full absolute bottom-3">
-                    <SingleMenuLink title={'Settings'} url={'/parentdashboard/settings'} border={true} />
+                  <div className="w-full absolute bottom-5">
+                    <SingleMenuLink title={'Settings'} icon={'settings'} url={'/parentdashboard/settings'} border={true} />
                   </div>
                 </div>
               </div>
             </div>
             {/* body */}
-            <div className="w-full min-h-screen">
+            <div className="w-full">
               {children}
             </div>
           </div>
