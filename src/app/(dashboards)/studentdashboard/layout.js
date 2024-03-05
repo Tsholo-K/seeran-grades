@@ -11,11 +11,13 @@ export default function StudentDashboardLayout({ children }) {
           <div className="lg:flex gap-10">
             {/* side menu for large screens */}
             <div className="hidden lg:block relative w-[40%] max-w-[400px] h-screen">
-              {/* parent dashboard */}
-              <Studentdashboard />
+              <div className="fixed w-[27%] max-w-[400px]">
+                {/* parent dashboard */}
+                <Studentdashboard />
+              </div>
             </div>
             {/* body */}
-            <div>
+            <div className="w-full">
               {children}
             </div>
           </div>
