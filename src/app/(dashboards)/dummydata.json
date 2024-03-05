@@ -69,7 +69,9 @@
     "classes" : [
         {
             "class_id" : "45356345",
-            "teacher" : "2938438420",
+            "teacher_id" : "2938438420",
+            "teacher" : "Silvia Berningham",
+            "register_teacher_id" : "2938438420",
             "subject" : "mathematics",
             "students" : ["220212349"],
             "grade" : "12",
@@ -77,7 +79,8 @@
         },
         {
             "class_id" : "34563456",
-            "teacher" : "2938438420",
+            "teacher_id" : "2938438420",
+            "teacher" : "Silvia Berningham",
             "subject" : "life orientation",
             "students" : ["220212348"],
             "grade" : "8",
@@ -85,7 +88,9 @@
         },
         {
             "class_id" : "34562356",
-            "teacher" : "2938438420",
+            "teacher_id" : "2938438420",
+            "teacher" : "Silvia Berningham",
+            "register_teacher_id" : "3456345633",
             "subject" : "physical sciences",
             "students" : ["220212349"],
             "grade" : "12",
@@ -93,7 +98,9 @@
         },
         {
             "class_id" : "34563345",
-            "teacher" : "3456345633",
+            "teacher_id" : "3456345633",
+            "teacher" : "Franklin Buck",
+            "register_teacher_id" : "",
             "subject" : "physical sciences",
             "students" : ["220212350"],
             "grade" : "10",
@@ -101,7 +108,9 @@
         },
         {
             "class_id" : "23452342",
-            "teacher" : "3456345633",
+            "teacher_id" : "3456345633",
+            "teacher" : "Franklin Buck",
+            "register_teacher_id" : "",
             "subject" : "life sciences",
             "students" : ["220212349"],
             "grade" : "12",
@@ -109,7 +118,9 @@
         },
         {
             "class_id" : "45678453",
-            "teacher" : "6785678565",
+            "teacher_id" : "6785678565",
+            "teacher" : "Tessa Moldy",
+            "register_teacher_id" : "",
             "subject" : "mathematics",
             "students" : ["220212348"],
             "grade" : "8",
@@ -117,7 +128,9 @@
         },
         {
             "class_id" : "94567834",
-            "teacher" : "6785678565",
+            "teacher_id" : "6785678565",
+            "teacher" : "Tessa Moldy",
+            "register_teacher_id" : "",
             "subject" : "mathematics",
             "students" : ["220212350"],
             "grade" : "10",
@@ -125,7 +138,9 @@
         },
         {
             "class_id" : "12547485",
-            "teacher" : "6785678565",
+            "teacher_id" : "6785678565",
+            "teacher" : "Tessa Moldy",
+            "register_teacher_id" : "6785678565",
             "subject" : "english",
             "students" : ["220212348"],
             "grade" : "8",

@@ -12,7 +12,7 @@ const MyClasses = () => {
   const teacher = '2938438420';
   let classroom = []
   data.classes.forEach( (cls) => {
-    if (cls.teacher === teacher) {
+    if (cls.teacher_id === teacher) {
       classroom.push(cls)
     }
   });
@@ -24,7 +24,7 @@ const MyClasses = () => {
       {/* back link */}
       <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}/>
       {/* page heading */}
-      <PageHeading title={'Performance'} subheading={'all classes'}/>
+      <PageHeading title={'Performance'} subheading={'all your classes'}/>
       {/* transcripts */}
       <Classes classrooms={classroom_sorted} teacher={false}/>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">that&apos;s allyour classes</p>

@@ -8,12 +8,21 @@ const menuitems = [
   {
     section : [
       {
+        title: 'Performance',
+        icon: 'performance',
+        url: '/teacherdashboard/performance',
+      }
+    ]
+  },
+  {
+    section : [
+      {
         title: 'Classes',
         icon: 'classes',
         url: '/teacherdashboard/classes',
       },
       {
-        title: 'Attendance',
+        title: 'Take Attendance',
         icon: 'calendar-days',
         url: '/teacherdashboard/attendance',
       },
@@ -65,7 +74,6 @@ const Teacherdashboard = () => {
               <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
             </Link>
           </div>
-           <SingleMenuLink title={'Performance'} icon={'performance'} url={'/teacherdashboard/performance'} border={true}/>
           {
             menuitems.map( ( item,index ) => (
               <>

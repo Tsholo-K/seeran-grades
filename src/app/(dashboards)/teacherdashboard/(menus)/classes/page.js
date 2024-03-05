@@ -12,7 +12,7 @@ const MyClasses = () => {
   const teacher = '2938438420';
   let classroom = []
   data.classes.forEach( (cls) => {
-    if (cls.teacher === teacher) {
+    if (cls.teacher_id === teacher) {
       classroom.push(cls)
     }
   });
