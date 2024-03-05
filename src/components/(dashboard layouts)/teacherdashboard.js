@@ -37,6 +37,15 @@ const menuitems = [
         url: '/teacherdashboard/notifications',
       }
     ]
+  },
+  {
+    section : [
+      {
+        title: 'Settings',
+        icon: 'settings',
+        url: '/teacherdashboard/settings',
+      }
+    ]
   }
 ]
 
@@ -63,9 +72,6 @@ const Teacherdashboard = () => {
               </>
             ))
           }
-        </div>
-        <div className="absolute bottom-10 w-full">
-          <SingleMenuLink title={'Settings'} icon={'settings'} url={'/teacherdashboard/settings'} border={true} />
         </div>
       </div>
     </>
