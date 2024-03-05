@@ -7,9 +7,9 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import UserImage from "@/components/userimage";
-import Button from "@/components/button";
+import PageHeading from "@/components/(general components)/pageheading";
+import UserImage from "@/components/(general components)/userimage";
+import Button from "@/components/(general components)/button";
 
 const RemoveChild = () => {
 

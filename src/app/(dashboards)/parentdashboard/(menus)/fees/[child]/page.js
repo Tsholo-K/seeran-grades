@@ -6,9 +6,9 @@ import { useParams } from "next/navigation";
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import SingleMenuLink from "@/components/signlemenulink";
-import MultipleMenuLinks from "@/components/multiplemenulinks";
+import PageHeading from "@/components/(general components)/pageheading";
+import SingleMenuLink from "@/components/(general components)/signlemenulink";
+import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
 
 
 const Balance = () => {

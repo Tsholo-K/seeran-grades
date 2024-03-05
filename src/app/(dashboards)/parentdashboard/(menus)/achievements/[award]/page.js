@@ -9,10 +9,10 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components 
 import Crumbs from "@/components/crumbs";
-import Subject from "@/components/subject";
-import Menu from "@/components/menu";
-import MultipleMenu from "@/components/multiplemenu";
-import PageHeading from "@/components/pageheading";
+import Subject from "@/components/(general components)/subject";
+import Menu from "@/components/(general components)/menu";
+import MultipleMenu from "@/components/(general components)/multiplemenu";
+import PageHeading from "@/components/(general components)/pageheading";
 
 
 const MenuLink = ({ menu, info }) => {

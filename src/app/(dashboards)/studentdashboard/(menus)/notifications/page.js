@@ -1,6 +1,6 @@
 import Crumbs from "@/components/crumbs";
-import Notifications from "@/components/notifications";
-import PageHeading from "@/components/pageheading";
+import Notifications from "@/components/(notifications components)/notifications";
+import PageHeading from "@/components/(general components)/pageheading";
 
 
 const NotificationsPage = () => {

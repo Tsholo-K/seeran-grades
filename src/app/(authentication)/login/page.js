@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 // components
-import LoginForm from "@/components/loginform";
+import LoginForm from "@/components/(forms)/loginform";
 
 
 const Signin = () => {

@@ -3,9 +3,9 @@
 import { useParams } from "next/navigation";
 
 // components
-import Button from "@/components/button";
+import Button from "@/components/(general components)/button";
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
+import PageHeading from "@/components/(general components)/pageheading";
 
 
 const Notice = () => {

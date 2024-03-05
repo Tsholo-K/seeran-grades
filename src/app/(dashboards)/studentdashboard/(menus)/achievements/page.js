@@ -3,8 +3,8 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components 
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import Achievements from "@/components/achievements";
+import PageHeading from "@/components/(general components)/pageheading";
+import Achievements from "@/components/(achievements components)/achievements";
 
 
 const AchievementsPage = () => {

@@ -1,8 +1,8 @@
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import InputArea from "@/components/inputarea";
-import Button from "@/components/button";
+import PageHeading from "@/components/(general components)/pageheading";
+import InputArea from "@/components/(general components)/inputarea";
+import Button from "@/components/(general components)/button";
 
 
 const PasswordChange = () => {

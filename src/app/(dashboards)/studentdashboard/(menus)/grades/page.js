@@ -3,8 +3,8 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import Transcripts from "@/components/transcripts";
+import PageHeading from "@/components/(general components)/pageheading";
+import Transcripts from "@/components/(grades components)/transcripts";
 
 
 const Grades = () => {

@@ -3,10 +3,10 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 //components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import UserImage from "@/components/userimage";
-import SingleMenuLink from "@/components/signlemenulink";
-import MultipleMenuLinks from "@/components/multiplemenulinks";
+import PageHeading from "@/components/(general components)/pageheading";
+import UserImage from "@/components/(general components)/userimage";
+import SingleMenuLink from "@/components/(general components)/signlemenulink";
+import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
 
 const menuitems = [
   {

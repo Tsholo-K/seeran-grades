@@ -5,13 +5,13 @@ import { useParams } from "next/navigation";
 
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
-import Subject from "@/components/subject";
+import Subject from "@/components/(general components)/subject";
 
 // components 
 import Crumbs from "@/components/crumbs";
-import MultipleMenu from "@/components/multiplemenu";
-import Menu from "@/components/menu";
-import PageHeading from "@/components/pageheading";
+import MultipleMenu from "@/components/(general components)/multiplemenu";
+import Menu from "@/components/(general components)/menu";
+import PageHeading from "@/components/(general components)/pageheading";
 
 
 const Assessment = () => {

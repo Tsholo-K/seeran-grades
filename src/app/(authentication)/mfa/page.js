@@ -5,8 +5,8 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 {/* components */}
-import Button from "@/components/button";
-import Input from "@/components/input";
+import Button from "@/components/(general components)/button";
+import Input from "@/components/(general components)/input";
 
 
 const Signin = () => {

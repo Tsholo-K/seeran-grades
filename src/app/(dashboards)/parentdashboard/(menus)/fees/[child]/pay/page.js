@@ -4,8 +4,8 @@ import { useParams } from "next/navigation";
 
 // components
 import Crumbs from "@/components/crumbs";
-import MultipleMenuLinks from "@/components/multiplemenulinks";
-import PageHeading from "@/components/pageheading";
+import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
+import PageHeading from "@/components/(general components)/pageheading";
 
 
 const Pay = () => {

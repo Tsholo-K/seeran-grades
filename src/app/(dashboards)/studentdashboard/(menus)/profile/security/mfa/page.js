@@ -6,8 +6,8 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 //components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import SingleMenuLink from "@/components/signlemenulink";
+import PageHeading from "@/components/(general components)/pageheading";
+import SingleMenuLink from "@/components/(general components)/signlemenulink";
 
 
 const Menu = {

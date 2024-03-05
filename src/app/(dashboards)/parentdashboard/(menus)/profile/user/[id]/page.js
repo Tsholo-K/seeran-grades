@@ -7,9 +7,9 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import SingleMenuLink from "@/components/signlemenulink";
-import MultipleMenu from "@/components/multiplemenu";
+import PageHeading from "@/components/(general components)/pageheading";
+import SingleMenuLink from "@/components/(general components)/signlemenulink";
+import MultipleMenu from "@/components/(general components)/multiplemenu";
 
 
 const ID = () => {

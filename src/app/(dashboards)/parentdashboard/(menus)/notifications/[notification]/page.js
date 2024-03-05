@@ -1,6 +1,6 @@
 // components
 import Crumbs from "@/components/crumbs";
-import MultipleMenu from "@/components/multiplemenu";
+import MultipleMenu from "@/components/(general components)/multiplemenu";
 
 const notification_info = [
   {

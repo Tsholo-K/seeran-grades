@@ -1,8 +1,8 @@
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import Button from "@/components/button";
-import InputArea from "@/components/inputarea";
+import PageHeading from "@/components/(general components)/pageheading";
+import Button from "@/components/(general components)/button";
+import InputArea from "@/components/(general components)/inputarea";
 
 
 const PhoneNumberAuthentication = () => {

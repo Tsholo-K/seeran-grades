@@ -2,9 +2,9 @@
 import data from '@/app/(dashboards)/dummydata.json'
 
 //components
-import ChildMenu from "@/components/childmenu";
+import ChildMenu from "@/components/(general components)/childmenu";
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
+import PageHeading from "@/components/(general components)/pageheading";
 
 
 const Children = () => {

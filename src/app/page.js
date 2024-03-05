@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 {/* components */}
-import Footer from "@/components/footer";
-import NavigationBar from "@/components/navigationbar";
+import Footer from "@/components/(general components)/footer";
+import NavigationBar from "@/components/(general components)/navigationbar";
 
 
 const Section = ({ heading, paragraph, image, side }) => {

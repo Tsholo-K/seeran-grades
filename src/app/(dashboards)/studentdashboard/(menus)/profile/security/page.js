@@ -3,9 +3,9 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import SingleMenuLink from "@/components/signlemenulink";
-import Menu from "@/components/menu";
+import PageHeading from "@/components/(general components)/pageheading";
+import SingleMenuLink from "@/components/(general components)/signlemenulink";
+import Menu from "@/components/(general components)/menu";
 import Link from 'next/link';
 
 

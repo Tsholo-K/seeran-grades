@@ -1,8 +1,8 @@
 'use client';
 
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import SingleMenuLink from "@/components/signlemenulink";
+import PageHeading from "@/components/(general components)/pageheading";
+import SingleMenuLink from "@/components/(general components)/signlemenulink";
 import { useParams } from "next/navigation";
 
 

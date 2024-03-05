@@ -1,7 +1,7 @@
 // components 
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import Messages from "@/components/messages";
+import PageHeading from "@/components/(general components)/pageheading";
+import Messages from "@/components/(messages components)/messages";
 
 const MessagesPage = () => {
   return (

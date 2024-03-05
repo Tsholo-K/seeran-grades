@@ -7,9 +7,9 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // componenets
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import Menu from "@/components/menu";
-import MultipleMenu from "@/components/multiplemenu";
+import PageHeading from "@/components/(general components)/pageheading";
+import Menu from "@/components/(general components)/menu";
+import MultipleMenu from "@/components/(general components)/multiplemenu";
 
 
 const Structure = () => {

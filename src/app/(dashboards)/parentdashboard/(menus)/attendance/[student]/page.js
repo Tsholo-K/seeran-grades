@@ -6,7 +6,7 @@ import { useParams } from "next/navigation";
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
+import PageHeading from "@/components/(general components)/pageheading";
 
 
 const Days = ({ day }) => {

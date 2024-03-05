@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 // components
-import Button from "./button";
+import Button from "../(general components)/button";
 import Link from "next/link";
 
 

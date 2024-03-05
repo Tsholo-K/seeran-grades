@@ -6,8 +6,8 @@ import { useParams } from "next/navigation";
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/pageheading";
-import MultipleMenu from "@/components/multiplemenu";
+import PageHeading from "@/components/(general components)/pageheading";
+import MultipleMenu from "@/components/(general components)/multiplemenu";
 
 
 const Subject = ({ subject }) => {

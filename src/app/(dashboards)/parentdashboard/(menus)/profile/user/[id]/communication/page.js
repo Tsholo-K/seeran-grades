@@ -8,8 +8,8 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import Button from "@/components/button";
-import PageHeading from "@/components/pageheading";
+import Button from "@/components/(general components)/button";
+import PageHeading from "@/components/(general components)/pageheading";
 
 
 const menus = {
