@@ -72,56 +72,64 @@
             "teacher" : "2938438420",
             "subject" : "mathematics",
             "students" : ["220212349"],
-            "grade" : "12"
+            "grade" : "12",
+            "group" : "B"
         },
         {
             "class_id" : "34563456",
             "teacher" : "2938438420",
             "subject" : "life orientation",
             "students" : ["220212348"],
-            "grade" : "8"
+            "grade" : "8",
+            "group" : "A"
         },
         {
             "class_id" : "34562356",
             "teacher" : "2938438420",
             "subject" : "physical sciences",
             "students" : ["220212349"],
-            "grade" : "12"
+            "grade" : "12",
+            "group" : "C"
         },
         {
             "class_id" : "34563345",
             "teacher" : "3456345633",
             "subject" : "physical sciences",
             "students" : ["220212350"],
-            "grade" : "10"
+            "grade" : "10",
+            "group" : "C"
         },
         {
             "class_id" : "23452342",
             "teacher" : "3456345633",
             "subject" : "life sciences",
             "students" : ["220212349"],
-            "grade" : "12"
+            "grade" : "12",
+            "group" : "D"
         },
         {
             "class_id" : "45678453",
             "teacher" : "6785678565",
             "subject" : "mathematics",
             "students" : ["220212348"],
-            "grade" : "8"
+            "grade" : "8",
+            "group" : "A"
         },
         {
             "class_id" : "94567834",
             "teacher" : "6785678565",
             "subject" : "mathematics",
             "students" : ["220212350"],
-            "grade" : "10"
+            "grade" : "10",
+            "group" : "B"
         },
         {
             "class_id" : "12547485",
             "teacher" : "6785678565",
             "subject" : "english",
             "students" : ["220212348"],
-            "grade" : "8"
+            "grade" : "8",
+            "group" : "B"
         
         }
     ],

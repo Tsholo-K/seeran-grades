@@ -1,5 +1,5 @@
 {/* components */}
-import Parentdashboard from "@/components/(dashboard layouts)/parentdashboard";
+import Admindashboard from "@/components/(dashboard layouts)/admindashboard";
 
 
 export default function ParentDashboardLandingPage() {
@@ -7,8 +7,8 @@ export default function ParentDashboardLandingPage() {
       <>
         <div>
           {/* parent dashboard for large screens */}
-          <div className="lg:hidden block">           
-            <Parentdashboard />
+          <div className="lg:hidden block h-screen">           
+            <Admindashboard />
           </div>
           {/* desktop view */}
           <div className="w-full hidden lg:block pt-16">
