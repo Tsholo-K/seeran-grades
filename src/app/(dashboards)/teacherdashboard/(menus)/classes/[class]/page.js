@@ -45,7 +45,7 @@ const MyClass = () => {
             {/* page heading */}
             <PageHeading title={'Class'} subheading={''}/>
             {/* transcripts */}
-            <Classes classrooms={classroom} teacher={false}/>
+            <Classes classrooms={classroom} teacher={false} url={false}/>
             <MultipleMenuLinks menu={menus} />
             <p className='text-sm text-gray-400 mt-7 pl-2'>students</p>
             <div className='mt-3 py-1 rounded-xl bg-white'>

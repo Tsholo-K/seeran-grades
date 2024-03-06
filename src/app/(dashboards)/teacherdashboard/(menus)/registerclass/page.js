@@ -26,7 +26,7 @@ const MyRegisterClass = () => {
       {/* page heading */}
       <PageHeading title={'Register Class'} subheading={''}/>
       {/* transcripts */}
-      <Classes classrooms={register_classroom} teacher={false} subject={false}/>
+      <Classes classrooms={register_classroom} teacher={false} subject={false} url={false}/>
       <div className='pt-7'>
         <p className='text-center text-sm text-gray-400 my-2'>this form can only be filled once a day</p>
         <SingleMenuLink title={'Take Attendance Register'} url={'/teacherdashboard/registerclass/attendance'} border={true}/>

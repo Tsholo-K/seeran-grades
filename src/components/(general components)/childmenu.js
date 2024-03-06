@@ -11,11 +11,15 @@ const ChildMenu = ({ all_children, dashboard, section, grade=true }) => {
                     <Link href={`/${dashboard}dashboard/${section}/${child.student_number}`} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
                         <Image priority src={`/${child.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
                         <div className="pt-3 w-full">
-                            <p className={`${grade ? null : 'text-xl pt-[5px]'} font-bold`}>{child.name.charAt(0).toUpperCase() + child.name.slice(1)} {child.surname.charAt(0).toUpperCase() + child.surname.slice(1)}</p>
+                            <p className={`font-bold`}>{child.name.charAt(0).toUpperCase() + child.name.slice(1)} {child.surname.charAt(0).toUpperCase() + child.surname.slice(1)}</p>
                             {
-                                grade &&
+                                grade 
+                                ?
                                 <p className="text-sm text-gray-500">grade: {child.grade}</p>
+                                :
+                                <p className="text-sm text-gray-500"> {child.student_number}</p>
                             }
+                            
                         </div>
                         <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
                     </Link>
