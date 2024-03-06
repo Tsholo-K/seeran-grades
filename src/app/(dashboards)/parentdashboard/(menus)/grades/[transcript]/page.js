@@ -28,7 +28,7 @@ const Transcript = () => {
 
   let teacher
   data.teachers.forEach( teach => {
-    if ( teach.id === transcript.teacher_id ) {
+    if ( teach.id === transcript.teacher ) {
       teacher = teach
     }
   })

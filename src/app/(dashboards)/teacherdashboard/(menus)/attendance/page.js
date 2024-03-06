@@ -12,7 +12,7 @@ const MyRegisterClasse = () => {
 
   const teacher = '2938438420';
   let register_classroom = []
-  data.classes.forEach( (cls) => {
+  data.register_classes.forEach( (cls) => {
     if (cls.register_teacher_id === teacher) {
       register_classroom.push(cls)
     }

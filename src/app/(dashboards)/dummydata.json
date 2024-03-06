@@ -71,9 +71,9 @@
             "class_id" : "45356345",
             "teacher_id" : "2938438420",
             "teacher" : "Silvia Berningham",
-            "register_teacher_id" : "2938438420",
             "subject" : "mathematics",
-            "students" : ["220212349"],
+            "icon" : "maths",
+            "students" : ["","","","","","","","","","","","",""],
             "grade" : "12",
             "group" : "B"
         },
@@ -82,7 +82,8 @@
             "teacher_id" : "2938438420",
             "teacher" : "Silvia Berningham",
             "subject" : "life orientation",
-            "students" : ["220212348"],
+            "icon" : "life-orientation",
+            "students" : ["","","","","","","","","","","","","",""],
             "grade" : "8",
             "group" : "A"
         },
@@ -90,9 +91,9 @@
             "class_id" : "34562356",
             "teacher_id" : "2938438420",
             "teacher" : "Silvia Berningham",
-            "register_teacher_id" : "3456345633",
             "subject" : "physical sciences",
-            "students" : ["220212349"],
+            "icon" : "physics",
+            "students" : ["","","","","","","","","",""],
             "grade" : "12",
             "group" : "C"
         },
@@ -100,9 +101,9 @@
             "class_id" : "34563345",
             "teacher_id" : "3456345633",
             "teacher" : "Franklin Buck",
-            "register_teacher_id" : "",
             "subject" : "physical sciences",
-            "students" : ["220212350"],
+            "icon" : "physics",
+            "students" : ["","","","","","","",""],
             "grade" : "10",
             "group" : "C"
         },
@@ -110,9 +111,9 @@
             "class_id" : "23452342",
             "teacher_id" : "3456345633",
             "teacher" : "Franklin Buck",
-            "register_teacher_id" : "",
             "subject" : "life sciences",
-            "students" : ["220212349"],
+            "icon" : "life-science",
+            "students" : ["","","","","","","","","","","","",""],
             "grade" : "12",
             "group" : "D"
         },
@@ -120,9 +121,9 @@
             "class_id" : "45678453",
             "teacher_id" : "6785678565",
             "teacher" : "Tessa Moldy",
-            "register_teacher_id" : "",
             "subject" : "mathematics",
-            "students" : ["220212348"],
+            "icon" : "maths",
+            "students" : ["","","","","","","","","","","","","","",""],
             "grade" : "8",
             "group" : "A"
         },
@@ -130,9 +131,9 @@
             "class_id" : "94567834",
             "teacher_id" : "6785678565",
             "teacher" : "Tessa Moldy",
-            "register_teacher_id" : "",
             "subject" : "mathematics",
-            "students" : ["220212350"],
+            "icon" : "maths",
+            "students" : ["","","","","","","","","","","",""],
             "grade" : "10",
             "group" : "B"
         },
@@ -140,12 +141,42 @@
             "class_id" : "12547485",
             "teacher_id" : "6785678565",
             "teacher" : "Tessa Moldy",
-            "register_teacher_id" : "6785678565",
             "subject" : "english",
-            "students" : ["220212348"],
+            "icon" : "language",
+            "students" : ["","","","","","","","","","","","",""],
             "grade" : "8",
             "group" : "B"
         
+        }   
+    ], 
+    
+    "register_classes" : [
+        {
+            "class_id" : "45356345",
+            "teacher" : "Silvia Berningham",
+            "register_teacher_id" : "2938438420",
+            "subject" : "mathematics",
+            "students" : ["","","","","","","","","","","",""],
+            "grade" : "12",
+            "group" : "B"
+        },
+        {
+            "class_id" : "12547485",
+            "teacher" : "Tessa Moldy",
+            "register_teacher_id" : "6785678565",
+            "subject" : "english",
+            "students" : ["","","","","","","","","","","","","","",""],
+            "grade" : "8",
+            "group" : "B"
+        },
+        {
+            "class_id" : "23452342",
+            "teacher" : "Franklin Buck",
+            "register_teacher_id" : "3456345633",
+            "subject" : "life sciences",
+            "students" : ["","","","","","","","","","",""],
+            "grade" : "11",
+            "group" : "D"
         }
     ],
 

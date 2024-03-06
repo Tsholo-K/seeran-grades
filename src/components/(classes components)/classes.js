@@ -28,6 +28,7 @@ const Classes = ({ classrooms, teacher=true, subject=true }) => {
                                         subject 
                                         ?
                                         <div className="flex justify-center py-2 gap-3 px-3 w-full">
+                                            <Image src={`/${classroom.icon}.svg`} alt='try it button' width={10} height={10} className="w-8 lg:w-12"/>
                                             <div className="grid grid-cols-1 place-content-center">
                                                 <p className="text-lg lg:text-xl">{classroom.subject}</p>
                                             </div>
