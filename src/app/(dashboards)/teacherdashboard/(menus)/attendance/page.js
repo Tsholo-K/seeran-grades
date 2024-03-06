@@ -5,6 +5,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Classes from '@/components/(classes components)/classes';
+import SingleMenuLink from '@/components/(general components)/signlemenulink';
 
 
 const MyRegisterClasse = () => {
@@ -23,9 +24,12 @@ const MyRegisterClasse = () => {
       {/* back link */}
       <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}/>
       {/* page heading */}
-      <PageHeading title={'Register Class(s)'} subheading={'all your register classes'}/>
+      <PageHeading title={'Register Class'} subheading={''}/>
       {/* transcripts */}
       <Classes classrooms={register_classroom} teacher={false} subject={false}/>
+      <div>
+        <SingleMenuLink title={'Take Attendance register'} url={'/teacherdashboard'} border={true}/>
+      </div>
     </div>
   )
 };

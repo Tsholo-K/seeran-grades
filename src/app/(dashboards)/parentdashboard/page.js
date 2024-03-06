@@ -6,8 +6,8 @@ export default function ParentDashboardLandingPage() {
     return (
       <>
         <div>
-          {/* parent dashboard for large screens */}
-          <div className="lg:hidden block">           
+          {/* parent dashboard for small screens */}
+          <div className="lg:hidden ">           
             <Parentdashboard />
           </div>
           {/* desktop view */}

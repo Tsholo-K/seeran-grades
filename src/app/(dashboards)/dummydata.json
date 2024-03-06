@@ -484,5 +484,20 @@
             ],
             "debit_order" : "15"
         }
+    ],
+
+    "subjects" : [
+        {
+            "title" : "mathematics",
+            "icon" : "maths"
+        },
+        {
+            "title" : "physical science",
+            "icon" : "physics"
+        },
+        {
+            "title" : "mathematics",
+            "icon" : "maths"
+        }
     ]
 }
