@@ -16,7 +16,7 @@ const Family = () => {
       <PageHeading title={'Family'} subheading={'these are all the children linked to your account'}/>
       {/* children menu */}
       <div className="rounded-xl bg-white">
-        <ChildMenu all_children={data.students} section={'family'} />
+        <ChildMenu all_children={data.students} dashboard={'parent'} section={'family'} />
       </div>
     </div>
   )

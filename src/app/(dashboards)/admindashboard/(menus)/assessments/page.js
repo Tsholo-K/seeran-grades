@@ -3,7 +3,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components 
 import Crumbs from "@/components/crumbs";
-import Assessments from "@/components/(assessments components)/assessments";
+import Assessments from "@/components/(achievements components)/(assessments components)/assessments";
 import PageHeading from '@/components/(general components)/pageheading';
 
 

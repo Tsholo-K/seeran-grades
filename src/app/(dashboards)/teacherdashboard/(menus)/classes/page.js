@@ -16,6 +16,7 @@ const MyClasses = () => {
       classroom.push(cls)
     }
   });
+
   const classroom_sorted = classroom.sort((a, b) => b.grade - a.grade )
 
   return (
@@ -25,7 +26,7 @@ const MyClasses = () => {
       {/* page heading */}
       <PageHeading title={'My Classes'} subheading={'all your classes'}/>
       {/* transcripts */}
-      <Classes classrooms={classroom_sorted} teacher={false}/>
+      <Classes classrooms={classroom_sorted} teacher={false} dashbaord={'teacher'} section={'classes'}/>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">that&apos;s all your classes</p>
     </div>
   )

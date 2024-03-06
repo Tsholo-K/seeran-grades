@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import MultipleMenuLinks from "../(general components)/multiplemenulinks";
-import SingleMenuLink from "../(general components)/signlemenulink";
 
 
 const menuitems = [
@@ -22,14 +21,9 @@ const menuitems = [
         url: '/teacherdashboard/classes',
       },
       {
-        title: 'Take Attendance',
-        icon: 'calendar-days',
-        url: '/teacherdashboard/attendance',
-      },
-      {
-        title: 'Log Activity',
-        icon: 'eye',
-        url: '/teacherdashboard/activities',
+        title: 'Register Class',
+        icon: 'register-class',
+        url: '/teacherdashboard/registerclass',
       }
     ]
   },

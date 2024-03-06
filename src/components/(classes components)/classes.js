@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-const Classes = ({ classrooms, teacher=true, subject=true }) => {
+const Classes = ({ dashbaord, section, classrooms, teacher=true, subject=true }) => {
     return (
         <>
             {
@@ -15,7 +15,7 @@ const Classes = ({ classrooms, teacher=true, subject=true }) => {
                                 </div>
                                 <p className="lg:text-lg text-sm pl-2 ">grade : {classroom.grade}</p>
                             </div>
-                            <Link href={`/parentdashboard/grades/${classroom.id}`}>
+                            <Link href={`/${dashbaord}dashboard/${section}/${classroom.class_id}`}>
                                 <div className="relative rounded-xl cursor-pointer bg-white py-3 px-1" >
                                     {   
                                         teacher &&
