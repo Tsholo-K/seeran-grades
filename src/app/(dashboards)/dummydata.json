@@ -57,12 +57,44 @@
             "image" : "profile-icon-2"
         },
         {
+            "name" : "xin",
+            "surname" : "xhao",
+            "date_of_birth" : "24/08/2002",
+            "grade" : "10",
+            "student_number" : "2202121467",
+            "image" : "profile-icon-9"
+        },
+        {
+            "name" : "lebohang",
+            "surname" : "tsholo",
+            "date_of_birth" : "24/08/2002",
+            "grade" : "10",
+            "student_number" : "2202121218",
+            "image" : "profile-icon-13"
+        },
+        {
+            "name" : "keabetswe",
+            "surname" : "murula",
+            "date_of_birth" : "24/08/2002",
+            "grade" : "10",
+            "student_number" : "220212531",
+            "image" : "profile-icon-7"
+        },
+        {
+            "name" : "brenda",
+            "surname" : "timberlake",
+            "date_of_birth" : "24/08/2002",
+            "grade" : "10",
+            "student_number" : "220212623",
+            "image" : "profile-icon-14"
+        },
+        {
             "name" : "godwill",
             "surname" : "munyoro",
             "date_of_birth" : "24/08/2002",
             "grade" : "10",
             "student_number" : "220212350",
-            "image" : "profile-icon-4"
+            "image" : "profile-icon-11"
         }
     ],
 
