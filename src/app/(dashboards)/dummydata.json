@@ -276,7 +276,7 @@
             "teacher_id" : "2938438420",
             "classroom" : "102",
             "subject" : "mathematics",
-            "students" : ["","","","","","","","","","","",""],
+            "students" : ["220212349","2202121218","220212531"],
             "grade" : "12",
             "group" : "B"
         },
@@ -286,7 +286,7 @@
             "teacher_id" : "6785678565",
             "classroom" : "121",
             "subject" : "english",
-            "students" : ["","","","","","","","","","","","","","",""],
+            "students" : ["220212348","220212623","220212350"],
             "grade" : "8",
             "group" : "B"
         },
@@ -296,7 +296,7 @@
             "teacher_id" : "3456345633",
             "classroom" : "134",
             "subject" : "life sciences",
-            "students" : ["","","","","","","","","","",""],
+            "students" : ["2202121467","2202123624"],
             "grade" : "11",
             "group" : "D"
         }
@@ -304,7 +304,7 @@
 
     "grades" : [
         {
-            "assessment_id" : "",
+            "assessment_id" : "4782908467",
             "id" : "0367926839",
             "subject" : "mathematics",
             "icon" : "maths",
@@ -390,8 +390,9 @@
             "subject" : "mathematics",
             "icon" : "maths",
             "title" : "3D Shapes",
-            "topics" : "mathematics",
+            "topics" : ["Area of 3D shapes"],
             "total" : "50",
+            "average_score" : "52.1%",
             "assessment" : "test",
             "due_date" : "wednsday, 13 febuary",
             "collected" : true
@@ -401,8 +402,10 @@
             "id" : "3476735243",
             "subject" : "life science",
             "title" : "The Cell",
+            "topics" : ["Chromosome","Mitochondria"],
             "icon" : "life-science",
             "total" : "50",
+            "average_score" : "63.3%",
             "assessment" : "practical",
             "due_date" : "friday, 13 march",
             "collected" : true
@@ -411,9 +414,11 @@
             "class_id" : "45356345",
             "id" : "9825364789",
             "subject" : "mathematics",
+            "title" : "Trigonometry",
+            "topics" : ["Triangles"],
             "icon" : "maths",
-            "title" : "Triangles",
             "total" : "75",
+            "average_score" : "72.7%",
             "assessment" : "assignment",
             "due_date" : "tuesday, 21 febuary",
             "collected" : true
@@ -422,9 +427,11 @@
             "class_id" : "34562356",
             "id" : "0897263746",
             "subject" : "physical sciences",
+            "title" : "Motion",
+            "topics" : ["Newtons 2nd Law"],
             "icon" : "physics",
-            "title" : "Newtons 2nd Law",
             "total" : "50",
+            "average_score" : "45.6%",
             "assessment" : "expirement",
             "due_date" : "wednsday, 20 febuary",
             "collected" : true
@@ -433,10 +440,12 @@
             "class_id" : "34563456",
             "id" : "2718292736",
             "subject" : "life orientation",
+            "title" : "Good & Bad Habits",
+            "topics" : ["Depression"],
             "icon" : "life-orientation",
-            "title" : "Habits",
             "assessment" : "practical",
             "total" : "20",
+            "average_score" : "82.1%",
             "due_date" : "wednsday, 3 march",
             "collected" : true
         },
@@ -444,10 +453,12 @@
             "class_id" : "34563456",
             "id" : "5738192736",
             "subject" : "life orientation",
+            "title" : "The Society",
+            "topics" : ["Wrong role models"],
             "icon" : "life-science",
-            "title" : "The Economy",
             "assessment" : "exam",
             "total" : "150",
+            "average_score" : "57.4%",
             "due_date" : "monday, 28 febuary",
             "collected" : true
         }

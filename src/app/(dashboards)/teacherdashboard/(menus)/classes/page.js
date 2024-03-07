@@ -10,6 +10,7 @@ import Classes from '@/components/(classes components)/classes';
 const MyClasses = () => {
 
   const teacher = '2938438420';
+  
   let classroom = []
   data.classes.forEach( (cls) => {
     if (cls.teacher_id === teacher) {

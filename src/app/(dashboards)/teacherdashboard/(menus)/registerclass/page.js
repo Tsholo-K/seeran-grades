@@ -12,11 +12,21 @@ import ChildMenu from '@/components/(general components)/childmenu';
 const MyRegisterClass = () => {
 
   const teacher = '2938438420';
+  
   let register_classroom = []
   data.register_classes.forEach( (cls) => {
     if (cls.teacher_id === teacher) {
       register_classroom.push(cls)
     }
+  });
+
+  let students = []
+  register_classroom[0].students.forEach( student_id => {
+    data.students.forEach( student => {
+      if ( student.id === student_id) {
+          students.push(student)
+      }
+    });
   });
 
   return (
@@ -33,7 +43,7 @@ const MyRegisterClass = () => {
       </div>
       <p className='text-sm text-gray-400 mt-12 pl-2'>students</p>
       <div className='mt-3 py-1 rounded-xl bg-white'>
-        <ChildMenu all_children={data.students} dashboard={'teacher'} section={'registerclass'} grade={false}/>
+        <ChildMenu all_children={students} dashboard={'teacher'} section={'registerclass'} grade={false}/>
       </div>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10"></p>
     </div>

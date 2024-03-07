@@ -8,9 +8,10 @@ import data from '@/app/(dashboards)/dummydata.json'
 // components
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
+import MultipleMenu from "@/components/(general components)/multiplemenu";
 
 
-const MyClass = () => {
+const ClassAssessment = () => {
 
     const params = useParams();
     const class_id = params.class;
@@ -24,12 +25,51 @@ const MyClass = () => {
         }
     });
 
+    const menuitems = [
+      {
+        // we need it to be an array so thats why
+        section : [
+          {
+            title: `Total`,
+            info : `${assessment.total}`
+          },
+          {
+            title: 'Assessment',
+            info : `${assessment.assessment}`
+          },
+          {
+            title: 'Date Assessed',
+            info : `${assessment.due_date}`
+          },
+          {
+            title: 'Students Assessed',
+            info : `3`
+          },
+          {
+            title: 'Average Score',
+            info : `${assessment.average_score}`
+          },
+          {
+            title: 'Topics',
+            info : `${assessment.topics}`
+          }
+        ]
+      }
+    ];
+
     return (
         <div>
             {/* back link */}
             <Crumbs url={`teacherdashboard/performance/${class_id}`} title={'class'}/>
             {/* page heading */}
             <PageHeading title={`${assessment.title}`} subheading={''}/>
+            {
+                menuitems.map( ( item,index ) => (
+                <>
+                    <MultipleMenu key={index} menu={item.section} />
+                </>
+                ))
+            }
             {/* transcripts */}
             <p className='text-sm text-gray-400 mt-7 pl-2'>scores</p>
             <p className="py-7 text-center text-sm text-gray-400">that&apos;s all scores</p>
@@ -37,4 +77,4 @@ const MyClass = () => {
     )
 };
 
-export default MyClass;
+export default ClassAssessment;

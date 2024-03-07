@@ -38,6 +38,15 @@ const MyClass = () => {
         }
     });
 
+    let students = []
+    classroom[0].students.forEach( student_id => {
+        data.students.forEach( student => {
+            if ( student.id === student_id) {
+                students.push(student)
+            }
+        });
+    });
+
     return (
         <div className="w-full relative grid grid-cols-1 place-content-center">
             {/* back link */}
@@ -49,7 +58,7 @@ const MyClass = () => {
             <MultipleMenuLinks menu={menus} />
             <p className='text-sm text-gray-400 mt-7 pl-2'>students</p>
             <div className='mt-3 py-1 rounded-xl bg-white'>
-                <ChildMenu all_children={data.students} dashboard={'teacher'} section={'classes'} grade={false}/>
+                <ChildMenu all_children={students} dashboard={'teacher'} section={'classes'} grade={false}/>
             </div>
             <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10"></p>
         </div>
