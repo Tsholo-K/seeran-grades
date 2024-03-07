@@ -5,18 +5,56 @@
         "surname" : ""
     },
 
-    "parent": { 
-        "id" : "1928742173",
-        "name": "seeran",
-        "surname" : "dion",
-        "children": ["220212349","1289374","9812734"],
-        "phone_number":"0711740824",
-        "email": "seeran.dion@icloud.com",
-        "image" : "profile-icon-1",
-        "sms_communication" : true,
-        "email_communication" : false,
-        "mfa_enabled" : "Off"
-    },
+    "parents": [
+        { 
+            "id" : "1928742173",
+            "name": "seeran",
+            "surname" : "dion",
+            "children": ["220212349","2202121218","2202123624"],
+            "phone_number":"0711740824",
+            "email": "seeran.dion@icloud.com",
+            "image" : "profile-icon-1",
+            "sms_communication" : true,
+            "email_communication" : false,
+            "mfa_enabled" : "Off"
+        },
+        {
+            "id" : "6273648592",
+            "name": "belinda",
+            "surname" : "broadway",
+            "children": ["220212348"],
+            "phone_number":"0711740824",
+            "email": "seeran.dion@icloud.com",
+            "image" : "profile-icon-1",
+            "sms_communication" : true,
+            "email_communication" : false,
+            "mfa_enabled" : "Off"
+        },
+        {
+            "id" : "9152637894",
+            "name": "kelly",
+            "surname" : "brown",
+            "children": ["2202121467","220212350"],
+            "phone_number":"0711740824",
+            "email": "seeran.dion@icloud.com",
+            "image" : "profile-icon-1",
+            "sms_communication" : true,
+            "email_communication" : false,
+            "mfa_enabled" : "Off"
+        },
+        {
+            "id" : "0172836471",
+            "name": "tyler",
+            "surname" : "baker",
+            "children": ["220212531","220212623"],
+            "phone_number":"0711740824",
+            "email": "seeran.dion@icloud.com",
+            "image" : "profile-icon-1",
+            "sms_communication" : true,
+            "email_communication" : false,
+            "mfa_enabled" : "Off"
+        }
+    ],
 
     "teachers" : [
         {
@@ -59,144 +97,175 @@
 
     "students": [
         {
+            "id" : "220212349",
             "name" : "koketso",
             "surname" : "tsholo",
             "date_of_birth" : "28/08/2002",
             "grade" : "12",
-            "student_number" : "220212349",
-            "image" : "profile-icon-3"
+            "image" : "profile-icon-3",
+            "parent_id" : ["1928742173"]
         },
         {
+            "id" : "220212348",
             "name" : "lethabo",
             "surname" : "mochaki",
             "date_of_birth" : "07/06/2003",
             "grade" : "8",
-            "student_number" : "220212348",
-            "image" : "profile-icon-2"
+            "image" : "profile-icon-2",
+            "parent_id" : ["6273648592"]
         },
         {
+            "id" : "2202121467",
             "name" : "xin",
             "surname" : "xhao",
             "date_of_birth" : "24/08/2002",
             "grade" : "10",
-            "student_number" : "2202121467",
-            "image" : "profile-icon-9"
+            "image" : "profile-icon-9",
+            "parent_id" : ["9152637894"]
         },
         {
+            "id" : "2202121218",
             "name" : "lebohang",
             "surname" : "tsholo",
             "date_of_birth" : "24/08/2002",
-            "grade" : "10",
-            "student_number" : "2202121218",
-            "image" : "profile-icon-13"
+            "grade" : "12",
+            "image" : "profile-icon-13",
+            "parent_id" : ["1928742173"]
         },
         {
+            "id" : "220212531",
             "name" : "keabetswe",
             "surname" : "murula",
             "date_of_birth" : "24/08/2002",
-            "grade" : "10",
-            "student_number" : "220212531",
-            "image" : "profile-icon-7"
+            "grade" : "12",
+            "image" : "profile-icon-7",
+            "parent_id" : ["0172836471"]
         },
         {
+            "id" : "220212623",
             "name" : "brenda",
             "surname" : "timberlake",
             "date_of_birth" : "24/08/2002",
-            "grade" : "10",
-            "student_number" : "220212623",
-            "image" : "profile-icon-14"
+            "grade" : "8",
+            "image" : "profile-icon-14",
+            "parent_id" : ["0172836471"]
         },
         {
+            "id" : "220212350",
             "name" : "godwill",
             "surname" : "munyoro",
             "date_of_birth" : "24/08/2002",
+            "grade" : "8",
+            "image" : "profile-icon-11",
+            "parent_id" : ["9152637894"]
+        },
+        {
+            "id" : "2202123624",
+            "name" : "karabo",
+            "surname" : "tsholo",
+            "date_of_birth" : "18/12/2004",
             "grade" : "10",
-            "student_number" : "220212350",
-            "image" : "profile-icon-11"
+            "image" : "profile-icon-16",
+            "parent_id" : ["1928742173"]
         }
     ],
 
     "classes" : [
         {
-            "class_id" : "45356345",
+            "id" : "45356345",
             "teacher_id" : "2938438420",
             "teacher" : "Silvia Berningham",
             "subject" : "mathematics",
             "icon" : "maths",
-            "students" : ["","","","","","","","","","","","",""],
+            "students" : ["220212349","2202121218","220212531"],
             "grade" : "12",
-            "group" : "B"
+            "group" : "B",
+            "assessments": [],
+            "grades" : []
         },
         {
-            "class_id" : "34563456",
+            "id" : "34563456",
             "teacher_id" : "2938438420",
             "teacher" : "Silvia Berningham",
             "subject" : "life orientation",
             "icon" : "life-orientation",
-            "students" : ["","","","","","","","","","","","","",""],
+            "students" : ["220212348","220212623","220212350"],
             "grade" : "8",
-            "group" : "A"
+            "group" : "A",
+            "assessments": [],
+            "grades" : ""
         },
         {
-            "class_id" : "34562356",
+            "id" : "34562356",
             "teacher_id" : "2938438420",
             "teacher" : "Silvia Berningham",
             "subject" : "physical sciences",
             "icon" : "physics",
-            "students" : ["","","","","","","","","",""],
+            "students" : ["220212349","2202121218","220212531"],
             "grade" : "12",
-            "group" : "C"
+            "group" : "C",
+            "assessments": [],
+            "grades" : ""
         },
         {
-            "class_id" : "34563345",
+            "id" : "34563345",
             "teacher_id" : "3456345633",
             "teacher" : "Franklin Buck",
             "subject" : "physical sciences",
             "icon" : "physics",
-            "students" : ["","","","","","","",""],
+            "students" : ["2202121467","2202123624"],
             "grade" : "10",
-            "group" : "C"
+            "group" : "C",
+            "assessments": [],
+            "grades" : ""
         },
         {
-            "class_id" : "23452342",
+            "id" : "23452342",
             "teacher_id" : "3456345633",
             "teacher" : "Franklin Buck",
             "subject" : "life sciences",
             "icon" : "life-science",
-            "students" : ["","","","","","","","","","","","",""],
+            "students" : ["220212349","2202121218","220212531"],
             "grade" : "12",
-            "group" : "D"
+            "group" : "D",
+            "assessments": [],
+            "grades" : ""
         },
         {
-            "class_id" : "45678453",
+            "id" : "45678453",
             "teacher_id" : "6785678565",
             "teacher" : "Tessa Moldy",
             "subject" : "mathematics",
             "icon" : "maths",
-            "students" : ["","","","","","","","","","","","","","",""],
+            "students" : ["220212348","220212623","220212350"],
             "grade" : "8",
-            "group" : "A"
+            "group" : "A",
+            "assessments": [],
+            "grades" : ""
         },
         {
-            "class_id" : "94567834",
+            "id" : "94567834",
             "teacher_id" : "6785678565",
             "teacher" : "Tessa Moldy",
             "subject" : "mathematics",
             "icon" : "maths",
-            "students" : ["","","","","","","","","","","",""],
+            "students" : ["2202121467","2202123624"],
             "grade" : "10",
-            "group" : "B"
+            "group" : "B",
+            "assessments": [],
+            "grades" : ""
         },
         {
-            "class_id" : "12547485",
+            "id" : "12547485",
             "teacher_id" : "6785678565",
             "teacher" : "Tessa Moldy",
             "subject" : "english",
             "icon" : "language",
-            "students" : ["","","","","","","","","","","","",""],
+            "students" : ["220212348","220212623","220212350"],
             "grade" : "8",
-            "group" : "B"
-        
+            "group" : "B",
+            "assessments": [],
+            "grades" : ""
         }   
     ], 
     
@@ -235,10 +304,10 @@
 
     "grades" : [
         {
+            "assessment_id" : "",
             "id" : "0367926839",
             "subject" : "mathematics",
             "icon" : "maths",
-            "class": "45356345",
             "assessment" : "exam",
             "date_submitted" : "monday, 09 febuary",
             "date_released" : "tuesday, 10 febuary",
@@ -248,23 +317,23 @@
             "teacher" : "2938438420"
         },
         {
+            "assessment_id" : "",
             "id" : "7825364789",
             "subject" : "physical sciences",
             "icon" : "physics",
-            "class" : "34563345",
             "assessment" : "assigment",
             "date_submitted" : "monday, 21 febuary",
             "date_released" : "tuesday, 14 febuary",
             "score" : "87",
             "total" : "150",
-            "submitted_by" : "220212350",
+            "submitted_by" : "2202121218",
             "teacher" : "2938438420"
         },
         {
+            "assessment_id" : "",
             "id" : "8753902635",
             "subject" : "mathematics",
             "icon" : "maths",
-            "class" : "45678453",
             "assessment" : "class test",
             "date_submitted" : "friday, 27 febuary",
             "date_released" : "tuesday, 24 febuary",
@@ -274,106 +343,113 @@
             "teacher" : "3456345633"
         },
         {
+            "assessment_id" : "",
             "id" : "8648309825",
             "subject" : "english",
             "icon" : "language",
-            "class" : "12547485",
             "assessment" : "prepared speech",
             "date_submitted" : "monday, 1 march",
             "date_released" : "tuesday, 21 febuary",
             "score" : "12",
             "total" : "20",
-            "submitted_by" : "220212348",
+            "submitted_by" : "2202121218",
             "teacher" : "6785678565"
         },
         {
+            "assessment_id" : "",
             "id" : "8731028453",
             "subject" : "life orientation",
             "icon" : "life-orientation",
-            "class" : "34563456",
             "assessment" : "practical",
             "date_submitted" : "monday, 23 febuary",
             "date_released" : "tuesday, 7 febuary",
             "score" : "18",
             "total" : "20",
-            "submitted_by" : "220212348",
+            "submitted_by" : "2202123624",
             "teacher" : "6785678565"
         },
         {
+            "assessment_id" : "",
             "id" : "0274638475",
             "subject" : "physical sciences",
             "icon" : "physics",
-            "class" : "34562356",
             "assessment" : "exam",
             "date_submitted" : "monday, 20 febuary",
             "date_released" : "tuesday, 4 febuary",
             "score" : "142",
             "total" : "150",
-            "submitted_by" : "220212349",
+            "submitted_by" : "2202123624",
             "teacher" : "3456345633"
         }
     ],
 
     "assessments" : [
         {
+            "class_id" : "45356345",
             "id" : "4782908467",
             "subject" : "mathematics",
             "icon" : "maths",
-            "student" : "220212349",
+            "title" : "3D Shapes",
+            "topics" : "mathematics",
             "total" : "50",
             "assessment" : "test",
-            "teacher_id" : "2938438420",
-            "due_date" : "wednsday, 13 febuary"
+            "due_date" : "wednsday, 13 febuary",
+            "collected" : false
         },
         {
+            "class_id" : "34563456",
             "id" : "3476735243",
             "subject" : "life science",
+            "title" : "Shapes",
             "icon" : "life-science",
-            "student" : "220212350",
             "total" : "50",
             "assessment" : "practical",
-            "teacher_id" : "3456345633",
-            "due_date" : "friday, 13 march"
+            "due_date" : "friday, 13 march",
+            "collected" : false
         },
         {
+            "class_id" : "45356345",
             "id" : "9825364789",
             "subject" : "mathematics",
             "icon" : "maths",
-            "student" : "220212348",
+            "title" : "Triangles",
             "total" : "75",
             "assessment" : "assignment",
-            "teacher_id" : "6785678565",
-            "due_date" : "tuesday, 21 febuary"
+            "due_date" : "tuesday, 21 febuary",
+            "collected" : false
         },
         {
+            "class_id" : "34562356",
             "id" : "0897263746",
             "subject" : "physical sciences",
             "icon" : "physics",
-            "student" : "220212349",
+            "title" : "Shapes",
             "total" : "50",
             "assessment" : "expirement",
-            "teacher_id" : "2938438420",
-            "due_date" : "wednsday, 20 febuary"
+            "due_date" : "wednsday, 20 febuary",
+            "collected" : false
         },
         {
+            "class_id" : "34563456",
             "id" : "2718292736",
             "subject" : "life orientation",
             "icon" : "life-orientation",
-            "student" : "220212348",
-            "total" : "20",
+            "title" : "Shapes",
             "assessment" : "practical",
-            "teacher_id" : "6785678565",
-            "due_date" : "wednsday, 3 march"
+            "total" : "20",
+            "due_date" : "wednsday, 3 march",
+            "collected" : false
         },
         {
+            "class_id" : "34563456",
             "id" : "5738192736",
-            "subject" : "life science",
+            "subject" : "life orientation",
             "icon" : "life-science",
-            "student" : "220212349",
-            "total" : "150",
+            "title" : "The Respiratory System",
             "assessment" : "exam",
-            "teacher_id" : "3456345633",
-            "due_date" : "monday, 28 febuary"
+            "total" : "150",
+            "due_date" : "monday, 28 febuary",
+            "collected" : false
         }
     ],
 

@@ -19,12 +19,17 @@ const MyClass = () => {
 
     let classroom = []
     data.classes.forEach( (cls) => {
-        if (cls.class_id === class_id) {
+        if (cls.id === class_id) {
         classroom.push(cls)
         }
     });
 
-    const grades = data.grades.sort((a, b) => b.date_submitted - a.date_submitted )
+    let assessments = []
+    data.assessments.forEach( assessment => {
+        if ( assessment.class_id === classroom[0].id ) {
+            assessments.push(assessment)
+        }
+    });
 
     return (
         <div className="w-full relative grid grid-cols-1 place-content-center">
@@ -35,7 +40,7 @@ const MyClass = () => {
             {/* transcripts */}
             <Classes classrooms={classroom} teacher={false} url={false}/>
             <p className='text-sm text-gray-400 mt-7 pl-2'>assessments</p>
-            <Transcripts transcripts={grades} dashboard={'teacher'} icon={false} score={false} submitter={false} date_title={'assessed'} section={'performance'}/>
+            <Transcripts transcripts={assessments} dashboard={'teacher'} icon={false} score={false} submitter={false} date_title={'assessed'} section={'performance'} subject={false}/>
         </div>
     )
 };

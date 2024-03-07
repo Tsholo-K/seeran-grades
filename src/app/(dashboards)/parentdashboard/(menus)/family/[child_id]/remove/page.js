@@ -16,9 +16,9 @@ const RemoveChild = () => {
   const params = useParams();
   const student_id = params.child_id
 
-  let student = ''
+  let student
   data.students.forEach( child => {
-    if ( child.student_number === student_id ) {
+    if ( child.id === student_id ) {
       student = child
     }
   });
@@ -26,7 +26,7 @@ const RemoveChild = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <Crumbs url={`parentdashboard/family/${student.student_number}`} title={'child id'}/>
+      <Crumbs url={`parentdashboard/family/${student.id}`} title={'child id'}/>
       {/* page heading */}
       <div className="lg:hidden">
         <PageHeading title={'Remove Child'} />

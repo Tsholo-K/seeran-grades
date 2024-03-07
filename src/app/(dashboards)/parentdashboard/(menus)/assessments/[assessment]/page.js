@@ -26,12 +26,28 @@ const Assessment = () => {
     }
   });
 
+  let classroom
+  data.classes.forEach( cls => {
+    if ( cls.id === assessment.class_id ) {
+      classroom = cls
+    }
+  })
+
   let teacher
   data.teachers.forEach( teach => {
-    if ( teach.id === assessment.teacher_id ) {
+    if ( teach.id === classroom.teacher_id ) {
       teacher = teach
     }
   })
+
+  let children = []
+  data.parents[0].children.forEach( child_id => {
+    data.students.forEach( child => {
+      if ( child.id === child_id ) {
+      children.push(child)
+      }
+    });
+  });
 
   const assessment_info = [
     {
@@ -52,7 +68,7 @@ const Assessment = () => {
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       <Crumbs url={`parentdashboard/assessments`} title={`assessments`}/>
         <PageHeading title={'Assessment'} />
-        <Subject subject={assessment.subject} icon={assessment.icon} submitter={assessment.student}/>
+        <Subject subject={assessment.subject} icon={assessment.icon}/>
         <MultipleMenu menu={assessment_info} />
         {/* teacher */}
         <div className="relative pt-7">

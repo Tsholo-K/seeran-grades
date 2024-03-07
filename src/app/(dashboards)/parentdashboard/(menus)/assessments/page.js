@@ -9,7 +9,34 @@ import PageHeading from '@/components/(general components)/pageheading';
 
 const Grades = () => {
 
-  const assessments = data.assessments
+  let children = []
+  data.parents[0].children.forEach( child_id => {
+    data.students.forEach( child => {
+      if ( child.id === child_id ) {
+      children.push(child)
+      }
+    });
+  });
+
+  let classes = []
+  children.forEach( child => {
+    data.classes.forEach( (cls) => {
+      cls.students.forEach( student => {
+        if ( child.id === student ) {
+          classes.push(cls)
+        }
+      });
+    });
+  });
+
+  let assessments = []
+  classes.forEach( cls => {
+    data.assessments.forEach( (assessment) => {
+      if ( cls.id === assessment.class_id ) {
+        assessments.push(assessment)
+      }
+    });
+  });
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">

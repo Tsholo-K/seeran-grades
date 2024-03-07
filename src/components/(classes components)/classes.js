@@ -66,8 +66,8 @@ const Classes = ({ dashbaord, section, classrooms, teacher=true, subject=true, u
                             {
                                 url
                                 ?
-                                    <Link href={`/${dashbaord}dashboard/${section}/${classroom.class_id}`}>
-                                        <Class_info classroom={ classroom} teacher={teacher} subject={subject} />
+                                    <Link href={`/${dashbaord}dashboard/${section}/${classroom.id}`}>
+                                        <Class_info classroom={classroom} teacher={teacher} subject={subject} />
                                     </Link>
                                 :
                                     <div>

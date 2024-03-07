@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const Security = () => {
 
-  const user = data.parent
+  const parent_user = data.parents[0]
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
@@ -22,11 +22,11 @@ const Security = () => {
       {/* email and phone number */}
       <div className="rounded-xl bg-white mt-20 ">
         <Link href={'/parentdashboard/profile/security/email'}>
-          <Menu title={'Email'} icon={true} info={`${user.email}`} />
+          <Menu title={'Email'} icon={true} info={`${parent_user.email}`} />
         </Link>
         <hr className="mx-5"></hr>
         <Link href={'/parentdashboard/profile/security/phonenumber'}>
-          <Menu title={'Phone Number'} icon={true} info={`${user.phone_number}`}/>
+          <Menu title={'Phone Number'} icon={true} info={`${parent_user.phone_number}`}/>
         </Link>
       </div>
       {/* password & mfa */}

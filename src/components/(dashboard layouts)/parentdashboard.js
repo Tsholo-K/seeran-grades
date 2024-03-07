@@ -1,3 +1,5 @@
+import data from '@/app/(dashboards)/dummydata.json'
+
 import Link from "next/link";
 import Image from "next/image";
 import MultipleMenuLinks from "../(general components)/multiplemenulinks";
@@ -73,6 +75,17 @@ const menuitems = [
 ]
 
 const Parentdashboard = () => {
+  
+  let children = []
+
+  data.parents[0].children.forEach( child_id => {
+    data.students.forEach( child => {
+      if ( child.id === child_id ) {
+      children.push(child)
+      }
+    });
+  });
+
   return (
     <>
         <div className="w-full h-full relative">
@@ -90,9 +103,14 @@ const Parentdashboard = () => {
                 <hr className="mx-5"></hr>
                 <Link href={'/parentdashboard/family'} className="flex py-2 px-3 gap-5 justify-start w-full cursor-pointer md:hover:text-blue-700">
                   <div className="flex w-fit">
-                    <Image src={'/profile-icon-2.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
-                    <Image src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
-                    <Image src={'/profile-icon-4.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
+                    {
+                      children.map( child => (
+                        <>
+                          <Image src={`/${child.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
+
+                        </>
+                      ))
+                    }
                   </div>
                   <p className="pt-2 w-full">Family</p>
                   <Image src={'/chevron-right-black.svg'} alt='try it button' width={50} height={50} className="w-fit h-fit pt-2"/>

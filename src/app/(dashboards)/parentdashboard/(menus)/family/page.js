@@ -8,6 +8,17 @@ import ChildMenu from "@/components/(general components)/childmenu";
 
 
 const Family = () => {
+
+  let children = []
+
+  data.parents[0].children.forEach( child_id => {
+    data.students.forEach( child => {
+      if ( child.id === child_id ) {
+      children.push(child)
+      }
+    });
+  });
+  
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       {/* back link */}
@@ -16,7 +27,7 @@ const Family = () => {
       <PageHeading title={'Family'} subheading={'these are all the children linked to your account'}/>
       {/* children menu */}
       <div className="rounded-xl bg-white">
-        <ChildMenu all_children={data.students} dashboard={'parent'} section={'family'} />
+        <ChildMenu all_children={children} dashboard={'parent'} section={'family'} />
       </div>
     </div>
   )

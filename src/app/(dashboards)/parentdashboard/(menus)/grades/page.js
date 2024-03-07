@@ -8,6 +8,26 @@ import Transcripts from "@/components/(grades components)/transcripts";
 
 
 const Grades = () => {
+
+  let children = []
+
+  data.parents[0].children.forEach( child_id => {
+    data.students.forEach( child => {
+      if ( child.id === child_id ) {
+      children.push(child)
+      }
+    });
+  });
+
+  let grades = []
+  children.forEach( child => {
+    data.grades.forEach( transcript => {
+      if ( transcript.submitted_by === child.id ) {
+        grades.push(transcript)
+      }
+    });
+  });
+
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       {/* back link */}
@@ -15,7 +35,7 @@ const Grades = () => {
       {/* page heading */}
       <PageHeading title={'Transcripts'} subheading={'all assessment results'}/>
       {/* transcripts */}
-      <Transcripts transcripts={data.grades} dashboard={'parent'} section={'grades'}/>
+      <Transcripts transcripts={grades} dashboard={'parent'} section={'grades'}/>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">all caught up..</p>
     </div>
   )

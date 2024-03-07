@@ -16,10 +16,13 @@ const ID = () => {
 
   const searchParams = useParams();
 
-  let parent_user = null
-  if( data.parent.id === searchParams.id ){
-    parent_user = data.parent
-  }
+  let parent_user 
+  data.parents.forEach( parent => {
+    if( parent.id === searchParams.id ){
+      parent_user = parent
+    }
+  });
+  
   const menus = [
       {
         title: 'Name',

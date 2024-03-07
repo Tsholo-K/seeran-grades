@@ -4,7 +4,7 @@ import Image from "next/image";
 import data from '@/app/(dashboards)/dummydata.json'
 
 
-const SubmittedBy = ({ student_id }) => {
+const SetFor = ({ student_id }) => {
 
     let submitter 
     data.students.forEach( (student) => {
@@ -17,7 +17,7 @@ const SubmittedBy = ({ student_id }) => {
     )
 }
   
-const Subject = ({ title='Subject', subject, icon, submitter }) => {
+const Subject = ({ title='Subject', subject, icon }) => {
     return (
       <>
         <div className="py-4 mb-8 lg:py-6">
@@ -32,7 +32,6 @@ const Subject = ({ title='Subject', subject, icon, submitter }) => {
                 </div>
             </div>
           </div>
-          <SubmittedBy student_id={submitter}/>
         </div>
       </>
     )

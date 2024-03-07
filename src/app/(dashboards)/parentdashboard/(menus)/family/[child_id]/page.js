@@ -20,7 +20,7 @@ const ChildId = () => {
 
   let student = ''
   data.students.forEach( child => {
-    if ( child.student_number === student_id ) {
+    if ( child.id === student_id ) {
       student = child
     }
   });
@@ -49,7 +49,7 @@ const ChildId = () => {
     {
       title: 'Student Number',
       icon: false,
-      info: student.student_number
+      info: student.id
     },
   ];
 
@@ -67,7 +67,7 @@ const ChildId = () => {
       <MultipleMenu menu={student_info} />
       {/* remove child */}
       <div className="text-red-600">
-        <SingleMenuLink title={'Remove Child From Account'} border={true} url={`/parentdashboard/family/${student.student_number}/remove`}/>
+        <SingleMenuLink title={'Remove Child From Account'} border={true} url={`/parentdashboard/family/${student.id}/remove`}/>
       </div>
       <p className="text-center text-gray-400 text-sm w-[90%] mx-auto pt-3">to reverse this you&apos;d need to go to school to have it relinked</p>
     </div>

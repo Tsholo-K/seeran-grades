@@ -28,7 +28,7 @@ const menuitems = [
 
 const ProfileSettings = () => {
 
-  const parent_user = data.parent
+  const parent_user = data.parents[0]
 
   return (
     <div className="">

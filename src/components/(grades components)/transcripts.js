@@ -6,9 +6,9 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 const SubmittedBy = ({ student_id }) => {
 
-    let submitter = ''
+    let submitter 
     data.students.forEach( (student) => {
-        if ( student.student_number === student_id ) {
+        if ( student.id === student_id ) {
         submitter = student
         }
     });
@@ -37,7 +37,7 @@ const TranscriptScore = ({ score, total }) => {
     )
 };
 
-const Transcripts = ({ transcripts, submitter=true, dashboard, section, date_title='results released', icon=true, score=true }) => {
+const Transcripts = ({ transcripts, subject=true, submitter=true, dashboard, section, date_title='results released', icon=true, score=true }) => {
     return (
         <>
             {
@@ -61,17 +61,18 @@ const Transcripts = ({ transcripts, submitter=true, dashboard, section, date_tit
                                         score &&
                                         <TranscriptScore score={transcript.score} total={transcript.total}/>
                                     }
-                                    
                                     <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{transcript.assessment}</p>
                                     <div className="flex justify-center py-2 gap-3 px-3 w-full cursor-pointer">
                                         {
                                             icon &&
                                                 <Image priority src={`/${transcript.icon}.svg`} alt="profile icon" width={30} height={30} className="w-8 lg:w-12" />
-      
                                         }
-                                        <div className="grid grid-cols-1 place-content-center">
-                                            <p className="lg:text-xl">{transcript.subject}</p>
-                                        </div>
+                                        {
+                                            subject &&
+                                            <div className="grid grid-cols-1 place-content-center">
+                                                <p className="lg:text-xl">{transcript.subject}</p>
+                                            </div>
+                                        }
                                     </div>
                                     <div className="flex pl-3 pt-3">
                                         <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-6"/>
