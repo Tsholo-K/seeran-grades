@@ -9,7 +9,6 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Classes from '@/components/(classes components)/classes';
-import Transcripts from "@/components/(grades components)/transcripts";
 import Assessments from "@/components/(assessments components)/assessments";
 
 
@@ -44,7 +43,7 @@ const MyClass = () => {
             {
                 assessments.map((assessment, index)=> (
                     <div key={index} >
-                        <Assessments assessment={assessment} title={true} date_title={'assessed'}/>
+                        <Assessments dashboard={'teacher'} section={`performance/${class_id}`} assessment={assessment} title={true} date_title={'assessed'}/>
                     </div>
                 ))
             }

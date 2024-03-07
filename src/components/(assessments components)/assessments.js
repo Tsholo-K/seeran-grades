@@ -2,11 +2,11 @@ import Image from "next/image"
 import Link from "next/link"
 
 
-const Assessments = ({ assessment, title=false, date_title }) => {
+const Assessments = ({ dashboard, section, assessment, title=false, date_title }) => {
     return (
       <>
         <div className="py-4 lg:py-6">
-          <Link href={`/parentdashboard/assessments/${assessment.id}`}>
+          <Link href={`/${dashboard}dashboard/${section}/${assessment.id}`}>
             <div className="rounded-xl bg-white py-3">
               <div>
                 <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{assessment.assessment}</p>
