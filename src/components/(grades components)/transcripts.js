@@ -37,7 +37,7 @@ const TranscriptScore = ({ score, total }) => {
     )
 };
 
-const Transcripts = ({ transcripts, submitter=true }) => {
+const Transcripts = ({ transcripts, submitter=true, dashboard, section, date_title='results released', icon=true }) => {
     return (
         <>
             {
@@ -55,12 +55,16 @@ const Transcripts = ({ transcripts, submitter=true }) => {
                                     </div>
                                 </>
                             }
-                            <Link href={`/parentdashboard/grades/${transcript.id}`}>
+                            <Link href={`/${dashboard}dashboard/${section}/${transcript.id}`}>
                                 <div className="relative rounded-xl bg-white py-3" >
                                     <TranscriptScore score={transcript.score} total={transcript.total}/>
                                     <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{transcript.assessment}</p>
                                     <div className="flex justify-center py-2 gap-3 px-3 w-full cursor-pointer">
-                                        <Image priority src={`/${transcript.icon}.svg`} alt="profile icon" width={30} height={30} className="w-8 lg:w-12" />
+                                        {
+                                            icon &&
+                                                <Image priority src={`/${transcript.icon}.svg`} alt="profile icon" width={30} height={30} className="w-8 lg:w-12" />
+      
+                                        }
                                         <div className="grid grid-cols-1 place-content-center">
                                             <p className="lg:text-xl">{transcript.subject}</p>
                                         </div>
@@ -68,7 +72,7 @@ const Transcripts = ({ transcripts, submitter=true }) => {
                                     <div className="flex pl-3 pt-3">
                                         <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-6"/>
                                         <div className="grid grid-cols-1 place-content-center">
-                                            <p className="text-sm pl-2 text-gray-500 lg:text-base">results released : {transcript.date_released}</p>
+                                            <p className="text-sm pl-2 text-gray-500 lg:text-base">{date_title} : { date_title === 'results released' ? transcript.date_released : transcript.date_submitted }</p>
                                         </div>
                                     </div>
                                 </div>

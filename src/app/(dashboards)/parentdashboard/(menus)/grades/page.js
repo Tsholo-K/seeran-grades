@@ -15,7 +15,7 @@ const Grades = () => {
       {/* page heading */}
       <PageHeading title={'Transcripts'} subheading={'all assessment results'}/>
       {/* transcripts */}
-      <Transcripts transcripts={data.grades} />
+      <Transcripts transcripts={data.grades} dashboard={'parent'} section={'grades'}/>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">all caught up..</p>
     </div>
   )

@@ -9,7 +9,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Classes from '@/components/(classes components)/classes';
-import ChildMenu from '@/components/(general components)/childmenu';
+import Transcripts from "@/components/(grades components)/transcripts";
 
 
 const MyClass = () => {
@@ -24,6 +24,8 @@ const MyClass = () => {
         }
     });
 
+    const grades = data.grades.sort((a, b) => b.date_submitted - a.date_submitted )
+
     return (
         <div className="w-full relative grid grid-cols-1 place-content-center">
             {/* back link */}
@@ -32,10 +34,8 @@ const MyClass = () => {
             <PageHeading title={`Class ${classroom[0].grade}${classroom[0].group}`} subheading={''}/>
             {/* transcripts */}
             <Classes classrooms={classroom} teacher={false} url={false}/>
-            <p className='text-sm text-gray-400 mt-7 pl-2'>students</p>
-            <div className='mt-3 py-1 rounded-xl bg-white'>
-                <ChildMenu all_children={data.students} dashboard={'teacher'} section={'classes'} grade={false}/>
-            </div>
+            <p className='text-sm text-gray-400 mt-7 pl-2'>assessments</p>
+            <Transcripts transcripts={grades} dashboard={'teacher'} icon={false} submitter={false} date_title={'assessed'} section={'performance'}/>
         </div>
     )
 };
