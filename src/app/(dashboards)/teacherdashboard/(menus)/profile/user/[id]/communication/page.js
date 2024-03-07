@@ -55,18 +55,21 @@ const ToggleMenu = ({ menu, checked }) => {
 const Communication = () => {
 
   const searchParams = useParams();
-  let sms = ''
-  let email = ''
 
-  if( data.parent.id === searchParams.id ){
-    sms = data.parent.sms_communication
-    email = data.parent.email_communication
-  }
+  let sms 
+  let email 
+
+  data.teachers.forEach((teach) => {
+    if( teach.id === searchParams.id ) {
+      sms = teach.sms_communication
+      email = teach.email_communication
+    }
+  });
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <Crumbs title={'ID'} url={`parentdashboard/profile/user/1928742173`} hide={false}/>
+      <Crumbs title={'ID'} url={`teacherdashboard/profile/user/${searchParams.id}`} hide={false}/>
       {/* page heading */}
       <PageHeading title={'Communication'} subheading={'preffered communication'} />
       {/* Sms toggle */}

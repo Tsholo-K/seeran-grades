@@ -37,7 +37,7 @@ const ProfileSettings = () => {
       {/* page heading */}
       <PageHeading title={'Profile Settings'} />
       {/* profile info section */}
-      <UserImage image={parent_user.img} name={parent_user.name} surname={parent_user.surname} email={parent_user.email}/>
+      <UserImage image={parent_user.image} name={parent_user.name} surname={parent_user.surname} email={parent_user.email}/>
       {/* menu links section */}
       {
         menuitems.map( ( item,index ) => (

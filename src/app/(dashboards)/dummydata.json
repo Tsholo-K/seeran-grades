@@ -12,7 +12,7 @@
         "children": ["220212349","1289374","9812734"],
         "phone_number":"0711740824",
         "email": "seeran.dion@icloud.com",
-        "img" : "profile-icon-1",
+        "image" : "profile-icon-1",
         "sms_communication" : true,
         "email_communication" : false,
         "mfa_enabled" : "Off"
@@ -23,19 +23,37 @@
             "id" : "2938438420",
             "name" : "Silvia",
             "surname" : "Berningham",
-            "classes" : ["45356345","34563456","34562356"]
+            "phone_number" : "+27616738765",
+            "email": "silvia@icloud.com",
+            "image" : "profile-icon-14",
+            "register_class" : "45356345",
+            "classes" : ["45356345","34563456","34562356"],
+            "sms_communication" : true,
+            "email_communication" : false
         },
         {
             "id" : "3456345633",
             "name" : "Franklin",
             "surname" : "Buck",
-            "classes" : ["34563345","23452342"]
+            "phone_number" : "+278165489276",
+            "email": "franklin@icloud.com",
+            "image" : "profile-icon-6",
+            "register_class" : "34563456",
+            "classes" : ["34563345","23452342"],
+            "sms_communication" : true,
+            "email_communication" : true
         },
         {
             "id" : "6785678565",
             "name" : "Tessa",
             "surname" : "Moldy",
-            "classes" : ["45678453","94567834","12547485"]
+            "phone_number" : "+276288926517",
+            "email": "tessa@icloud.com",
+            "image" : "profile-icon-10",
+            "register_class" : "45356345",
+            "classes" : ["45678453","94567834","12547485"],
+            "sms_communication" : false,
+        "email_communication" : false
         }
     ],
 
@@ -185,8 +203,9 @@
     "register_classes" : [
         {
             "class_id" : "45356345",
-            "teacher" : "Silvia Berningham",
+            "register_teacher" : "Silvia Berningham",
             "register_teacher_id" : "2938438420",
+            "classroom" : "102",
             "subject" : "mathematics",
             "students" : ["","","","","","","","","","","",""],
             "grade" : "12",
@@ -194,8 +213,9 @@
         },
         {
             "class_id" : "12547485",
-            "teacher" : "Tessa Moldy",
+            "register_teacher" : "Tessa Moldy",
             "register_teacher_id" : "6785678565",
+            "classroom" : "121",
             "subject" : "english",
             "students" : ["","","","","","","","","","","","","","",""],
             "grade" : "8",
@@ -203,8 +223,9 @@
         },
         {
             "class_id" : "23452342",
-            "teacher" : "Franklin Buck",
+            "register_teacher" : "Franklin Buck",
             "register_teacher_id" : "3456345633",
+            "classroom" : "134",
             "subject" : "life sciences",
             "students" : ["","","","","","","","","","",""],
             "grade" : "11",

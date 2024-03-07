@@ -27,7 +27,7 @@ const MyClasses = () => {
       <PageHeading title={'Performance'} subheading={'all your classes'}/>
       {/* transcripts */}
       <Classes classrooms={classroom_sorted} teacher={false}/>
-      <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">that&apos;s allyour classes</p>
+      <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">that&apos;s all your classes</p>
     </div>
   )
 };

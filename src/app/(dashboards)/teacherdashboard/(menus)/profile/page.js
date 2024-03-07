@@ -15,12 +15,12 @@ const menuitems = [
       {
         title: 'Personal Information',
         icon: 'book-lock',
-        url: '/parentdashboard/profile/user/1928742173',
+        url: '/teacherdashboard/profile/user/2938438420',
       },
       {
         title: 'Sign-in And Security',
         icon: 'fingerprint',
-        url: '/parentdashboard/profile/security',
+        url: '/teacherdashboard/profile/security',
       },
     ]
   }
@@ -28,16 +28,22 @@ const menuitems = [
 
 const ProfileSettings = () => {
 
-  const parent_user = data.parent
+  const teacher_id = '2938438420'
+  let teacher 
+  data.teachers.forEach((teach) => {
+    if( teach.id === teacher_id ) {
+      teacher = teach
+    }
+  });
 
   return (
     <div className="">
       {/* back link */}
-      <Crumbs title={'dashboard'} url={`parentdashboard`} hide={true}/>
+      <Crumbs title={'dashboard'} url={`teacherdashboard`} hide={true}/>
       {/* page heading */}
       <PageHeading title={'Profile Settings'} />
       {/* profile info section */}
-      <UserImage image={parent_user.img} name={parent_user.name} surname={parent_user.surname} email={parent_user.email}/>
+      <UserImage image={teacher.image} name={teacher.name} surname={teacher.surname} email={teacher.email}/>
       {/* menu links section */}
       {
         menuitems.map( ( item,index ) => (

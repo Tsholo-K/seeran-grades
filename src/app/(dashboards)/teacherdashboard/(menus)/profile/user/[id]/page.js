@@ -16,44 +16,56 @@ const ID = () => {
 
   const searchParams = useParams();
 
-  let parent_user = null
-  if( data.parent.id === searchParams.id ){
-    parent_user = data.parent
-  }
+  const teacher_id = searchParams.id
+  
+  let teacher 
+  data.teachers.forEach((teach) => {
+    if( teach.id === teacher_id ) {
+      teacher = teach
+    }
+  });
+
+  let register 
+  data.register_classes.forEach((classroom) => {
+    if( classroom.class_id === teacher.register_class ) {
+      register = classroom
+    }
+  });
+
   const menus = [
       {
         title: 'Name',
-        info: `${parent_user.name.charAt(0).toUpperCase() + parent_user.name.slice(1)}`
+        info: `${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)}`
       },
       {
         title: 'Surname',
-        info:`${parent_user.surname.charAt(0).toUpperCase() + parent_user.surname.slice(1)}`
+        info:`${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`
       },
       {
         title: 'Phone Number',
-        info: `${parent_user.phone_number}`
+        info: `${teacher.phone_number}`
       },
       {
         title: 'Email',
-        info: `${parent_user.email}`
+        info: `${teacher.email}`
       },
       {
-        title: 'Children',
-        info: `${parent_user.children.length}`
-      },
+        title: 'Classroom',
+        info: `${register.classroom}`
+      }
   ]
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <Crumbs title={'profile settings'} url={`parentdashboard/profile`} hide={false}/>
+      <Crumbs title={'profile settings'} url={`teacherdashboard/profile`} hide={false}/>
       {/* page heading */}
       <PageHeading title={'ID'} />
       {/* personal infomation */}
       <MultipleMenu menu={menus}/>
       {/* communication preferance */}
       <div className="text-red-600 pt-16">
-        <SingleMenuLink title={'Communication Prefferance'} icon={''} url={'/parentdashboard/profile/user/1928742173/communication'} border={true}/>
+        <SingleMenuLink title={'Communication Prefferance'} icon={''} url={`/teacherdashboard/profile/user/${teacher_id}/communication`} border={true}/>
       </div>
     </div>
   )

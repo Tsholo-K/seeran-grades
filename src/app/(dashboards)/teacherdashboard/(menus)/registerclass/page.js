@@ -24,7 +24,7 @@ const MyRegisterClass = () => {
       {/* back link */}
       <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}/>
       {/* page heading */}
-      <PageHeading title={'Register Class'} subheading={''}/>
+      <PageHeading title={'Register Class'} subheading={'your register class'}/>
       {/* transcripts */}
       <Classes classrooms={register_classroom} teacher={false} subject={false} url={false}/>
       <div className='pt-7'>
@@ -35,6 +35,7 @@ const MyRegisterClass = () => {
       <div className='mt-3 py-1 rounded-xl bg-white'>
         <ChildMenu all_children={data.students} dashboard={'teacher'} section={'registerclass'} grade={false}/>
       </div>
+      <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10"></p>
     </div>
   )
 };

@@ -1,3 +1,6 @@
+// dummy data
+import data from '@/app/(dashboards)/dummydata.json'
+
 import Link from "next/link";
 import Image from "next/image";
 import MultipleMenuLinks from "../(general components)/multiplemenulinks";
@@ -53,21 +56,31 @@ const menuitems = [
 ]
 
 const Teacherdashboard = () => {
+
+  const teacher_id = '2938438420'
+  let teacher 
+  data.teachers.forEach((teach) => {
+    if( teach.id === teacher_id ) {
+      teacher = teach
+    }
+  });
+
   return (
     <>
       <div className="w-full h-full relative">
         <div>
-          {/* accounts section */}
+          {/* account settings */}
           <div className="rounded-xl bg-white mb-7">
             <Link href={'/teacherdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-              <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
+              <Image priority src={`/${teacher.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
               <div className="w-full">
-                <p className="pt-3 ">Seeran Dion</p>
+                <p className="pt-3 ">{teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} {teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}</p>
                 <p className="text-sm text-gray-400 ">profile settings</p>
               </div>
               <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
             </Link>
           </div>
+          {/* menu links */}
           {
             menuitems.map( ( item,index ) => (
               <>
