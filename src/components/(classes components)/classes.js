@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Class_info = ({ classroom, teacher, subject, info  }) => {
     return (
-        <div className={`relative rounded-xl cursor-pointer bg-white  ${info ? 'py-8' : 'py-5' } px-3 lg:px-7`} >
+        <div className={`relative rounded-xl cursor-pointer bg-white py-7 px-3 lg:px-8`} >
             {   
                 teacher &&
                 <div className="flex gap-2 w-full justify-center">
@@ -14,16 +14,16 @@ const Class_info = ({ classroom, teacher, subject, info  }) => {
             {
                 subject 
                 ?
-                <div className="flex justify-center py-2 gap-2 px-3 w-full">
-                    <Image src={`/${classroom.icon}.svg`} alt='try it button' width={10} height={10} className={`${info ? 'w-12' : 'w-14' }  lg:w-20`}/>
+                <div className="flex justify-center  gap-2 px-3 w-full">
+                    <Image src={`/${classroom.icon}.svg`} alt='try it button' width={10} height={10} className={`${info ? 'w-14' : 'w-14' }  lg:w-20`}/>
                     <div className="grid grid-cols-1 place-content-center">
                         <p className="text-lg lg:text-2xl">{classroom.subject}</p>
                     </div>
                 </div>
                 :
-                <div className="flex gap-3 justify-center">
+                <div className="flex gap-3 pb-3 justify-center">
                     <Image src={'/user-round-blue.svg'} alt='try it button' width={10} height={10}  className={`${info ? 'w-12' : 'w-14' }  lg:w-20`}/>
-                    <p className=" text-sm lg:text-2xl text-gray-500 pt-1 grid grid-cols-1 place-content-center">
+                    <p className=" text-sm lg:text-2xl text-gray-500 grid grid-cols-1 place-content-center">
                         {classroom.teacher}
                     </p>
                 </div>
