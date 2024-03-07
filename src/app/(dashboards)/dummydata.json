@@ -577,6 +577,26 @@
         {
             "student" : "220212350",
             "days_absent" : ["tuesday, 15 febuary"]
+        },
+        {
+            "student" : "2202121467",
+            "days_absent" : []
+        },
+        {
+            "student" : "2202121218",
+            "days_absent" : ["tuesday, 15 febuary"]
+        },
+        {
+            "student" : "220212531",
+            "days_absent" : []
+        },
+        {
+            "student" : "220212623",
+            "days_absent" : []
+        },
+        {
+            "student" : "2202123624",
+            "days_absent" : []
         }
     ],
 

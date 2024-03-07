@@ -8,7 +8,7 @@ const MessagesPage = () => {
     <div className="w-full relative grid grid-cols-1 place-content-center">
       <Crumbs url={`parentdashboard`} title={`dashboard`} hide={true}/>
       <PageHeading title={'Chats'} />
-      <Messages />
+      <Messages dashboard={'parent'}/>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">all caught up..</p>
     </div>
   )

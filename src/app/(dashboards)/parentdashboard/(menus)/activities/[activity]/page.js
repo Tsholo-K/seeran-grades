@@ -26,7 +26,7 @@ const Activity = () => {
 
   let student
   data.students.forEach( stu => {
-    if ( stu.student_number === log.student ) {
+    if ( stu.id === log.student ) {
       student = stu
     }
   })

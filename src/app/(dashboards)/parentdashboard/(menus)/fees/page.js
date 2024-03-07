@@ -16,7 +16,7 @@ const Children = () => {
       <PageHeading title={'Children'} subheading={'check outstanding balances and/or invoices'} />
       {/* children menu */}
       <div className="rounded-xl bg-white">
-        <ChildMenu  all_children={data.students} section={'fees'}/>
+        <ChildMenu  all_children={data.students} dashboard={'parent'} section={'fees'}/>
       </div>
     </div>
   )
