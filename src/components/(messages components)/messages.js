@@ -2,10 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-const Messages = () => {
+const Messages = ({ dashboard, }) => {
   return (
     <>
-        <Link href={'/parentdashboard/messages/teacher'} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+        <Link href={`/${dashboard}dashboard/messages/teacher`} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
             <p className="absolute top-0 left-3 bg-blue-600 w-6 text-center rounded-full text-white">1</p>
             <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-w-12 lg:max-w-16" />
             <div className=" w-full">

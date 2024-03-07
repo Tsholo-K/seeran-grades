@@ -1,7 +1,6 @@
 'use client'
 
 import Image from "next/image";
-import Link from "next/link";
 import { useParams } from "next/navigation";
 
 // dummy data
@@ -24,7 +23,7 @@ const Teachers = () => {
 
   return (
     <div className="w-full min-h-full relative">
-      <Crumbs url={`parentdashboard/messages`} title={`3`}/>
+      <Crumbs url={`teacherdashboard/messages`} title={`3`}/>
       {/* chats */}
       <div className="chat text-base text-white">
         <div className="mine messages">

@@ -1,3 +1,4 @@
+import Crumbs from "@/components/crumbs"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -26,9 +27,7 @@ const MenuLink = ({Menu}) => {
 const page = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
-        <Link href={'/parentdashboard'} className="flex w-full text-blue-700"><Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard</Link>
-      </div>
+      <Crumbs title={'dashboard'} url={'teacherdashboard'} hide={true}/>
       <div>
         <h1 className="w-full text-center pb-5 text-4xl">Settings</h1>
       </div>

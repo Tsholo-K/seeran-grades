@@ -203,8 +203,8 @@
     "register_classes" : [
         {
             "class_id" : "45356345",
-            "register_teacher" : "Silvia Berningham",
-            "register_teacher_id" : "2938438420",
+            "teacher" : "Silvia Berningham",
+            "teacher_id" : "2938438420",
             "classroom" : "102",
             "subject" : "mathematics",
             "students" : ["","","","","","","","","","","",""],
@@ -213,8 +213,8 @@
         },
         {
             "class_id" : "12547485",
-            "register_teacher" : "Tessa Moldy",
-            "register_teacher_id" : "6785678565",
+            "teacher" : "Tessa Moldy",
+            "teacher_id" : "6785678565",
             "classroom" : "121",
             "subject" : "english",
             "students" : ["","","","","","","","","","","","","","",""],
@@ -223,8 +223,8 @@
         },
         {
             "class_id" : "23452342",
-            "register_teacher" : "Franklin Buck",
-            "register_teacher_id" : "3456345633",
+            "teacher" : "Franklin Buck",
+            "teacher_id" : "3456345633",
             "classroom" : "134",
             "subject" : "life sciences",
             "students" : ["","","","","","","","","","",""],
