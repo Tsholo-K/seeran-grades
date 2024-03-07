@@ -29,7 +29,7 @@ const menuitems = [
       section : [
         {
           title: 'Messages',
-          icon: 'teacher',
+          icon: 'admin',
           url: '/parentdashboard/messages',
         },
         {
