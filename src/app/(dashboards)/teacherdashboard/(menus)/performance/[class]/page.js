@@ -35,7 +35,7 @@ const MyClass = () => {
             {/* transcripts */}
             <Classes classrooms={classroom} teacher={false} url={false}/>
             <p className='text-sm text-gray-400 mt-7 pl-2'>assessments</p>
-            <Transcripts transcripts={grades} dashboard={'teacher'} icon={false} submitter={false} date_title={'assessed'} section={'performance'}/>
+            <Transcripts transcripts={grades} dashboard={'teacher'} icon={false} score={false} submitter={false} date_title={'assessed'} section={'performance'}/>
         </div>
     )
 };

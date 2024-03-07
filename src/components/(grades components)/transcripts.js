@@ -37,7 +37,7 @@ const TranscriptScore = ({ score, total }) => {
     )
 };
 
-const Transcripts = ({ transcripts, submitter=true, dashboard, section, date_title='results released', icon=true }) => {
+const Transcripts = ({ transcripts, submitter=true, dashboard, section, date_title='results released', icon=true, score=true }) => {
     return (
         <>
             {
@@ -57,7 +57,11 @@ const Transcripts = ({ transcripts, submitter=true, dashboard, section, date_tit
                             }
                             <Link href={`/${dashboard}dashboard/${section}/${transcript.id}`}>
                                 <div className="relative rounded-xl bg-white py-3" >
-                                    <TranscriptScore score={transcript.score} total={transcript.total}/>
+                                    {
+                                        score &&
+                                        <TranscriptScore score={transcript.score} total={transcript.total}/>
+                                    }
+                                    
                                     <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{transcript.assessment}</p>
                                     <div className="flex justify-center py-2 gap-3 px-3 w-full cursor-pointer">
                                         {
