@@ -748,11 +748,11 @@
     "attendances" : [
         {
             "student" : "220212348",
-            "days_absent" : ["monday, 3 march","tuesday, 26 febuary","thursday, 21 febuary","tuesday, 15 febuary","friday, 12 febuary"]
+            "days_absent" : [] 
         },
         {
             "student" : "220212349",
-            "days_absent" : []
+            "days_absent" : ["monday, 3 march","tuesday, 26 febuary","thursday, 21 febuary","tuesday, 15 febuary","friday, 12 febuary"]
         },
         {
             "student" : "220212350",
@@ -784,7 +784,7 @@
         {
             "id" : "7290263527",
             "outstanding_blalnce" : "4 875",
-            "student" : "220212350",
+            "student" : "2202121218",
             "fee_structure" : [
                 {
                     "title" : "tuition Fee",
@@ -826,7 +826,7 @@
         {
             "id" : "9172836475",
             "outstanding_blalnce" : "400",
-            "student" : "220212348",
+            "student" : "2202123624",
             "fee_structure" : [
                 {
                     "title" : "Tuition Fee",

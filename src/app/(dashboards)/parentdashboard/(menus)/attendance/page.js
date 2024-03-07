@@ -8,6 +8,17 @@ import PageHeading from "@/components/(general components)/pageheading";
 
 
 const Children = () => {
+
+  let children = []
+
+  data.parents[0].children.forEach( child_id => {
+    data.students.forEach( child => {
+      if ( child.id === child_id ) {
+      children.push(child)
+      }
+    });
+  });
+
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       {/* back link */}
@@ -16,7 +27,7 @@ const Children = () => {
       <PageHeading title={'Children'} subheading={'check attendance'} />
       {/* children menu */}
       <div className="rounded-xl bg-white">
-        <ChildMenu  all_children={data.students} dashboard={'parent'} section={'attendance'}/>
+        <ChildMenu  all_children={children} dashboard={'parent'} section={'attendance'}/>
       </div>
     </div>
   )

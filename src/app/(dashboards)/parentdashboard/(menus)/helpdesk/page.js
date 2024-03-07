@@ -1,5 +1,5 @@
+import Crumbs from "@/components/crumbs"
 import Image from "next/image"
-import Link from "next/link"
 
 
 const Menu = {
@@ -30,11 +30,7 @@ const MenuLink = ({Menu}) => {
 const page = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
-      <div className="fixed top-0 pt-16 pb-1 w-full bg-gray-100">
-        <Link href={'/parentdashboard'} className="flex w-full text-blue-700">
-          <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20}/>dashboard
-        </Link>
-      </div>
+      <Crumbs title={'dashboard'} url={'parentdashboard'} />
       <div>
         <h1 className="w-full text-center pb-5 text-4xl">Help desk</h1>
       </div>
@@ -42,7 +38,7 @@ const page = () => {
           <div className="mx-auto w-fit py-7">
             <p className="w-fit mx-auto text-gray-500 text-sm">school logo</p>
           </div>
-          <h2 className="w-full text-center text-xl">School Name</h2>
+          <h2 className="w-full text-center text-gray-500 text-xl">School Name</h2>
       </div>
       {/* menu section */}
       <div className="rounded-xl bg-white">

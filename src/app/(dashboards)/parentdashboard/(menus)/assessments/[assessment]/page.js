@@ -51,6 +51,15 @@ const Assessment = () => {
     });
   });
 
+  let due_for = []
+  children.forEach( child => {
+    classroom.students.forEach( child_id => {
+      if ( child.id === child_id) {
+        due_for.push(child)
+      }
+    });
+  });
+
   const assessment_info = [
     {
       title: 'Assessment',
@@ -77,10 +86,11 @@ const Assessment = () => {
           <Link href={'/teachers/teacher'} className="w-full text-end pr-2 text-blue-700 absolute top-0 right-4">message</Link>
           <Menu title={'Set By'} info={`${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} ${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`} border={true}/>
         </div>
-        <p className="text-center mb-3 mt-12 text-gray-400">assesment for:</p>
+        <p className="text-center mb-3 mt-12 text-gray-400">due for:</p>
         <div className="rounded-xl bg-white">
-          <ChildMenu all_children= {data.students}  dashboard={'parent'} section={`assessment/${assessment.id}`} />
+          <ChildMenu all_children= {due_for} url={false} dashboard={'parent'} section={`assessment/${assessment.id}`} />
         </div>
+        <p className="py-7"></p>
     </div>
   )
 };

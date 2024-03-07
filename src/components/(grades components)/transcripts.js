@@ -14,7 +14,7 @@ const SubmittedBy = ({ student_id, date }) => {
     });
 
     return (
-        <p className={`lg:text-xl ${ date ? 'text-sm' : 'text-xl'}  pl-2 text-black`}>{submitter.name.charAt(0).toUpperCase() + submitter.name.slice(1)} {submitter.surname.charAt(0).toUpperCase() + submitter.surname.slice(1)}</p>
+        <p className={`lg:text-xl text-sm  pl-2 text-gray-500`}>{submitter.name.charAt(0).toUpperCase() + submitter.name.slice(1)} {submitter.surname.charAt(0).toUpperCase() + submitter.surname.slice(1)}</p>
     )
 };
 

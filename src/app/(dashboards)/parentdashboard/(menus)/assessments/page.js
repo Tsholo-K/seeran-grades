@@ -38,6 +38,16 @@ const Grades = () => {
     });
   });
 
+  let assesments_set = []
+  assessments.forEach( assessment => {
+    const already_there = assesments_set.find((assess) => assess.id === assessment.id);
+    if (already_there) {
+      null
+    } else {
+      assesments_set.push(assessment)
+    }
+  });
+  
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       {/* back link */}
@@ -46,9 +56,9 @@ const Grades = () => {
       <PageHeading title={'Assessments'} subheading={'due assessments'} />
       {/* assesments */}
       {
-        assessments.map( ( assessment, index ) => (
+        assesments_set.map( ( assessment, index ) => (
           <>
-            <Assessments key={index} assessment={assessment}/>
+            <Assessments dashboard={'parent'} section={'assessments'} key={index} date_title={'Due'} assessment={assessment}/>
           </>
         ))
       }
