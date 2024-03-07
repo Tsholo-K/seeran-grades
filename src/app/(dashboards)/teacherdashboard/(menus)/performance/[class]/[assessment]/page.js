@@ -29,21 +29,13 @@ const ClassAssessment = () => {
       {
         // we need it to be an array so thats why
         section : [
-          {
-            title: `Total`,
-            info : `${assessment.total}`
-          },
+          
           {
             title: 'Assessment',
             info : `${assessment.assessment}`
-          },
-          {
-            title: 'Date Assessed',
-            info : `${assessment.due_date}`
-          },
-          {
-            title: 'Students Assessed',
-            info : `3`
+          },{
+            title: `Total`,
+            info : `${assessment.total}`
           },
           {
             title: 'Average Score',
@@ -52,6 +44,14 @@ const ClassAssessment = () => {
           {
             title: 'Topics',
             info : `${assessment.topics}`
+          },
+          {
+            title: 'Date Assessed',
+            info : `${assessment.due_date}`
+          },
+          {
+            title: 'Students Assessed',
+            info : `3`
           }
         ]
       }
