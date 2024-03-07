@@ -10,21 +10,7 @@ import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Classes from '@/components/(classes components)/classes';
 import ChildMenu from '@/components/(general components)/childmenu';
-import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
 
-
-const menus = {
-    section : [
-        {
-            title:'Set Assessment',
-            url:'/teacherdashboard/classes/assessment'
-        },
-        {
-            title:'Release Grades',
-            url:'/teacherdashboard/classes/grades'
-        }
-    ]
-}
 
 const MyClass = () => {
 
@@ -41,17 +27,15 @@ const MyClass = () => {
     return (
         <div className="w-full relative grid grid-cols-1 place-content-center">
             {/* back link */}
-            <Crumbs url={`teacherdashboard/classes`} title={'classes'}/>
+            <Crumbs url={`teacherdashboard/performance`} title={'performance'}/>
             {/* page heading */}
             <PageHeading title={`Class ${classroom[0].grade}${classroom[0].group}`} subheading={''}/>
             {/* transcripts */}
             <Classes classrooms={classroom} teacher={false} url={false}/>
-            <MultipleMenuLinks menu={menus} />
             <p className='text-sm text-gray-400 mt-7 pl-2'>students</p>
             <div className='mt-3 py-1 rounded-xl bg-white'>
                 <ChildMenu all_children={data.students} dashboard={'teacher'} section={'classes'} grade={false}/>
             </div>
-            <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10"></p>
         </div>
     )
 };

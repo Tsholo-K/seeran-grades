@@ -24,9 +24,9 @@ const MyClasses = () => {
       {/* back link */}
       <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}/>
       {/* page heading */}
-      <PageHeading title={'Performance'} subheading={'all your classes'}/>
+      <PageHeading title={'Performance'} subheading={'class performances'}/>
       {/* transcripts */}
-      <Classes classrooms={classroom_sorted} teacher={false}/>
+      <Classes dashbaord={'teacher'} section={'performance'} classrooms={classroom_sorted} teacher={false}/>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">that&apos;s all your classes</p>
     </div>
   )
