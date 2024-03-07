@@ -9,7 +9,7 @@ const PhoneNumberAuthentication = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <Crumbs url={'parentdashboard/profile/security/mfa'} title={'mfa'}/>
+      <Crumbs url={'teacherdashboard/profile/security/mfa'} title={'mfa'}/>
       {/* page heading */}
       <PageHeading title={'Multi-Factor Authentication'} />
       {/* input area */}

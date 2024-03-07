@@ -9,7 +9,7 @@ const PasswordChange = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <Crumbs url={'parentdashboard/profile/security'} title={'security'}/>
+      <Crumbs url={'teacherdashboard/profile/security'} title={'security'}/>
       {/* page heading */}
       <PageHeading title={'Password Change'} />
       {/* input areas */}

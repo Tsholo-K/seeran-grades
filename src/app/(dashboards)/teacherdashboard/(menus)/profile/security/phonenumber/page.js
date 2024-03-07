@@ -8,7 +8,7 @@ const Email = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
-      <Crumbs title={'security'} url={'parentdashboard/profile/security'}/>
+      <Crumbs title={'security'} url={'teacherdashboard/profile/security'}/>
       {/* page heading */}
       <PageHeading title={'Update Phone Number'} />
       {/* input area */}
