@@ -17,7 +17,7 @@ const ChildMenu = ({ all_children, dashboard, section, grade=true }) => {
                                 ?
                                 <p className="text-sm text-gray-500">grade: {child.grade}</p>
                                 :
-                                <p className="text-sm text-gray-500"> {child.student_number}</p>
+                                <p className="text-sm text-gray-500"> {child.id}</p>
                             }
                             
                         </div>

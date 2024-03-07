@@ -33,7 +33,7 @@ const TranscriptScore = ({ score, total, date }) => {
     }
 
     return (
-        <Image src={`/${mark}.svg`} alt='try it button' width={10} height={10} className={`absolute  w-fit h-fit ${ date ? 'top-3' : 'top-6 lg:top-[18px]'}  right-4 lg:w-8`}/>
+        <Image src={`/${mark}.svg`} alt='try it button' width={10} height={10} className={`absolute  w-fit h-fit ${ date ? 'top-3' : 'top-5 lg:top-[18px]'}  right-4 lg:w-8`}/>
     )
 };
 
