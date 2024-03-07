@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 
-const Assessments = ({ assessment, title=false }) => {
+const Assessments = ({ assessment, title=false, date_title }) => {
     return (
       <>
         <div className="py-4 lg:py-6">
@@ -30,7 +30,7 @@ const Assessments = ({ assessment, title=false }) => {
               <div className="flex pl-3 pt-2">
                 <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-6"/>
                 <div className="grid grid-cols-1 place-content-center">
-                  <p className=" text-sm lg:text-base pl-2 text-gray-500">Due : {assessment.due_date}</p>
+                  <p className=" text-sm lg:text-base pl-2 text-gray-500">{date_title} : {assessment.due_date}</p>
                 </div>
               </div>
             </div>

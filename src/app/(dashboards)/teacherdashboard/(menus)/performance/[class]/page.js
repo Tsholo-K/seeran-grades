@@ -10,6 +10,7 @@ import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Classes from '@/components/(classes components)/classes';
 import Transcripts from "@/components/(grades components)/transcripts";
+import Assessments from "@/components/(assessments components)/assessments";
 
 
 const MyClass = () => {
@@ -32,7 +33,7 @@ const MyClass = () => {
     });
 
     return (
-        <div className="w-full relative grid grid-cols-1 place-content-center">
+        <div>
             {/* back link */}
             <Crumbs url={`teacherdashboard/performance`} title={'performance'}/>
             {/* page heading */}
@@ -40,7 +41,14 @@ const MyClass = () => {
             {/* transcripts */}
             <Classes classrooms={classroom} teacher={false} url={false}/>
             <p className='text-sm text-gray-400 mt-7 pl-2'>assessments</p>
-            <Transcripts transcripts={assessments} dashboard={'teacher'} icon={false} score={false} submitter={false} date_title={'assessed'} section={'performance'} subject={false}/>
+            {
+                assessments.map((assessment, index)=> (
+                    <div key={index} >
+                        <Assessments assessment={assessment} title={true} date_title={'assessed'}/>
+                    </div>
+                ))
+            }
+            <p className="py-7 text-center text-sm text-gray-400">that&apos;s all assessments</p>
         </div>
     )
 };

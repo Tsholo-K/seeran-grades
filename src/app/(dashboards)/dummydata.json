@@ -394,18 +394,18 @@
             "total" : "50",
             "assessment" : "test",
             "due_date" : "wednsday, 13 febuary",
-            "collected" : false
+            "collected" : true
         },
         {
-            "class_id" : "34563456",
+            "class_id" : "23452342",
             "id" : "3476735243",
             "subject" : "life science",
-            "title" : "Shapes",
+            "title" : "The Cell",
             "icon" : "life-science",
             "total" : "50",
             "assessment" : "practical",
             "due_date" : "friday, 13 march",
-            "collected" : false
+            "collected" : true
         },
         {
             "class_id" : "45356345",
@@ -416,40 +416,40 @@
             "total" : "75",
             "assessment" : "assignment",
             "due_date" : "tuesday, 21 febuary",
-            "collected" : false
+            "collected" : true
         },
         {
             "class_id" : "34562356",
             "id" : "0897263746",
             "subject" : "physical sciences",
             "icon" : "physics",
-            "title" : "Shapes",
+            "title" : "Newtons 2nd Law",
             "total" : "50",
             "assessment" : "expirement",
             "due_date" : "wednsday, 20 febuary",
-            "collected" : false
+            "collected" : true
         },
         {
             "class_id" : "34563456",
             "id" : "2718292736",
             "subject" : "life orientation",
             "icon" : "life-orientation",
-            "title" : "Shapes",
+            "title" : "Habits",
             "assessment" : "practical",
             "total" : "20",
             "due_date" : "wednsday, 3 march",
-            "collected" : false
+            "collected" : true
         },
         {
             "class_id" : "34563456",
             "id" : "5738192736",
             "subject" : "life orientation",
             "icon" : "life-science",
-            "title" : "The Respiratory System",
+            "title" : "The Economy",
             "assessment" : "exam",
             "total" : "150",
             "due_date" : "monday, 28 febuary",
-            "collected" : false
+            "collected" : true
         }
     ],
 
