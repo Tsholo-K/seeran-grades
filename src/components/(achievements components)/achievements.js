@@ -9,7 +9,7 @@ const SubmittedBy = ({ student_id }) => {
 
     let submitter 
     data.students.forEach( (student) => {
-      if ( student.student_number === student_id ) {
+      if ( student.id === student_id ) {
         submitter = student
       }
     });
