@@ -34,7 +34,7 @@ const menuitems = [
     section : [
       {
         title: 'Messages',
-        icon: 'teacher',
+        icon: 'admin',
         url: '/teacherdashboard/messages',
       },
       {
