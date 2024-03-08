@@ -13,7 +13,7 @@
             "children": ["220212349","2202121218","2202123624"],
             "phone_number":"0711740824",
             "email": "seeran.dion@icloud.com",
-            "image" : "profile-icon-1",
+            "image" : "teacher-icons/Number=38",
             "sms_communication" : true,
             "email_communication" : false,
             "mfa_enabled" : "Off"
@@ -63,7 +63,7 @@
             "surname" : "Berningham",
             "phone_number" : "+27616738765",
             "email": "silvia@icloud.com",
-            "image" : "profile-icon-14",
+            "image" : "teacher-icons/Number=2",
             "register_class" : "45356345",
             "classes" : ["45356345","34563456","34562356"],
             "sms_communication" : true,
@@ -102,7 +102,7 @@
             "surname" : "tsholo",
             "date_of_birth" : "28/08/2002",
             "grade" : "12",
-            "image" : "profile-icon-3",
+            "image" : "teacher-icons/Number=25",
             "parent_id" : ["1928742173"]
         },
         {
@@ -129,7 +129,7 @@
             "surname" : "tsholo",
             "date_of_birth" : "24/08/2002",
             "grade" : "12",
-            "image" : "profile-icon-13",
+            "image" : "teacher-icons/Number=45",
             "parent_id" : ["1928742173"]
         },
         {
@@ -165,7 +165,7 @@
             "surname" : "tsholo",
             "date_of_birth" : "18/12/2004",
             "grade" : "10",
-            "image" : "profile-icon-16",
+            "image" : "teacher-icons/Number=100",
             "parent_id" : ["1928742173"]
         }
     ],

@@ -72,7 +72,7 @@ const Teacherdashboard = () => {
           {/* account settings */}
           <div className="rounded-xl bg-white mb-7">
             <Link href={'/teacherdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-              <Image priority src={`/${teacher.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
+              <Image priority src={`/${teacher.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16 rounded-full" />
               <div className="w-full">
                 <p className="pt-3 ">{teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} {teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}</p>
                 <p className="text-sm text-gray-400 ">profile settings</p>

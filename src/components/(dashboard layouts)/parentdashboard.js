@@ -93,7 +93,7 @@ const Parentdashboard = () => {
               {/* accounts section */}
               <div className="rounded-xl bg-white ">
                 <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-                  <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
+                  <Image priority src={'/teacher-icons/Number=38.svg'} alt="profile icon" width={30} height={30} className="w-fit rounded-full h-fit max-h-16 max-w-16" />
                   <div className="w-full">
                     <p className="pt-3 ">Seeran Dion</p>
                     <p className="text-sm text-gray-400 ">profile settings</p>
@@ -106,7 +106,7 @@ const Parentdashboard = () => {
                     {
                       children.map( child => (
                         <>
-                          <Image src={`/${child.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-10 max-w-10" />
+                          <Image src={`/${child.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit rounded-full h-fit max-h-10 max-w-10" />
 
                         </>
                       ))
