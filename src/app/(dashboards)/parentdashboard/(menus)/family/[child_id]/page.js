@@ -57,10 +57,6 @@ const ChildId = () => {
     <div className="w-full relative grid grid-cols-1 place-content-center ">
       {/* back link */}
       <Crumbs url={`parentdashboard/family`} title={'family'}/>
-      {/* page heading */}
-      <div className="lg:hidden">
-        <PageHeading title={'ID'} />
-      </div>
       {/* child id */}
       <UserImage image={`${student.image}`} name={student.name} surname={student.surname}/>
       {/* child information */}

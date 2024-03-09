@@ -4,7 +4,7 @@ import Link from "next/link";
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
-const SubmittedBy = ({ student_id, date }) => {
+const SubmittedBy = ({ student_id }) => {
 
     let submitter 
     data.students.forEach( (student) => {

@@ -40,8 +40,6 @@ const ProfileSettings = () => {
     <div className="">
       {/* back link */}
       <Crumbs title={'dashboard'} url={`teacherdashboard`} hide={true}/>
-      {/* page heading */}
-      <PageHeading title={'Profile Settings'} />
       {/* profile info section */}
       <UserImage image={teacher.image} name={teacher.name} surname={teacher.surname} email={teacher.email}/>
       {/* menu links section */}

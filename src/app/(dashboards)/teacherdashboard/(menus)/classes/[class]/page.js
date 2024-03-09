@@ -7,24 +7,10 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/(general components)/pageheading";
 import Classes from '@/components/(classes components)/classes';
 import ChildMenu from '@/components/(general components)/childmenu';
 import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
 
-
-const menus = {
-    section : [
-        {
-            title:'Set Assessment',
-            url:'/teacherdashboard/classes/assessment'
-        },
-        {
-            title:'Release Grades',
-            url:'/teacherdashboard/classes/grades'
-        }
-    ]
-}
 
 const MyClass = () => {
 
@@ -46,6 +32,19 @@ const MyClass = () => {
             }
         });
     });
+
+    const menus = {
+        section : [
+            {
+                title : 'Set Assessment',
+                url : `/teacherdashboard/classes/${class_id}/assessment`
+            },
+            {
+                title : 'Release Grades',
+                url : `/teacherdashboard/classes/${class_id}/grades`
+            }
+        ]
+    }
 
     return (
         <div className="w-full relative grid grid-cols-1 place-content-center">
