@@ -275,7 +275,6 @@
             "teacher" : "Silvia Berningham",
             "teacher_id" : "2938438420",
             "classroom" : "102",
-            "subject" : "mathematics",
             "students" : ["220212349","2202121218","220212531"],
             "grade" : "12",
             "group" : "B"
@@ -285,7 +284,6 @@
             "teacher" : "Tessa Moldy",
             "teacher_id" : "6785678565",
             "classroom" : "121",
-            "subject" : "english",
             "students" : ["220212348","220212623","220212350"],
             "grade" : "8",
             "group" : "B"
@@ -295,7 +293,6 @@
             "teacher" : "Franklin Buck",
             "teacher_id" : "3456345633",
             "classroom" : "134",
-            "subject" : "life sciences",
             "students" : ["2202121467","2202123624"],
             "grade" : "11",
             "group" : "D"

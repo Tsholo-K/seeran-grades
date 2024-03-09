@@ -51,8 +51,6 @@ const MyClass = () => {
         <div className="w-full relative grid grid-cols-1 place-content-center">
             {/* back link */}
             <Crumbs url={`teacherdashboard/classes`} title={'classes'}/>
-            {/* page heading */}
-            <PageHeading title={`Class ${classroom[0].grade}${classroom[0].group}`} subheading={''}/>
             {/* transcripts */}
             <Classes classrooms={classroom} teacher={false} url={false}/>
             <MultipleMenuLinks menu={menus} />

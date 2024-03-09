@@ -62,7 +62,7 @@ const Classes = ({ dashbaord, section, classrooms, teacher=true, subject=true, u
             {
                 classrooms.map( ( classroom, index) => (
                     <>
-                        <div key={index} className="py-8 lg:py-12">
+                        <div key={index} className="py-6 lg:py-12">
                             <div className="flex pl-2 pb-2">
                                 <div className="grid grid-cols-1 place-content-center">
                                     <Image src={'/grade.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-7"/>

@@ -9,6 +9,15 @@ const menuitems = [
     {
       section : [
         {
+          title: 'Family',
+          icon: 'family',
+          url: '/parentdashboard/family',
+        }
+      ]
+    },
+    {
+      section : [
+        {
           title: 'Grades',
           icon: 'graduation-cap',
           url: '/parentdashboard/grades',
@@ -27,11 +36,7 @@ const menuitems = [
     },
     {
       section : [
-        {
-          title: 'Messages',
-          icon: 'admin',
-          url: '/parentdashboard/messages',
-        },
+        
         {
           title: 'Activities',
           icon: 'eye',
@@ -47,14 +52,19 @@ const menuitems = [
     {
       section : [
         {
-          title: 'Fees',
-          icon: 'wallet',
-          url: '/parentdashboard/fees',
+          title: 'Messages',
+          icon: 'admin',
+          url: '/parentdashboard/messages',
         },
         {
           title: 'Notifications',
           icon: 'bell-ring',
           url: '/parentdashboard/notifications',
+        },
+        {
+          title: 'Fees',
+          icon: 'wallet',
+          url: '/parentdashboard/fees',
         },
         {
           title: 'Help Desk',
@@ -99,21 +109,6 @@ const Parentdashboard = () => {
                     <p className="text-sm text-gray-400 ">profile settings</p>
                   </div>
                   <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
-                </Link>
-                <hr className="mx-5"></hr>
-                <Link href={'/parentdashboard/family'} className="flex py-2 px-3 gap-5 justify-start w-full cursor-pointer md:hover:text-blue-700">
-                  <div className="flex w-fit">
-                    {
-                      children.map( child => (
-                        <>
-                          <Image src={`/${child.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit rounded-full h-fit max-h-10 max-w-10" />
-
-                        </>
-                      ))
-                    }
-                  </div>
-                  <p className="pt-2 w-full">Family</p>
-                  <Image src={'/chevron-right-black.svg'} alt='try it button' width={50} height={50} className="w-fit h-fit pt-2"/>
                 </Link>
               </div>
               {

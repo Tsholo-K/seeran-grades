@@ -35,11 +35,9 @@ const MyClass = () => {
         <div>
             {/* back link */}
             <Crumbs url={`teacherdashboard/performance`} title={'performance'}/>
-            {/* page heading */}
-            <PageHeading title={`Class ${classroom[0].grade}${classroom[0].group}`} subheading={''}/>
             {/* transcripts */}
             <Classes classrooms={classroom} teacher={false} url={false}/>
-            <p className='text-sm text-gray-400 mt-7 pl-2'>assessments</p>
+            <p className='text-sm text-gray-400 mt-7 lg:mt-10 pl-2'>assessments</p>
             {
                 assessments.map((assessment, index)=> (
                     <div key={index} >

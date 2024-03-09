@@ -34,7 +34,7 @@ const MyRegisterClass = () => {
       {/* back link */}
       <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}/>
       {/* page heading */}
-      <PageHeading title={'Register Class'} subheading={'your register class'}/>
+      <PageHeading title={'Register Class'} subheading={`class ${register_classroom[0].grade}${register_classroom[0].group}`}/>
       {/* transcripts */}
       <Classes classrooms={register_classroom} teacher={false} subject={false} url={false}/>
       <div>
