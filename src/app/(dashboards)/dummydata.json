@@ -13,7 +13,7 @@
             "children": ["220212349","2202121218","2202123624"],
             "phone_number":"0711740824",
             "email": "seeran.dion@icloud.com",
-            "image" : "parent-icons/Number=38",
+            "image" : "default-user-icon",
             "sms_communication" : true,
             "email_communication" : false,
             "mfa_enabled" : "Off"
@@ -25,7 +25,7 @@
             "children": ["220212348"],
             "phone_number":"0711740824",
             "email": "seeran.dion@icloud.com",
-            "image" : "profile-icon-1",
+            "image" : "default-user-icon",
             "sms_communication" : true,
             "email_communication" : false,
             "mfa_enabled" : "Off"
@@ -37,7 +37,7 @@
             "children": ["2202121467","220212350"],
             "phone_number":"0711740824",
             "email": "seeran.dion@icloud.com",
-            "image" : "profile-icon-1",
+            "image" : "default-user-icon",
             "sms_communication" : true,
             "email_communication" : false,
             "mfa_enabled" : "Off"
@@ -49,7 +49,7 @@
             "children": ["220212531","220212623"],
             "phone_number":"0711740824",
             "email": "seeran.dion@icloud.com",
-            "image" : "profile-icon-1",
+            "image" : "default-user-icon",
             "sms_communication" : true,
             "email_communication" : false,
             "mfa_enabled" : "Off"
@@ -63,7 +63,7 @@
             "surname" : "Berningham",
             "phone_number" : "+27616738765",
             "email": "silvia@icloud.com",
-            "image" : "parent-icons/Number=2",
+            "image" : "default-user-icon",
             "register_class" : "45356345",
             "classes" : ["45356345","34563456","34562356"],
             "sms_communication" : true,
@@ -75,7 +75,7 @@
             "surname" : "Buck",
             "phone_number" : "+278165489276",
             "email": "franklin@icloud.com",
-            "image" : "profile-icon-6",
+            "image" : "default-user-icon",
             "register_class" : "34563456",
             "classes" : ["34563345","23452342"],
             "sms_communication" : true,
@@ -87,7 +87,7 @@
             "surname" : "Moldy",
             "phone_number" : "+276288926517",
             "email": "tessa@icloud.com",
-            "image" : "profile-icon-10",
+            "image" : "default-user-icon",
             "register_class" : "45356345",
             "classes" : ["45678453","94567834","12547485"],
             "sms_communication" : false,
@@ -102,7 +102,7 @@
             "surname" : "tsholo",
             "date_of_birth" : "28/08/2002",
             "grade" : "12",
-            "image" : "parent-icons/Number=7",
+            "image" : "default-user-icon",
             "parent_id" : ["1928742173"]
         },
         {
@@ -111,7 +111,7 @@
             "surname" : "mochaki",
             "date_of_birth" : "07/06/2003",
             "grade" : "8",
-            "image" : "profile-icon-2",
+            "image" : "default-user-icon",
             "parent_id" : ["6273648592"]
         },
         {
@@ -120,7 +120,7 @@
             "surname" : "xhao",
             "date_of_birth" : "24/08/2002",
             "grade" : "10",
-            "image" : "profile-icon-9",
+            "image" : "default-user-icon",
             "parent_id" : ["9152637894"]
         },
         {
@@ -129,7 +129,7 @@
             "surname" : "tsholo",
             "date_of_birth" : "24/08/2002",
             "grade" : "12",
-            "image" : "parent-icons/Number=45",
+            "image" : "default-user-icon",
             "parent_id" : ["1928742173"]
         },
         {
@@ -138,7 +138,7 @@
             "surname" : "murula",
             "date_of_birth" : "24/08/2002",
             "grade" : "12",
-            "image" : "profile-icon-7",
+            "image" : "default-user-icon",
             "parent_id" : ["0172836471"]
         },
         {
@@ -147,7 +147,7 @@
             "surname" : "timberlake",
             "date_of_birth" : "24/08/2002",
             "grade" : "8",
-            "image" : "profile-icon-14",
+            "image" : "default-user-icon",
             "parent_id" : ["0172836471"]
         },
         {
@@ -156,7 +156,7 @@
             "surname" : "munyoro",
             "date_of_birth" : "24/08/2002",
             "grade" : "8",
-            "image" : "profile-icon-11",
+            "image" : "default-user-icon",
             "parent_id" : ["9152637894"]
         },
         {
@@ -165,7 +165,7 @@
             "surname" : "tsholo",
             "date_of_birth" : "18/12/2004",
             "grade" : "10",
-            "image" : "parent-icons/Number=100",
+            "image" : "default-user-icon",
             "parent_id" : ["1928742173"]
         }
     ],
