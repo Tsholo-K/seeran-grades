@@ -1,7 +1,6 @@
 'use client'
 
 import Image from "next/image";
-import Link from "next/link";
 import { useParams } from "next/navigation";
 
 // dummy data
@@ -58,7 +57,6 @@ const Teachers = () => {
         </div>
       </div>
       <div className="fixed w-full bottom-0 left-0 xl:mb-5">
-        
         <div className="w-full flex justify-center gap-3 px-3 py-2">
             <input type="text" className="w-full  border-[1px] p-1 border-gray-300 rounded-full bg-white px-5" />
             <Image src={'/send-horizontal.svg'} alt='back to main menu' height={26} width={26}/>
