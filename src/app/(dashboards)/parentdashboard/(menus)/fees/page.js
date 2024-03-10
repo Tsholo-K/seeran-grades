@@ -2,9 +2,9 @@
 import data from '@/app/(dashboards)/dummydata.json'
 
 //components
-import ChildMenu from "@/components/(general components)/childmenu";
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
+import UserMenu from '@/components/(general components)/childmenu';
 
 
 const Children = () => {
@@ -27,7 +27,7 @@ const Children = () => {
       <PageHeading title={'Children'} subheading={'check outstanding balances and/or invoices'} />
       {/* children menu */}
       <div className="rounded-xl bg-white">
-        <ChildMenu  all_children={children} dashboard={'parent'} section={'fees'}/>
+        <UserMenu  all_users={children} dashboard={'parent'} section={'fees'}/>
       </div>
     </div>
   )
