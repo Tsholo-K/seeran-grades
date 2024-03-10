@@ -4,7 +4,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 // components
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
-import ChildMenu from "@/components/(general components)/childmenu";
+import UserMenu from '@/components/(general components)/childmenu';
 
 
 const Family = () => {
@@ -27,7 +27,7 @@ const Family = () => {
       <PageHeading title={'Family'} subheading={'these are all the children linked to your account'}/>
       {/* children menu */}
       <div className="rounded-xl bg-white">
-        <ChildMenu all_children={children} dashboard={'parent'} section={'family'} />
+        <UserMenu all_users={children} dashboard={'parent'} section={'family'} />
       </div>
     </div>
   )

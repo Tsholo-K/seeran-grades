@@ -1,6 +1,5 @@
 'use client';
 
-import Link from "next/link";
 import { useParams } from "next/navigation";
 
 // dummy data
@@ -11,8 +10,7 @@ import Subject from "@/components/(general components)/subject";
 import Crumbs from "@/components/crumbs";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import Menu from "@/components/(general components)/menu";
-import PageHeading from "@/components/(general components)/pageheading";
-import ChildMenu from "@/components/(general components)/childmenu";
+import UserMenu from "@/components/(general components)/childmenu";
 
 
 const Assessment = () => {
@@ -85,7 +83,7 @@ const Assessment = () => {
       </div>
       <p className="pl-2 mb-2 text-sm mt-12 text-gray-400">due for</p>
       <div className="rounded-xl bg-white">
-        <ChildMenu all_children={due_for} url={false} />
+        <UserMenu all_users={due_for} url={false} />
       </div>
       <p className="py-2"></p>
     </div>

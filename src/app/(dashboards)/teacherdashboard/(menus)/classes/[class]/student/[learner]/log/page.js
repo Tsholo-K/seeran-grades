@@ -33,13 +33,13 @@ const SetAssessment = () => {
             <p className="text-sm text-gray-400 pl-2 mt-14">offence</p>
             <div className="bg-white rounded-xl mb-4 min-h-8 px-4">
                 <select className="text-center bg-white focus:outline-none rounded-xl h-full w-full">
-                    <option> --- Pick Offence --- </option>
-                    <option> late </option>
-                    <option> violent </option>
-                    <option> disruptive </option>
-                    <option> vulgar/offensive language </option>
-                    <option> sleeping </option>
-                    <option> disrespectful </option>
+                    <option className="text-center" disabled selected> --- Pick Offence --- </option>
+                    <option className="text-center"> late </option>
+                    <option className="text-center"> violent </option>
+                    <option className="text-center"> disruptive </option>
+                    <option className="text-center"> vulgar/offensive language </option>
+                    <option className="text-center"> sleeping </option>
+                    <option className="text-center"> disrespectful </option>
                 </select>
             </div>
             <p className="text-sm text-gray-400 pl-2 mt-4">record</p>

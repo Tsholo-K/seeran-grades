@@ -1,6 +1,5 @@
 'use client'
 
-import Link from "next/link";
 import { useParams } from "next/navigation";
 
 // dummy data
@@ -8,12 +7,11 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/(general components)/pageheading";
 import Subject from "@/components/(general components)/subject";
 import Menu from "@/components/(general components)/menu";
 import Score from "@/components/(grades components)/score";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
-import ChildMenu from "@/components/(general components)/childmenu";
+import UserMenu from "@/components/(general components)/childmenu";
  
 const Transcript = () => {
 
@@ -68,7 +66,7 @@ const Transcript = () => {
       <MultipleMenu menu={transcript_info} />
       <p className="pl-2 mb-1 text-sm mt-7 text-gray-400">submitted by</p>
       <div className="rounded-xl bg-white">
-        <ChildMenu all_children={student} url={false} />
+        <UserMenu all_users={student} url={false} />
       </div>
       {/* teacher */}
       <div className="relative pt-10">

@@ -9,6 +9,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 // compopnents
 import Crumbs from "@/components/crumbs";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
+import UserMenu from "@/components/(general components)/childmenu";
 
 
 const Activity = () => {
@@ -23,10 +24,10 @@ const Activity = () => {
     }
   });
 
-  let student
+  let student = []
   data.students.forEach( stu => {
-    if ( stu.id === log.student ) {
-      student = stu
+    if ( parseInt(stu.id) === parseInt(log.student) ) {
+      student.push(stu)
     }
   })
 
@@ -39,12 +40,8 @@ const Activity = () => {
 
   const activity_info = [
     {
-      title: 'Logged by',
+      title: 'Issued by',
       info: `${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} ${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`
-    },
-    {
-      title: 'Recipient',
-      info: `${student.name.charAt(0).toUpperCase() + student.name.slice(1)} ${student.surname.charAt(0).toUpperCase() + student.surname.slice(1)}`
     },
     {
       title: 'Date issued',
@@ -65,7 +62,12 @@ const Activity = () => {
           </p>
         </div>
       </div>
+      
       <MultipleMenu menu={activity_info} />
+      <p className="pl-2 text-sm text-gray-400 pt-7">recipient</p>
+      <div className="rounded-xl bg-white">
+        <UserMenu all_users={student} url={false} />
+      </div>
     </div>
   )
 };

@@ -11,6 +11,7 @@ import Subject from "@/components/(general components)/subject";
 import Menu from "@/components/(general components)/menu";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import ChildMenu from "@/components/(general components)/childmenu";
+import UserMenu from "@/components/(general components)/childmenu";
 
 
 const Award = () => {
@@ -58,7 +59,7 @@ const Award = () => {
       <Menu title={'Authority'} info={award.authority} border={true} />
       <p className="pl-2 mb-2 text-sm mt-12 text-gray-400">granted to</p>
       <div className="rounded-xl bg-white">
-        <ChildMenu all_children={student} url={false}  />
+        <UserMenu all_users={student} url={false}  />
       </div>
     </div>
   )

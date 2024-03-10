@@ -2,25 +2,25 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-const ChildMenu = ({ all_children, dashboard, section, grade=true, url=true }) => {
+const UserMenu = ({ all_users, dashboard, section, grade=true, url=true }) => {
   return (
     <>
-        { all_children.map( (child, index) => (
+        { all_users.map( (user, index) => (
             <>
                 <div key={index}>
                     {
                         url 
                         ?
-                        <Link href={`/${dashboard}dashboard/${section}/${child.id}`} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-                            <Image priority src={`/${child.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit rounded-full h-fit max-h-16 max-w-16" />
+                        <Link href={`/${dashboard}dashboard/${section}/${user.id}`} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+                            <Image priority src={`/${user.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit rounded-full h-fit max-h-16 max-w-16" />
                             <div className="pt-3 w-full">
-                                <p className={`font-bold`}>{child.name.charAt(0).toUpperCase() + child.name.slice(1)} {child.surname.charAt(0).toUpperCase() + child.surname.slice(1)}</p>
+                                <p className={`font-bold`}>{user.name.charAt(0).toUpperCase() + user.name.slice(1)} {user.surname.charAt(0).toUpperCase() + user.surname.slice(1)}</p>
                                 {
                                     grade 
                                     ?
-                                    <p className="text-sm text-gray-500">grade: {child.grade}</p>
+                                    <p className="text-sm text-gray-500">grade: {user.grade}</p>
                                     :
-                                    <p className="text-sm text-gray-500"> {child.id}</p>
+                                    <p className="text-sm text-gray-500"> {user.id}</p>
                                 }
                                 
                             </div>
@@ -28,21 +28,21 @@ const ChildMenu = ({ all_children, dashboard, section, grade=true, url=true }) =
                         </Link>
                         :
                         <div  className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer rounded-full md:hover:text-blue-700">
-                            <Image priority src={`/${child.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit rounded-full max-h-16 max-w-16" />
+                            <Image priority src={`/${user.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit h-fit rounded-full max-h-16 max-w-16" />
                             <div className="pt-3 w-full">
-                                <p className={`font-bold`}>{child.name.charAt(0).toUpperCase() + child.name.slice(1)} {child.surname.charAt(0).toUpperCase() + child.surname.slice(1)}</p>
+                                <p className={`font-bold`}>{user.name.charAt(0).toUpperCase() + user.name.slice(1)} {user.surname.charAt(0).toUpperCase() + user.surname.slice(1)}</p>
                                 {
                                     grade 
                                     ?
-                                    <p className="text-sm text-gray-500">grade: {child.grade}</p>
+                                    <p className="text-sm text-gray-500">grade: {user.grade}</p>
                                     :
-                                    <p className="text-sm text-gray-500"> {child.id}</p>
+                                    <p className="text-sm text-gray-500"> {user.id}</p>
                                 }
                             </div>
                         </div>
                     }
                     {
-                        ( all_children.length > 1  &&  index !== all_children.length - 1) &&
+                        ( all_users.length > 1  &&  index !== all_users.length - 1) &&
                         <hr className="mx-5"></hr>
                     }
                 </div>
@@ -53,4 +53,4 @@ const ChildMenu = ({ all_children, dashboard, section, grade=true, url=true }) =
   )
 }
 
-export default ChildMenu;
+export default UserMenu;

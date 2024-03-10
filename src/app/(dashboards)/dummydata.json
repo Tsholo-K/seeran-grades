@@ -103,7 +103,7 @@
             "date_of_birth" : "28/08/2002",
             "grade" : "12",
             "image" : "default-user-icon",
-            "parent_id" : ["1928742173"]
+            "parents" : ["1928742173"]
         },
         {
             "id" : "220212348",
@@ -112,7 +112,7 @@
             "date_of_birth" : "07/06/2003",
             "grade" : "8",
             "image" : "default-user-icon",
-            "parent_id" : ["6273648592"]
+            "parents" : ["6273648592"]
         },
         {
             "id" : "2202121467",
@@ -121,7 +121,7 @@
             "date_of_birth" : "24/08/2002",
             "grade" : "10",
             "image" : "default-user-icon",
-            "parent_id" : ["9152637894"]
+            "parents" : ["9152637894"]
         },
         {
             "id" : "2202121218",
@@ -130,7 +130,7 @@
             "date_of_birth" : "24/08/2002",
             "grade" : "12",
             "image" : "default-user-icon",
-            "parent_id" : ["1928742173"]
+            "parents" : ["1928742173"]
         },
         {
             "id" : "220212531",
@@ -139,7 +139,7 @@
             "date_of_birth" : "24/08/2002",
             "grade" : "12",
             "image" : "default-user-icon",
-            "parent_id" : ["0172836471"]
+            "parents" : ["0172836471"]
         },
         {
             "id" : "220212623",
@@ -148,7 +148,7 @@
             "date_of_birth" : "24/08/2002",
             "grade" : "8",
             "image" : "default-user-icon",
-            "parent_id" : ["0172836471"]
+            "parents" : ["0172836471"]
         },
         {
             "id" : "220212350",
@@ -157,7 +157,7 @@
             "date_of_birth" : "24/08/2002",
             "grade" : "8",
             "image" : "default-user-icon",
-            "parent_id" : ["9152637894"]
+            "parents" : ["9152637894"]
         },
         {
             "id" : "2202123624",
@@ -166,7 +166,7 @@
             "date_of_birth" : "18/12/2004",
             "grade" : "10",
             "image" : "default-user-icon",
-            "parent_id" : ["1928742173"]
+            "parents" : ["1928742173"]
         }
     ],
 
@@ -729,7 +729,6 @@
             "icon" : "speech",
             "logger" : "3456345633",
             "date_logged" : "tuesday, 23 june"
-            
         },
         {
             "id" : "0172837465",
@@ -739,7 +738,6 @@
             "icon" : "bell-electric",
             "logger" : "2938438420",
             "date_logged" : "tuesday, 23 june"
-            
         },
         {
             "id" : "1928374011",
@@ -749,7 +747,6 @@
             "icon" : "book-x",
             "logger" : "3456345633",
             "date_logged" : "tuesday, 23 june"
-            
         },
         {
             "id" : "0173526374",
@@ -759,7 +756,6 @@
             "icon" : "violence",
             "logger" : "6785678565",
             "date_logged" : "tuesday, 23 june"
-            
         }
     ],
 
