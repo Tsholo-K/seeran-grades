@@ -42,7 +42,7 @@ const MyRegisterClass = () => {
       </div>
       <p className='text-sm text-gray-400 mt-12 pl-2'>students</p>
       <div className='mt-3 py-1 rounded-xl bg-white'>
-        <UserMenu all_users={students} dashboard={'teacher'} section={'registerclass'} grade={false}/>
+        <UserMenu all_users={students} dashboard={'teacher'} section={'registerclass/student'} grade={false}/>
       </div>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10"></p>
     </div>
