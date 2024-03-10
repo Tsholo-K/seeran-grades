@@ -7,8 +7,6 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/(general components)/pageheading";
-import InputArea from "@/components/(general components)/inputarea";
 import Button from "@/components/(general components)/button";
 import Subject from "@/components/(general components)/subject";
 
@@ -32,12 +30,23 @@ const SetAssessment = () => {
             {/* subject */}
             <Subject icon={`${classroom.icon}`} subject={`${classroom.subject}`}/>
             {/* input areas */}
-            <div className="relative mb-6 text-base">
-                <InputArea title='assessment' placeholder={`test, assignment, exam...`} type={'text'}/>
+            <p className="text-sm text-gray-400 pl-2 mt-14">offence</p>
+            <div className="bg-white rounded-xl mb-4 min-h-8 px-4">
+                <select className="text-center rounded-xl h-full w-full">
+                    <option> --- Pick Offence --- </option>
+                    <option> late </option>
+                    <option> violent </option>
+                    <option> disruptive </option>
+                    <option> vulgar/offensive language </option>
+                    <option> sleeping </option>
+                    <option> disrespectful </option>
+                </select>
             </div>
+            <p className="text-sm text-gray-400 pl-2 mt-4">record</p>
+            <textarea className="rounded-xl min-h-32" />
+            <p className="py-6"></p>
             {/* button */}
-            <Button title={'set'} type={'submit'} />
-            <p className="text-center text-sm text-gray-400">setting assessment for class {classroom.grade}{classroom.group}</p>
+            <Button title={'log'} type={'submit'} />
         </div>
     )
 };

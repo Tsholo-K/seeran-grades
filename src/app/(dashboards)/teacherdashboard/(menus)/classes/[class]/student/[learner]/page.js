@@ -8,7 +8,6 @@ import data from '@/app/(dashboards)/dummydata.json';
 // components
 import Crumbs from "@/components/crumbs";
 import UserImage from "@/components/(general components)/userimage";
-import MultipleMenu from "@/components/(general components)/multiplemenu";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
 import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
 
@@ -48,7 +47,7 @@ const StudentId = () => {
       {/* child id */}
       <UserImage image={`${student.image}`} name={student.name} surname={student.surname}/>
       <p className="text-center text-gray-400 text-sm w-[90%] mx-auto py-7"></p>
-      <SingleMenuLink title={'Student profile'} border={true} icon={'user-round-blue'} url={`/teacherdashboard/classes/${class_id}/student/${student.id}/profile`}/>
+      <SingleMenuLink title={'Student ID'} border={true} icon={'user-round-blue'} url={`/teacherdashboard/classes/${class_id}/student/${student.id}/profile`}/>
       <p className="text-center text-gray-400 text-sm w-[90%] mx-auto py-4"></p>
       <MultipleMenuLinks menu={menulinks} />
     </div>
