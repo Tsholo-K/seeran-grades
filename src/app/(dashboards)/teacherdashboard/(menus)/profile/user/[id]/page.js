@@ -27,7 +27,7 @@ const ID = () => {
 
   let register 
   data.register_classes.forEach((classroom) => {
-    if( classroom.class_id === teacher.register_class ) {
+    if( classroom.id === teacher.register_class ) {
       register = classroom
     }
   });

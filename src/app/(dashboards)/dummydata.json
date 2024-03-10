@@ -271,7 +271,7 @@
     
     "register_classes" : [
         {
-            "class_id" : "45356345",
+            "id" : "45356345",
             "teacher" : "Silvia Berningham",
             "teacher_id" : "2938438420",
             "classroom" : "102",
@@ -280,7 +280,7 @@
             "group" : "B"
         },
         {
-            "class_id" : "12547485",
+            "id" : "12547485",
             "teacher" : "Tessa Moldy",
             "teacher_id" : "6785678565",
             "classroom" : "121",
@@ -289,7 +289,7 @@
             "group" : "B"
         },
         {
-            "class_id" : "23452342",
+            "id" : "23452342",
             "teacher" : "Franklin Buck",
             "teacher_id" : "3456345633",
             "classroom" : "134",

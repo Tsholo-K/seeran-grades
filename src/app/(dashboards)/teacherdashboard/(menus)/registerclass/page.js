@@ -36,11 +36,10 @@ const MyRegisterClass = () => {
       <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}/>
       {/* transcripts */}
       <Classes classrooms={register_classroom} teacher={false} subject={false} url={false}/>
-      <div>
-        <p className='text-center text-sm text-gray-400 my-2'>this form can only be filled once a day</p>
+      <div className='pt-6'>
         <SingleMenuLink title={'Take Attendance Register'} url={'/teacherdashboard/registerclass/attendance'} border={true}/>
       </div>
-      <p className='text-sm text-gray-400 mt-12 pl-2'>students</p>
+      <p className='text-sm text-gray-400 mt-10 pl-2'>students</p>
       <div className='mt-3 py-1 rounded-xl bg-white'>
         <UserMenu all_users={students} dashboard={'teacher'} section={'registerclass/student'} grade={false}/>
       </div>
