@@ -309,6 +309,7 @@
             "date_submitted" : "monday, 09 febuary",
             "date_released" : "tuesday, 10 febuary",
             "score" : "44",
+            "marked" : false,
             "total" : "50",
             "submitted_by" : "220212349",
             "teacher" : "2938438420"
@@ -322,6 +323,8 @@
             "date_submitted" : "monday, 09 febuary",
             "date_released" : "tuesday, 10 febuary",
             "score" : "38",
+            "marked" : true,
+            "message" : "good",
             "total" : "50",
             "submitted_by" : "2202121218",
             "teacher" : "2938438420"
@@ -335,6 +338,7 @@
             "date_submitted" : "monday, 09 febuary",
             "date_released" : "tuesday, 10 febuary",
             "score" : "32",
+            "marked" : false,
             "total" : "50",
             "submitted_by" : "220212531",
             "teacher" : "2938438420"
@@ -348,6 +352,8 @@
             "date_submitted" : "monday, 09 febuary",
             "date_released" : "tuesday, 10 febuary",
             "score" : "67",
+            "marked" : true,
+            "message" : "good",
             "total" : "75",
             "submitted_by" : "220212349",
             "teacher" : "2938438420"
@@ -361,6 +367,7 @@
             "date_submitted" : "monday, 09 febuary",
             "date_released" : "tuesday, 10 febuary",
             "score" : "53",
+            "marked" : false,
             "total" : "75",
             "submitted_by" : "2202121218",
             "teacher" : "2938438420"
@@ -374,6 +381,7 @@
             "date_submitted" : "monday, 09 febuary",
             "date_released" : "tuesday, 10 febuary",
             "score" : "58",
+            "marked" : false,
             "total" : "75",
             "submitted_by" : "220212531",
             "teacher" : "2938438420"
@@ -387,6 +395,7 @@
             "date_submitted" : "monday, 21 febuary",
             "date_released" : "tuesday, 14 febuary",
             "score" : "87",
+            "marked" : true,
             "total" : "150",
             "submitted_by" : "2202121218",
             "teacher" : "2938438420"
@@ -400,6 +409,7 @@
             "date_submitted" : "friday, 27 febuary",
             "date_released" : "tuesday, 24 febuary",
             "score" : "15",
+            "marked" : true,
             "total" : "50",
             "submitted_by" : "220212348",
             "teacher" : "3456345633"
@@ -413,6 +423,7 @@
             "date_submitted" : "monday, 1 march",
             "date_released" : "tuesday, 21 febuary",
             "score" : "12",
+            "marked" : true,
             "total" : "20",
             "submitted_by" : "2202121218",
             "teacher" : "6785678565"
@@ -426,6 +437,7 @@
             "date_submitted" : "monday, 20 febuary",
             "date_released" : "tuesday, 4 febuary",
             "score" : "142",
+            "marked" : false,
             "total" : "150",
             "submitted_by" : "2202123624",
             "teacher" : "3456345633"
@@ -439,6 +451,7 @@
             "date_submitted" : "monday, 09 febuary",
             "date_released" : "tuesday, 10 febuary",
             "score" : "42",
+            "marked" : true,
             "total" : "50",
             "submitted_by" : "220212349",
             "teacher" : "2938438420"
@@ -452,6 +465,7 @@
             "date_submitted" : "monday, 09 febuary",
             "date_released" : "tuesday, 10 febuary",
             "score" : "32",
+            "marked" : true,
             "total" : "50",
             "submitted_by" : "2202121218",
             "teacher" : "2938438420"
@@ -465,6 +479,7 @@
             "date_submitted" : "monday, 09 febuary",
             "date_released" : "tuesday, 10 febuary",
             "score" : "30",
+            "marked" : false,
             "total" : "50",
             "submitted_by" : "220212531",
             "teacher" : "2938438420"
@@ -478,6 +493,7 @@
             "date_submitted" : "monday, 23 febuary",
             "date_released" : "tuesday, 7 febuary",
             "score" : "18",
+            "marked" : true,
             "total" : "20",
             "submitted_by" : "220212348",
             "teacher" : "6785678565"
@@ -491,6 +507,7 @@
             "date_submitted" : "monday, 23 febuary",
             "date_released" : "tuesday, 7 febuary",
             "score" : "19",
+            "marked" : false,
             "total" : "20",
             "submitted_by" : "220212623",
             "teacher" : "6785678565"
@@ -504,6 +521,7 @@
             "date_submitted" : "monday, 23 febuary",
             "date_released" : "tuesday, 7 febuary",
             "score" : "16",
+            "marked" : true,
             "total" : "20",
             "submitted_by" : "220212350",
             "teacher" : "6785678565"
@@ -517,6 +535,7 @@
             "date_submitted" : "monday, 23 febuary",
             "date_released" : "tuesday, 7 febuary",
             "score" : "98",
+            "marked" : true,
             "total" : "150",
             "submitted_by" : "220212348",
             "teacher" : "6785678565"
@@ -530,6 +549,7 @@
             "date_submitted" : "monday, 23 febuary",
             "date_released" : "tuesday, 7 febuary",
             "score" : "123",
+            "marked" : false,
             "total" : "150",
             "submitted_by" : "220212623",
             "teacher" : "6785678565"
@@ -543,6 +563,7 @@
             "date_submitted" : "monday, 23 febuary",
             "date_released" : "tuesday, 7 febuary",
             "score" : "113",
+            "marked" : true,
             "total" : "150",
             "submitted_by" : "220212350",
             "teacher" : "6785678565"

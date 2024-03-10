@@ -4,7 +4,7 @@ const Input = ({ type, placeholder }) => {
         <input 
         type={`${type}`} 
         placeholder={`${placeholder}`}  
-        className="border rounded-md px-5 py-1 w-full focus:outline-none"
+        className="rounded-lg px-5 py-1 w-full focus:outline-none"
         />
     </>
   )

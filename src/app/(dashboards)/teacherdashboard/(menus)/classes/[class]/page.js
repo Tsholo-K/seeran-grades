@@ -41,7 +41,7 @@ const MyClass = () => {
             },
             {
                 title : 'Release Grades',
-                url : `/teacherdashboard/classes/${class_id}/grades`
+                url : `/teacherdashboard/classes/${class_id}/grading`
             }
         ]
     }

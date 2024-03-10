@@ -18,9 +18,16 @@ const SubmittedBy = ({ student_id }) => {
     )
 };
 
-const TranscriptScore = ({ score, total, date }) => {
+const TranscriptScore = ({ score, total, date, marked }) => {
 
-    const result = score / total * 100
+    if ( marked === false ) {
+        return (
+            <Image src={`/grades-pending.svg`} alt='try it button' width={10} height={10} className={`absolute  w-fit h-fit ${ date ? 'top-3' : 'top-5 lg:top-[18px]'}  right-4 lg:w-8`}/>
+        )
+    }
+
+    const result = parseInt(score) / parseInt(total) * 100
+    
     let mark
     if( result > -1 ) {
         mark = 'grades-ready-failed'
@@ -33,7 +40,7 @@ const TranscriptScore = ({ score, total, date }) => {
     }
 
     return (
-        <Image src={`/${mark}.svg`} alt='try it button' width={10} height={10} className={`absolute  w-fit h-fit ${ date ? 'top-3' : 'top-5 lg:top-[18px]'}  right-4 lg:w-8`}/>
+        <Image src={`/${mark}.svg`} alt='try it button' width={10} height={10} className={`absolute w-fit h-fit ${ date ? 'top-3' : 'top-5 lg:top-[18px]'}  right-4 lg:w-8`}/>
     )
 };
 
@@ -59,7 +66,7 @@ const Transcripts = ({ transcripts, assessment=true, date=true, subject=true, su
                                 <div className="relative rounded-xl bg-white py-3" >
                                     {
                                         score &&
-                                        <TranscriptScore score={transcript.score} total={transcript.total} date={date}/>
+                                        <TranscriptScore score={transcript.score} total={transcript.total} date={date} marked={transcript.marked}/>
                                     }
                                     {
                                         assessment &&

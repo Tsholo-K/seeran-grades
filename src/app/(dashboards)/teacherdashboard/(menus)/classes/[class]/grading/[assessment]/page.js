@@ -7,9 +7,9 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/(general components)/pageheading";
-import MultipleMenu from "@/components/(general components)/multiplemenu";
 import Transcripts from "@/components/(grades components)/transcripts";
+import Button from "@/components/(general components)/button";
+import PageHeading from "@/components/(general components)/pageheading";
 
 
 const Grade = () => {
@@ -35,11 +35,14 @@ const Grade = () => {
     return (
         <div>
             {/* back link */}
-            <Crumbs url={`teacherdashboard/classes/${class_id}`} title={'class'}/>
+            <Crumbs url={`teacherdashboard/classes/${class_id}/grading`} title={'class'}/>
+            <PageHeading title={`${assessment.title}`} subheading={`${assessment.assessment}`}/>
+            <p className="my-7"></p>
+            <Button title={'release'} />
+            <p className="text-center text-sm text-gray-400 pt-1 w-[90%] mx-auto">you can only release gradings after all studnets are graded</p>
             {/* transcripts */}
             <p className='text-sm text-gray-400 mt-7 pl-2'>gradings</p>
-            <Transcripts  dashboard={'teacher'} assessment={false} date={false} section={`performance/${class_id}/${assessment_id}`} icon={false} transcripts={grades} subject={false} submitter={false} />
-            <p className="py-7 text-center text-sm text-gray-400">that&apos;s all scores</p>
+            <Transcripts  dashboard={'teacher'} assessment={false} date={false} section={`classes/${class_id}/grading/${assessment_id}`} icon={false} transcripts={grades} subject={false} submitter={false} />
         </div>
     )
 };

@@ -22,7 +22,7 @@ const Grades = () => {
   let grades = []
   children.forEach( child => {
     data.grades.forEach( transcript => {
-      if ( transcript.submitted_by === child.id ) {
+      if ( transcript.submitted_by === child.id && transcript.marked ) {
         grades.push(transcript)
       }
     });

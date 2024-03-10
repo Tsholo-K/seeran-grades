@@ -38,7 +38,7 @@ const CollectedAssessments = () => {
             {
                 assessments.map((assessment, index)=> (
                     <div key={index} >
-                        <Assessments dashboard={'teacher'} section={`classes/${class_id}/grades`} assessment={assessment} title={true} date_title={'assessed'}/>
+                        <Assessments dashboard={'teacher'} section={`classes/${class_id}/grading`} assessment={assessment} title={true} date_title={'assessed'}/>
                     </div>
                 ))
             }
