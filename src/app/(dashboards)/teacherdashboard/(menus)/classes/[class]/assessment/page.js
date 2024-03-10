@@ -28,10 +28,10 @@ const SetAssessment = () => {
         <div className="w-full relative grid grid-cols-1 place-content-center ">
             {/* back link */}
             <Crumbs url={`teacherdashboard/classes/${classroom.id}`} title={'class'}/>
-            {/* input areas */}
             {/* subject */}
-            <Subject title="Subject" icon={`${classroom.icon}`} subject={`${classroom.subject}`}/>
-            <div className="relative mb-10">
+            <Subject icon={`${classroom.icon}`} subject={`${classroom.subject}`}/>
+            {/* input areas */}
+            <div className="relative mb-6 text-base">
                 <InputArea title='assessment' placeholder={`test, assignment, exam...`} type={'text'}/>
                 <InputArea title='assessment title' type={'text'}/>
                 <InputArea title='total score' type={'text'}/>
@@ -40,7 +40,7 @@ const SetAssessment = () => {
             </div>
             {/* button */}
             <Button title={'set'} type={'submit'} />
-            <p className="text-center text-sm text-gray-400 pt-1">setting assessment for class {classroom.grade}{classroom.group}</p>
+            <p className="text-center text-sm text-gray-400">setting assessment for class {classroom.grade}{classroom.group}</p>
         </div>
     )
 };

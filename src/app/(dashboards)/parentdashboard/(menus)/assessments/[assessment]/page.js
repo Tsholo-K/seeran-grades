@@ -69,7 +69,7 @@ const Assessment = () => {
       info: assessment.total
     },
     {
-      title: 'Due Date',
+      title: 'Due date',
       info: assessment.due_date
     }
   ]
@@ -81,8 +81,7 @@ const Assessment = () => {
       <MultipleMenu menu={assessment_info} />
       {/* teacher */}
       <div className="relative pt-7">
-        <Link href={'/teachers/teacher'} className="w-full text-end pr-2 text-blue-700 absolute top-0 right-4">message</Link>
-        <Menu title={'Set By'} info={`${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} ${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`} border={true}/>
+        <Menu title={'Set by'} info={`${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} ${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`} border={true}/>
       </div>
       <p className="pl-2 mb-2 mt-12 text-gray-400">due for:</p>
       <div className="rounded-xl bg-white">

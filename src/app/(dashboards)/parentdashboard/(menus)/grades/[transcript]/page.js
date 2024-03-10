@@ -43,7 +43,7 @@ const Transcript = () => {
       info: `${transcript.score} / ${transcript.total}`
     },
     {
-      title: 'Date Submitted',
+      title: 'Date submitted',
       info: transcript.date_submitted
     }
   ]
@@ -53,10 +53,6 @@ const Transcript = () => {
       <div>
         {/* back link */}
         <Crumbs url={`parentdashboard/grades`} title={'grades'}/>
-        {/* page heading */}
-        <div className="lg:hidden">
-          <PageHeading title={'Transcript'} />
-        </div>
         {/* student */}
         <Score score={transcript.score} total={transcript.total}/>
         {/* subject */}
