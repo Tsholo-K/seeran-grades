@@ -49,7 +49,7 @@ const Grades = () => {
   });
   
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
       {/* back link */}
       <Crumbs url={`parentdashboard`} title={'dashboard'} hide={true}/>
       {/* page heading */}

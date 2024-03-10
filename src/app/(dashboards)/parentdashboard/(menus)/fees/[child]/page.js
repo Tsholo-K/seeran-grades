@@ -39,7 +39,7 @@ const Balance = () => {
   }
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
       <Crumbs title={'fees'} url={'parentdashboard/fees'} />
       <PageHeading title={'Balance'} />
       {/* outstanding balance */}

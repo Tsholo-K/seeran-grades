@@ -12,7 +12,6 @@ import Crumbs from "@/components/crumbs";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import Menu from "@/components/(general components)/menu";
 import PageHeading from "@/components/(general components)/pageheading";
-import Image from "next/image";
 import ChildMenu from "@/components/(general components)/childmenu";
 
 
@@ -76,21 +75,20 @@ const Assessment = () => {
   ]
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center ">
+    <div>
       <Crumbs url={`parentdashboard/assessments`} title={`assessments`}/>
-        <PageHeading title={'Assessment'} />
-        <Subject subject={assessment.subject} icon={assessment.icon}/>
-        <MultipleMenu menu={assessment_info} />
-        {/* teacher */}
-        <div className="relative pt-7">
-          <Link href={'/teachers/teacher'} className="w-full text-end pr-2 text-blue-700 absolute top-0 right-4">message</Link>
-          <Menu title={'Set By'} info={`${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} ${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`} border={true}/>
-        </div>
-        <p className="text-center mb-3 mt-12 text-gray-400">due for:</p>
-        <div className="rounded-xl bg-white">
-          <ChildMenu all_children= {due_for} url={false} dashboard={'parent'} section={`assessment/${assessment.id}`} />
-        </div>
-        <p className="py-7"></p>
+      <Subject subject={assessment.subject} icon={assessment.icon}/>
+      <MultipleMenu menu={assessment_info} />
+      {/* teacher */}
+      <div className="relative pt-7">
+        <Link href={'/teachers/teacher'} className="w-full text-end pr-2 text-blue-700 absolute top-0 right-4">message</Link>
+        <Menu title={'Set By'} info={`${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} ${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`} border={true}/>
+      </div>
+      <p className="pl-2 mb-2 mt-12 text-gray-400">due for:</p>
+      <div className="rounded-xl bg-white">
+        <ChildMenu all_children={due_for} url={false} />
+      </div>
+      <p className="py-2"></p>
     </div>
   )
 };

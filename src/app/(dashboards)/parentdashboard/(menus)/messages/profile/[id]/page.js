@@ -39,16 +39,16 @@ const MenuLink = ({Menu}) => {
 
 const page = () => {
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center ">
+    <div>
       <Crumbs title={'chat'} url={'parentdashboard/messages/teacher'}/>
       <div>
         <h1 className="w-full text-center pb-5 text-4xl">Teacher ID</h1>
       </div>
       <div className="w-fit my-10 mx-auto">
-          <div className="mx-auto w-fit pb-4">
-              <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
-          </div>
-          <h2 className="w-full text-center text-2xl">Surname Name</h2>
+        <div className="mx-auto w-fit pb-4">
+            <Image priority src={'/profile-icon-1.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-40 max-w-40" />
+        </div>
+        <h2 className="w-full text-center text-2xl">Surname Name</h2>
       </div>
       <div className="py-4 mb-10">
         <div className="flex">

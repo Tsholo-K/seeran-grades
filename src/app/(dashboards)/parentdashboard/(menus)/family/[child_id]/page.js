@@ -54,7 +54,7 @@ const ChildId = () => {
   ];
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center ">
+    <div>
       {/* back link */}
       <Crumbs url={`parentdashboard/family`} title={'family'}/>
       {/* child id */}

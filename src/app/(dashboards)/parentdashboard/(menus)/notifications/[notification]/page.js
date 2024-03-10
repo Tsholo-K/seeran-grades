@@ -15,7 +15,7 @@ const notification_info = [
 
 const Notifications = () => {
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
       <Crumbs title={'notifications'} url={'parentdashboard/notifications'} />
       <div className="mb-16">
         <div className="w-full mx-auto">

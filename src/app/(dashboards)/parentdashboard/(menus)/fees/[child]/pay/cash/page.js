@@ -15,7 +15,7 @@ const Cash = () => {
   const student_id = params.child
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
       <Crumbs title={'pay'} url={`parentdashboard/fees/${student_id}/pay`} />
       <PageHeading title={'Cash'} />
       <div className="pb-10 ">

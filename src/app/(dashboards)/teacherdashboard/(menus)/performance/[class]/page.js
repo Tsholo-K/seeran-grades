@@ -7,7 +7,6 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/(general components)/pageheading";
 import Classes from '@/components/(classes components)/classes';
 import Assessments from "@/components/(assessments components)/assessments";
 
@@ -20,7 +19,7 @@ const MyClass = () => {
     let classroom = []
     data.classes.forEach( (cls) => {
         if (cls.id === class_id) {
-        classroom.push(cls)
+            classroom.push(cls)
         }
     });
 
@@ -40,9 +39,7 @@ const MyClass = () => {
             <p className='text-sm text-gray-400 mt-7 lg:mt-10 pl-2'>assessments</p>
             {
                 assessments.map((assessment, index)=> (
-                    <div key={index} >
-                        <Assessments dashboard={'teacher'} section={`performance/${class_id}`} assessment={assessment} title={true} date_title={'assessed'}/>
-                    </div>
+                    <Assessments key={index} dashboard={'teacher'} section={`performance/${class_id}`} assessment={assessment} title={true} date_title={'assessed'}/>
                 ))
             }
             <p className="py-7 text-center text-sm text-gray-400">that&apos;s all assessments</p>

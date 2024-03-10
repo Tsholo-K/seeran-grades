@@ -36,9 +36,8 @@ const Attendance = () => {
   });
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
       <Crumbs title={'children'} url={'parentdashboard/attendance'} />
-      <PageHeading title={'Attendance'} />
       {/* counter section */}
       <div className="w-full pb-10">
         <div className="mx-auto bg-[#66b0f0] grid grid-cols-1 place-content-center w-[150px] h-[150px] text-white rounded-full text-7xl">

@@ -20,7 +20,7 @@ const MyClass = () => {
     let classroom = []
     data.classes.forEach( (cls) => {
         if (cls.id === class_id) {
-        classroom.push(cls)
+            classroom.push(cls)
         }
     });
 

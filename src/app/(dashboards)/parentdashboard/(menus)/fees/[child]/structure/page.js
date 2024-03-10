@@ -30,7 +30,7 @@ const Structure = () => {
   })
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
       <Crumbs title={'balance'} url={`parentdashboard/fees/${student_id}`} />
       <PageHeading title={'Structure'} />
       <MultipleMenu menu={structure} />

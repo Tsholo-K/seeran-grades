@@ -1,5 +1,5 @@
 // dummy data
-import data from '@/app/(dashboards)/dummydata.json'
+import data from '@/app/(dashboards)/dummydata.json';
 
 // components
 import Crumbs from "@/components/crumbs";
@@ -7,7 +7,7 @@ import PageHeading from "@/components/(general components)/pageheading";
 import Classes from '@/components/(classes components)/classes';
 
 
-const MyClasses = () => {
+const MyPerformance = () => {
 
   const teacher = '2938438420';
   let classroom = []
@@ -17,7 +17,7 @@ const MyClasses = () => {
     }
   });
 
-  const classroom_sorted = classroom.sort((a, b) => b.grade - a.grade )
+  const classroom_sorted = classroom.sort((a, b) => b.grade - a.grade );
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
@@ -32,4 +32,4 @@ const MyClasses = () => {
   )
 };
 
-export default MyClasses;
+export default MyPerformance;

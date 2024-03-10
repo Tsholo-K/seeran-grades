@@ -18,7 +18,7 @@ const menulinks = {
 
 const Settings = ({ dashboard }) => {
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center ">
+    <div>
       <Crumbs title={'dashboard'} url={`${dashboard}dashboard`} hide={true}/>
       <PageHeading title={'Settings'} />
       <div className="w-fit my-10 mx-auto">

@@ -14,7 +14,7 @@ const Notice = () => {
   const student_id = params.child
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
       <Crumbs title={'cash'} url={`parentdashboard/fees/${student_id}/pay/cash`} />
       <PageHeading title={'Give Notice'} />
       <div className="relative">
@@ -28,7 +28,7 @@ const Notice = () => {
           <textarea type={``} placeholder={``} className="w-full resize-none rounded-xl h-[200px] px-3 focus:outline-none"></textarea>
         </div>
       </div>
-      <p className="w-[90%] mx-auto text-center mb-7 text-sm lg:text-base text-gray-400">this can be anything... e.g i put the money in his flipfile, please make sure to look at it there</p>
+      <p className="w-[90%] mx-auto text-center mb-8 text-sm lg:text-base text-gray-400">this can be anything... e.g i put the money in his flipfile, please make sure to look at it there</p>
       <Button type={'submit'} title={'notify'} />
     </div>
   )

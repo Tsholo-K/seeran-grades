@@ -14,18 +14,15 @@ const Invoices = () => {
   const student_id = params.child
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
       <Crumbs title={'invoices'} url={`parentdashboard/fees/${student_id}`} />
       <PageHeading title={'Invoices'} />
       <p className="pl-2 font-bold text-gray-400 pb-3 text-center mx-auto">Year : 2024</p>
       {
         months.map( ( mont, index ) => (
-          <>
-            <div className="py-3">
-              <SingleMenuLink key={index} title={mont} border={true}/>
-            </div>
-          </>
-          
+          <div key={index} className="py-2">
+            <SingleMenuLink title={mont} border={true}/>
+          </div>
         ))
       }
       <p className="w-[90%] mx-auto text-center text-sm text-gray-400 py-10">all invoices</p>

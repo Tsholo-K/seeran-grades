@@ -31,7 +31,7 @@ const ProfileSettings = () => {
   const parent_user = data.parents[0]
 
   return (
-    <div className="">
+    <div>
       {/* back link */}
       <Crumbs title={'dashboard'} url={`parentdashboard`} hide={true}/>
       {/* profile info section */}

@@ -50,7 +50,7 @@ const Transcript = () => {
 
   return (
     <>
-      <div className="w-full relative grid grid-cols-1 place-content-center ">
+      <div>
         {/* back link */}
         <Crumbs url={`parentdashboard/grades`} title={'grades'}/>
         {/* page heading */}

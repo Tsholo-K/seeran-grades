@@ -7,7 +7,6 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/(general components)/pageheading";
 import Subject from "@/components/(general components)/subject";
 import Score from "@/components/(grades components)/score";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
@@ -40,7 +39,7 @@ const Transcript = () => {
       info: transcript.assessment
     },
     {
-      title: 'Grade',
+      title: 'Score',
       info: `${transcript.score} / ${transcript.total}`
     },
     {
@@ -50,23 +49,16 @@ const Transcript = () => {
   ]
 
   return (
-    <>
-      <div className="w-full relative grid grid-cols-1 place-content-center ">
-        {/* back link */}
-        <Crumbs url={`teacherdashboard/performance/${class_id}/${assessment_id}`} title={'assessment'}/>
-        {/* page heading */}
-        <div className="lg:hidden">
-          <PageHeading title={'Transcript'} />
-        </div>
-        {/* score */}
-        <Score score={transcript.score} total={transcript.total}/>
-        {/* subject */}
-        <Subject title="Student" icon={'user-round-blue'} subject={`${student.name.charAt(0).toUpperCase() + student.name.slice(1)} ${student.surname.charAt(0).toUpperCase() + student.surname.slice(1)}`} submitter={transcript.submitted_by}/>
-        {/* info */}
-        <MultipleMenu menu={transcript_info} />
-        <div className="py-2"></div>
-      </div>
-    </>
+    <div>
+      {/* back link */}
+      <Crumbs url={`teacherdashboard/performance/${class_id}/${assessment_id}`} title={'assessment'}/>
+      {/* score */}
+      <Score score={transcript.score} total={transcript.total}/>
+      {/* subject */}
+      <Subject title="Student" icon={'user-round-blue'} subject={`${student.name.charAt(0).toUpperCase() + student.name.slice(1)} ${student.surname.charAt(0).toUpperCase() + student.surname.slice(1)}`} submitter={transcript.submitted_by}/>
+      {/* info */}
+      <MultipleMenu menu={transcript_info} />
+    </div>
   )
 };
 

@@ -29,7 +29,7 @@ const AchievementsPage = () => {
   });
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
       <Crumbs url={`parentdashboard`} title={`dashboard`} hide={true}/>
       {/* page heading */}
       <PageHeading title={'Achievements'} subheading={'granted achievements'} />

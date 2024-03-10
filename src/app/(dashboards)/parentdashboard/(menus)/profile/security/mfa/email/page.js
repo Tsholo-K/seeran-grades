@@ -7,7 +7,7 @@ import InputArea from "@/components/(general components)/inputarea";
 
 const PhoneNumberAuthentication = () => {
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center ">
+    <div>
       {/* back link */}
       <Crumbs url={'parentdashboard/profile/security/mfa'} title={'mfa'}/>
       {/* page heading */}

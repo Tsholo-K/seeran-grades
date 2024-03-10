@@ -5,7 +5,7 @@ import PageHeading from "@/components/(general components)/pageheading";
 
 const NotificationsPage = () => {
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
       <Crumbs title={'dashboard'} url={'parentdashboard'} hide={true}/>
       <PageHeading title={'Notifications'} />
       <Notifications subject_line={'Friday, Fun day'} first_sentance={"we'll be having a fun day this friday so.."} dashboard={'parent'}/>

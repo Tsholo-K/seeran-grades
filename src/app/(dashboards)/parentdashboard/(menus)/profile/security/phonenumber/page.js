@@ -6,7 +6,7 @@ import Button from "@/components/(general components)/button";
 
 const Email = () => {
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center ">
+    <div>
       {/* back link */}
       <Crumbs title={'security'} url={'parentdashboard/profile/security'}/>
       {/* page heading */}

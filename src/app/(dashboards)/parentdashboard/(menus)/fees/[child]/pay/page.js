@@ -29,11 +29,11 @@ const Pay = () => {
   }
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
       <Crumbs title={'balance'} url={`parentdashboard/fees/${student_id}`} />
       <PageHeading title={'Pay'} />
       <MultipleMenuLinks menu={methods} />
-      <p className="w-[90%] mx-auto text-center text-sm lg:text-base text-gray-400">choose method</p>
+      <p className="text-center text-sm lg:text-base text-gray-400">choose method</p>
     </div>
   )
 };

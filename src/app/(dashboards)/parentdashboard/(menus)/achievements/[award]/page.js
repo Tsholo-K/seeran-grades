@@ -1,7 +1,5 @@
 'use client'
 
-import Image from "next/image";
-import Link from "next/link";
 import { useParams } from "next/navigation";
 
 // dummy data
@@ -12,17 +10,7 @@ import Crumbs from "@/components/crumbs";
 import Subject from "@/components/(general components)/subject";
 import Menu from "@/components/(general components)/menu";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
-import PageHeading from "@/components/(general components)/pageheading";
-
-
-const MenuLink = ({ menu, info }) => {
-  return (
-    <div className="relative flex py-3 gap-1 justify-start w-full px-3 cursor-pointer md:hover:text-blue-700">
-      <p>{menu}</p>
-      <p className="text-gray-400 absolute right-4">{info}</p>
-    </div>
-  )
-};
+import ChildMenu from "@/components/(general components)/childmenu";
 
 
 const Award = () => {
@@ -36,6 +24,13 @@ const Award = () => {
       award = achievement
     }
   });
+
+  let student = []
+  data.students.forEach( stu => {
+    if ( stu.id === award.student ) {
+      student.push(stu)
+    }
+  }); 
 
   const award_info = [
     {
@@ -53,16 +48,18 @@ const Award = () => {
   ]
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center ">
+    <div>
       <Crumbs url={`parentdashboard/achievements`} title={`achievements`}/>
-      {/* page heading */}
-      <PageHeading title={'Award'} />
-      <Subject subject={award.for} icon={award.icon} submitter={award.student} title="field"/>
+      <Subject subject={award.for} icon={award.icon} submitter={award.student}/>
       {/* award info */}
       <MultipleMenu menu={award_info} />
       {/* authority */}
-      <p className="pb-1 w-full pr-3 text-gray-400 text-sm pl-2 pt-10">awarded by</p>
+      <p className="pb-1 w-full pr-3 text-gray-400 text-sm pl-2 pt-4">Awarded by</p>
       <Menu title={'Authority'} info={award.authority} border={true} />
+      <p className="pl-2 mb-2 mt-12 text-gray-400">Granted to:</p>
+      <div className="rounded-xl bg-white">
+        <ChildMenu all_children={student} url={false}  />
+      </div>
     </div>
   )
 };

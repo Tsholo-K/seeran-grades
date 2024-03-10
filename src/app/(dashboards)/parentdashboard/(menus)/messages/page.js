@@ -5,7 +5,7 @@ import Messages from "@/components/(messages components)/messages";
 
 const MessagesPage = () => {
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
       <Crumbs url={`parentdashboard`} title={`dashboard`} hide={true}/>
       <PageHeading title={'Chats'} />
       <Messages dashboard={'parent'}/>
