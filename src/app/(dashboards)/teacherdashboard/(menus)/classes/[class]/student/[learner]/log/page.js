@@ -43,7 +43,7 @@ const SetAssessment = () => {
                 </select>
             </div>
             <p className="text-sm text-gray-400 pl-2 mt-4">record</p>
-            <textarea className="rounded-xl min-h-32" />
+            <textarea className="rounded-xl min-h-32 p-3" />
             <p className="py-6"></p>
             {/* button */}
             <Button title={'log'} type={'submit'} />
