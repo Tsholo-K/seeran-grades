@@ -38,7 +38,7 @@ const RemoveChild = () => {
       </p>
       {/* button */}
       <Button title={'confirm'} type={'submit'} />
-      <p className="text-center text-red-500 text-sm w-[90%] mx-auto pt-3">this cannot be reversed on the platform</p>
+      <p className="text-center text-red-500 text-sm w-[90%] mx-auto pt-1">this cannot be reversed on the platform</p>
     </div>
   )
 }

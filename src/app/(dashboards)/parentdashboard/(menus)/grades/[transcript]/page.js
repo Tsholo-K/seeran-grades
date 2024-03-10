@@ -66,8 +66,7 @@ const Transcript = () => {
       <Subject subject={transcript.subject} icon={transcript.icon} submitter={transcript.submitted_by}/>
       {/* info */}
       <MultipleMenu menu={transcript_info} />
-      
-      <p className="pl-2 mb-1 mt-7 text-gray-400">submitted by</p>
+      <p className="pl-2 mb-1 text-sm mt-7 text-gray-400">submitted by</p>
       <div className="rounded-xl bg-white">
         <ChildMenu all_children={student} url={false} />
       </div>
@@ -75,7 +74,7 @@ const Transcript = () => {
       <div className="relative pt-10">
         <Menu title={'Teacher'} info={`${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} ${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`} border={true}/>
       </div>
-      <div className="py-2"></div>
+      <div className="py-4"></div>
     </div>
   )
 };

@@ -54,9 +54,9 @@ const Award = () => {
       {/* award info */}
       <MultipleMenu menu={award_info} />
       {/* authority */}
-      <p className="pb-1 w-full pr-3 text-gray-400 text-sm pl-2 pt-4">Awarded by</p>
+      <p className="pb-1 w-full pr-3 text-gray-400 text-sm pl-2 pt-4">awarded by</p>
       <Menu title={'Authority'} info={award.authority} border={true} />
-      <p className="pl-2 mb-2 mt-12 text-gray-400">Granted to:</p>
+      <p className="pl-2 mb-2 text-sm mt-12 text-gray-400">granted to</p>
       <div className="rounded-xl bg-white">
         <ChildMenu all_children={student} url={false}  />
       </div>

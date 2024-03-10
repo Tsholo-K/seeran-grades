@@ -83,7 +83,7 @@ const Assessment = () => {
       <div className="relative pt-4">
         <Menu title={'Set by'} info={`${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} ${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`} border={true}/>
       </div>
-      <p className="pl-2 mb-2 mt-12 text-gray-400">due for</p>
+      <p className="pl-2 mb-2 text-sm mt-12 text-gray-400">due for</p>
       <div className="rounded-xl bg-white">
         <ChildMenu all_children={due_for} url={false} />
       </div>

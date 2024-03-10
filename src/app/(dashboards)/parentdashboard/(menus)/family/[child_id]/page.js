@@ -65,7 +65,7 @@ const ChildId = () => {
       <div className="text-red-600">
         <SingleMenuLink title={'Remove Child From Account'} border={true} url={`/parentdashboard/family/${student.id}/remove`}/>
       </div>
-      <p className="text-center text-gray-400 text-sm w-[90%] mx-auto pt-3">to reverse this you&apos;d need to go to school to have it relinked</p>
+      <p className="text-center text-gray-400 text-sm w-[90%] mx-auto pt-1">to reverse this you&apos;d need to go to school to have it relinked</p>
     </div>
   )
 }

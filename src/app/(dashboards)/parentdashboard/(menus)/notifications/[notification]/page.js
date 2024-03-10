@@ -4,7 +4,7 @@ import MultipleMenu from "@/components/(general components)/multiplemenu";
 
 const notification_info = [
   {
-    title: 'Sender',
+    title: 'Sent by',
     info: 'Principal',
   },
   {
@@ -26,8 +26,8 @@ const Notifications = () => {
         <div className="flex">
           <p className=" text-sm lg:text-base pl-2 pb-1 text-gray-400">message</p>
         </div>
-        <div className="relative rounded-xl bg-white p-4">
-          <p className="w-full py-1 px-2">
+        <div className="relative rounded-xl text-center bg-white p-3">
+          <p className="w-full">
             We understand the importance of staying connected and informed about your child&apos;s education journey. 
             That&apos;s why we&apos;re excited to introduce Seeran Grades, a user-friendly platform designed to empower you with
             real-time insights into your child&apos;s academic progress and well-being
