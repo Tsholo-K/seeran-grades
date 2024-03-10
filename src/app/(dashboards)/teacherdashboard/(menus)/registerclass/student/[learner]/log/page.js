@@ -21,7 +21,7 @@ const SetAssessment = () => {
             {/* back link */}
             <Crumbs url={`teacherdashboard/registerclass/student/${student_id}`} title={'student'}/>
             {/* subject */}
-            <Subject icon={`home`} subject={`register class`}/>
+            <Subject subject={`register class`}/>
             {/* input areas */}
             <p className="text-sm text-gray-400 pl-2 mt-14">offence</p>
             <div className="bg-white rounded-xl mb-4 min-h-8 px-4">
