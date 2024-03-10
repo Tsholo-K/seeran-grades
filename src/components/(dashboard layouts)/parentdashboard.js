@@ -101,10 +101,10 @@ const Parentdashboard = () => {
     <>
         <div className="w-full h-full relative">
           <div className="">
-              {/* accounts section */}
+              {/* profile section */}
               <div className="rounded-xl bg-white ">
                 <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-                  <Image priority src={`${parent.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit rounded-full h-fit max-h-16 max-w-16" />
+                  <Image priority={true} src={`/${parent.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit rounded-full h-fit max-h-16 max-w-16" />
                   <div className="w-full">
                     <p className="pt-3 ">Seeran Dion</p>
                     <p className="text-sm text-gray-400 ">profile settings</p>
