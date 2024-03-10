@@ -55,7 +55,7 @@ const MyClass = () => {
             <MultipleMenuLinks menu={menus} />
             <p className='text-sm text-gray-400 mt-7 pl-2'>students</p>
             <div className='mt-3 py-1 rounded-xl bg-white'>
-                <ChildMenu all_children={students} dashboard={'teacher'} section={'classes'} grade={false}/>
+                <ChildMenu all_children={students} dashboard={'teacher'} section={`classes/${class_id}/student`} grade={false}/>
             </div>
             <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10"></p>
         </div>

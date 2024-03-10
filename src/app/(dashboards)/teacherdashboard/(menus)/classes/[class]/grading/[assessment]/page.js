@@ -35,7 +35,7 @@ const Grade = () => {
     return (
         <div>
             {/* back link */}
-            <Crumbs url={`teacherdashboard/classes/${class_id}/grading`} title={'class'}/>
+            <Crumbs url={`teacherdashboard/classes/${class_id}/grading`} title={'assessments'}/>
             <PageHeading title={`${assessment.title}`} subheading={`${assessment.assessment}`}/>
             <p className="my-7"></p>
             <Button title={'release'} />
