@@ -27,6 +27,11 @@ const menuitems = [
         title: 'Register Class',
         icon: 'register-class',
         url: '/teacherdashboard/registerclass',
+      },
+      {
+        title: 'timetable',
+        icon: 'time-table',
+        url: '/teacherdashboard/timetable',
       }
     ]
   },

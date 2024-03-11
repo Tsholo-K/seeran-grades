@@ -22,37 +22,19 @@ const studentdashboardmenuitems = [
     {
       section : [
         {
-          title: 'Grades',
-          icon: 'graduation-cap',
-          url: '/studentdashboard/grades',
+          title: 'Messages',
+          icon: 'admin',
+          url: '/studentdashboard/messages',
         },
-        {
-          title: 'Assessments',
-          icon: 'calendar-clock',
-          url: '/studentdashboard/assessments',
-        },
-        {
-          title: 'Achievements',
-          icon: 'award',
-          url: '/studentdashboard/achievements',
-        }
-      ]
-    },
-    {
-      section : [
         {
           title: 'Notifications',
           icon: 'bell-ring',
           url: '/studentdashboard/notifications',
         },
-        {
-          title: 'Messages',
-          icon: 'teacher',
-          url: '/studentdashboard/messages',
-        },
+        
         {
           title: 'Help Desk',
-          icon: 'admin',
+          icon: 'messages',
           url: '/studentdashboard/helpdesk',
         }
       ]
@@ -75,7 +57,7 @@ const Studentdashboard = () => {
             {/* accounts section */}
             <div className="rounded-xl bg-white mb-7">
               <Link href={'/studentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-                <Image priority src={'/profile-icon-3.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-16 max-w-16" />
+                <Image priority src={'/default-user-icon.svg'} alt="profile icon" width={30} height={30} className="rounded-full w-fit h-fit max-h-16 max-w-16" />
                 <div className="w-full">
                   <p className="pt-3 ">Tsholo Koketso</p>
                   <p className="text-sm text-gray-400 ">profile settings</p>
