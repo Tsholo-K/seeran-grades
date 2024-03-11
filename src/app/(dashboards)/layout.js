@@ -9,7 +9,7 @@ export default function ParentDashboardLayout({ children }) {
         {/* navigation bar */}
         <NavigationBar left_link={false} left_logo_small={''} left_logo_large={''} right_link={false} max={false}/>
         {/* body */}
-        <div className="pt-16 h-screen relative">
+        <div className="pt-16 h-screen relative max-w-[1500px] mx-auto">
             {children}
         </div>
       </div>
