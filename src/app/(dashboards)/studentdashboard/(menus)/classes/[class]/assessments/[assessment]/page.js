@@ -65,11 +65,6 @@ const Assessment = () => {
       <Subject subject={assessment.subject} icon={assessment.icon}/>
       <p className="py-8"></p>
       <MultipleMenu menu={assessment_info} />
-      {/* teacher */}
-      <p className="pl-2 mb-2 text-sm mt-12 text-gray-400">set by</p>
-      <div className="rounded-xl bg-white">
-        <UserMenu all_users={teacher} url={false} grade={false}/>
-      </div>
     </div>
   )
 };

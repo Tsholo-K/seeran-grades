@@ -3,7 +3,6 @@ import Image from "next/image"
 import MultipleMenuLinks from "../(general components)/multiplemenulinks"
 
 
-
 const studentdashboardmenuitems = [
     {
       section : [
@@ -44,7 +43,7 @@ const studentdashboardmenuitems = [
         {
           title: 'Settings',
           icon: 'settings',
-          url : '/parentdashboard/settings'
+          url : '/studentdashboard/settings'
         }
       ]
     }
