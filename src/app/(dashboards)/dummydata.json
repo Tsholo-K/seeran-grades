@@ -101,6 +101,8 @@
             "name" : "koketso",
             "surname" : "tsholo",
             "date_of_birth" : "28/08/2002",
+            "email" : "tsholo.koketso@icoud.com",
+            "phone_number" : "0711740824",
             "grade" : "12",
             "image" : "default-user-icon",
             "parents" : ["1928742173"]

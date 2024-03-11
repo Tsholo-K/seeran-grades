@@ -9,7 +9,6 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Assessments from "@/components/(assessments components)/assessments";
-import SingleMenuLink from "@/components/(general components)/signlemenulink";
 
 
 const AssessmentsPage = () => {
@@ -25,14 +24,13 @@ const AssessmentsPage = () => {
 
     return (
         <div>
-            <Crumbs url={`teacherdashboard/classes/${class_id}`} title={'class'}/>
+            <Crumbs url={`studentdashboard/classes/${class_id}`} title={'class'}/>
             <PageHeading title={'Assessments'} subheading={`due assessments`}/>
-            <SingleMenuLink title={'Set assessment'} icon={'date'} border={true} url={`/teacherdashboard/classes/${class_id}/assessments/set`}/>
             {/* assessments */}
-            <p className='text-sm text-gray-400 mt-16 lg:mt-10 pl-2'>assessments</p>
+            <p className='text-sm text-gray-400 mt-4 lg:mt-10 pl-2'>assessments</p>
             {
                 assessments.map((assessment, index)=> (
-                    <Assessments key={index} dashboard={'teacher'} section={`classes/${class_id}/assessments/collect`} assessment={assessment} title={true} date_title={'due'}/>
+                    <Assessments key={index} dashboard={'student'} section={`classes/${class_id}/assessments`} assessment={assessment} title={true} date_title={'due'}/>
                 ))
             }
         </div>
