@@ -7,14 +7,16 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import Classes from '@/components/(classes components)/classes';
-import Assessments from "@/components/(assessments components)/assessments";
+import Transcripts from "@/components/(grades components)/transcripts";
+import Subject from "@/components/(general components)/subject";
+import PageHeading from "@/components/(general components)/pageheading";
 
 
 const MyClass = () => {
 
     const params = useParams();
     const class_id = params.class
+    const student = "220212349"
 
     let classroom = []
     data.classes.forEach( (cls) => {
@@ -23,26 +25,28 @@ const MyClass = () => {
         }
     });
 
-    let assessments = []
-    data.assessments.forEach( assessment => {
-        if ( assessment.class_id === classroom[0].id ) {
-            assessments.push(assessment)
-        }
+    let grades = []
+    data.grades.forEach( transcript => {
+    if ( transcript.submitted_by === student && transcript.subject === classroom[0].subject ) {
+        grades.push(transcript)
+    }
     });
 
     return (
         <div>
-            {/* back link */}
-            <Crumbs url={`studentdashboard/classes/${class_id}/`} title={'performance'}/>
-            {/* transcripts */}
-            <Classes classrooms={classroom} teacher={false} url={false}/>
-            <p className='text-sm text-gray-400 mt-7 lg:mt-10 pl-2'>graded assessments</p>
+            <Crumbs url={`studentdashboard/classes/${class_id}/`} title={'class'}/>
+            <PageHeading  title={`Grades`} subheading={`graded assessments`}/>
+            <p className='text-sm text-gray-400 mt-4 lg:mt-7 pl-2'>assessments</p>
             {
-                assessments.map((assessment, index)=> (
-                    <Assessments key={index} dashboard={'teacher'} section={`performance/${class_id}`} assessment={assessment} title={true} date_title={'released'}/>
-                ))
+                grades.length > 0
+                ?
+                <>
+                    <Transcripts transcripts={grades} submitter={false} dashboard={'student'} section={`classes/${class_id}/performance`} />
+                    <p className="py-7 text-center text-sm text-gray-400">that&apos;s all assessments</p>
+                </>
+                :
+                <p className="py-7 text-center text-sm text-gray-400 pt-32">no  assessments</p>
             }
-            <p className="py-7 text-center text-sm text-gray-400">that&apos;s all assessments</p>
         </div>
     )
 };

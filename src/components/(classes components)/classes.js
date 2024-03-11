@@ -56,18 +56,21 @@ const Class_info = ({ classroom, teacher, subject, info  }) => {
     )
 }
 
-const Classes = ({ dashbaord, section, classrooms, teacher=true, subject=true, url=true, info=true }) => {
+const Classes = ({ dashbaord, section, classrooms, teacher=true, subject=true, url=true, info=true, grade=true }) => {
     return (
         <>
             {
                 classrooms.map( ( classroom, index) => (
                     <div key={index} className="pb-6 pt-2 lg:pb-12">
-                        <div className="flex pl-2 pb-2">
-                            <div className="grid grid-cols-1 place-content-center">
-                                <Image src={'/grade.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-7"/>
+                        {
+                            grade &&
+                            <div className="flex pl-2 pb-2">
+                                <div className="grid grid-cols-1 place-content-center">
+                                    <Image src={'/grade.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-7"/>
+                                </div>
+                                <p className="lg:text-lg text-gray-500 text-sm pl-2 ">grade : {classroom.grade}</p>
                             </div>
-                            <p className="lg:text-lg text-gray-500 text-sm pl-2 ">grade : {classroom.grade}</p>
-                        </div>
+                        }
                         {
                             url
                             ?

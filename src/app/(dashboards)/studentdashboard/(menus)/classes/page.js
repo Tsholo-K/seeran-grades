@@ -29,7 +29,7 @@ const MyClasses = () => {
       {/* page heading */}
       <PageHeading title={'My Classes'} subheading={'all your classes'}/>
       {/* transcripts */}
-      <Classes classrooms={classroom_sorted} teacher={false} dashbaord={'student'} section={'classes'} info={false}/>
+      <Classes classrooms={classroom_sorted} teacher={false} grade={false} dashbaord={'student'} section={'classes'} info={false}/>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">that&apos;s all your classes</p>
     </div>
   )
