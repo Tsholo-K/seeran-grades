@@ -36,12 +36,14 @@ const MyClass = () => {
     const menus = {
         section : [
             {
-                title : 'Set Assessment',
-                url : `/teacherdashboard/classes/${class_id}/assessment`
+                title : 'Assessments',
+                url : `/teacherdashboard/classes/${class_id}/assessments`,
+                icon: `calendar-clock`
             },
             {
-                title : 'Release Grades',
-                url : `/teacherdashboard/classes/${class_id}/grading`
+                title : 'Grades',
+                url : `/teacherdashboard/classes/${class_id}/grading`,
+                icon : `graduation-cap`
             }
         ]
     }

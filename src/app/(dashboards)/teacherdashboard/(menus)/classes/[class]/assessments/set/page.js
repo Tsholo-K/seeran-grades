@@ -7,7 +7,6 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/(general components)/pageheading";
 import InputArea from "@/components/(general components)/inputarea";
 import Button from "@/components/(general components)/button";
 import Subject from "@/components/(general components)/subject";
@@ -27,11 +26,11 @@ const SetAssessment = () => {
     return (
         <div className="w-full relative grid grid-cols-1 place-content-center ">
             {/* back link */}
-            <Crumbs url={`teacherdashboard/classes/${classroom.id}`} title={'class'}/>
+            <Crumbs url={`teacherdashboard/classes/${classroom.id}/assessments`} title={'due assessments'}/>
             {/* subject */}
             <Subject icon={`${classroom.icon}`} subject={`${classroom.subject}`}/>
             {/* input areas */}
-            <div className="relative mb-6 text-base">
+            <div className="relative mb-16 mt-6 text-base">
                 <InputArea title='assessment' placeholder={`test, assignment, exam...`} type={'text'}/>
                 <InputArea title='assessment title' type={'text'}/>
                 <InputArea title='total score' type={'text'}/>

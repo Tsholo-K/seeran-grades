@@ -8,6 +8,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 // components
 import Crumbs from "@/components/crumbs";
 import Assessments from "@/components/(assessments components)/assessments";
+import PageHeading from "@/components/(general components)/pageheading";
 
 
 const CollectedAssessments = () => {
@@ -33,8 +34,9 @@ const CollectedAssessments = () => {
         <div>
             {/* back link */}
             <Crumbs url={`teacherdashboard/classes/${class_id}`} title={'class'}/>
+            <PageHeading title={'Grade'} subheading={'collected assessments'} />
             {/* transcripts */}
-            <p className='text-sm text-gray-400 mt-7 lg:mt-10 pl-2'>collected assessments</p>
+            <p className='text-sm text-gray-400 mt-2 lg:mt-10 pl-2'>assessments</p>
             {
                 assessments.map((assessment, index)=> (
                     <div key={index} >

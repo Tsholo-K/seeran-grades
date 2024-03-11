@@ -3,10 +3,8 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/(general components)/pageheading";
 import Classes from '@/components/(classes components)/classes';
 import SingleMenuLink from '@/components/(general components)/signlemenulink';
-import ChildMenu from '@/components/(general components)/childmenu';
 import UserMenu from '@/components/(general components)/childmenu';
 
 
@@ -37,7 +35,7 @@ const MyRegisterClass = () => {
       {/* transcripts */}
       <Classes classrooms={register_classroom} teacher={false} subject={false} url={false}/>
       <div className='pt-6'>
-        <SingleMenuLink title={'Take Attendance Register'} url={'/teacherdashboard/registerclass/attendance'} border={true}/>
+        <SingleMenuLink title={'Attendance Register'} url={'/teacherdashboard/registerclass/attendance'} icon={'take-attendance'} border={true}/>
       </div>
       <p className='text-sm text-gray-400 mt-10 pl-2'>students</p>
       <div className='mt-3 py-1 rounded-xl bg-white'>

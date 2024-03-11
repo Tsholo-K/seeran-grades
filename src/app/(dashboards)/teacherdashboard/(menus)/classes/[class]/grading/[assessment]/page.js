@@ -39,7 +39,7 @@ const Grade = () => {
             <PageHeading title={`${assessment.title}`} subheading={`${assessment.assessment}`}/>
             <p className="my-7"></p>
             <Button title={'release'} />
-            <p className="text-center text-sm text-gray-400 pt-1 w-[90%] mx-auto">you can only release gradings after all studnets are graded</p>
+            <p className="text-center text-sm text-gray-400 pt-1 w-[90%] mx-auto">you can only release grades after all studnets are graded</p>
             {/* transcripts */}
             <p className='text-sm text-gray-400 mt-10 pl-2'>gradings</p>
             <Transcripts  dashboard={'teacher'} assessment={false} date={false} section={`classes/${class_id}/grading/${assessment_id}`} icon={false} transcripts={grades} subject={false} submitter={false} />
