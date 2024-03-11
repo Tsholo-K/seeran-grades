@@ -9,8 +9,8 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import Classes from '@/components/(classes components)/classes';
 import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
-import SingleMenuLink from "@/components/(general components)/signlemenulink";
 import Subject from "@/components/(general components)/subject";
+import UserMenu from "@/components/(general components)/childmenu";
 
 
 const MyClass = () => {
@@ -25,22 +25,24 @@ const MyClass = () => {
         }
     });
 
+    let teacher = []
+    data.teachers.forEach( teach => {
+        if( teach.id === classroom[0].teacher_id ) {
+            teacher.push(teach)
+        }
+    });
+
     const menus = {
         section : [
             {
                 title : 'Performance',
-                url : `/studentdashboard/classes/${class_id}/grading`,
+                url : `/studentdashboard/classes/${class_id}/performance`,
                 icon : `performance`
             },
             {
                 title : 'Assessments',
                 url : `/studentdashboard/classes/${class_id}/assessments`,
                 icon: `calendar-clock`
-            },
-            {
-                title : 'Teacher',
-                url : `/studentdashboard/classes/${class_id}/assessments`,
-                icon: `user-round-blue`
             }
         ]
     }
@@ -50,8 +52,12 @@ const MyClass = () => {
             <Crumbs url={`studentdashboard/classes`} title={'classes'}/>
             <Classes classrooms={classroom} teacher={false} subject={false} url={false}/>
             <Subject title="Subject" subject={`${classroom[0].subject}`} icon={`${classroom[0].icon}`} />
-            <p className="py-2"></p>
+            <p className="py-0"></p>
             <MultipleMenuLinks menu={menus} />
+            <p className="text-gray-500 text-sm pl-2 pt-6">teacher</p>
+            <div className="bg-white rounded-xl mb-7">
+               <UserMenu all_users={teacher} dashboard={'student'} section={`classes/${class_id}/teacher`} grade={false}/> 
+            </div>
         </div>
     )
 };
