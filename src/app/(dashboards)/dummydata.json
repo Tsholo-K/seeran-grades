@@ -875,5 +875,48 @@
             "title" : "mathematics",
             "icon" : "maths"
         }
+    ],
+
+    "time_tables" : [
+        
+        {
+            "monday" : [
+                {
+                    "from" : "7h45",
+                    "to" : "08h00",
+                    "class" : "Register Class"
+                },
+                {
+                    "from" : "08h05",
+                    "to" : "9h00",
+                    "class" : "English"
+                },
+                {
+                    "from" : "09h05",
+                    "to" : "10h00",
+                    "class" : "Mathematics"
+                },
+                {
+                    "from" : "10h05",
+                    "to" : "11h00",
+                    "class" : "Life Orientation"
+                },
+                {
+                    "from" : "11h05",
+                    "to" : "12h00",
+                    "class" : "Lunch Time"
+                },
+                {
+                    "from" : "12h05",
+                    "to" : "13h00",
+                    "class" : "Life Science"
+                },
+                {
+                    "from" : "13h05",
+                    "to" : "14h00",
+                    "class" : "French"
+                }
+            ]
+        }
     ]
 }

@@ -14,7 +14,7 @@ const studentdashboardmenuitems = [
         {
           title: 'timetable',
           icon: 'time-table',
-          url: '/studentdashboard/assessments',
+          url: '/studentdashboard/timetable',
         }
       ]
     },
