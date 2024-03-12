@@ -85,7 +85,7 @@ const LoginForm = () => {
           />
         </div>
         <p className="h-[25px] my-1 text-center text-sm text-[#fe5244]">{error}</p>
-        <Button title={'login'} type={'submit'}/>
+        <Button title={'login'} black={true} type={'submit'}/>
         <p className="text-sm md:text-base w-full text-center pt-3 text-gray-400">Don&apos;t have an account? <Link href={'/signin'} className=" text-[#fe5244] ">signin</Link></p>
       </form>
     </>

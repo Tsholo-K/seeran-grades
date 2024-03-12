@@ -30,7 +30,7 @@ const AdminDesk = () => {
                                 <p className="text-sm pl-2 text-gray-500 lg:text-base">contact number : {admin.number}</p>
                             </div>
                         </div>
-                        <Button title={`request call`} />
+                        <Button title={`request call`}/>
                     </div>
                 ))
             }

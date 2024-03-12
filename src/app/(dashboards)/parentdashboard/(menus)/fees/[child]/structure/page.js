@@ -35,7 +35,7 @@ const Structure = () => {
       <PageHeading title={'Structure'} />
       <MultipleMenu menu={structure} />
       <Menu title={'total'} info={total} border={true}/>
-      <p className="mx-auto text-sm text-gray-400 py-1">total debitable amount p/m</p>
+      <p className="mx-auto text-sm text-center text-gray-400 py-1">total debitable amount p/m</p>
     </div>
   )
 };

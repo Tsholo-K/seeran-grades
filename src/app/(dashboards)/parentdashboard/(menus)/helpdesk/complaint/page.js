@@ -1,17 +1,26 @@
 import Aligner from "@/components/(general components)/aligner"
 import PageHeading from "@/components/(general components)/pageheading"
+import SingleMenuLink from "@/components/(general components)/signlemenulink"
 import Crumbs from "@/components/crumbs"
 
 
 const page = () => {
+
+  const complaints = null
+
   return (
     <div>
       <Aligner/>
-      <Crumbs title={'dashboard'} url={'parentdashboard/helpdesk'} />
-      <PageHeading title={`Help desk`} />
-      <div className="w-fit pt-7 pb-16 mx-auto">
-        <p className="text-center text-gray-500">School Name & logo</p>
-      </div>
+      <Crumbs title={'help desk'} url={'parentdashboard/helpdesk'} />
+      <PageHeading title={`Complaints`} subheading={`all complaints`} />
+      <SingleMenuLink title={'Log complaint'} icon={'date'} border={true} url={`/parentdashboard/helpdesk/complaint/log`}/>
+      <p className="pl-2 text-sm text-gray-400 pt-8 pb-1">complaints</p>
+      {
+        complaints 
+        ? null 
+        :
+        <p className="pl-2 text-sm text-center text-gray-400 pt-8 pb-1">no complaints</p>
+      }
     </div>
   )
 }

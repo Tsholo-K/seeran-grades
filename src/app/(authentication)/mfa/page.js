@@ -27,7 +27,7 @@ const Signin = () => {
             <div className="my-4">
               <Input type={'text'} placeholder={'OTP'} />
             </div>
-            <Button title={'authenticate'} type={'submit'}/>
+            <Button title={'authenticate'} black={true} type={'submit'}/>
             <p className="text-sm md:text-base w-full text-center pt-3 text-gray-400">Didn&apos;t recieve the code? <Link href={'/signin'} className=" text-black">resend</Link></p>
           </form>
         </div>

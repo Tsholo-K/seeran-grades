@@ -30,7 +30,7 @@ const Signin = () => {
                     <div className="my-4">
                         <Input type={'text'} placeholder={'phone number'} />
                     </div>
-                    <Button title={'sign in'} type={'submit'}/>                   
+                    <Button title={'sign in'} black={true} type={'submit'}/>                   
                     <p className="text-sm md:text-base w-full text-center pt-3 text-gray-400">Already have an account? <Link href={'/login'} className=" text-[#66b0f0]">login</Link></p>
                 </form>
             </div>
