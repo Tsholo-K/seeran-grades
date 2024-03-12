@@ -5,6 +5,21 @@
         "surname" : ""
     },
 
+    "admins" : [
+        {
+            "id" : "0162736453",
+            "name" : "chloe",
+            "surname" : "mitchel",
+            "number" : "0118971524"
+        },
+        {
+            "id" : "7815243672",
+            "name" : "cait",
+            "surname" : "yasuo",
+            "number" : "0118971524"
+        }
+    ],
+
     "parents": [
         { 
             "id" : "1928742173",
