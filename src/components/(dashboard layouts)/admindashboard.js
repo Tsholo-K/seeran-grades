@@ -9,7 +9,7 @@ const menuitems = [
         {
           title: 'Performance',
           icon: 'performance',
-          url: '/admindashboard/grades',
+          url: '/admindashboard/performance',
         }
       ]
     },
@@ -18,10 +18,10 @@ const menuitems = [
         {
           title: 'Announcements',
           icon: 'megaphone',
-          url: '/admindashboard/messages',
+          url: '/admindashboard/announcements',
         },
         {
-          title: 'Staff',
+          title: 'Helpdesk',
           icon: 'admin',
           url: '/admindashboard/helpdesk',
         }
@@ -30,13 +30,13 @@ const menuitems = [
     {
       section : [
         {
-          title: 'Parents',
+          title: 'Fees',
           icon: 'wallet',
           url: '/admindashboard/fees',
         },
         {
           title: 'Students',
-          icon: 'bell-ring',
+          icon: 'user-round-blue',
           url: '/admindashboard/notifications',
         }
       ]
