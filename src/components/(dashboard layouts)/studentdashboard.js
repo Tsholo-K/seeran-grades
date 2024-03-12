@@ -30,12 +30,6 @@ const studentdashboardmenuitems = [
           icon: 'bell-ring',
           url: '/studentdashboard/notifications',
         },
-        
-        {
-          title: 'Help Desk',
-          icon: 'messages',
-          url: '/studentdashboard/helpdesk',
-        }
       ]
     },
     {

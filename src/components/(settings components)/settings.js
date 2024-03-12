@@ -23,7 +23,7 @@ const Settings = ({ dashboard }) => {
       <Aligner/>
       <Crumbs title={'dashboard'} url={`${dashboard}dashboard`} hide={true}/>
       <PageHeading title={'Settings'} />
-      <div className="w-fit my-10 mx-auto">
+      <div className="w-fit mt-8 mb-16 mx-auto">
           <div className="mx-auto w-fit pb-4">
             <Image priority src={'/favicon.svg'} alt="profile icon" width={30} height={30} className="w-fit h-fit max-h-[250px] max-w-[250px] " />
           </div>

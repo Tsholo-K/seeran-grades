@@ -10,6 +10,7 @@ import Crumbs from "@/components/crumbs";
 import UserImage from "@/components/(general components)/userimage";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import Aligner from "@/components/(general components)/aligner";
+import SingleMenuLink from "@/components/(general components)/signlemenulink";
 
 
 const TeacherId = () => {
@@ -51,6 +52,8 @@ const TeacherId = () => {
       <UserImage image={`${teacher.image}`} name={teacher.name} surname={teacher.surname} email={`${teacher.email}`}/>
       <p className="pb-4"></p>
       <MultipleMenu menu={teacher_info} />
+      <SingleMenuLink title={`Message`} icon={`admin`} border={true} url={`/studentdashboard/messages/${teacher.id}`} />
+      <p className="text-sm text-gray-400 text-center pt-1">this will send you to the messages section</p>
     </div>
   )
 };
