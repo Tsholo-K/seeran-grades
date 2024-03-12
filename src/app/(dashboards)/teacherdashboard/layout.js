@@ -16,7 +16,7 @@ export default function ParentDashboardLayout({ children }) {
               </div>
             </div>
             {/* body */}
-            <div className="w-full">
+            <div className="w-full pb-40">
               {children}
             </div>
           </div>
