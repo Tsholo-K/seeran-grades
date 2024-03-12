@@ -10,6 +10,7 @@ import Crumbs from "@/components/crumbs";
 import Subject from "@/components/(general components)/subject";
 import Button from "@/components/(general components)/button";
 import PageHeading from "@/components/(general components)/pageheading";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const LeanerGrading = () => {
@@ -41,7 +42,8 @@ const LeanerGrading = () => {
   })
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
+    <div>
+      <Aligner/>
       <Crumbs url={`teacherdashboard/classes/${class_id}/grading/${assessment_id}`} title={'assessment'}/>
       <Subject title="Student" icon={'user-round-blue'} subject={`${student.name.charAt(0).toUpperCase() + student.name.slice(1)} ${student.surname.charAt(0).toUpperCase() + student.surname.slice(1)}`}/>
       <p className=" text-sm lg:text-base pl-2 pb-1 text-gray-400 pt-7">score</p>

@@ -5,6 +5,7 @@ import data from '@/app/(dashboards)/dummydata.json';
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Classes from '@/components/(classes components)/classes';
+import Aligner from '@/components/(general components)/aligner';
 
 
 const MyClasses = () => {
@@ -24,7 +25,7 @@ const MyClasses = () => {
 
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs url={`studentdashboard`} title={'dashboard'} hide={true}/>
       {/* page heading */}
       <PageHeading title={'My Classes'} subheading={'all your classes'}/>

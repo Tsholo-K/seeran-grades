@@ -8,6 +8,7 @@ import data from '@/app/(dashboards)/dummydata.json';
 // components
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const TimeTable = () => {
@@ -19,6 +20,7 @@ const TimeTable = () => {
 
     return (
         <div>
+            <Aligner/>
             <Crumbs title={`timetable`} url={`studentdashboard/timetable`} />
             <PageHeading title={`${day.charAt(0).toUpperCase() + day.slice(1)}`} />
             {

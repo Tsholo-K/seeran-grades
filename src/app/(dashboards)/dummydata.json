@@ -172,6 +172,35 @@
         }
     ],
 
+    "grade_levels" : [
+        {
+            "id" : "9126437264",
+            "grade" : "12",
+            "learners" : "42",
+            "register_classes" : [ "45356345", "12547485", "23452342" ],
+            "subjects" : [
+                {
+                    "subject" : "mathematics",
+                    "learners" : "14",
+                    "groups" : "1",
+                    "classes" : ["45356345"]
+                },
+                {
+                    "subject" : "physical sciences",
+                    "learners" : "16",
+                    "groups" : "1",
+                    "classes" : ["34562356"]
+                },
+                {
+                    "subject" : "life science",
+                    "learners" : "25",
+                    "groups" : "1",
+                    "classes" : ["23452342"]
+                }
+            ]
+        }
+    ],
+
     "classes" : [
         {
             "id" : "45356345",
@@ -181,7 +210,7 @@
             "icon" : "maths",
             "students" : ["220212349","2202121218","220212531"],
             "grade" : "12",
-            "group" : "B",
+            "group" : "A",
             "assessments": [],
             "grades" : []
         },
@@ -205,7 +234,7 @@
             "icon" : "physics",
             "students" : ["220212349","2202121218","220212531"],
             "grade" : "12",
-            "group" : "C",
+            "group" : "A",
             "assessments": [],
             "grades" : ""
         },
@@ -229,7 +258,7 @@
             "icon" : "life-science",
             "students" : ["220212349","2202121218","220212531"],
             "grade" : "12",
-            "group" : "D",
+            "group" : "A",
             "assessments": [],
             "grades" : ""
         },
@@ -269,7 +298,7 @@
             "assessments": [],
             "grades" : ""
         }   
-    ], 
+    ],
     
     "register_classes" : [
         {

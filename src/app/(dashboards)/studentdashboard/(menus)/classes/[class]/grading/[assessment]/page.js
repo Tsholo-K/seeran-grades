@@ -10,6 +10,7 @@ import Crumbs from "@/components/crumbs";
 import Transcripts from "@/components/(grades components)/transcripts";
 import Button from "@/components/(general components)/button";
 import PageHeading from "@/components/(general components)/pageheading";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const Grade = () => {
@@ -34,7 +35,7 @@ const Grade = () => {
 
     return (
         <div>
-            {/* back link */}
+            <Aligner/>
             <Crumbs url={`teacherdashboard/classes/${class_id}/grading`} title={'assessments'}/>
             <PageHeading title={`${assessment.title}`} subheading={`${assessment.assessment}`}/>
             <p className="my-7"></p>

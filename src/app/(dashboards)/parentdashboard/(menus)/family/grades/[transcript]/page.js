@@ -1,7 +1,6 @@
 'use client'
 
 import { useParams } from "next/navigation";
-import { useEffect } from "react";
 
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
@@ -9,16 +8,12 @@ import data from '@/app/(dashboards)/dummydata.json'
 // components
 import Crumbs from "@/components/crumbs";
 import Subject from "@/components/(general components)/subject";
-import Menu from "@/components/(general components)/menu";
 import Score from "@/components/(grades components)/score";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import UserMenu from "@/components/(general components)/childmenu";
+import Aligner from "@/components/(general components)/aligner";
  
 const Transcript = () => {
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [])
 
   const params = useParams();
   const transcript_id = params.transcript
@@ -61,19 +56,15 @@ const Transcript = () => {
 
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs url={`parentdashboard/family/grades`} title={'grades'}/>
-      {/* student */}
       <Score score={transcript.score} total={transcript.total}/>
-      {/* subject */}
       <Subject subject={transcript.subject} icon={transcript.icon} submitter={transcript.submitted_by}/>
-      {/* info */}
       <MultipleMenu menu={transcript_info} />
       <p className="pl-2 mb-1 text-sm mt-12 text-gray-400">submitted by</p>
       <div className="rounded-xl bg-white">
         <UserMenu all_users={student} url={false} />
       </div>
-      {/* teacher */}
       <p className="pl-2 mb-1 text-sm mt-8 text-gray-400">teacher</p>
       <div className="rounded-xl bg-white">
         <UserMenu all_users={teacher} url={false} grade={false} />

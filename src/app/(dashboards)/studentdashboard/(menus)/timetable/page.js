@@ -5,6 +5,7 @@ import data from '@/app/(dashboards)/dummydata.json';
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
+import Aligner from '@/components/(general components)/aligner';
 
 
 const MyClasses = () => {
@@ -38,7 +39,7 @@ const MyClasses = () => {
   
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs url={`studentdashboard`} title={'dashboard'} hide={true}/>
       <PageHeading title={'My Time Table'} subheading={'your weekly time table'}/>
       <MultipleMenuLinks menu={days} />

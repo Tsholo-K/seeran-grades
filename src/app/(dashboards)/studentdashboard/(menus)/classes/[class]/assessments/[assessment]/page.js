@@ -11,6 +11,7 @@ import Crumbs from "@/components/crumbs";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import Menu from "@/components/(general components)/menu";
 import UserMenu from "@/components/(general components)/childmenu";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const Assessment = () => {
@@ -61,6 +62,7 @@ const Assessment = () => {
 
   return (
     <div>
+      <Aligner/>
       <Crumbs url={`studentdashboard/classes/${class_id}/assessments`} title={`assessments`}/>
       <Subject subject={assessment.subject} icon={assessment.icon}/>
       <p className="py-8"></p>

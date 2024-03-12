@@ -11,6 +11,7 @@ import Classes from '@/components/(classes components)/classes';
 import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
 import Subject from "@/components/(general components)/subject";
 import UserMenu from "@/components/(general components)/childmenu";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const MyClass = () => {
@@ -49,6 +50,7 @@ const MyClass = () => {
 
     return (
         <div>
+            <Aligner/>
             <Crumbs url={`studentdashboard/classes`} title={'classes'}/>
             <Classes classrooms={classroom} teacher={false} subject={false} url={false}/>
             <Subject title="Subject" subject={`${classroom[0].subject}`} icon={`${classroom[0].icon}`} />
