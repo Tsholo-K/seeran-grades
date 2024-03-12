@@ -52,7 +52,7 @@ const Grades = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`parentdashboard/family`} title={'family'} hide={true}/>
+      <Crumbs url={`parentdashboard/family`} title={'family'}/>
       {/* page heading */}
       <PageHeading title={'Assessments'} subheading={'due assessments'} />
       {/* assesments */}

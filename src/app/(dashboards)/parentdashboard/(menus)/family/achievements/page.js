@@ -32,7 +32,7 @@ const AchievementsPage = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`parentdashboard/family`} title={`family`} hide={true}/>
+      <Crumbs url={`parentdashboard/family`} title={`family`}/>
       {/* page heading */}
       <PageHeading title={'Achievements'} subheading={'granted achievements'} />
       {/* achievements */}

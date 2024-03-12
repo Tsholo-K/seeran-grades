@@ -32,11 +32,11 @@ const Grades = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`parentdashboard/family`} title={'family'} hide={true}/>
+      <Crumbs url={`parentdashboard/family`} title={'family'}/>
       {/* page heading */}
       <PageHeading title={'Transcripts'} subheading={'all assessment results'}/>
       {/* transcripts */}
-      <Transcripts transcripts={grades} dashboard={'parent'} section={'grades'}/>
+      <Transcripts transcripts={grades} dashboard={'parent'} section={'family/grades'}/>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">all caught up..</p>
     </div>
   )
