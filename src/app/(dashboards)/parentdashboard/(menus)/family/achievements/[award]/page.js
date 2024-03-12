@@ -1,6 +1,7 @@
 'use client'
 
 import { useParams } from "next/navigation";
+import { useEffect } from "react";
 
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
@@ -10,11 +11,14 @@ import Crumbs from "@/components/crumbs";
 import Subject from "@/components/(general components)/subject";
 import Menu from "@/components/(general components)/menu";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
-import ChildMenu from "@/components/(general components)/childmenu";
 import UserMenu from "@/components/(general components)/childmenu";
 
 
 const Award = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   const params = useParams();
   const award_id = params.award
@@ -50,7 +54,7 @@ const Award = () => {
 
   return (
     <div>
-      <Crumbs url={`parentdashboard/achievements`} title={`achievements`}/>
+      <Crumbs url={`parentdashboard/family/achievements`} title={`achievements`}/>
       <Subject subject={award.for} icon={award.icon} submitter={award.student}/>
       {/* award info */}
       <MultipleMenu menu={award_info} />

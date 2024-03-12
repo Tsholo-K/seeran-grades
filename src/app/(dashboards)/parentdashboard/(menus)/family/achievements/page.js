@@ -30,11 +30,11 @@ const AchievementsPage = () => {
 
   return (
     <div>
-      <Crumbs url={`parentdashboard`} title={`dashboard`} hide={true}/>
+      <Crumbs url={`parentdashboard/family`} title={`family`} hide={true}/>
       {/* page heading */}
       <PageHeading title={'Achievements'} subheading={'granted achievements'} />
       {/* achievements */}
-      <Achievements achievements={achievements} />      
+      <Achievements achievements={achievements} dashboard={`parent`} section={`family/achievements`} />      
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">all caught up..</p>
     </div>
   )

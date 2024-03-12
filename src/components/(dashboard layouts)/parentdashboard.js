@@ -17,25 +17,6 @@ const menuitems = [
     },
     {
       section : [
-        {
-          title: 'Grades',
-          icon: 'graduation-cap',
-          url: '/parentdashboard/grades',
-        },
-        {
-          title: 'Assessments',
-          icon: 'calendar-clock',
-          url: '/parentdashboard/assessments',
-        },
-        {
-          title: 'Achievements',
-          icon: 'award',
-          url: '/parentdashboard/achievements',
-        }
-      ]
-    },
-    {
-      section : [
         
         {
           title: 'Activities',

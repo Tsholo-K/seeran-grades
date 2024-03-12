@@ -1,6 +1,7 @@
 'use client';
 
 import { useParams } from "next/navigation";
+import { useEffect } from "react";
 
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
@@ -14,6 +15,10 @@ import UserMenu from "@/components/(general components)/childmenu";
 
 
 const Assessment = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   const params = useParams();
   const assessment_id = params.assessment
@@ -74,7 +79,7 @@ const Assessment = () => {
 
   return (
     <div>
-      <Crumbs url={`parentdashboard/assessments`} title={`assessments`}/>
+      <Crumbs url={`parentdashboard/family/assessments`} title={`assessments`}/>
       <Subject subject={assessment.subject} icon={assessment.icon}/>
       <MultipleMenu menu={assessment_info} />
       {/* teacher */}

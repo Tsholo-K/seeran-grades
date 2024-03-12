@@ -51,14 +51,14 @@ const Grades = () => {
   return (
     <div>
       {/* back link */}
-      <Crumbs url={`parentdashboard`} title={'dashboard'} hide={true}/>
+      <Crumbs url={`parentdashboard/family`} title={'family'} hide={true}/>
       {/* page heading */}
       <PageHeading title={'Assessments'} subheading={'due assessments'} />
       {/* assesments */}
       {
         assesments_set.map( ( assessment, index ) => (
           <>
-            <Assessments dashboard={'parent'} section={'assessments'} key={index} date_title={'Due'} assessment={assessment}/>
+            <Assessments dashboard={'parent'} section={'family/assessments'} key={index} date_title={'Due'} assessment={assessment}/>
           </>
         ))
       }

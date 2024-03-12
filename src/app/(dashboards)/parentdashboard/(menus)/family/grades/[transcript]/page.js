@@ -1,6 +1,7 @@
 'use client'
 
 import { useParams } from "next/navigation";
+import { useEffect } from "react";
 
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
@@ -14,6 +15,10 @@ import MultipleMenu from "@/components/(general components)/multiplemenu";
 import UserMenu from "@/components/(general components)/childmenu";
  
 const Transcript = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   const params = useParams();
   const transcript_id = params.transcript
@@ -57,7 +62,7 @@ const Transcript = () => {
   return (
     <div>
       {/* back link */}
-      <Crumbs url={`parentdashboard/grades`} title={'grades'}/>
+      <Crumbs url={`parentdashboard/family/grades`} title={'grades'}/>
       {/* student */}
       <Score score={transcript.score} total={transcript.total}/>
       {/* subject */}

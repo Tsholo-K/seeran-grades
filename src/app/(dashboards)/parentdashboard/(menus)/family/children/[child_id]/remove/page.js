@@ -26,7 +26,7 @@ const RemoveChild = () => {
   return (
     <div>
       {/* back link */}
-      <Crumbs url={`parentdashboard/family/${student.id}`} title={'child id'}/>
+      <Crumbs url={`parentdashboard/family/children/${student.id}`} title={'child id'}/>
       {/* page heading */}
       <div className="lg:hidden">
         <PageHeading title={'Remove Child'} />

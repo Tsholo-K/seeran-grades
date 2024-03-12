@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import { useEffect } from "react";
 
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
@@ -13,6 +14,10 @@ import UserMenu from "@/components/(general components)/childmenu";
 
 
 const Activity = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   const param = useParams();
   const activity_id = param.activity
@@ -62,7 +67,6 @@ const Activity = () => {
           </p>
         </div>
       </div>
-      
       <MultipleMenu menu={activity_info} />
       <p className="pl-2 text-sm text-gray-400 pt-7">recipient</p>
       <div className="rounded-xl bg-white">

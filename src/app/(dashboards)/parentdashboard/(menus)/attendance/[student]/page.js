@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import { useEffect } from "react";
 
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
@@ -24,6 +25,10 @@ const Days = ({ day }) => {
 }
 
 const Attendance = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   const params = useParams();
   const student_id = params.student

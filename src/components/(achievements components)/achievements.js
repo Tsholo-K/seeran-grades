@@ -18,7 +18,7 @@ const SubmittedBy = ({ student_id }) => {
     )
 };
 
-const Achievements = ({ achievements }) => {
+const Achievements = ({ achievements, dashboard, section }) => {
     return (
         <>
             {
@@ -31,7 +31,7 @@ const Achievements = ({ achievements }) => {
                                 </div>
                                 <SubmittedBy student_id={achievement.student} />
                             </div>
-                            <Link href={`/parentdashboard/achievements/${achievement.id}`}>
+                            <Link href={`/${dashboard}dashboard/${section}/${achievement.id}`}>
                                 <div className="rounded-xl bg-white py-3">
                                     <div>
                                     <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{achievement.score}</p>

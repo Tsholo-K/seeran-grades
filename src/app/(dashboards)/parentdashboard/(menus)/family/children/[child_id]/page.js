@@ -7,7 +7,6 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/(general components)/pageheading";
 import UserImage from "@/components/(general components)/userimage";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
@@ -56,14 +55,14 @@ const ChildId = () => {
   return (
     <div>
       {/* back link */}
-      <Crumbs url={`parentdashboard/family`} title={'family'}/>
+      <Crumbs url={`parentdashboard/family/children`} title={'children'}/>
       {/* child id */}
       <UserImage image={`${student.image}`} name={student.name} surname={student.surname}/>
       {/* child information */}
       <MultipleMenu menu={student_info} />
       {/* remove child */}
       <div className="text-red-600">
-        <SingleMenuLink title={'Remove Child From Account'} border={true} url={`/parentdashboard/family/${student.id}/remove`}/>
+        <SingleMenuLink title={'Remove Child From Account'} border={true} url={`/parentdashboard/family/children/${student.id}/remove`}/>
       </div>
       <p className="text-center text-gray-400 text-sm w-[90%] mx-auto pt-1">to reverse this you&apos;d need to go to school to have it relinked</p>
     </div>

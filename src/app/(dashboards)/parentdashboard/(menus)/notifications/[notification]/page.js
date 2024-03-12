@@ -1,3 +1,7 @@
+'use client'
+
+import { useEffect } from "react";
+
 // components
 import Crumbs from "@/components/crumbs";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
@@ -14,6 +18,11 @@ const notification_info = [
 ]
 
 const Notifications = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <div>
       <Crumbs title={'notifications'} url={'parentdashboard/notifications'} />
