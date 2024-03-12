@@ -9,6 +9,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import AttendanceCard from "@/components/(general components)/attendancecard";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const AssessmentRegister = () => {
@@ -34,6 +35,7 @@ const AssessmentRegister = () => {
 
     return (
         <div>
+            <Aligner/>
             <Crumbs url={`teacherdashboard/classes/${class_id}/assessments`} title={'due assessments'}/>
             <PageHeading title={`Assessment Register`} />
             <p className='text-sm text-gray-400 mt-6 pl-2'>students</p>

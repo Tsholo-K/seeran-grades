@@ -10,6 +10,7 @@ import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Assessments from "@/components/(assessments components)/assessments";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const AssessmentsPage = () => {
@@ -25,6 +26,7 @@ const AssessmentsPage = () => {
 
     return (
         <div>
+            <Aligner/>
             <Crumbs url={`teacherdashboard/classes/${class_id}`} title={'class'}/>
             <PageHeading title={'Assessments'} subheading={`due assessments`}/>
             <SingleMenuLink title={'Set assessment'} icon={'date'} border={true} url={`/teacherdashboard/classes/${class_id}/assessments/set`}/>

@@ -8,9 +8,8 @@ import data from '@/app/(dashboards)/dummydata.json'
 // components
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
-import UserImage from "@/components/(general components)/userimage";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
-import SingleMenuLink from "@/components/(general components)/signlemenulink";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const ChildId = () => {
@@ -56,7 +55,7 @@ const ChildId = () => {
 
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs url={`teacherdashboard/classes/${class_id}/student/${student_id}`} title={'student'}/>
       <PageHeading title={'ID'}  />
       {/* child information */}

@@ -9,6 +9,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const ID = () => {
@@ -49,7 +50,7 @@ const ID = () => {
 
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs title={'parent'} url={`teacherdashboard/registerclass/student/${student_id}/parents/${parent_id}`}/>
       {/* page heading */}
       <PageHeading title={'ID'} />

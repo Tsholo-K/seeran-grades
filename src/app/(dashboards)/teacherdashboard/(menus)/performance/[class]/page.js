@@ -9,6 +9,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import Classes from '@/components/(classes components)/classes';
 import Assessments from "@/components/(assessments components)/assessments";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const MyClass = () => {
@@ -32,7 +33,7 @@ const MyClass = () => {
 
     return (
         <div>
-            {/* back link */}
+            <Aligner/>
             <Crumbs url={`teacherdashboard/performance`} title={'performance'}/>
             {/* transcripts */}
             <Classes classrooms={classroom} teacher={false} url={false}/>

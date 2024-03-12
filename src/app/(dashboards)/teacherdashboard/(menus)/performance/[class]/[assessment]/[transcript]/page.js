@@ -10,6 +10,7 @@ import Crumbs from "@/components/crumbs";
 import Subject from "@/components/(general components)/subject";
 import Score from "@/components/(grades components)/score";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
+import Aligner from "@/components/(general components)/aligner";
  
 
 const Transcript = () => {
@@ -50,7 +51,7 @@ const Transcript = () => {
 
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs url={`teacherdashboard/performance/${class_id}/${assessment_id}`} title={'assessment'}/>
       {/* score */}
       <Score score={transcript.score} total={transcript.total}/>

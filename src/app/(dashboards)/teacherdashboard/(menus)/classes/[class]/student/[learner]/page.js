@@ -10,6 +10,7 @@ import Crumbs from "@/components/crumbs";
 import UserImage from "@/components/(general components)/userimage";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
 import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const StudentId = () => {
@@ -42,7 +43,7 @@ const StudentId = () => {
 
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs url={`teacherdashboard/classes/${class_id}`} title={'class'}/>
       {/* child id */}
       <UserImage image={`${student.image}`} name={student.name} surname={student.surname}/>

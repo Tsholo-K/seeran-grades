@@ -5,6 +5,7 @@ import data from '@/app/(dashboards)/dummydata.json';
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Classes from '@/components/(classes components)/classes';
+import Aligner from '@/components/(general components)/aligner';
 
 
 const MyPerformance = () => {
@@ -21,7 +22,7 @@ const MyPerformance = () => {
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
-      {/* back link */}
+      <Aligner/>
       <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}/>
       {/* page heading */}
       <PageHeading title={'Performance'} subheading={'class performances'}/>

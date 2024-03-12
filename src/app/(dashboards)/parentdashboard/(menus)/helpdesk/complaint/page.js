@@ -13,7 +13,7 @@ const page = () => {
       <Aligner/>
       <Crumbs title={'help desk'} url={'parentdashboard/helpdesk'} />
       <PageHeading title={`Complaints`} subheading={`all complaints`} />
-      <SingleMenuLink title={'Log complaint'} icon={'date'} border={true} url={`/parentdashboard/helpdesk/complaint/log`}/>
+      <SingleMenuLink title={'Log complaint'} icon={'mailbox'} border={true} url={`/parentdashboard/helpdesk/complaint/log`}/>
       <p className="pl-2 text-sm text-gray-400 pt-8 pb-1">complaints</p>
       {
         complaints 

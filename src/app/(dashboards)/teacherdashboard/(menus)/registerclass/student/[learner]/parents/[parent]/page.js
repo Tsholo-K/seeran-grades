@@ -9,12 +9,12 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import UserImage from "@/components/(general components)/userimage";
 import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const ParentProfile = () => {
 
   const params = useParams()
-  const class_id = params.class
   const parent_id = params.parent
   const student_id = params.learner
 
@@ -53,7 +53,7 @@ const ParentProfile = () => {
 
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs title={'parents'} url={`teacherdashboard/registerclass/student/${student_id}/parents`} hide={true}/>
       {/* profile info section */}
       <UserImage image={parent.image} name={parent.name} surname={parent.surname} email={parent.email}/>

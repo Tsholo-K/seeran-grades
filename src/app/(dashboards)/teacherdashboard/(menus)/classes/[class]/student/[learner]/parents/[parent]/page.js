@@ -8,8 +8,8 @@ import data from '@/app/(dashboards)/dummydata.json'
 //components
 import Crumbs from "@/components/crumbs";
 import UserImage from "@/components/(general components)/userimage";
-import SingleMenuLink from "@/components/(general components)/signlemenulink";
 import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const ParentProfile = () => {
@@ -54,7 +54,7 @@ const ParentProfile = () => {
 
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs title={'parents'} url={`teacherdashboard/classes/${class_id}/student/${student_id}/parents`} hide={true}/>
       {/* profile info section */}
       <UserImage image={parent.image} name={parent.name} surname={parent.surname} email={parent.email}/>

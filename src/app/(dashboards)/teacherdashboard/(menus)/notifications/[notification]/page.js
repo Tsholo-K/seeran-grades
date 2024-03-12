@@ -1,6 +1,7 @@
 // components
 import Crumbs from "@/components/crumbs";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
+import Aligner from "@/components/(general components)/aligner";
 
 const notification_info = [
   {
@@ -16,6 +17,7 @@ const notification_info = [
 const Notifications = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
+      <Aligner/>
       <Crumbs title={'notifications'} url={'teacherdashboard/notifications'} />
       <div className="mb-16">
         <div className="w-full mx-auto">

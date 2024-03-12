@@ -8,7 +8,7 @@ const AttendanceCard = ({ learner, button }) => {
         <p className='pl-20 pt-4 pb-10'>{learner.name.charAt(0).toUpperCase() + learner.name.slice(1)} {learner.surname.charAt(0).toUpperCase() + learner.surname.slice(1)}</p>
         <form className='bg-white rounded-xl'>
             <input type='text' disabled value={`${learner.id}`} className='absolute bg-white  left-20 top-10' />
-            <button className='absolute right-4 top-[20px] text-black rounded-lg bg-[#d0f0e4] focus:bg-[#ffcf2e] px-4 py-2 focus:text-white' >{button}</button>
+            <button className='absolute right-4 top-[20px] text-black rounded-lg  bg-[#d0f0e4] hover:text-white hover:bg-[#ffcf2e] focus:bg-[#ffcf2e] px-4 py-2 focus:text-white' >{button}</button>
         </form>
     </div>
   )

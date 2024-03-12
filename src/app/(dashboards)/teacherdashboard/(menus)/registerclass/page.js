@@ -6,6 +6,7 @@ import Crumbs from "@/components/crumbs";
 import Classes from '@/components/(classes components)/classes';
 import SingleMenuLink from '@/components/(general components)/signlemenulink';
 import UserMenu from '@/components/(general components)/childmenu';
+import Aligner from '@/components/(general components)/aligner';
 
 
 const MyRegisterClass = () => {
@@ -30,7 +31,7 @@ const MyRegisterClass = () => {
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
-      {/* back link */}
+      <Aligner/>
       <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}/>
       {/* transcripts */}
       <Classes classrooms={register_classroom} teacher={false} subject={false} url={false}/>

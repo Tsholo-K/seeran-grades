@@ -23,7 +23,7 @@ const page = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs title={'dashboard'} url={'parentdashboard'} />
+      <Crumbs title={'dashboard'} url={'parentdashboard'}hide={true} />
       <PageHeading title={`Help desk`} />
       <div className="w-fit pt-7 pb-16 mx-auto">
       <p className="text-center text-gray-500">School Name & logo</p>

@@ -9,6 +9,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import Button from "@/components/(general components)/button";
 import Subject from "@/components/(general components)/subject";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const SetAssessment = () => {
@@ -25,7 +26,7 @@ const SetAssessment = () => {
 
     return (
         <div className="w-full relative grid grid-cols-1 place-content-center ">
-            {/* back link */}
+            <Aligner/>
             <Crumbs url={`teacherdashboard/classes/${classroom.id}/student/${student_id}`} title={'student'}/>
             {/* subject */}
             <Subject icon={`${classroom.icon}`} subject={`${classroom.subject}`}/>
