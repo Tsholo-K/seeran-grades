@@ -1,11 +1,13 @@
 import Crumbs from "@/components/crumbs";
 import Notifications from "@/components/(notifications components)/notifications";
 import PageHeading from "@/components/(general components)/pageheading";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const NotificationsPage = () => {
   return (
     <div>
+      <Aligner/>
       <Crumbs title={'dashboard'} url={'parentdashboard'} hide={true}/>
       <PageHeading title={'Notifications'} />
       <Notifications subject_line={'Friday, Fun day'} first_sentance={"we'll be having a fun day this friday so.."} dashboard={'parent'}/>

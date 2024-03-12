@@ -11,6 +11,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import UserMenu from "@/components/(general components)/childmenu";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const Activity = () => {
@@ -56,6 +57,7 @@ const Activity = () => {
 
   return (
     <div>
+      <Aligner/>
       <Crumbs title={'logs'} url={'parentdashboard/activities'}/>
       <Image priority src={`/${log.icon}.svg`} alt="profile icon" width={30} height={30} className="h-36 w-auto lg:h-52 mx-auto" />
       <p className="text-sm lg:text-base text-gray-500 pt-3 w-full text-center">{log.activity}</p>

@@ -5,6 +5,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import Assessments from "@/components/(assessments components)/assessments";
 import PageHeading from '@/components/(general components)/pageheading';
+import Aligner from '@/components/(general components)/aligner';
 
 
 const Grades = () => {
@@ -50,7 +51,7 @@ const Grades = () => {
   
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs url={`parentdashboard/family`} title={'family'} hide={true}/>
       {/* page heading */}
       <PageHeading title={'Assessments'} subheading={'due assessments'} />

@@ -5,6 +5,7 @@ import { useEffect } from "react";
 // components
 import Crumbs from "@/components/crumbs";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
+import Aligner from "@/components/(general components)/aligner";
 
 const notification_info = [
   {
@@ -25,6 +26,7 @@ const Notifications = () => {
 
   return (
     <div>
+      <Aligner/>
       <Crumbs title={'notifications'} url={'parentdashboard/notifications'} />
       <div className="mb-16">
         <div className="w-full mx-auto">

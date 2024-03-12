@@ -5,6 +5,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import UserMenu from '@/components/(general components)/childmenu';
+import Aligner from '@/components/(general components)/aligner';
 
 
 const Children = () => {
@@ -21,7 +22,7 @@ const Children = () => {
 
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs title={'dashboard'} url={'parentdashboard'} hide={true} />
       {/* page heading */}
       <PageHeading title={'Children'} subheading={'check attendance'} />

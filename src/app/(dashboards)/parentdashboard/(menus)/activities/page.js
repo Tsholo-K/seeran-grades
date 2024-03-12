@@ -5,12 +5,14 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import Activities from "@/components/(activities components)/activities";
 import PageHeading from "@/components/(general components)/pageheading";
+import Aligner from '@/components/(general components)/aligner';
 
 const ActivitiesPage = () => {
 
   return (
     <>
       <div>
+        <Aligner/>
         <Crumbs title={'dashboard'} url={'parentdashboard'} hide={true}/>
         <PageHeading title={'Logs'} subheading={'a record of captured activities'} />
         {/* accounts section */}

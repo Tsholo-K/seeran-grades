@@ -2,6 +2,7 @@ import MultipleMenuLinks from "@/components/(general components)/multiplemenulin
 import PageHeading from "@/components/(general components)/pageheading";
 import Crumbs from "@/components/crumbs";
 import Image from "next/image";
+import Aligner from "../(general components)/aligner";
 
 
 const menulinks = {
@@ -19,6 +20,7 @@ const menulinks = {
 const Settings = ({ dashboard }) => {
   return (
     <div>
+      <Aligner/>
       <Crumbs title={'dashboard'} url={`${dashboard}dashboard`} hide={true}/>
       <PageHeading title={'Settings'} />
       <div className="w-fit my-10 mx-auto">

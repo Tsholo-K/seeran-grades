@@ -10,6 +10,7 @@ import Crumbs from "@/components/crumbs";
 import UserImage from "@/components/(general components)/userimage";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const ChildId = () => {
@@ -54,7 +55,7 @@ const ChildId = () => {
 
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs url={`parentdashboard/family/children`} title={'children'}/>
       {/* child id */}
       <UserImage image={`${student.image}`} name={student.name} surname={student.surname}/>

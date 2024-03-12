@@ -5,6 +5,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import UserMenu from '@/components/(general components)/childmenu';
+import Aligner from '@/components/(general components)/aligner';
 
 
 const Family = () => {
@@ -21,6 +22,7 @@ const Family = () => {
   
   return (
     <div>
+      <Aligner/>
       <Crumbs title={'family'} url={`parentdashboard/family`} hide={true}/>
       <PageHeading title={'Children'} subheading={'these are all the children linked to your account'}/>
       <div className="rounded-xl bg-white mt-6">

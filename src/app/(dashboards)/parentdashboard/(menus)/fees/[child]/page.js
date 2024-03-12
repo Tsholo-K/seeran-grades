@@ -9,6 +9,7 @@ import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
 import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const Balance = () => {
@@ -40,6 +41,7 @@ const Balance = () => {
 
   return (
     <div>
+      <Aligner/>
       <Crumbs title={'fees'} url={'parentdashboard/fees'} />
       <PageHeading title={'Balance'} />
       {/* outstanding balance */}

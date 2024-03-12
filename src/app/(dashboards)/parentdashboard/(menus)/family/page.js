@@ -7,6 +7,7 @@ import PageHeading from "@/components/(general components)/pageheading";
 import UserMenu from '@/components/(general components)/childmenu';
 import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
 import SingleMenuLink from '@/components/(general components)/signlemenulink';
+import Aligner from '@/components/(general components)/aligner';
 
 
 const menuitems = [
@@ -45,6 +46,7 @@ const Family = () => {
   
   return (
     <div>
+      <Aligner/>
       <Crumbs title={'dashboard'} url={`parentdashboard`} hide={true}/>
       <PageHeading title={'Family'} subheading={'monitor academics'}/>
       <p className='py-4'></p>

@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const Days = ({ day }) => {
@@ -42,6 +43,7 @@ const Attendance = () => {
 
   return (
     <div>
+      <Aligner/>
       <Crumbs title={'children'} url={'parentdashboard/attendance'} />
       {/* counter section */}
       <div className="w-full pb-10">

@@ -4,6 +4,7 @@ import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
 import { useParams } from "next/navigation";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const months = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -15,6 +16,7 @@ const Invoices = () => {
 
   return (
     <div>
+      <Aligner/>
       <Crumbs title={'invoices'} url={`parentdashboard/fees/${student_id}`} />
       <PageHeading title={'Invoices'} />
       <p className="pl-2 font-bold text-gray-400 pb-3 text-center mx-auto">Year : 2024</p>

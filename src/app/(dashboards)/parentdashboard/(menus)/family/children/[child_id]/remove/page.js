@@ -10,6 +10,7 @@ import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import UserImage from "@/components/(general components)/userimage";
 import Button from "@/components/(general components)/button";
+import Aligner from "@/components/(general components)/aligner";
 
 const RemoveChild = () => {
 
@@ -25,7 +26,7 @@ const RemoveChild = () => {
   
   return (
     <div>
-      {/* back link */}
+      <Aligner/>
       <Crumbs url={`parentdashboard/family/children/${student.id}`} title={'child id'}/>
       {/* page heading */}
       <div className="lg:hidden">

@@ -5,6 +5,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Achievements from "@/components/(achievements components)/achievements";
+import Aligner from '@/components/(general components)/aligner';
 
 
 const AchievementsPage = () => {
@@ -30,6 +31,7 @@ const AchievementsPage = () => {
 
   return (
     <div>
+      <Aligner/>
       <Crumbs url={`parentdashboard/family`} title={`family`} hide={true}/>
       {/* page heading */}
       <PageHeading title={'Achievements'} subheading={'granted achievements'} />
