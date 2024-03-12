@@ -65,9 +65,9 @@ const Transcript = () => {
       <div className="rounded-xl bg-white">
         <UserMenu all_users={student} url={false} />
       </div>
-      <p className="pl-2 mb-1 text-sm mt-8 text-gray-400">teacher</p>
+      <p className="pl-2 mb-2 text-sm mt-12 text-gray-400">teacher</p>
       <div className="rounded-xl bg-white">
-        <UserMenu all_users={teacher} url={false} grade={false} />
+        <UserMenu all_users={teacher} dashboard={`parent`} section={`family/grades/${transcript_id}`} grade={false} />
       </div>
       <div className="py-4"></div>
     </div>

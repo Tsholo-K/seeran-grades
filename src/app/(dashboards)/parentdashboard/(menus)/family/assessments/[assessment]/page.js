@@ -9,9 +9,9 @@ import Subject from "@/components/(general components)/subject";
 // components 
 import Crumbs from "@/components/crumbs";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
-import Menu from "@/components/(general components)/menu";
 import UserMenu from "@/components/(general components)/childmenu";
 import Aligner from "@/components/(general components)/aligner";
+import Image from "next/image";
 
 
 const Assessment = () => {
@@ -34,10 +34,10 @@ const Assessment = () => {
     }
   })
 
-  let teacher
+  let teacher = []
   data.teachers.forEach( teach => {
     if ( teach.id === classroom.teacher_id ) {
-      teacher = teach
+      teacher.push(teach)
     }
   })
 
@@ -77,15 +77,27 @@ const Assessment = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`parentdashboard/family/assessments`} title={`assessments`}/>
+      <Crumbs url={`parentdashboard/family/assessments`} title={`assessment`}/>
       <Subject subject={assessment.subject} icon={assessment.icon}/>
       <MultipleMenu menu={assessment_info} />
-      <div className="relative pt-4">
-        <Menu title={'Set by'} info={`${teacher.name.charAt(0).toUpperCase() + teacher.name.slice(1)} ${teacher.surname.charAt(0).toUpperCase() + teacher.surname.slice(1)}`} border={true}/>
+      <div className="bg-white rounded-xl px-4 py-3">
+        <p className="text-center text-lg lg:text-2xl">Topics</p>
+        {
+          assessment.topics.map( (topic, index) => (
+            <div key={index} className="flex gap-3 pt-2">
+              <Image src={`/topics.svg`} alt="topics" width={10} height={10} className="h-6 w-6"/>
+              <p className="text-gray-400 text-sm lg:text-base grid grid-cols-1 place-content-center">{topic}</p>
+            </div>
+          ))
+        }
       </div>
-      <p className="pl-2 mb-2 text-sm mt-12 text-gray-400">due for</p>
+      <p className="pl-2 mb-2 text-sm mt-12 text-gray-400">set for</p>
       <div className="rounded-xl bg-white">
         <UserMenu all_users={due_for} url={false} />
+      </div>
+      <p className="pl-2 mb-2 text-sm mt-12 text-gray-400">set by</p>
+      <div className="rounded-xl bg-white">
+        <UserMenu all_users={teacher} dashboard={`parent`} section={`family/assessments/${assessment_id}`} grade={false} />
       </div>
       <p className="py-2"></p>
     </div>
