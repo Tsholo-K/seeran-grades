@@ -6,6 +6,7 @@ import { useParams } from "next/navigation";
 import Button from "@/components/(general components)/button";
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const Notice = () => {
@@ -15,7 +16,8 @@ const Notice = () => {
 
   return (
     <div>
-      <Crumbs title={'cash'} url={`parentdashboard/fees/${student_id}/pay/cash`} />
+      <Aligner/>
+      <Crumbs title={'cash'} url={`parentdashboard/fees/${student_id}/pay/cash`} heading={`give notice`} />
       <PageHeading title={'Give Notice'} />
       <div className="relative">
         <p className="text-sm lg:text-base text-gray-400 pl-2 py-1">amount</p>

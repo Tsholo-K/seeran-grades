@@ -24,7 +24,7 @@ const MyClasses = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       <Aligner/>
-      <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}/>
+      <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true} heading={`my classes`}/>
       {/* page heading */}
       <PageHeading title={'My Classes'} subheading={'all your classes'}/>
       {/* transcripts */}

@@ -34,7 +34,7 @@ const MyClass = () => {
     return (
         <div>
             <Aligner/>
-            <Crumbs url={`teacherdashboard/performance`} title={'performance'}/>
+            <Crumbs url={`teacherdashboard/performance`} title={'performance'} heading={`assessments`}/>
             {/* transcripts */}
             <Classes classrooms={classroom} teacher={false} url={false}/>
             <p className='text-sm text-gray-400 mt-7 lg:mt-10 pl-2'>graded assessments</p>

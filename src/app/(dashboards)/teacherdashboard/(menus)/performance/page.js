@@ -23,7 +23,7 @@ const MyPerformance = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       <Aligner/>
-      <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}/>
+      <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true} heading={`performance`}/>
       {/* page heading */}
       <PageHeading title={'Performance'} subheading={'class performances'}/>
       {/* transcripts */}

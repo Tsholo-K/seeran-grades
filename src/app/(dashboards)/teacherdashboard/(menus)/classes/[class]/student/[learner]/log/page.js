@@ -27,7 +27,7 @@ const SetAssessment = () => {
     return (
         <div className="w-full relative grid grid-cols-1 place-content-center ">
             <Aligner/>
-            <Crumbs url={`teacherdashboard/classes/${classroom.id}/student/${student_id}`} title={'student'}/>
+            <Crumbs url={`teacherdashboard/classes/${classroom.id}/student/${student_id}`} title={'student'} heading={`log activity`}/>
             {/* subject */}
             <Subject icon={`${classroom.icon}`} subject={`${classroom.subject}`}/>
             {/* input areas */}

@@ -47,7 +47,7 @@ const TeacherId = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`parentdashboard/family/grades/${transcript_id}`} title={'transcript'}/>
+      <Crumbs url={`parentdashboard/family/grades/${transcript_id}`} title={'transcript'} heading={`teacher profile`}/>
       {/* child id */}
       <UserImage image={`${teacher.image}`} name={teacher.name} surname={teacher.surname} email={`${teacher.email}`}/>
       <MultipleMenu menu={teacher_info} />

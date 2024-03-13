@@ -14,7 +14,7 @@ const AdminDesk = () => {
     return (
         <div>
             <Aligner/>
-            <Crumbs title={'help desk'} url={'parentdashboard/helpdesk'} />
+            <Crumbs title={'help desk'} url={'parentdashboard/helpdesk'} heading={`admin desk`} />
             <PageHeading title={`Admin Desk`} subheading={`get in touch with an admin`}/>
             <p className="text-gray-400 text-sm pl-2 pb-1">admins</p>
             {

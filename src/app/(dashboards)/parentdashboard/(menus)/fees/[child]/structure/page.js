@@ -10,6 +10,7 @@ import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Menu from "@/components/(general components)/menu";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const Structure = () => {
@@ -31,6 +32,7 @@ const Structure = () => {
 
   return (
     <div>
+      <Aligner/>
       <Crumbs title={'balance'} url={`parentdashboard/fees/${student_id}`} />
       <PageHeading title={'Structure'} />
       <MultipleMenu menu={structure} />

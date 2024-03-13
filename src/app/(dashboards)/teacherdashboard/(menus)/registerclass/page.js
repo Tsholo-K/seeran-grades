@@ -32,7 +32,7 @@ const MyRegisterClass = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       <Aligner/>
-      <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}/>
+      <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}  heading={`register class`}/>
       {/* transcripts */}
       <Classes classrooms={register_classroom} teacher={false} subject={false} url={false}/>
       <div className='pt-6'>

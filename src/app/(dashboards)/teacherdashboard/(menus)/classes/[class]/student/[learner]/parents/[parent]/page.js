@@ -55,7 +55,7 @@ const ParentProfile = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs title={'parents'} url={`teacherdashboard/classes/${class_id}/student/${student_id}/parents`} hide={true}/>
+      <Crumbs title={'parents'} url={`teacherdashboard/classes/${class_id}/student/${student_id}/parents`} hide={true} heading={`parent profile`}/>
       {/* profile info section */}
       <UserImage image={parent.image} name={parent.name} surname={parent.surname} email={parent.email}/>
       <p className="py-4"></p>

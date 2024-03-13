@@ -7,7 +7,6 @@ import { useEffect } from "react";
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
-import PageHeading from "@/components/(general components)/pageheading";
 import Aligner from "@/components/(general components)/aligner";
 
 
@@ -44,7 +43,7 @@ const Attendance = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs title={'children'} url={'parentdashboard/attendance'} />
+      <Crumbs title={'children'} url={'parentdashboard/attendance'}  heading={`attendance`}/>
       {/* counter section */}
       <div className="w-full pb-10">
         <div className="mx-auto bg-[#66b0f0] grid grid-cols-1 place-content-center w-[150px] h-[150px] text-white rounded-full text-7xl">

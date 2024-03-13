@@ -11,7 +11,7 @@ const page = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs title={'help desk'} url={'parentdashboard/helpdesk'} />
+      <Crumbs title={'help desk'} url={'parentdashboard/helpdesk'} heading={`complaints`}/>
       <PageHeading title={`Complaints`} subheading={`all complaints`} />
       <SingleMenuLink title={'Log complaint'} icon={'mailbox'} border={true} url={`/parentdashboard/helpdesk/complaint/log`}/>
       <p className="pl-2 text-sm text-gray-400 pt-8 pb-1">complaints</p>

@@ -9,6 +9,7 @@ import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import Subject from "@/components/(general components)/subject";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const Card = () => {
@@ -41,7 +42,8 @@ const Card = () => {
 
   return (
     <div>
-      <Crumbs title={'pay'} url={`parentdashboard/fees/${student_id}/pay`} />
+      <Aligner/>
+      <Crumbs title={'pay'} url={`parentdashboard/fees/${student_id}/pay`} heading={`card`} />
       <PageHeading title={'Card'} />
       <div className="pb-10">
         <Image src={'/card-pay.svg'} alt="pay in cash"  height={100} width={100} className="w-32 lg:w-40 mx-auto"/>

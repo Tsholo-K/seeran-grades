@@ -67,7 +67,7 @@ const ClassAssessment = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`teacherdashboard/performance/${class_id}`} title={'class'}/>
+      <Crumbs url={`teacherdashboard/performance/${class_id}`} title={'class'} heading={`summary`}/>
       {/* page heading */}
       <PageHeading title={`${assessment.title}`} subheading={'assessment summary'}/>
       {

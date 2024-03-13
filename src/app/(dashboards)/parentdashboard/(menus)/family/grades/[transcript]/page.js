@@ -57,7 +57,7 @@ const Transcript = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`parentdashboard/family/grades`} title={'grades'}/>
+      <Crumbs url={`parentdashboard/family/grades`} title={'grades'} heading={`transcript`}/>
       <Score score={transcript.score} total={transcript.total}/>
       <Subject subject={transcript.subject} icon={transcript.icon} submitter={transcript.submitted_by}/>
       <MultipleMenu menu={transcript_info} />

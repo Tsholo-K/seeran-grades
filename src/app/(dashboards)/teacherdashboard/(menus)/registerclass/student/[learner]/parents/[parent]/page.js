@@ -15,6 +15,7 @@ import Aligner from "@/components/(general components)/aligner";
 const ParentProfile = () => {
 
   const params = useParams()
+  const class_id = params.class
   const parent_id = params.parent
   const student_id = params.learner
 
@@ -54,7 +55,7 @@ const ParentProfile = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs title={'parents'} url={`teacherdashboard/registerclass/student/${student_id}/parents`} hide={true}/>
+      <Crumbs title={'parents'} url={`teacherdashboard/registerclass/student/${student_id}/parents`} hide={true} heading={`parent profile`}/>
       {/* profile info section */}
       <UserImage image={parent.image} name={parent.name} surname={parent.surname} email={parent.email}/>
       <p className="py-4"></p>

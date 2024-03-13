@@ -27,7 +27,7 @@ const AssessmentsPage = () => {
     return (
         <div>
             <Aligner/>
-            <Crumbs url={`teacherdashboard/classes/${class_id}`} title={'class'}/>
+            <Crumbs url={`teacherdashboard/classes/${class_id}`} title={'class'} heading={`assessments`}/>
             <PageHeading title={'Assessments'} subheading={`due assessments`}/>
             <SingleMenuLink title={'Set assessment'} icon={'date'} border={true} url={`/teacherdashboard/classes/${class_id}/assessments/set`}/>
             {/* assessments */}

@@ -34,7 +34,7 @@ const CollectedAssessments = () => {
     return (
         <div>
             <Aligner/>
-            <Crumbs url={`teacherdashboard/classes/${class_id}`} title={'class'}/>
+            <Crumbs url={`teacherdashboard/classes/${class_id}`} title={'class'} heading={`grade`}/>
             <PageHeading title={'Grade'} subheading={'collected assessments'} />
             {/* transcripts */}
             <p className='text-sm text-gray-400 mt-2 lg:mt-10 pl-2'>assessments</p>

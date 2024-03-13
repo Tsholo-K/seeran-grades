@@ -44,7 +44,7 @@ const StudentId = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`teacherdashboard/classes/${class_id}`} title={'class'}/>
+      <Crumbs url={`teacherdashboard/classes/${class_id}`} title={'class'} heading={`student profile`}/>
       {/* child id */}
       <UserImage image={`${student.image}`} name={student.name} surname={student.surname}/>
       <p className="text-center text-gray-400 text-sm w-[90%] mx-auto py-7"></p>

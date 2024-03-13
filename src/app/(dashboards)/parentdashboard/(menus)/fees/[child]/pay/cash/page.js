@@ -7,6 +7,7 @@ import Image from "next/image";
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const Cash = () => {
@@ -16,7 +17,8 @@ const Cash = () => {
 
   return (
     <div>
-      <Crumbs title={'pay'} url={`parentdashboard/fees/${student_id}/pay`} />
+      <Aligner/>
+      <Crumbs title={'pay'} url={`parentdashboard/fees/${student_id}/pay`} heading={`cash`}/>
       <PageHeading title={'Cash'} />
       <div className="pb-10 ">
         <Image src={'/cash-pay.svg'} alt="pay in cash"  height={100} width={100} className="w-32 lg:w-40 mx-auto"/>

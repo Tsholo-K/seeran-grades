@@ -51,7 +51,7 @@ const ID = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs title={'parent'} url={`teacherdashboard/registerclass/student/${student_id}/parents/${parent_id}`}/>
+      <Crumbs title={'parent'} url={`teacherdashboard/registerclass/student/${student_id}/parents/${parent_id}`} hide={false}/>
       {/* page heading */}
       <PageHeading title={'ID'} />
       {/* personal infomation */}

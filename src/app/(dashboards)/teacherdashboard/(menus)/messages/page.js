@@ -8,7 +8,7 @@ const MessagesPage = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       <Aligner/>
-      <Crumbs url={`teacherdashboard`} title={`dashboard`} hide={true}/>
+      <Crumbs url={`teacherdashboard`} title={`dashboard`} hide={true} heading={`chats`}/>
       <PageHeading title={'Chats'} />
       <Messages dashboard={'teacher'}/>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">all caught up..</p>

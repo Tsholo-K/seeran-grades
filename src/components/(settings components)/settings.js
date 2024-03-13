@@ -21,7 +21,7 @@ const Settings = ({ dashboard }) => {
   return (
     <div>
       <Aligner/>
-      <Crumbs title={'dashboard'} url={`${dashboard}dashboard`} hide={true}/>
+      <Crumbs title={'dashboard'} url={`${dashboard}dashboard`} hide={true} heading={`settings`}/>
       <PageHeading title={'Settings'} />
       <div className="w-fit mt-8 mb-16 mx-auto">
           <div className="mx-auto w-fit pb-4">

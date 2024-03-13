@@ -5,6 +5,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import AttendanceCard from '@/components/(general components)/attendancecard';
+import Aligner from '@/components/(general components)/aligner';
 
 
 const Attendance = () => {
@@ -29,8 +30,8 @@ const Attendance = () => {
 
     return (
         <div>
-            {/* back link */}
-            <Crumbs url={`teacherdashboard/registerclass`} title={'register class'}/>
+            <Aligner/>
+            <Crumbs url={`teacherdashboard/registerclass`} title={'register class'} heading={`attendance register`}/>
             <PageHeading title={`Attendance Register`} subheading={`class ${register.grade}${register.group}`} />
             <p className='text-sm text-gray-400 mt-6 pl-2'>students</p>
             {

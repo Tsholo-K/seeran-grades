@@ -56,7 +56,7 @@ const ChildId = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`parentdashboard/family/children`} title={'children'}/>
+      <Crumbs url={`parentdashboard/family/children`} title={'children'} heading={`child profile`}/>
       {/* child id */}
       <UserImage image={`${student.image}`} name={student.name} surname={student.surname}/>
       {/* child information */}

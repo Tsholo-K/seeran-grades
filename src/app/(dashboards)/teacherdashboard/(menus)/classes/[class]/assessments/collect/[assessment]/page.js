@@ -36,7 +36,7 @@ const AssessmentRegister = () => {
     return (
         <div>
             <Aligner/>
-            <Crumbs url={`teacherdashboard/classes/${class_id}/assessments`} title={'due assessments'}/>
+            <Crumbs url={`teacherdashboard/classes/${class_id}/assessments`} title={'due assessments'} heading={`register`}/>
             <PageHeading title={`Assessment Register`} />
             <p className='text-sm text-gray-400 mt-6 pl-2'>students</p>
             {

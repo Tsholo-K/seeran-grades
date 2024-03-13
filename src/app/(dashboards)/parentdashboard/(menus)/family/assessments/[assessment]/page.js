@@ -77,7 +77,7 @@ const Assessment = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`parentdashboard/family/assessments`} title={`assessment`}/>
+      <Crumbs url={`parentdashboard/family/assessments`} title={`assessments`} heading={`assessment`}/>
       <Subject subject={assessment.subject} icon={assessment.icon}/>
       <MultipleMenu menu={assessment_info} />
       <div className="bg-white rounded-xl px-4 py-3">

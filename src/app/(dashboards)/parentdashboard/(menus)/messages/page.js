@@ -8,7 +8,7 @@ const MessagesPage = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`parentdashboard`} title={`dashboard`} hide={true}/>
+      <Crumbs url={`parentdashboard`} title={`dashboard`} hide={true} heading={`chats`}/>
       <PageHeading title={'Chats'} />
       <Messages dashboard={'parent'}/>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">all caught up..</p>

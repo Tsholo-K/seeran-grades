@@ -6,6 +6,7 @@ import { useParams } from "next/navigation";
 import Crumbs from "@/components/crumbs";
 import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
 import PageHeading from "@/components/(general components)/pageheading";
+import Aligner from "@/components/(general components)/aligner";
 
 
 const Pay = () => {
@@ -30,6 +31,7 @@ const Pay = () => {
 
   return (
     <div>
+      <Aligner/>
       <Crumbs title={'balance'} url={`parentdashboard/fees/${student_id}`} />
       <PageHeading title={'Pay'} />
       <MultipleMenuLinks menu={methods} />

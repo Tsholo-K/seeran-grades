@@ -3,6 +3,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Link from "next/link";
 import Image from "next/image";
 import MultipleMenuLinks from "../(general components)/multiplemenulinks";
+import Aligner from '../(general components)/aligner';
 
 
 const menuitems = [
@@ -79,30 +80,29 @@ const Parentdashboard = () => {
   });
 
   return (
-    <>
-        <div className="w-full h-full relative">
-          <div className="">
-              {/* profile section */}
-              <div className="rounded-xl bg-white ">
-                <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-                  <Image priority={true} src={`/${parent.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit rounded-full h-fit max-h-16 max-w-16" />
-                  <div className="w-full">
-                    <p className="pt-3 ">Seeran Dion</p>
-                    <p className="text-sm text-gray-400 ">profile settings</p>
-                  </div>
-                  <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
-                </Link>
+    <div className="w-full h-full relative">
+      <Aligner/>
+      <div className="">
+          {/* profile section */}
+          <div className="rounded-xl bg-white ">
+            <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+              <Image priority={true} src={`/${parent.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit rounded-full h-fit max-h-16 max-w-16" />
+              <div className="w-full">
+                <p className="pt-3 ">Seeran Dion</p>
+                <p className="text-sm text-gray-400 ">profile settings</p>
               </div>
-              {
-                menuitems.map( ( item,index ) => (
-                  <>
-                    <MultipleMenuLinks key={index} menu={item} />
-                  </>
-                ))
-              }
+              <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
+            </Link>
           </div>
-        </div>
-    </>
+          {
+            menuitems.map( ( item,index ) => (
+              <>
+                <MultipleMenuLinks key={index} menu={item} />
+              </>
+            ))
+          }
+      </div>
+    </div>
   )
 };
 

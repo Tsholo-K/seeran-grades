@@ -8,7 +8,7 @@ const NotificationsPage = () => {
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
       <Aligner/>
-      <Crumbs title={'dashboard'} url={'teacherdashboard'} hide={true}/>
+      <Crumbs title={'dashboard'} url={'teacherdashboard'} hide={true} heading={`notifications`}/>
       <PageHeading title={'Notifications'} />
       <Notifications subject_line={'Friday, Fun day'} first_sentance={"we'll be having a fun day this friday so.."} dashboard={'teacher'}/>
       <Notifications subject_line={'Time Tables'} first_sentance={"time tables have been released for all.."} read={true} dashboard={'teacher'}/>

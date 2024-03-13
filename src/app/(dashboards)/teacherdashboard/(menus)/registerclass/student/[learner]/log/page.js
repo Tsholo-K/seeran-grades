@@ -15,12 +15,19 @@ import Aligner from "@/components/(general components)/aligner";
 const SetAssessment = () => {
 
     const params = useParams()
+    const class_id = params.class
     const student_id = params.learner
+
+    let classroom
+    data.classes.forEach( (cls) => {
+        if ( cls.id === class_id )
+        classroom = cls
+    });
 
     return (
         <div className="w-full relative grid grid-cols-1 place-content-center ">
             <Aligner/>
-            <Crumbs url={`teacherdashboard/registerclass/student/${student_id}`} title={'student'}/>
+            <Crumbs url={`teacherdashboard/registerclass/student/${student_id}`} title={'student'} heading={`log activity`}/>
             {/* subject */}
             <Subject subject={`register class`}/>
             {/* input areas */}

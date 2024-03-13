@@ -36,7 +36,7 @@ const Grade = () => {
     return (
         <div>
             <Aligner/>
-            <Crumbs url={`teacherdashboard/classes/${class_id}/grading`} title={'assessments'}/>
+            <Crumbs url={`teacherdashboard/classes/${class_id}/grading`} title={'assessments'}  heading={`gradings`}/>
             <PageHeading title={`${assessment.title}`} subheading={`${assessment.assessment}`}/>
             <p className="my-7"></p>
             <Button title={'release'} />
