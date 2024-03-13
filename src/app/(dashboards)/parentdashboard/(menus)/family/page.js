@@ -46,7 +46,7 @@ const Family = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs title={'dashboard'} url={`parentdashboard`} hide={true}/>
+      <Crumbs title={'dashboard'} url={`parentdashboard`} hide={true} heading={`family`}/>
       <PageHeading title={'Family'} subheading={'monitor academics'}/>
       <p className='py-4'></p>
       <SingleMenuLink title={`Children`} url={`/parentdashboard/family/children`} icon={`users`}  border={true} />

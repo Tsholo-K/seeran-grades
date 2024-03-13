@@ -32,7 +32,7 @@ const Grades = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`parentdashboard/family`} title={'family'}/>
+      <Crumbs url={`parentdashboard/family`} title={'family'} heading={`transcripts`}/>
       {/* page heading */}
       <PageHeading title={'Transcripts'} subheading={'all assessment results'}/>
       {/* transcripts */}

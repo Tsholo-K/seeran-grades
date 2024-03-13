@@ -42,7 +42,7 @@ const Balance = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs title={'fees'} url={'parentdashboard/fees'} />
+      <Crumbs title={'fees'} url={'parentdashboard/fees'} heading={`balance`} />
       <PageHeading title={'Balance'} />
       {/* outstanding balance */}
       <div className="rounded-xl bg-white p-3 mb-7">

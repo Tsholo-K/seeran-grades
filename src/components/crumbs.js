@@ -44,10 +44,11 @@ const Crumbs = ({ title, url, hide=false, heading }) => {
       <div className={`fixed ${ hide && 'lg:hidden'} top-0 pt-16 w-full pb-1 bg-gray-100 z-[2]`}>
         <div className='relative flex'>
           <Link href={`/${url}`} className="flex text-[#66b0f0] lg:text-xl w-fit">
-              <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20} className="xl:pt-1"/>{title}
+              <Image src={'/chevron-left.svg'} alt='back to main menu' height={20} width={20} className="xl:pt-1"/>
+              {title}
           </Link>
-          <div className='absolute w-full mx-32 left-0 z-1'>
-            <p className={` ${scroll ? 'block' : 'hidden'} mx-auto w-fit transition duration-500 ease-in-out`}>{heading}</p>
+          <div className='absolute right-8'>
+            <p className={` ${scroll ? 'block' : 'hidden'} text-[#66b0f0] mx-auto w-fit transition-all duration-1000 ease-in-out`}>{heading}</p>
           </div>
         </div>
       </div>

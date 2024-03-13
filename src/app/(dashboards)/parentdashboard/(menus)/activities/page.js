@@ -13,7 +13,7 @@ const ActivitiesPage = () => {
     <>
       <div>
         <Aligner/>
-        <Crumbs title={'dashboard'} url={'parentdashboard'} hide={true}/>
+        <Crumbs title={'dashboard'} url={'parentdashboard'} hide={true} heading={`logs`}/>
         <PageHeading title={'Logs'} subheading={'a record of captured activities'} />
         {/* accounts section */}
         <Activities activities={data.activities}/>

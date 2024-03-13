@@ -23,7 +23,7 @@ const Family = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs title={'family'} url={`parentdashboard/family`}/>
+      <Crumbs title={'family'} url={`parentdashboard/family`} heading={`children`}/>
       <PageHeading title={'Children'} subheading={'these are all the children linked to your account'}/>
       <div className="rounded-xl bg-white mt-6">
         <UserMenu all_users={children} dashboard={'parent'} section={'family/children'} />
