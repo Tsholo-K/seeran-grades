@@ -8,7 +8,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 // components
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
-import UserMenu from "@/components/(general components)/childmenu";
+import UserMenu from "@/components/(general components)/usermenu";
 import Aligner from "@/components/(general components)/aligner";
 
 

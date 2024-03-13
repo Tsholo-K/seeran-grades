@@ -5,7 +5,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import Classes from '@/components/(classes components)/classes';
 import SingleMenuLink from '@/components/(general components)/signlemenulink';
-import UserMenu from '@/components/(general components)/childmenu';
+import UserMenu from '@/components/(general components)/usermenu';
 import Aligner from '@/components/(general components)/aligner';
 
 

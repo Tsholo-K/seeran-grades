@@ -9,7 +9,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import Classes from '@/components/(classes components)/classes';
 import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
-import UserMenu from "@/components/(general components)/childmenu";
+import UserMenu from "@/components/(general components)/usermenu";
 import Aligner from "@/components/(general components)/aligner";
 
 

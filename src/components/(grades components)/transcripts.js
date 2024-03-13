@@ -49,58 +49,56 @@ const Transcripts = ({ transcripts, assessment=true, date=true, subject=true, su
         <>
             {
                 transcripts.map( ( transcript, index) => (
-                    <>
-                        <div key={index} className={`${date ? 'py-4 lg:py-6' : 'py-2 lg:py-3'}`}>
-                            {
-                                submitter &&
-                                <>
-                                    <div className="flex pl-2 pb-2">
-                                        <div className="grid grid-cols-1 place-content-center">
-                                            <Image src={'/pencil-line.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-7"/>
-                                        </div>
-                                        <SubmittedBy student_id={transcript.submitted_by}/>
+                    <div key={index} className={`${date ? 'py-4 lg:py-6' : 'py-2 lg:py-3'}`}>
+                        {
+                            submitter &&
+                            <>
+                                <div className="flex pl-2 pb-2">
+                                    <div className="grid grid-cols-1 place-content-center">
+                                        <Image src={'/pencil-line.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-7"/>
                                     </div>
-                                </>
-                            }
-                            <Link href={`/${dashboard}dashboard/${section}/${transcript.id}`}>
-                                <div className="relative rounded-xl bg-white py-3" >
-                                    {
-                                        score &&
-                                        <TranscriptScore score={transcript.score} total={transcript.total} date={date} marked={transcript.marked}/>
-                                    }
-                                    {
-                                        assessment &&
-                                            <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{transcript.assessment}</p>
-
-                                    }
-                                    <div className="flex justify-center py-2 gap-3 px-3 w-full cursor-pointer">
-                                        {
-                                            icon &&
-                                                <Image priority src={`/${transcript.icon}.svg`} alt="profile icon" width={30} height={30} className="w-8 lg:w-12" />
-                                        }
-                                        <div className="grid grid-cols-1 place-content-center">
-                                            {
-                                                subject
-                                                ?
-                                                    <p className="lg:text-xl">{transcript.subject}</p>
-                                                :
-                                                    <SubmittedBy student_id={transcript.submitted_by} date={date}/>
-                                            }
-                                        </div>
-                                    </div>
-                                    {
-                                        date &&
-                                        <div className="flex pl-3 pt-3">
-                                            <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-6"/>
-                                            <div className="grid grid-cols-1 place-content-center">
-                                                <p className="text-sm pl-2 text-gray-500 lg:text-base">{date_title} : { date_title === 'results released' ? transcript.date_released : transcript.date_submitted }</p>
-                                            </div>
-                                        </div>
-                                    }
+                                    <SubmittedBy student_id={transcript.submitted_by}/>
                                 </div>
-                            </Link>
-                        </div>
-                    </>
+                            </>
+                        }
+                        <Link href={`/${dashboard}dashboard/${section}/${transcript.id}`}>
+                            <div className="relative rounded-xl bg-white py-3" >
+                                {
+                                    score &&
+                                    <TranscriptScore score={transcript.score} total={transcript.total} date={date} marked={transcript.marked}/>
+                                }
+                                {
+                                    assessment &&
+                                        <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{transcript.assessment}</p>
+
+                                }
+                                <div className="flex justify-center py-2 gap-3 px-3 w-full cursor-pointer">
+                                    {
+                                        icon &&
+                                            <Image priority src={`/${transcript.icon}.svg`} alt="profile icon" width={30} height={30} className="w-8 lg:w-12" />
+                                    }
+                                    <div className="grid grid-cols-1 place-content-center">
+                                        {
+                                            subject
+                                            ?
+                                                <p className="lg:text-xl">{transcript.subject}</p>
+                                            :
+                                                <SubmittedBy student_id={transcript.submitted_by} date={date}/>
+                                        }
+                                    </div>
+                                </div>
+                                {
+                                    date &&
+                                    <div className="flex pl-3 pt-3">
+                                        <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-6"/>
+                                        <div className="grid grid-cols-1 place-content-center">
+                                            <p className="text-sm pl-2 text-gray-500 lg:text-base">{date_title} : { date_title === 'results released' ? transcript.date_released : transcript.date_submitted }</p>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </Link>
+                    </div>
                 ))
             }
         </>

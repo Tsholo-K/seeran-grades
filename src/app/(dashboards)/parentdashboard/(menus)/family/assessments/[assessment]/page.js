@@ -9,7 +9,7 @@ import Subject from "@/components/(general components)/subject";
 // components 
 import Crumbs from "@/components/crumbs";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
-import UserMenu from "@/components/(general components)/childmenu";
+import UserMenu from "@/components/(general components)/usermenu";
 import Aligner from "@/components/(general components)/aligner";
 import Image from "next/image";
 

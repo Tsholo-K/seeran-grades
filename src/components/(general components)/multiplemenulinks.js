@@ -8,7 +8,7 @@ const MultipleMenuLinks = ({ menu }) => {
     <div className="rounded-xl my-7 bg-white">
       {
         menu.section.map( ( item, index ) => (
-          <>
+          <div key={index}>
             {
               ( menulength > 1 && index !== menulength - 1 )
               ? (
@@ -23,7 +23,7 @@ const MultipleMenuLinks = ({ menu }) => {
                 </>
               )
             }
-          </>
+          </div>
         ))
       }
     </div>

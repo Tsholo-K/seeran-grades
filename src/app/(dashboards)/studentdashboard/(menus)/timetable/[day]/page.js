@@ -21,7 +21,7 @@ const TimeTable = () => {
     return (
         <div>
             <Aligner/>
-            <Crumbs title={`timetable`} url={`studentdashboard/timetable`} />
+            <Crumbs title={`timetable`} url={`studentdashboard/timetable`} heading={`${day.charAt(0).toUpperCase() + day.slice(1)}`} />
             <PageHeading title={`${day.charAt(0).toUpperCase() + day.slice(1)}`} subheading={`${day} timetable`} />
             {
                 time_table.map( (period, index) => (

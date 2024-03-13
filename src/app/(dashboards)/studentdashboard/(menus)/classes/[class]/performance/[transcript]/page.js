@@ -11,7 +11,7 @@ import Subject from "@/components/(general components)/subject";
 import Menu from "@/components/(general components)/menu";
 import Score from "@/components/(grades components)/score";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
-import UserMenu from "@/components/(general components)/childmenu";
+import UserMenu from "@/components/(general components)/usermenu";
 import Aligner from "@/components/(general components)/aligner";
  
 const Transcript = () => {

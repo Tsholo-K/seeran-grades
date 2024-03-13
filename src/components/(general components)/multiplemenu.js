@@ -6,35 +6,28 @@ const MultipleMenu = ({ menu }) => {
     const menulength = menu.length
   
     return (
-      <>
-        <div className="rounded-xl my-7 bg-white">
-          <>
-            {
-              menu.map( ( item, index ) => (
+      <div className="rounded-xl my-7 bg-white">
+        {
+          menu.map( ( item, index ) => (
+            <div key={index}>
+              {
+                ( menulength > 1 && index !== menulength - 1 )
+                ? (
                   <>
-                    <>
-                    {
-                      ( menulength > 1 && index !== menulength - 1 )
-                      ? (
-                        <>
-                            <Menu title={item.title} info={item.info} icon={item.icon}/>
-                            <hr className="mx-5"></hr>
-                        </>
-                      )
-                      : (
-                        <>
-                            <Menu title={item.title} info={item.info} icon={item.icon} />
-                        </>
-                      )
-                    }
-                      
-                    </>
+                      <Menu title={item.title} info={item.info} icon={item.icon}/>
+                      <hr className="mx-5"></hr>
                   </>
-              ))
-            }
-          </>
-        </div>
-      </>
+                )
+                : (
+                  <>
+                      <Menu title={item.title} info={item.info} icon={item.icon} />
+                  </>
+                )
+              }                  
+          </div>
+          ))
+        }
+      </div>
     )
   };
 

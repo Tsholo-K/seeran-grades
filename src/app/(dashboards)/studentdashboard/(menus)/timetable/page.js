@@ -9,8 +9,6 @@ import Aligner from '@/components/(general components)/aligner';
 
 
 const MyClasses = () => {
-
-  const student = '220212349';
   
   const days = {
     section : [

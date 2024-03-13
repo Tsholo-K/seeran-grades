@@ -10,7 +10,7 @@ import Crumbs from "@/components/crumbs";
 import Classes from '@/components/(classes components)/classes';
 import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
 import Subject from "@/components/(general components)/subject";
-import UserMenu from "@/components/(general components)/childmenu";
+import UserMenu from "@/components/(general components)/usermenu";
 import Aligner from "@/components/(general components)/aligner";
 
 

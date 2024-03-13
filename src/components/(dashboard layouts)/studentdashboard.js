@@ -21,6 +21,15 @@ const studentdashboardmenuitems = [
     {
       section : [
         {
+          title: 'Achievements',
+          icon: 'award',
+          url: '/studentdashboard/achievements',
+        },
+      ]
+    },
+    {
+      section : [
+        {
           title: 'Messages',
           icon: 'admin',
           url: '/studentdashboard/messages',

@@ -18,19 +18,27 @@ const SubmittedBy = ({ student_id }) => {
     )
 };
 
-const Achievements = ({ achievements, dashboard, section }) => {
+const Achievements = ({ achievements, dashboard, section, student=false }) => {
     return (
         <>
             {
                 achievements.map(( achievement, index ) => (
                     <>
                         <div key={index} className="py-4 lg:py-6">
-                            <div className="flex pl-2">
-                                <div className="grid grid-cols-1 place-content-center">
-                                    <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-8"/>
+                            {
+                               student 
+                               ?
+                               <>
+
+                               </>
+                               :
+                                <div className="flex pl-2">
+                                    <div className="grid grid-cols-1 place-content-center">
+                                        <Image src={'/grant.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-8"/>
+                                    </div>
+                                    <SubmittedBy student_id={achievement.student} />
                                 </div>
-                                <SubmittedBy student_id={achievement.student} />
-                            </div>
+                            }
                             <Link href={`/${dashboard}dashboard/${section}/${achievement.id}`}>
                                 <div className="rounded-xl bg-white py-3">
                                     <div>
