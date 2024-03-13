@@ -8,10 +8,10 @@ import data from '@/app/(dashboards)/dummydata.json'
 // components 
 import Crumbs from "@/components/crumbs";
 import Subject from "@/components/(general components)/subject";
-import Menu from "@/components/(general components)/menu";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import UserMenu from "@/components/(general components)/childmenu";
 import Aligner from "@/components/(general components)/aligner";
+import Image from "next/image";
 
 
 const Award = () => {
@@ -52,12 +52,11 @@ const Award = () => {
     <div>
       <Aligner/>
       <Crumbs url={`parentdashboard/family/achievements`} title={`achievements`}/>
+      <Image priority src={`/handshake.svg`} alt="profile icon" width={30} height={30} className="w-full h-full rounded-full mx-auto px-16 mb-4" />
+
       <Subject subject={award.for} icon={award.icon} submitter={award.student}/>
       {/* award info */}
       <MultipleMenu menu={award_info} />
-      {/* authority */}
-      <p className="pb-1 w-full pr-3 text-gray-400 text-sm pl-2 pt-4">awarded by</p>
-      <Menu title={'Authority'} info={award.authority} border={true} />
       <p className="pl-2 mb-2 text-sm mt-12 text-gray-400">granted to</p>
       <div className="rounded-xl bg-white">
         <UserMenu all_users={student} url={false}  />

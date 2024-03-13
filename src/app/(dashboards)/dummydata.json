@@ -710,23 +710,12 @@
             "medal" : null
         },
         {
-            "id" : "8291627384",
-            "student" : "220212350",
-            "for" : "basket ball",
-            "icon" : "basketball",
-            "assessment" : "sports",
-            "score" : "2nd",
-            "date_granted" : "wednesday, 5 april 2024",
-            "authority" : "2394087584",
-            "medal" : "silver-medal"
-        },
-        {
             "id" : "4827364592",
             "student" : "220212349",
             "for" : "mathematics",
             "icon" : "maths",
             "assessment" : "test",
-            "score" : "highest mark",
+            "score" : "1st place",
             "date_granted" : "thursday, 14 march 2024",
             "authority" : "2394087584",
             "medal" : null
@@ -736,7 +725,7 @@
             "student" : "220212349",
             "for" : "physical sciences",
             "icon" : "physics",
-            "assessment" : "school fair",
+            "assessment" : "quiz",
             "score" : "top 10",
             "date_granted" : "tuesday, 23 febuary 2024",
             "authority" : "2394087584",
@@ -752,17 +741,6 @@
             "date_granted" : "tuesday, 23 febuary 2024",
             "authority" : "2394087584",
             "medal" : null
-        },
-        {
-            "id" : "01728364756",
-            "student" : "220212349",
-            "for" : "chess",
-            "icon" : "chess",
-            "assessment" : "chess",
-            "score" : "tournament winner",
-            "date_granted" : "tuesday, 23 febuary 2024",
-            "authority" : "2394087584",
-            "medal" : "gold-medal"
         }
     ],
 
