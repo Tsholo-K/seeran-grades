@@ -33,10 +33,18 @@ const Crumbs = ({ title, url, hide=false, heading }) => {
 
     }, [scrollY]);
 
-    
-
     return null; // Since this component doesn't render anything, return null
   };
+
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <>  
