@@ -52,8 +52,7 @@ const Award = () => {
     <div>
       <Aligner/>
       <Crumbs url={`parentdashboard/family/achievements`} title={`achievements`} heading={`achievement`}/>
-      <Image priority src={`/handshake.svg`} alt="profile icon" width={30} height={30} className="w-full h-full rounded-full mx-auto px-16 mb-4" />
-
+      <Image priority src={`/handshake.svg`} alt="profile icon" width={30} height={30} className="w-full h-full max-h-[250px] mx-auto px-16 mb-4" />
       <Subject subject={award.for} icon={award.icon} submitter={award.student}/>
       {/* award info */}
       <MultipleMenu menu={award_info} />
