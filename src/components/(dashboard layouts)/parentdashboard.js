@@ -50,7 +50,7 @@ const menuitems = [
         },
         {
           title: 'Help Desk',
-          icon: 'admin',
+          icon: 'help-desk',
           url: '/parentdashboard/helpdesk',
         }
       ]
@@ -83,24 +83,23 @@ const Parentdashboard = () => {
     <div className="w-full h-full relative">
       <Aligner/>
       <div className="">
-          {/* profile section */}
-          <div className="rounded-xl bg-white ">
-            <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-              <Image priority={true} src={`/${parent.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit rounded-full h-fit max-h-16 max-w-16" />
-              <div className="w-full">
-                <p className="pt-3 ">Seeran Dion</p>
-                <p className="text-sm text-gray-400 ">profile settings</p>
-              </div>
-              <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
-            </Link>
-          </div>
-          {
-            menuitems.map( ( item,index ) => (
-              <>
-                <MultipleMenuLinks key={index} menu={item} />
-              </>
-            ))
-          }
+        <div className="rounded-xl bg-white ">
+          <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
+            <Image priority={true} src={`/${parent.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit rounded-full h-fit max-h-16 max-w-16" />
+            <div className="w-full">
+              <p className="pt-3 ">Seeran Dion</p>
+              <p className="text-sm text-gray-400 ">profile settings</p>
+            </div>
+            <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
+          </Link>
+        </div>
+        {
+          menuitems.map( ( item,index ) => (
+            <>
+              <MultipleMenuLinks key={index} menu={item} />
+            </>
+          ))
+        }
       </div>
     </div>
   )

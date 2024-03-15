@@ -23,7 +23,7 @@ const Notifications = () => {
       <PageHeading title={`Announce `} subheading={`school wide notification`} />
       <InputArea type={`text`} title={`announcement title`}/>
       <p className="text-sm text-gray-400 pl-2 pt-2 pb-2">message</p>
-      <textarea className="rounded-xl w-full h-40 mb-4 px-4 py-2" />
+      <textarea className="rounded-xl w-full h-40 mb-4 px-3 py-2" />
       <Button title={`announce`} />
     </div>
   ) 

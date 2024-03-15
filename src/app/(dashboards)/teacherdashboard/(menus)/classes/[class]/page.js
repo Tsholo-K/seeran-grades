@@ -11,6 +11,7 @@ import Classes from '@/components/(classes components)/classes';
 import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
 import UserMenu from "@/components/(general components)/usermenu";
 import Aligner from "@/components/(general components)/aligner";
+import SingleMenuLink from "@/components/(general components)/signlemenulink";
 
 
 const MyClass = () => {
@@ -56,7 +57,8 @@ const MyClass = () => {
             {/* transcripts */}
             <Classes classrooms={classroom} teacher={false} url={false}/>
             <MultipleMenuLinks menu={menus} />
-            <p className='text-sm text-gray-400 mt-7 pl-2'>students</p>
+            <SingleMenuLink title={`Activities`} icon={`eye`} url={`/teacherdashboard/classes/${class_id}/activities`} border={true}/>
+            <p className='text-sm text-gray-400 mt-8 pl-2'>students</p>
             <div className='mt-3 py-1 rounded-xl bg-white'>
                 <UserMenu all_users={students} dashboard={'teacher'} section={`classes/${class_id}/student`} grade={false}/>
             </div>

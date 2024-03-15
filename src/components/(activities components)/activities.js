@@ -18,7 +18,7 @@ const SubmittedBy = ({ student_id }) => {
     )
 };
 
-const Activities = ({ activities }) => {
+const Activities = ({ activities, dashboard, section }) => {
     return (
         <>
             {
@@ -31,7 +31,7 @@ const Activities = ({ activities }) => {
                                 </div>
                                 <SubmittedBy student_id={activity.student}/>
                             </div>
-                            <Link href={`/parentdashboard/activities/${activity.id}`}>
+                            <Link href={`/${dashboard}dashboard/${section}/${activity.id}`}>
                             <div className="rounded-xl bg-white py-3">
                                 <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{activity.activity}</p>
                                 <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer">

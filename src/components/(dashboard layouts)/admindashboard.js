@@ -20,25 +20,25 @@ const menuitems = [
           title: 'Announcements',
           icon: 'megaphone',
           url: '/admindashboard/announcements',
-        },
-        {
-          title: 'Helpdesk',
-          icon: 'admin',
-          url: '/admindashboard/helpdesk',
         }
       ]
     },
     {
       section : [
         {
+          title: 'Users',
+          icon: 'user-round-blue',
+          url: '/admindashboard/users',
+        },
+        {
           title: 'Fees',
           icon: 'wallet',
           url: '/admindashboard/fees',
         },
         {
-          title: 'Users',
-          icon: 'user-round-blue',
-          url: '/admindashboard/users',
+          title: 'Complaints',
+          icon: 'mailbox',
+          url: '/admindashboard/helpdesk',
         }
       ]
     },
