@@ -51,7 +51,7 @@ const Award = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`studentdashboard/achievements`} title={`achievements`}/>
+      <Crumbs url={`studentdashboard/achievements`} title={`achievements`} heading={`award`}/>
       <Image priority src={`/handshake.svg`} alt="profile icon" width={30} height={30} className="w-full h-full max-h-[250px] mx-auto px-16 mb-4" />
       <p className="text-center text-gray-400">well done</p>
       <Subject subject={award.for} icon={award.icon} submitter={award.student}/>

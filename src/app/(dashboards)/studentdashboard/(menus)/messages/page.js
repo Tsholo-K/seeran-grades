@@ -6,7 +6,7 @@ import Messages from "@/components/(messages components)/messages";
 const MessagesPage = () => {
   return (
     <div>
-      <Crumbs url={`studentdashboard`} title={`dashboard`} hide={true}/>
+      <Crumbs url={`studentdashboard`} title={`dashboard`} hide={true} heading={`chats`}/>
       <PageHeading title={'Chats'} />
       <Messages dashboard={'student'}/>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">all caught up..</p>

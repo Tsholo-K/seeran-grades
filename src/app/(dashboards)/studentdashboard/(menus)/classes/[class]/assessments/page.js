@@ -26,7 +26,7 @@ const AssessmentsPage = () => {
     return (
         <div>
             <Aligner/>
-            <Crumbs url={`studentdashboard/classes/${class_id}`} title={'class'}/>
+            <Crumbs url={`studentdashboard/classes/${class_id}`} title={'class'} heading={`assessments`}/>
             <PageHeading title={'Assessments'} subheading={`due assessments`}/>
             {/* assessments */}
             <p className='text-sm text-gray-400 mt-4 lg:mt-10 pl-2'>assessments</p>

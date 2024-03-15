@@ -63,7 +63,7 @@ const Assessment = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`studentdashboard/classes/${class_id}/assessments`} title={`assessments`}/>
+      <Crumbs url={`studentdashboard/classes/${class_id}/assessments`} title={`assessments`} heading={`assessment`}/>
       <Subject subject={assessment.subject} icon={assessment.icon}/>
       <p className="py-8"></p>
       <MultipleMenu menu={assessment_info} />

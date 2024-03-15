@@ -26,7 +26,7 @@ const MyClasses = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`studentdashboard`} title={'dashboard'} hide={true} heading={`My Classes`}/>
+      <Crumbs url={`studentdashboard`} title={'dashboard'} hide={true} heading={`my classes`}/>
       {/* page heading */}
       <PageHeading title={'My Classes'} subheading={'all your classes'}/>
       {/* transcripts */}

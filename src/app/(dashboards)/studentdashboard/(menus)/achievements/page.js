@@ -34,7 +34,7 @@ const AchievementsPage = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`studentdashboard`} title={`dashboard`} hide={true} heading={`Achievements`}/>
+      <Crumbs url={`studentdashboard`} title={`dashboard`} hide={true} heading={`achievements`}/>
       {/* page heading */}
       <PageHeading title={'Achievements'} subheading={'granted achievements'} />
       {/* achievements */}
