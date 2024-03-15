@@ -1,5 +1,21 @@
 {
-    "princpal" : {
+    "schools" : [
+        {   
+            "id" : "7152635478",
+            "name" : "seeran academy",
+            "slogan" : "shifting the culture",
+            "banking_details" : "details",
+            "logo" : "school logo",
+            "admin_count" : "5",
+            "student_count" : "540",
+            "parent_count" : "243",
+            "teacher_count" : "32",
+            "grades" : "7",
+            "institution" : "primary school"
+        }
+    ],
+
+    "principal" : {
         "id" : "2394087584",
         "name" : "",
         "surname" : ""
@@ -190,8 +206,35 @@
     "grade_levels" : [
         {
             "id" : "9126437264",
-            "grade" : "12",
-            "learners" : "42",
+            "grade" : "1",
+            "learners" : ["","","","","","","","","","","","","","","","","","","","","","","","","","","",""],
+            "register_classes" : [ "45356345", "12547485", "23452342" ],
+            "subjects" : [
+                {
+                    "subject" : "mathematics",
+                    "learners" : "28",
+                    "groups" : "2",
+                    "classes" : ["45356345"]
+                },
+                {
+                    "subject" : "english",
+                    "learners" : "28",
+                    "groups" : "2",
+                    "classes" : ["34562356"]
+                },
+                {
+                    "subject" : "life orientation",
+                    "learners" : "28",
+                    "groups" : "2",
+                    "classes" : ["23452342"]
+                }
+            ],
+            "teachers" : ["",""]
+        },
+        {
+            "id" : "9126437264",
+            "grade" : "2",
+            "learners" : ["42","","","","","","","","","","","","","","","","","","","","","","","","",""],
             "register_classes" : [ "45356345", "12547485", "23452342" ],
             "subjects" : [
                 {
@@ -212,7 +255,143 @@
                     "groups" : "1",
                     "classes" : ["23452342"]
                 }
-            ]
+            ],
+            "teachers" : ["","",""]
+        },
+        {
+            "id" : "9126437264",
+            "grade" : "3",
+            "learners" : ["42","","","","","","","","","","","","","","","","","","","","","",""],
+            "register_classes" : [ "45356345", "12547485", "23452342" ],
+            "subjects" : [
+                {
+                    "subject" : "mathematics",
+                    "learners" : "14",
+                    "groups" : "1",
+                    "classes" : ["45356345"]
+                },
+                {
+                    "subject" : "physical sciences",
+                    "learners" : "16",
+                    "groups" : "1",
+                    "classes" : ["34562356"]
+                },
+                {
+                    "subject" : "life science",
+                    "learners" : "25",
+                    "groups" : "1",
+                    "classes" : ["23452342"]
+                }
+            ],
+            "teachers" : ["","","",""]
+        },
+        {
+            "id" : "9126437264",
+            "grade" : "4",
+            "learners" : ["42","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],
+            "register_classes" : [ "45356345", "12547485", "23452342" ],
+            "subjects" : [
+                {
+                    "subject" : "mathematics",
+                    "learners" : "14",
+                    "groups" : "1",
+                    "classes" : ["45356345"]
+                },
+                {
+                    "subject" : "physical sciences",
+                    "learners" : "16",
+                    "groups" : "1",
+                    "classes" : ["34562356"]
+                },
+                {
+                    "subject" : "life science",
+                    "learners" : "25",
+                    "groups" : "1",
+                    "classes" : ["23452342"]
+                }
+            ],
+            "teachers" : ["","","",""]
+        },
+        {
+            "id" : "9126437264",
+            "grade" : "5",
+            "learners" : ["42","","","","","","","","","","","","","","","","","","","","","","","","","",""],
+            "register_classes" : [ "45356345", "12547485", "23452342" ],
+            "subjects" : [
+                {
+                    "subject" : "mathematics",
+                    "learners" : "14",
+                    "groups" : "1",
+                    "classes" : ["45356345"]
+                },
+                {
+                    "subject" : "physical sciences",
+                    "learners" : "16",
+                    "groups" : "1",
+                    "classes" : ["34562356"]
+                },
+                {
+                    "subject" : "life science",
+                    "learners" : "25",
+                    "groups" : "1",
+                    "classes" : ["23452342"]
+                }
+            ],
+            "teachers" : ["","","",""]
+        },
+        {
+            "id" : "9126437264",
+            "grade" : "6",
+            "learners" : ["42","","","","","","","","","","","","","","","","","","","","",""],
+            "register_classes" : [ "45356345", "12547485", "23452342" ],
+            "subjects" : [
+                {
+                    "subject" : "mathematics",
+                    "learners" : "14",
+                    "groups" : "1",
+                    "classes" : ["45356345"]
+                },
+                {
+                    "subject" : "physical sciences",
+                    "learners" : "16",
+                    "groups" : "1",
+                    "classes" : ["34562356"]
+                },
+                {
+                    "subject" : "life science",
+                    "learners" : "25",
+                    "groups" : "1",
+                    "classes" : ["23452342"]
+                }
+            ],
+            "teachers" : ["","","",""]
+        },
+        {
+            "id" : "9126437264",
+            "grade" : "7",
+            "learners" : ["42","","","","","","","","","","","",""],
+            "register_classes" : [ "45356345", "12547485", "23452342" ],
+            "subjects" : [
+                {
+                    "subject" : "mathematics",
+                    "learners" : "14",
+                    "groups" : "1",
+                    "classes" : ["45356345"]
+                },
+                {
+                    "subject" : "physical sciences",
+                    "learners" : "16",
+                    "groups" : "1",
+                    "classes" : ["34562356"]
+                },
+                {
+                    "subject" : "life science",
+                    "learners" : "25",
+                    "groups" : "1",
+                    "classes" : ["23452342"]
+                }
+            ],
+            "teachers" : ["","","",""]
         }
     ],
 

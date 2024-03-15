@@ -36,9 +36,9 @@ const menuitems = [
           url: '/admindashboard/fees',
         },
         {
-          title: 'Students',
+          title: 'Users',
           icon: 'user-round-blue',
-          url: '/admindashboard/notifications',
+          url: '/admindashboard/users',
         }
       ]
     },

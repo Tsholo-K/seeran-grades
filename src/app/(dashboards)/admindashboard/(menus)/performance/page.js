@@ -2,6 +2,7 @@
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
+import Aligner from "@/components/(general components)/aligner";
 
 
 const MyPerformance = () => {
@@ -48,10 +49,10 @@ const MyPerformance = () => {
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
-      {/* back link */}
-      <Crumbs url={`admindashboard`} title={'dashboard'} hide={true}/>
+      <Aligner/>
+      <Crumbs url={`admindashboard`} title={'dashboard'} hide={true} heading={`performance`}/>
       {/* page heading */}
-      <PageHeading title={'Performance'} subheading={'grades'}/>
+      <PageHeading title={'Performance'} subheading={'all grades'}/>
       <MultipleMenuLinks icon={true} menu={grades} />
       <p className=" text-sm w-[80%] text-gray-400 text-center mx-auto py-10">that&apos;s all grades</p>
     </div>

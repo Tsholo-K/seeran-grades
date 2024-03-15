@@ -57,7 +57,7 @@ const Crumbs = ({ title, url, hide=false, heading }) => {
               {title}
           </Link>
           <div className='absolute right-8'>
-            <p className={` ${scroll ? 'block' : 'hidden'} text-[#66b0f0] mx-auto w-fit transition-all duration-1000 ease-in-out`}>{heading}</p>
+            <p className={` ${scroll ? 'block' : 'hidden'} text-[#66b0f0] w-fit transition-all duration-1000 ease-in-out`}>{heading}</p>
           </div>
         </div>
       </div>
