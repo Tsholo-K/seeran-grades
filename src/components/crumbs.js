@@ -18,7 +18,6 @@ const Crumbs = ({ title, url, hide=false, heading }) => {
       
       const handleScroll = () => {
         setScrollY(window.scrollY);
-        console.log(scrollY)
 
         if ( scrollY > 68 ) {
           setScroll(true)
