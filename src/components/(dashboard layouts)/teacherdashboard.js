@@ -30,7 +30,7 @@ const menuitems = [
         url: '/teacherdashboard/registerclass',
       },
       {
-        title: 'timetable',
+        title: 'Timetable',
         icon: 'time-table',
         url: '/teacherdashboard/timetable',
       }
