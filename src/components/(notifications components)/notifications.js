@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-const Notifications = ({ dashboard, subject_line, first_sentance, time, read=false}) => {
+const Notifications = ({ dashboard, subject_line, section=`notifications`, first_sentance, time, read=false}) => {
     return (
         <>
-            <Link href={`/${dashboard}dashboard/notifications/id`} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer">
+            <Link href={`/${dashboard}dashboard/${section}/id`} className="flex relative py-3 gap-5 px-3 justify-start w-full cursor-pointer">
                 {
                     read === false &&
                     <Image src={`/notification-icon.svg`} alt="notification" width={22} height={22} className="absolute left-1 top-7"/>
