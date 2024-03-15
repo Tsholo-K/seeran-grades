@@ -9,6 +9,7 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import Aligner from "@/components/(general components)/aligner";
 import Grade_level from "@/components/(performance components)/grade_level";
+import Grade_subject from "@/components/(performance components)/grade_subjects";
 
 
 const MyClass = () => {
@@ -28,7 +29,8 @@ const MyClass = () => {
             <Aligner/>
             <Crumbs url={`admindashboard/performance`} title={'performance'} heading={`grade ${grade}`}/>
             <Grade_level grade={grade_level} />
-            <p className="pt-7 pl-2 text-sm text-gray-400">subjects</p>
+            <p className="pt-12 pl-2 text-sm text-gray-400">subjects</p>
+            <Grade_subject dashbaord={`admin`} section={`performance/grade/${grade}`} subjects={grade_level.subjects} teacher={false} />
             <p className="py-7 text-center text-sm text-gray-400">that&apos;s all subjects</p>
         </div>
     )
