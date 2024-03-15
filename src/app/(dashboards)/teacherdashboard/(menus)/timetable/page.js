@@ -11,23 +11,28 @@ const MyClasses = () => {
     section : [
       {
         title: "Monday",
-        url: `/teacherdashboard/timetable/monday`
+        url: `/teacherdashboard/timetable/monday`,
+        icon : "time-table"
       },
       {
         title: "Tuesday",
-        url: `/teacherdashboard/timetable/tuesday`
+        url: `/teacherdashboard/timetable/tuesday`,
+        icon : "time-table"
       },
       {
         title: "Wednesday",
-        url: `/teacherdashboard/timetable/wednesday`
+        url: `/teacherdashboard/timetable/wednesday`,
+        icon : "time-table"
       },
       {
         title: "Thursday",
-        url: `/teacherdashboard/timetable/thursday`
+        url: `/teacherdashboard/timetable/thursday`,
+        icon : "time-table"
       },
       {
         title: "Friday",
-        url: `/teacherdashboard/timetable/friday`
+        url: `/teacherdashboard/timetable/friday`,
+        icon : "time-table"
       }
     ]
   }
