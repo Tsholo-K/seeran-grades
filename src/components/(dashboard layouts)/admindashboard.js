@@ -8,6 +8,15 @@ const menuitems = [
     {
       section : [
         {
+          title: 'Console',
+          icon: 'management',
+          url: '/admindashboard/console',
+        }
+      ]
+    },
+    {
+      section : [
+        {
           title: 'Performance',
           icon: 'performance',
           url: '/admindashboard/performance',
@@ -20,15 +29,6 @@ const menuitems = [
           title: 'Announcements',
           icon: 'megaphone',
           url: '/admindashboard/announcements',
-        }
-      ]
-    },
-    {
-      section : [
-        {
-          title: 'Users',
-          icon: 'user-round-blue',
-          url: '/admindashboard/users',
         },
         {
           title: 'Fees',

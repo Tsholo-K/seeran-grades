@@ -27,15 +27,16 @@ const ChildId = () => {
 
   const student_info = [
     {
-      title: 'Name',
-      icon: false,
-      info: `${student.name.charAt(0).toUpperCase() + student.name.slice(1)}`
-    },
-    {
       title: 'Surname',
       icon: false,
       info: `${student.surname.charAt(0).toUpperCase() + student.surname.slice(1)}`
     },
+    {
+      title: 'Name',
+      icon: false,
+      info: `${student.name.charAt(0).toUpperCase() + student.name.slice(1)}`
+    },
+    
     {
       title: 'Date of birth',
       icon: false,
@@ -47,7 +48,7 @@ const ChildId = () => {
       info: student.grade
     },
     {
-      title: 'Student Number',
+      title: 'Account ID',
       icon: false,
       info: student.id
     },
@@ -57,14 +58,9 @@ const ChildId = () => {
     <div>
       <Aligner/>
       <Crumbs url={`parentdashboard/family/children`} title={'children'} heading={`child profile`}/>
-      {/* child id */}
       <UserImage image={`${student.image}`} name={student.name} surname={student.surname}/>
-      {/* child information */}
       <MultipleMenu menu={student_info} />
-      {/* remove child */}
-      <div className="text-red-600">
-        <SingleMenuLink title={'Remove Child From Account'} border={true} url={`/parentdashboard/family/children/${student.id}/remove`}/>
-      </div>
+      <SingleMenuLink title={'Remove Child From Account'} chevron="red" icon={`remove-user`} border={true} url={`/parentdashboard/family/children/${student.id}/remove`}/>
       <p className="text-center text-gray-400 text-sm w-[90%] mx-auto pt-1">to reverse this you&apos;d need to go to school to have it relinked</p>
     </div>
   )

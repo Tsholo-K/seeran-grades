@@ -45,7 +45,7 @@ const ProfileSettings = () => {
       }
       {/* sign out */}
       <div className="pt-7">
-        <SingleMenuLink title={'Sign Out'} icon={'log-out'} url={'/loggedout'} border={true}/>
+        <SingleMenuLink title={'Sign Out'} chevron='red' icon={'log-out'} url={'/loggedout'} border={true}/>
       </div>
     </div>
   )

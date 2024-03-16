@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-const SingleMenuLink = ({ title, url, icon=null, border=false }) => {
+const SingleMenuLink = ({ title, url, icon=null, border=false, chevron='blue' }) => {
     return (
         <>
             <div className={`rounded-xl ${ border ? ' bg-white' : ''}`}>
@@ -15,7 +15,13 @@ const SingleMenuLink = ({ title, url, icon=null, border=false }) => {
                         : null
                     }
                     <p className={`w-full`}>{title}</p>
-                    <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
+                    {
+                        chevron === 'blue'
+                        ?
+                        <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
+                        :
+                        <Image src={'/chevron-right-red.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit"/>
+                    }
                 </Link>
             </div>
         </>

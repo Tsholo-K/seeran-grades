@@ -50,8 +50,8 @@ const TeacherId = () => {
       <Crumbs url={`studentdashboard/classes/${class_id}`} title={'class'}/>
       {/* child id */}
       <UserImage image={`${teacher.image}`} name={teacher.name} surname={teacher.surname} email={`${teacher.email}`}/>
-      <p className="pb-4"></p>
       <MultipleMenu menu={teacher_info} />
+      <p className="pb-4"></p>
       <SingleMenuLink title={`Message`} icon={`admin`} border={true} url={`/studentdashboard/messages/${teacher.id}`} />
       <p className="text-sm text-gray-400 text-center pt-1">this will send you to the messages section</p>
     </div>

@@ -24,15 +24,21 @@
     "admins" : [
         {
             "id" : "0162736453",
+            "id_number" : "",
             "name" : "chloe",
             "surname" : "mitchel",
-            "number" : "0118971524"
+            "email" : "chloemitchel@icloud.com",
+            "phone_number" : "0821726354",
+            "image" : "default-user-icon"
         },
         {
             "id" : "7815243672",
+            "id_number" : "",
             "name" : "cait",
             "surname" : "yasuo",
-            "number" : "0118971524"
+            "email" : "caityasuo@icloud.com",
+            "phone_number" : "0671523645",
+            "image" : "default-user-icon"
         }
     ],
 
@@ -129,6 +135,7 @@
     "students": [
         {
             "id" : "220212349",
+            "id_number" : "",
             "name" : "koketso",
             "surname" : "tsholo",
             "date_of_birth" : "28/08/2002",
@@ -140,6 +147,7 @@
         },
         {
             "id" : "220212348",
+            "id_number" : "",
             "name" : "lethabo",
             "surname" : "mochaki",
             "date_of_birth" : "07/06/2003",
@@ -149,6 +157,7 @@
         },
         {
             "id" : "2202121467",
+            "id_number" : "",
             "name" : "xin",
             "surname" : "xhao",
             "date_of_birth" : "24/08/2002",
@@ -158,6 +167,7 @@
         },
         {
             "id" : "2202121218",
+            "id_number" : "",
             "name" : "lebohang",
             "surname" : "tsholo",
             "date_of_birth" : "24/08/2002",
@@ -167,6 +177,7 @@
         },
         {
             "id" : "220212531",
+            "id_number" : "",
             "name" : "keabetswe",
             "surname" : "murula",
             "date_of_birth" : "24/08/2002",
@@ -176,6 +187,7 @@
         },
         {
             "id" : "220212623",
+            "id_number" : "",
             "name" : "brenda",
             "surname" : "timberlake",
             "date_of_birth" : "24/08/2002",
@@ -185,6 +197,7 @@
         },
         {
             "id" : "220212350",
+            "id_number" : "",
             "name" : "godwill",
             "surname" : "munyoro",
             "date_of_birth" : "24/08/2002",
@@ -194,6 +207,7 @@
         },
         {
             "id" : "2202123624",
+            "id_number" : "",
             "name" : "karabo",
             "surname" : "tsholo",
             "date_of_birth" : "18/12/2004",
