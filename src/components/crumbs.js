@@ -38,8 +38,9 @@ const Crumbs = ({ title, url, hide=false, heading }) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setIsClient(true);
-    setScroll(false)
+    setScroll(false);
   }, []);
 
   if (!isClient) {
