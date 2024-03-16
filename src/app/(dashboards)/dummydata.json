@@ -24,7 +24,6 @@
     "admins" : [
         {
             "id" : "0162736453",
-            "id_number" : "",
             "name" : "chloe",
             "surname" : "mitchel",
             "email" : "chloemitchel@icloud.com",
@@ -33,7 +32,6 @@
         },
         {
             "id" : "7815243672",
-            "id_number" : "",
             "name" : "cait",
             "surname" : "yasuo",
             "email" : "caityasuo@icloud.com",
