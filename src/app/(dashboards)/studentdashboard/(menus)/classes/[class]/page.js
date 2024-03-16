@@ -52,7 +52,7 @@ const MyClass = () => {
         <div>
             <Aligner/>
             <Crumbs url={`studentdashboard/classes`} title={'classes'} heading={`${classroom[0].subject}`}/>
-            <Classes classrooms={classroom} teacher={false} subject={false} url={false}/>
+            <Classes classrooms={classroom} grade={false} teacher={false} subject={false} url={false}/>
             <Subject title="Subject" subject={`${classroom[0].subject}`} icon={`${classroom[0].icon}`} />
             <p className="py-0"></p>
             <MultipleMenuLinks menu={menus} />

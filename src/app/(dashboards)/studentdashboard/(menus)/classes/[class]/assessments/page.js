@@ -27,7 +27,7 @@ const AssessmentsPage = () => {
         <div>
             <Aligner/>
             <Crumbs url={`studentdashboard/classes/${class_id}`} title={'class'} heading={`assessments`}/>
-            <PageHeading title={'Assessments'} subheading={`due assessments`}/>
+            <PageHeading title={`${assessments[0].subject.charAt(0).toUpperCase() + assessments[0].subject.slice(1)}`} subheading={`due assessments`}/>
             {/* assessments */}
             <p className='text-sm text-gray-400 mt-4 lg:mt-10 pl-2'>assessments</p>
             {
