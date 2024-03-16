@@ -27,7 +27,7 @@ const RemoveChild = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`admindashboard/console/admins/profile/${admin_id}`} title={'admin profile'} heading={`remove admin`}/>
+      <Crumbs url={`admindashboard/console/admins/profile/${admin_id}/id`} title={'admin ID'} heading={`remove admin`}/>
       {/* page heading */}
       <div className="lg:hidden">
         <PageHeading title={'Remove Admin'} />

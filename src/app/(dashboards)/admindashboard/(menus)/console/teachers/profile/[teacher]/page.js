@@ -23,13 +23,14 @@ const TeacherId = () => {
     }
   });
 
-
   return (
     <div>
       <Crumbs url={`admindashboard/console/teachers`} title={'teachers'}/>
       <UserImage image={`${teacher.image}`} name={teacher.name} surname={teacher.surname} email={`${teacher.email}`}/>
-      <p className="pb-4"></p>
+      <p className="pb-0"></p>
       <SingleMenuLink title={`Teacher ID`} icon={`user-round-blue`} border={true} url={`/admindashboard/console/teachers/profile/${teacher.id}/id`} />
+      <p className="py-4"></p>
+      <SingleMenuLink title={`timetable`} url={``} icon={`time-table`} border={true} />
     </div>
   )
 };

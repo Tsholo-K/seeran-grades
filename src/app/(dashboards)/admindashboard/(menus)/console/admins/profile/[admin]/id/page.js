@@ -11,6 +11,7 @@ import UserImage from "@/components/(general components)/userimage";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import Aligner from "@/components/(general components)/aligner";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
+import PageHeading from "@/components/(general components)/pageheading";
 
 
 const TeacherId = () => {
@@ -56,11 +57,12 @@ const TeacherId = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`admindashboard/console/admins`} title={'admins'}/>
-      {/* child id */}
-      <UserImage image={`${admin.image}`} name={admin.name} surname={admin.surname} email={`${admin.email}`}/>
+      <Crumbs url={`admindashboard/console/admins/profile/${admin_id}`} title={'admin profile'}/>
+      <PageHeading title={`ID`} />
+      <MultipleMenu menu={admin_info} />
       <p className="pb-4"></p>
-      <SingleMenuLink title={`Admin ID`} icon={`user-round-blue`}  border={true} url={`/admindashboard/console/admins/profile/${admin.id}/id`} />
+      <SingleMenuLink title={`remove account`} icon={`remove-user`} chevron="red" border={true} url={`/admindashboard/console/admins/profile/${admin.id}/id/remove`} />
+      <p className="text-sm text-gray-400 text-center pt-1">only the principal can remove admin accounts</p>
     </div>
   )
 };
