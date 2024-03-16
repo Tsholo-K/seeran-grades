@@ -16,7 +16,7 @@ const ActivitiesPage = () => {
         <Crumbs title={'dashboard'} url={'parentdashboard'} hide={true} heading={`logs`}/>
         <PageHeading title={'Logs'} subheading={'a record of captured activities'} />
         {/* accounts section */}
-        <Activities activities={data.activities}/>
+        <Activities dashboard={`parent`} section={`activities`} activities={data.activities}/>
         <p className="text-sm w-[80%] text-gray-500 text-center mx-auto py-10">all caught up..</p>
       </div>
     </>
