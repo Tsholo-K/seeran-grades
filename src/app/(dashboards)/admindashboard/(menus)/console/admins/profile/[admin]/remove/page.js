@@ -27,14 +27,14 @@ const RemoveChild = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`admindashboard/console/admins/profile/${admin_id}`} title={'admin profile'} heading={`remove child`}/>
+      <Crumbs url={`admindashboard/console/admins/profile/${admin_id}`} title={'admin profile'} heading={`remove admin`}/>
       {/* page heading */}
       <div className="lg:hidden">
         <PageHeading title={'Remove Admin'} />
       </div>
       {/* child id */}
       <UserImage image={`${admin.image}`} name={admin.name} surname={admin.surname} />
-      <p className="text-center text-gray-400 text-sm w-[90%] mx-auto mb-24">you are about to remove this admin from your account</p>
+      <p className="text-center text-gray-400 text-sm w-[90%] mx-auto mb-10">you are about to remove this admin from your account</p>
       {/* button */}
       <Button title={'confirm'} type={'submit'} />
     </div>

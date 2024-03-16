@@ -8,8 +8,8 @@ import React from 'react';
 const AccountCreation = () => {
   return (
     <div>
-      <Crumbs title={'admins'} url={'admindashboard/console/admins'} heading={`account creation`} />
-      <PageHeading title={`Add Account`} subheading={`admin account creation`}/>
+      <Crumbs title={'teachers'} url={'admindashboard/console/teachers'} heading={`account creation`} />
+      <PageHeading title={`Add Account`} subheading={`teacher account creation`}/>
       <InputArea type={`text`} title={`Surname`} />
       <InputArea type={`text`} title={`Name`} />
       <InputArea type={`text`} title={`Email Address`} />
