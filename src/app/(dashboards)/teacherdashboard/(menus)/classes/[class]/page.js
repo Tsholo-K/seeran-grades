@@ -43,7 +43,7 @@ const MyClass = () => {
                 icon: `calendar-clock`
             },
             {
-                title : 'Grades',
+                title : 'Grade',
                 url : `/teacherdashboard/classes/${class_id}/grading`,
                 icon : `graduation-cap`
             }

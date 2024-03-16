@@ -8,11 +8,9 @@ import data from '@/app/(dashboards)/dummydata.json'
 // components
 import Crumbs from "@/components/crumbs";
 import Subject from "@/components/(general components)/subject";
-import Menu from "@/components/(general components)/menu";
 import Score from "@/components/(grades components)/score";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
-import UserMenu from "@/components/(general components)/usermenu";
-import Aligner from "@/components/(general components)/aligner";
+import Topics from "@/components/(general components)/topics";
  
 const Transcript = () => {
 
@@ -58,14 +56,14 @@ const Transcript = () => {
 
   return (
     <div>
-      <Aligner/>
       <Crumbs url={`studentdashboard/classes/${class_id}/performance`} title={'grades'} heading={`transcript`}/>
       {/* student */}
       <Score score={transcript.score} total={transcript.total}/>
       {/* subject */}
       <Subject subject={transcript.subject} icon={transcript.icon} submitter={transcript.submitted_by}/>
-      {/* info */}
       <MultipleMenu menu={transcript_info} />
+      <p className="py-2"></p>
+      <Topics topics={transcript.topics} />
       <div className="py-4"></div>
     </div>
   )

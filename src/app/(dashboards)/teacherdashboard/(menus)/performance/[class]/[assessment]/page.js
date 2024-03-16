@@ -11,6 +11,7 @@ import PageHeading from "@/components/(general components)/pageheading";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import Transcripts from "@/components/(grades components)/transcripts";
 import Aligner from "@/components/(general components)/aligner";
+import Topics from "@/components/(general components)/topics";
 
 
 const ClassAssessment = () => {
@@ -49,10 +50,6 @@ const ClassAssessment = () => {
             info : `${assessment.average_score}`
           },
           {
-            title: 'Topics',
-            info : `${assessment.topics}`
-          },
-          {
             title: 'Date Assessed',
             info : `${assessment.due_date}`
           },
@@ -67,7 +64,7 @@ const ClassAssessment = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`teacherdashboard/performance/${class_id}`} title={'class'} heading={`summary`}/>
+      <Crumbs url={`teacherdashboard/performance/${class_id}`} title={'class'} heading={`assessment summary`}/>
       {/* page heading */}
       <PageHeading title={`${assessment.title}`} subheading={'assessment summary'}/>
       {
@@ -75,7 +72,7 @@ const ClassAssessment = () => {
           <MultipleMenu key={index} menu={item.section} />
         ))
       }
-      {/* transcripts */}
+      <Topics topics={assessment.topics} />
       <p className='text-sm text-gray-400 mt-7 pl-2'>scores</p>
       <Transcripts  dashboard={'teacher'} assessment={false} date={false} section={`performance/${class_id}/${assessment_id}`} icon={false} transcripts={grades} subject={false} submitter={false} />
       <p className="py-7 text-center text-sm text-gray-400">that&apos;s all scores</p>

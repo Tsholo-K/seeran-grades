@@ -38,7 +38,7 @@ const Grade = () => {
             <Aligner/>
             <Crumbs url={`teacherdashboard/classes/${class_id}/grading`} title={'assessments'}  heading={`gradings`}/>
             <PageHeading title={`${assessment.title}`} subheading={`${assessment.assessment}`}/>
-            <p className="my-7"></p>
+            <p className="my-4"></p>
             <Button title={'release'} />
             <p className="text-center text-sm text-gray-400 pt-1 w-[90%] mx-auto">you can only release grades after all studnets are graded</p>
             {/* transcripts */}

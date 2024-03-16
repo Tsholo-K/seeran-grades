@@ -12,6 +12,7 @@ import Score from "@/components/(grades components)/score";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import UserMenu from "@/components/(general components)/usermenu";
 import Aligner from "@/components/(general components)/aligner";
+import Topics from "@/components/(general components)/topics";
  
 const Transcript = () => {
 
@@ -61,6 +62,7 @@ const Transcript = () => {
       <Score score={transcript.score} total={transcript.total}/>
       <Subject subject={transcript.subject} icon={transcript.icon} submitter={transcript.submitted_by}/>
       <MultipleMenu menu={transcript_info} />
+      <Topics topics={transcript.topics} />
       <p className="pl-2 mb-1 text-sm mt-12 text-gray-400">submitted by</p>
       <div className="rounded-xl bg-white">
         <UserMenu all_users={student} url={false} />
