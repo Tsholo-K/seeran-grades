@@ -30,7 +30,7 @@ const TeacherId = () => {
       <p className="pb-0"></p>
       <SingleMenuLink title={`Teacher ID`} icon={`user-round-blue`} border={true} url={`/admindashboard/console/teachers/profile/${teacher.id}/id`} />
       <p className="py-4"></p>
-      <SingleMenuLink title={`timetable`} url={``} icon={`time-table`} border={true} />
+      <SingleMenuLink title={`timetable`} url={`/admindashboard/console/teachers/profile/${teacher_id}/timetable`} icon={`time-table`} border={true} />
     </div>
   )
 };
