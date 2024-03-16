@@ -9,6 +9,8 @@ import data from '@/app/(dashboards)/dummydata.json';
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Aligner from "@/components/(general components)/aligner";
+import Image from "next/image";
+import Periods from "@/components/(timetable components)/periods";
 
 
 const TimeTable = () => {
@@ -23,16 +25,7 @@ const TimeTable = () => {
             <Aligner/>
             <Crumbs title={`timetable`} url={`studentdashboard/timetable`} heading={`${day}`} />
             <PageHeading title={`${day.charAt(0).toUpperCase() + day.slice(1)}`} subheading={`${day} timetable`} />
-            {
-                time_table.map( (period, index) => (
-                    <div key={index} className="mb-8">
-                        <p className="pb-1 text-gray-400 pl-2">{period.from} - {period.to}</p>
-                        <div className="bg-white rounded-xl py-2 px-3">
-                            <p className="w-full text-center py-2 text-xl">{period.class}</p>
-                        </div>
-                    </div>
-                ) )
-            }
+            <Periods periods={time_table} />
             <p className="text-sm text-gray-400 text-center py-6">end of the day</p>
         </div>
     )

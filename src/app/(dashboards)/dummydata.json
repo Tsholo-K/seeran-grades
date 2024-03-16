@@ -1268,43 +1268,49 @@
     ],
 
     "time_tables" : [
-        
         {
             "monday" : [
                 {
                     "from" : "7h45",
                     "to" : "08h00",
-                    "class" : "Register Class"
+                    "class" : "Register Class",
+                    "classroom" : "102"
                 },
                 {
                     "from" : "08h05",
                     "to" : "9h00",
-                    "class" : "English"
+                    "class" : "English",
+                    "classroom" : "124"
                 },
                 {
                     "from" : "09h05",
                     "to" : "10h00",
-                    "class" : "Mathematics"
+                    "class" : "Mathematics",
+                    "classroom" : "132"
                 },
                 {
                     "from" : "10h05",
                     "to" : "11h00",
-                    "class" : "Life Orientation"
+                    "class" : "Life Orientation",
+                    "classroom" : "101"
                 },
                 {
                     "from" : "11h05",
                     "to" : "12h00",
-                    "class" : "Lunch Time"
+                    "class" : "Lunch Time",
+                    "classroom" : ""
                 },
                 {
                     "from" : "12h05",
                     "to" : "13h00",
-                    "class" : "Life Science"
+                    "class" : "Life Science",
+                    "classroom" : "141"
                 },
                 {
                     "from" : "13h05",
                     "to" : "14h00",
-                    "class" : "French"
+                    "class" : "French",
+                    "classroom" : "107"
                 }
             ]
         }
