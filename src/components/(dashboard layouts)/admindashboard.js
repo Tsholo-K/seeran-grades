@@ -18,7 +18,7 @@ const menuitems = [
     {
       section : [
         {
-          title: 'Account Management',
+          title: 'Accounts Management',
           icon: 'management',
           url: '/admindashboard/console',
         },
