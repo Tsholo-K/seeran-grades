@@ -33,7 +33,7 @@ const MyPerformance = ({ searchParams, }) => {
 
   return (
     <div className="w-full">
-      <Crumbs url={`admindashboard/console/students/grades`} title={'grades'} heading={`students`}/>
+      <Crumbs url={`admindashboard/console/students/grades`} title={'grades'} heading={`students`} align={false}/>
       {/* page heading */}
       <PageHeading title={`Grade ${grade}`} subheading={`grade ${grade} students`}/>
       <Menu border={true} title={`Students`} info={`${data.students.length}`}/>

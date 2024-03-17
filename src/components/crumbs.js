@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-const Crumbs = ({ title, url, hide=false, heading }) => {
+const Crumbs = ({ title, url, hide=false, heading, align=true }) => {
 
   const [scroll, setScroll] = useState(false);
 
@@ -37,8 +37,10 @@ const Crumbs = ({ title, url, hide=false, heading }) => {
 
   const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
+  useEffect((align) => {
+    if ( scroll ) {
+      window.scrollTo(0, 0);
+    }
     setIsClient(true);
     setScroll(false);
   }, []);
