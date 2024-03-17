@@ -38,12 +38,12 @@ const Crumbs = ({ title, url, hide=false, heading, align=true }) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    if ( align ) {
+    if ( align === true ) {
       window.scrollTo(0, 0);
     }
     setIsClient(true);
     setScroll(false);
-  }, []);
+  }, [align]);
 
   if (!isClient) {
     return null;

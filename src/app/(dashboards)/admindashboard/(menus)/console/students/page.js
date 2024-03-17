@@ -16,11 +16,6 @@ const Admins = () => {
         title: "Students",
         icon: "users",
         url: "/admindashboard/console/students/grades"
-      },
-      {
-        title: "students",
-        icon: "users",
-        url: ""
       }
     ]
   }
