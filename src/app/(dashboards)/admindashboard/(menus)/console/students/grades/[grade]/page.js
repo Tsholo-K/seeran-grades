@@ -22,7 +22,7 @@ const MyPerformance = ({ searchParams, }) => {
     students = data.students
   } else {
     data.students.forEach( stu => {
-      if( stu.name.includes(query) || stu.surname.includes(query) || stu.id.includes(query) ) {
+      if( stu.name.includes(query.toLowerCase()) || stu.surname.includes(query.toLowerCase()) || stu.id.includes(query) ) {
         students.push(stu)
       }
     });
