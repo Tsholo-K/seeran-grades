@@ -5,15 +5,7 @@ import Aligner from "../(general components)/aligner";
 
 
 const menuitems = [
-    {
-      section : [
-        {
-          title: 'Console',
-          icon: 'management',
-          url: '/admindashboard/console',
-        }
-      ]
-    },
+
     {
       section : [
         {
@@ -26,14 +18,28 @@ const menuitems = [
     {
       section : [
         {
-          title: 'Announcements',
-          icon: 'megaphone',
-          url: '/admindashboard/announcements',
+          title: 'Account Management',
+          icon: 'management',
+          url: '/admindashboard/console',
         },
         {
           title: 'Fees',
           icon: 'wallet',
           url: '/admindashboard/fees',
+        }
+      ]
+    },
+    {
+      section : [
+        {
+          title: 'Announcements',
+          icon: 'megaphone',
+          url: '/admindashboard/announcements',
+        },
+        {
+          title: 'Messages',
+          icon: 'admin',
+          url: '/admindashboard/helpdesk',
         },
         {
           title: 'Complaints',
