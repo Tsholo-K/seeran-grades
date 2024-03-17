@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-const UserMenu = ({ all_users, dashboard, section, grade=true, url=true }) => {
+const UserMenu = ({ all_users, dashboard, section, grade=true, url=true, }) => {
   return (
     <>
         { all_users.map( (user, index) => (

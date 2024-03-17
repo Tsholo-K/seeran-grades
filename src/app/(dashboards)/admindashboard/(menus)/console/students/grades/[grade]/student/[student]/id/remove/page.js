@@ -14,7 +14,8 @@ import Button from "@/components/(general components)/button";
 const RemoveTeacher = () => {
 
   const params = useParams();
-  const student_id = params.student
+  const student_id = params.student;
+  const grade = params.grade;
 
   let student 
   data.students.forEach( teach => {
@@ -25,7 +26,7 @@ const RemoveTeacher = () => {
   
   return (
     <div>
-      <Crumbs url={`admindashboard/console/students/profile/${student_id}/id`} title={'student ID'} heading={`remove student`}/>
+      <Crumbs url={`admindashboard/console/students/grades/${grade}/student/${student_id}/id`} title={'student ID'} heading={`remove student`}/>
       <div className="lg:hidden">
         <PageHeading title={'Remove Student'} />
       </div>

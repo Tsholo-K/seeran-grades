@@ -15,7 +15,8 @@ import PageHeading from "@/components/(general components)/pageheading";
 const StudentId = () => {
 
   const params = useParams();
-  const student_id = params.student
+  const student_id = params.student;
+  const grade = params.grade;
 
   let student 
   data.students.forEach( teach => {
@@ -54,11 +55,11 @@ const StudentId = () => {
 
   return (
     <div>
-      <Crumbs url={`admindashboard/console/students/profile/${student_id}`} title={'student profile'} head/>
+      <Crumbs url={`admindashboard/console/students/grades/${grade}/student/${student_id}`} title={'student profile'} head/>
       <PageHeading title={`ID`} />
       <MultipleMenu menu={student_info} />
       <p className="pb-4"></p>
-      <SingleMenuLink title={`remove account`} icon={`remove-user`} chevron="red" border={true} url={`/admindashboard/console/students/profile/${student_id}/id/remove`} />
+      <SingleMenuLink title={`remove account`} icon={`remove-user`} chevron="red" border={true} url={`/admindashboard/console/students/grades/${grade}/student/${student_id}/id/remove`} />
     </div>
   )
 };

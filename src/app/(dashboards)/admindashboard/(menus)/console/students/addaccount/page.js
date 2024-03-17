@@ -1,6 +1,6 @@
+// components
 import PageHeading from '@/components/(general components)/pageheading';
 import Crumbs from '@/components/crumbs';
-import React from 'react';
 import StudentCreationFrom from '@/components/(forms)/studentcreationfrom';
 
 
