@@ -5,13 +5,21 @@ import { useState } from 'react';
 
 const StudentCreationFrom = () => {
 
+    const [nationality, setNationality] = useState(`--- Citizen/Resident ---`);
     const [id_number, setid_number] = useState('');
+    const [passportnumber, setPassportNumber] = useState('');
     const [surname, setSurname] = useState('');
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [confirmationemail, setConfirmationEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('')
 
     var saIdParser = require('south-african-id-parser');
+
+    function handleNationality(event) {
+        setNationality(event.target.value)
+        console.log(event.target.value)
+    }
 
     function idNumber(event) {
         setid_number(event.target.value)
@@ -22,6 +30,10 @@ const StudentCreationFrom = () => {
         document.getElementById('validation').innerHTML = ``
         }
     };
+
+    function handlePassportNumber(event) {
+        setPassportNumber(event.target.value)
+    }
 
     function handleSurnameChange(event) {
         setSurname(event.target.value)
@@ -35,13 +47,27 @@ const StudentCreationFrom = () => {
         setEmail(event.target.value)
     };
 
+    function handleConfrimationEmailChange(event) {
+        setConfirmationEmail(event.target.value)
+    };
+
     function handlePhoneNumberChange(event) {
         setPhoneNumber(event.target.value)
     };
 
     return (
         <div>
+            {/* nationality confrimation */}
             <div className="py-2 mt-6">
+                <p className="text-sm text-gray-400 pl-2 py-1">South African Citizen/Resident?</p>
+                <select value={nationality} onChange={handleNationality} className='bg-white rounded-xl h-9 w-full'>
+                    <option disabled className='text-center' >--- Citizen/Resident ---</option>
+                    <option value={`yes`} className='text-center'>Yes</option>
+                    <option value={`no`} className='text-center'>no</option>
+                </select>
+            </div>
+            {/* ID number  */}
+            <div className={`py-2 transition-all duration-1000 ease-linear ${ nationality === 'yes' ? 'block' : 'hidden'} `}>
                 <p className="text-sm text-gray-400 pl-2 py-1">ID Number</p>
                 <div className="rounded-xl bg-white mb-1">
                     <input
@@ -53,6 +79,20 @@ const StudentCreationFrom = () => {
                 </div>
                 <p id='validation' className='text-center text-sm text-red-600 pt-1'></p>
             </div>
+            {/* passport number */}
+            <div className={`py-2 transition-all duration-1000 ease-linear ${ nationality === 'no' ? 'block' : 'hidden'} `}>
+                <p className="text-sm text-gray-400 pl-2 py-1">Passport Number</p>
+                <div className="rounded-xl bg-white mb-1">
+                    <input
+                    type={`number`}
+                    onChange={handlePassportNumber}
+                    className="w-full text-base rounded-xl h-10 px-4 focus:outline-none resize-none"
+                    value={passportnumber}
+                    />
+                </div>
+                <p id='validation' className='text-center text-sm text-red-600 pt-1'></p>
+            </div>
+            {/* surname */}
             <div className="py-2">
                 <p className="text-sm text-gray-400 pl-2 py-1">Surname</p>
                 <div className="rounded-xl bg-white mb-1">
@@ -64,6 +104,7 @@ const StudentCreationFrom = () => {
                     />
                 </div>
             </div>
+            {/* name */}
             <div className="py-2">
                 <p className="text-sm text-gray-400 pl-2 py-1">Name</p>
                 <div className="rounded-xl bg-white mb-1">
@@ -75,6 +116,7 @@ const StudentCreationFrom = () => {
                     />
                 </div>
             </div>
+            {/* email */}
             <div className="py-2">
                 <p className="text-sm text-gray-400 pl-2 py-1">Email Address ( optional )</p>
                 <div className="rounded-xl bg-white mb-1">
@@ -86,6 +128,19 @@ const StudentCreationFrom = () => {
                     />
                 </div>
             </div>
+            {/* email confirmation */}
+            <div className="py-2">
+                <p className="text-sm text-gray-400 pl-2 py-1">Confirm Email Address ( optional )</p>
+                <div className="rounded-xl bg-white mb-1">
+                    <input
+                    type={`text`}
+                    onChange={handleConfrimationEmailChange}
+                    className="w-full text-base rounded-xl h-10 px-4 focus:outline-none resize-none"
+                    value={confirmationemail}
+                    />
+                </div>
+            </div>
+            {/* phone number */}
             <div className="py-2">
                 <p className="text-sm text-gray-400 pl-2 py-1">Phone Number ( optional )</p>
                 <div className="rounded-xl bg-white mb-1">
