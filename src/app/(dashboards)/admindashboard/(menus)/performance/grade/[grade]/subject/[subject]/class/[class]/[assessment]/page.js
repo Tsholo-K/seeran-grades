@@ -10,8 +10,6 @@ import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import Transcripts from "@/components/(grades components)/transcripts";
-import Aligner from "@/components/(general components)/aligner";
-import Image from "next/image";
 import Topics from "@/components/(general components)/topics";
 
 
@@ -66,7 +64,6 @@ const ClassAssessment = () => {
 
   return (
     <div>
-      <Aligner/>
       <Crumbs url={`admindashboard/performance/grade/${grade_id}/subject/${subject_id}/class/${class_id}`} title={'class'} heading={`assessment summary`}/>
       {/* page heading */}
       <PageHeading title={`${assessment.title}`} subheading={'assessment summary'}/>

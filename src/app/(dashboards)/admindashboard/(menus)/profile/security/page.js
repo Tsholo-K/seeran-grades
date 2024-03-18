@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const Security = () => {
 
-  const parent_user = data.parents[0]
+  const admin = data.admins[0]
 
   return (
     <div>
@@ -22,22 +22,20 @@ const Security = () => {
       {/* email and phone number */}
       <div className="rounded-xl bg-white mt-20 ">
         <Link href={'/admindashboard/profile/security/email'}>
-          <Menu title={'Email'} icon={true} info={`${parent_user.email}`} />
+          <Menu title={'Email'} icon={true} info={`${admin.email}`} />
         </Link>
         <hr className="mx-5"></hr>
         <Link href={'/admindashboard/profile/security/phonenumber'}>
-          <Menu title={'Phone Number'} icon={true} info={`${parent_user.phone_number}`}/>
+          <Menu title={'Phone Number'} icon={true} info={`${admin.phone_number}`}/>
         </Link>
       </div>
       {/* password & mfa */}
       <div className="rounded-xl bg-white mt-20 ">
         {/* two factor authentication */}
-        <SingleMenuLink title={'Two Factor Authentication'} url={'/admindashboard/profile/security/mfa'} />
+        <SingleMenuLink icon={`authentication`} title={'Two Factor Authentication'} url={'/admindashboard/profile/security/mfa'} />
         <hr className="mx-5"></hr>
         {/* password change */}
-        <div className="text-red-600">
-          <SingleMenuLink title={'Change Password'} url={'/admindashboard/profile/security/password'} />
-        </div>
+        <SingleMenuLink icon={`password-change`} title={'Change Password'} chevron='red' url={'/admindashboard/profile/security/password'} />
       </div>
     </div>
   )

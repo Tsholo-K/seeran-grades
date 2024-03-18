@@ -1,10 +1,11 @@
-import Link from "next/link"
-import Image from "next/image"
-import MultipleMenuLinks from "../(general components)/multiplemenulinks"
-import Aligner from "../(general components)/aligner"
+// dummy data
+import data from '@/app/(dashboards)/dummydata.json';
+
+import MultipleMenuLinks from "../(general components)/multiplemenulinks";
+import AccountMenu from "./accountmenu";
 
 
-const studentdashboardmenuitems = [
+const studentdashboardmenulinks = [
     {
       section : [
         {
@@ -55,20 +56,12 @@ const studentdashboardmenuitems = [
 
 const Studentdashboard = () => {
   return (
-    <div className="w-full h-full relative">
-      <Aligner/>
-      <div className="rounded-xl bg-white mb-7">
-        <Link href={'/studentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-          <Image priority src={'/default-user-icon.svg'} alt="profile icon" width={30} height={30} className="rounded-full w-fit h-fit max-h-16 max-w-16" />
-          <div className="w-full">
-            <p className="pt-3 ">Tsholo Koketso</p>
-            <p className="text-sm text-gray-400 ">profile settings</p>
-          </div>
-          <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
-        </Link>
-      </div>
+    <div>
+      {/* profile settings */}
+      <AccountMenu dashboard={`student`} user={data.students[0]}/>
+      {/* menu links */}
       {
-        studentdashboardmenuitems.map( ( item,index ) => (
+        studentdashboardmenulinks.map( ( item,index ) => (
           <>
             <MultipleMenuLinks key={index} menu={item} />
           </>
@@ -76,6 +69,6 @@ const Studentdashboard = () => {
       }
     </div>
   )
-}
+};
 
-export default Studentdashboard
+export default Studentdashboard;

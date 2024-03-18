@@ -2,7 +2,6 @@
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
-import Aligner from "@/components/(general components)/aligner";
 
 
 const MyPerformance = () => {
@@ -48,8 +47,7 @@ const MyPerformance = () => {
   }
 
   return (
-    <div className="w-full relative grid grid-cols-1 place-content-center">
-      <Aligner/>
+    <div>
       <Crumbs url={`admindashboard`} title={'dashboard'} hide={true} heading={`performance`}/>
       {/* page heading */}
       <PageHeading title={'Performance'} subheading={'all grades'}/>

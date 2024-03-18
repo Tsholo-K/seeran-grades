@@ -1,4 +1,3 @@
-import Aligner from "@/components/(general components)/aligner"
 import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks"
 import PageHeading from "@/components/(general components)/pageheading"
 import Crumbs from "@/components/crumbs"
@@ -35,14 +34,9 @@ const menuitems = [
     {
       section : [
         {
-          title: 'Register Classes',
-          icon: 'class',
-          url: '/admindashboard/console/parents',
-        },
-        {
-          title: 'Classes',
-          icon: 'classes',
-          url: '/admindashboard/console/parents',
+          title: 'Grades',
+          icon: 'grades',
+          url: '/admindashboard/console/grades',
         }
       ]
     }
@@ -51,7 +45,6 @@ const menuitems = [
 const page = () => {
   return (
     <div>
-        <Aligner/>
         <Crumbs title={'dashboard'} url={'admindashboard'} hide={true} heading={`console`}/>
         <PageHeading title={`Console`} subheading={`accounts management`}/>
         {

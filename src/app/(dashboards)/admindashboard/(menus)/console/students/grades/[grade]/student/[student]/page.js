@@ -8,10 +8,10 @@ import data from '@/app/(dashboards)/dummydata.json';
 // components
 import Crumbs from "@/components/crumbs";
 import UserImage from "@/components/(general components)/userimage";
-import SingleMenuLink from "@/components/(general components)/signlemenulink";
+import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
 
 
-const TeacherId = () => {
+const StudentProfile = () => {
 
   const params = useParams();
   const student_id = params.student
@@ -24,15 +24,29 @@ const TeacherId = () => {
     }
   });
 
+  const menulinks = {
+    section : [
+      {
+        title: "Student ID",
+        icon: "user-round-blue",
+        url: `/admindashboard/console/students/grades/${grade}/student/${student_id}/id`
+      },
+      {
+        title: "Parents",
+        icon: "family",
+        url: `/admindashboard/console/students/grades/${grade}/student/${student_id}/parents`
+      }
+    ]
+  }
+
   return (
     <div>
       <Crumbs url={`admindashboard/console/students/grades/${grade}`} title={'students'}/>
       <UserImage image={`${student.image}`} name={student.name} surname={student.surname} email={`${student.email}`}/>
-      <SingleMenuLink title={`Student ID`} icon={`user-round-blue`} border={true} url={`/admindashboard/console/students/grades/${grade}/student/${student_id}/id`} />
-      <p className="py-4"></p>
-      <SingleMenuLink title={`Parents`} border={true} icon={`family`} url={`/admindashboard/console/students/grades/${grade}/student/${student_id}/parents`} />
+      <p className="py-3"></p>
+      <MultipleMenuLinks menu={menulinks}/>
     </div>
   )
 };
 
-export default TeacherId;
+export default StudentProfile;

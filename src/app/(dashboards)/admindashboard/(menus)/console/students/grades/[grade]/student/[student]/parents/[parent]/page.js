@@ -9,7 +9,6 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import UserImage from "@/components/(general components)/userimage";
 import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
-import Aligner from "@/components/(general components)/aligner";
 
 
 const ParentProfile = () => {
@@ -18,7 +17,6 @@ const ParentProfile = () => {
   const grade = params.grade
   const parent_id = params.parent
   const student_id = params.student
-
   
   let learner
   data.students.forEach( child => {
@@ -51,7 +49,6 @@ const ParentProfile = () => {
 
   return (
     <div>
-      <Aligner/>
       <Crumbs title={'student parents'} url={`admindashboard/console/students/grades/${grade}/student/${student_id}/parents`} hide={true} heading={`parent profile`}/>
       {/* profile info section */}
       <UserImage image={parent.image} name={parent.name} surname={parent.surname} email={parent.email}/>
@@ -59,9 +56,7 @@ const ParentProfile = () => {
       {/* menu links section */}
       <div className="relative">
         <MultipleMenuLinks menu={menuitems} />
-        <div className="absolute top-[103px] w-full flex justify-center text-gray-400 text-sm">
-          <p>this will send you to the messages section</p>
-        </div>
+        <p className="absolute top-[103px] w-full flex justify-center text-gray-400 text-sm">this will redirect you to the messages section</p>
       </div>
     </div>
   )

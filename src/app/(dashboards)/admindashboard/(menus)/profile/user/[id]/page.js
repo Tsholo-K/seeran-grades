@@ -16,48 +16,44 @@ const ID = () => {
 
   const searchParams = useParams();
 
-  let parent_user 
-  data.parents.forEach( parent => {
-    if( parent.id === searchParams.id ){
-      parent_user = parent
+  let admin 
+  data.admins.forEach( adm => {
+    if( adm.id === searchParams.id ){
+      admin = adm
     }
   });
   
   const menus = [
       {
         title: 'Name',
-        info: `${parent_user.name.charAt(0).toUpperCase() + parent_user.name.slice(1)}`
+        info: `${admin.name.charAt(0).toUpperCase() + admin.name.slice(1)}`
       },
       {
         title: 'Surname',
-        info:`${parent_user.surname.charAt(0).toUpperCase() + parent_user.surname.slice(1)}`
+        info:`${admin.surname.charAt(0).toUpperCase() + admin.surname.slice(1)}`
       },
       {
         title: 'Phone Number',
-        info: `${parent_user.phone_number}`
+        info: `${admin.phone_number}`
       },
       {
         title: 'Email',
-        info: `${parent_user.email}`
+        info: `${admin.email}`
       },
       {
-        title: 'Children',
-        info: `${parent_user.children.length}`
+        title: 'Account ID',
+        info: `${admin.id}`
       },
   ]
 
   return (
     <div>
       {/* back link */}
-      <Crumbs title={'profile settings'} url={`admindashboard/profile`} hide={false}/>
+      <Crumbs title={'profile settings'} url={`admindashboard/profile`} />
       {/* page heading */}
       <PageHeading title={'ID'} />
       {/* personal infomation */}
       <MultipleMenu menu={menus}/>
-      {/* communication preferance */}
-      <div className="text-red-600 pt-16">
-        <SingleMenuLink title={'Communication Prefferance'} icon={''} url={'/admindashboard/profile/user/1928742173/communication'} border={true}/>
-      </div>
     </div>
   )
 };

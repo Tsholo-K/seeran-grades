@@ -58,7 +58,7 @@ const StudentId = () => {
       <Crumbs url={`admindashboard/console/students/grades/${grade}/student/${student_id}`} title={'student profile'} head/>
       <PageHeading title={`ID`} />
       <MultipleMenu menu={student_info} />
-      <p className="pb-4"></p>
+      <p className="py-4"></p>
       <SingleMenuLink title={`remove account`} icon={`remove-user`} chevron="red" border={true} url={`/admindashboard/console/students/grades/${grade}/student/${student_id}/id/remove`} />
     </div>
   )

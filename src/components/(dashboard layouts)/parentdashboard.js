@@ -1,12 +1,11 @@
-import data from '@/app/(dashboards)/dummydata.json'
+// dummy data
+import data from '@/app/(dashboards)/dummydata.json';
 
-import Link from "next/link";
-import Image from "next/image";
 import MultipleMenuLinks from "../(general components)/multiplemenulinks";
-import Aligner from '../(general components)/aligner';
+import AccountMenu from './accountmenu';
 
 
-const menuitems = [
+const parentdashboardmenulinks = [
     {
       section : [
         {
@@ -67,40 +66,19 @@ const menuitems = [
 ]
 
 const Parentdashboard = () => {
-  
-  let parent = data.parents[0]
-  let children = []
-
-  data.parents[0].children.forEach( child_id => {
-    data.students.forEach( child => {
-      if ( child.id === child_id ) {
-      children.push(child)
-      }
-    });
-  });
 
   return (
-    <div className="w-full h-full relative">
-      <Aligner/>
-      <div className="">
-        <div className="rounded-xl bg-white ">
-          <Link href={'/parentdashboard/profile'} className="flex py-2 gap-5 px-3 justify-start w-full cursor-pointer md:hover:text-blue-700">
-            <Image priority={true} src={`/${parent.image}.svg`} alt="profile icon" width={30} height={30} className="w-fit rounded-full h-fit max-h-16 max-w-16" />
-            <div className="w-full">
-              <p className="pt-3 ">Seeran Dion</p>
-              <p className="text-sm text-gray-400 ">profile settings</p>
-            </div>
-            <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit pt-5"/>
-          </Link>
-        </div>
-        {
-          menuitems.map( ( item,index ) => (
-            <>
-              <MultipleMenuLinks key={index} menu={item} />
-            </>
-          ))
-        }
-      </div>
+    <div>
+      {/* profile settings */}
+      <AccountMenu dashboard={`parent`} user={data.parents[0]}/>
+      {/* menu links */}
+      {
+        parentdashboardmenulinks.map( ( item,index ) => (
+          <>
+            <MultipleMenuLinks key={index} menu={item} />
+          </>
+        ))
+      }
     </div>
   )
 };

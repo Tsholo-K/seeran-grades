@@ -9,11 +9,10 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import UserMenu from "@/components/(general components)/usermenu";
-import Aligner from "@/components/(general components)/aligner";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
 
 
-const Parents = () => {
+const StudentParents = () => {
 
   const params = useParams()
   const grade = params.grade
@@ -49,4 +48,4 @@ const Parents = () => {
   )
 };
 
-export default Parents;
+export default StudentParents;

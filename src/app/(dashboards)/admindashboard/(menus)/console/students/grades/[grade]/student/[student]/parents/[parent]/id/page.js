@@ -9,11 +9,10 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
-import Aligner from "@/components/(general components)/aligner";
 import UserMenu from "@/components/(general components)/usermenu";
 
 
-const ID = () => {
+const ParentID = () => {
 
   const searchParams = useParams();
   const grade = searchParams.grade
@@ -61,7 +60,6 @@ const ID = () => {
 
   return (
     <div>
-      <Aligner/>
       <Crumbs title={'parent'} url={`admindashboard/console/students/grades/${grade}/student/${student_id}/parents/${parent_id}`} hide={false}/>
       {/* page heading */}
       <PageHeading title={'ID'} />
@@ -76,4 +74,4 @@ const ID = () => {
   )
 };
 
-export default ID;
+export default ParentID;

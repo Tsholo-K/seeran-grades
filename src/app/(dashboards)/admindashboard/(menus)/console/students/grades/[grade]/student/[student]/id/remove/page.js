@@ -11,7 +11,7 @@ import PageHeading from "@/components/(general components)/pageheading";
 import UserImage from "@/components/(general components)/userimage";
 import Button from "@/components/(general components)/button";
 
-const RemoveTeacher = () => {
+const RemoveStudent = () => {
 
   const params = useParams();
   const student_id = params.student;
@@ -37,4 +37,4 @@ const RemoveTeacher = () => {
   )
 }
 
-export default RemoveTeacher;
+export default RemoveStudent;
