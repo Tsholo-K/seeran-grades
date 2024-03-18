@@ -38,14 +38,19 @@ const MyClass = () => {
     const menus = {
         section : [
             {
+                title : 'Grade',
+                url : `/teacherdashboard/classes/${class_id}/grading`,
+                icon : `stamp`
+            },
+            {
                 title : 'Assessments',
                 url : `/teacherdashboard/classes/${class_id}/assessments`,
                 icon: `calendar-clock`
             },
             {
-                title : 'Grade',
-                url : `/teacherdashboard/classes/${class_id}/grading`,
-                icon : `graduation-cap`
+                title : 'Activities',
+                url : `/teacherdashboard/classes/${class_id}/activities`,
+                icon : `eye`
             }
         ]
     }
@@ -56,10 +61,10 @@ const MyClass = () => {
             <Crumbs url={`teacherdashboard/classes`} title={'classes'}/>
             {/* transcripts */}
             <Classes classrooms={classroom} teacher={false} url={false}/>
+            <SingleMenuLink title={`Performance`} icon={`performance`} url={`/teacherdashboard/classes/${class_id}/performance`} border={true}/>
             <MultipleMenuLinks menu={menus} />
-            <SingleMenuLink title={`Activities`} icon={`eye`} url={`/teacherdashboard/classes/${class_id}/activities`} border={true}/>
-            <p className='text-sm text-gray-400 mt-8 pl-2'>students</p>
-            <div className='mt-3 py-1 rounded-xl bg-white'>
+            <p className='text-sm text-gray-400 pl-2'>students</p>
+            <div className='mt-1 py-1 rounded-xl bg-white'>
                 <UserMenu all_users={students} dashboard={'teacher'} section={`classes/${class_id}/student`} grade={false}/>
             </div>
             <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10"></p>

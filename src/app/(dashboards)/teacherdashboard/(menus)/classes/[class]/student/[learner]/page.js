@@ -47,9 +47,9 @@ const StudentId = () => {
       <Crumbs url={`teacherdashboard/classes/${class_id}`} title={'class'} heading={`student profile`}/>
       {/* child id */}
       <UserImage image={`${student.image}`} name={student.name} surname={student.surname}/>
-      <p className="text-center text-gray-400 text-sm w-[90%] mx-auto py-7"></p>
+      <p className="py-2"></p>
       <SingleMenuLink title={'Student ID'} border={true} icon={'user-round-blue'} url={`/teacherdashboard/classes/${class_id}/student/${student.id}/profile`}/>
-      <p className="text-center text-gray-400 text-sm w-[90%] mx-auto py-4"></p>
+      <p className="py-2"></p>
       <MultipleMenuLinks menu={menulinks} />
     </div>
   )

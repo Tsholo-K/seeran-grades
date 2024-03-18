@@ -31,7 +31,7 @@ const AssessmentsPage = () => {
             <PageHeading title={'Assessments'} subheading={`due assessments`}/>
             <SingleMenuLink title={'Set assessment'} icon={'date'} border={true} url={`/teacherdashboard/classes/${class_id}/assessments/set`}/>
             {/* assessments */}
-            <p className='text-sm text-gray-400 mt-16 lg:mt-10 pl-2'>assessments</p>
+            <p className='text-sm text-gray-400 mt-8 lg:mt-10 pl-2'>assessments</p>
             {
                 assessments.map((assessment, index)=> (
                     <Assessments key={index} dashboard={'teacher'} section={`classes/${class_id}/assessments/collect`} assessment={assessment} title={true} date_title={'due'}/>

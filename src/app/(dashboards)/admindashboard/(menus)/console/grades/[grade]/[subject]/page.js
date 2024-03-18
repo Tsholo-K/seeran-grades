@@ -18,14 +18,27 @@ const Grade = ({}) => {
   const grade = params.grade
   const subject = params.subject
 
+  let grade_level
+  data.grade.forEach( (level) => {
+      if ( level.grade === grade ) {
+          grade_level = level
+      }
+  });
+
+  let subject_name
+  grade_level.subjects.forEach( sub => {
+    if ( sub.id === subject ) {
+      subject_name = sub.subject
+    }
+  })
+
   return (
     <div className="w-full">
-      <Crumbs url={`admindashboard/console/grades/${grade}`} title={`grade ${grade}`} heading={`${subject} classes`} />
-      <PageHeading title={`Grade ${grade}`} subheading={`${subject}`}/>
-      <p className="py-4"></p>
-      <SingleMenuLink title={`Add Class`} icon={`class`} border={true}/>
-      <p className="pt-8 pl-2 text-sm text-gray-400">{subject} classes</p>
+      <Crumbs url={`admindashboard/console/grades/${grade}`} title={`grade ${grade}`} heading={`${subject_name} classes`} />
+      <PageHeading title={`Grade ${grade}`} subheading={`${subject_name}`}/>
+      <p className="pt-4 pl-2 text-sm text-gray-400">classes</p>
       <Classes dashbaord={`admin`} section={`console/grades/${grade}/${subject}`} classrooms={data.classes} subject={false} teacher={false} grade={false}/>
+      <SingleMenuLink title={`Add Class`} icon={`class`} border={true}/>
       <p className=" text-sm w-[80%] text-gray-400 text-center mx-auto py-10">that&apos;s all subjects</p>
     </div>
   )

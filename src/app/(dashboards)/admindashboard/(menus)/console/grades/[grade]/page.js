@@ -2,61 +2,57 @@
 
 import { useParams } from "next/navigation";
 
+// dummy data
+import data from '@/app/(dashboards)/dummydata.json'
+
 // components
 import Crumbs from "@/components/crumbs";
+import Grade_subject from "@/components/(performance components)/grade_subjects";
+import MultipleMenu from "@/components/(general components)/multiplemenu";
 import PageHeading from "@/components/(general components)/pageheading";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
-import Subject from "@/components/(general components)/subject";
-import Link from "next/link";
 
 
-const MyPerformance = ({}) => {
+const GradeLevel = () => {
 
-  const params = useParams();
-  const grade = params.grade
+    const params = useParams();
+    const grade = params.grade
 
-  const menulinks = [
-    {
-      title: "Mathematics",
-      icon: "maths",
-      code: "mathematics"
-    },
-    {
-      title: "Physical Science",
-      icon: "physics",
-      code: "physical-science"
-    },
-    {
-      title: "Life science",
-      icon: "life-science",
-      code: "life-science"
-    },
-    {
-      title: "English",
-      icon: "language",
-      code: "english"
-    }
-  ]
+    let grade_level
+    data.grade.forEach( (level) => {
+        if ( level.grade === grade ) {
+            grade_level = level
+        }
+    });
 
-  return (
-    <div className="w-full">
-      <Crumbs url={`admindashboard/console/grades`} title={'grades'} heading={`grade ${grade}`}/>
-      {/* page heading */}
-      <PageHeading title={`Grade ${grade}`} subheading={``}/>
-      <SingleMenuLink title={`Register Classes`} border={true} url={`admindashboard/console/grades/${grade}/registerclasses`}/>
-      <p className="pt-8 mt-6 text-center text-sm text-gray-400 pb-1 ">classes by subjects</p>
-      {
-        menulinks.map( (link, index) => (
-          <div key={index}>
-            <Link href={`/admindashboard/console/grades/${grade}/${link.code}`}>
-              <Subject subject={`${link.title}`} icon={`${link.icon}`}/>
-            </Link>
-          </div>
-        ))
-      }
-      <p className=" text-sm w-[80%] text-gray-400 text-center mx-auto py-10">that&apos;s all subjects</p>
-    </div>
-  )
+    const subject_info = [
+        {
+            title: `Learners`,
+            info: `${grade_level.learners.length}`
+        },
+        {
+            title: `Teachers`,
+            info: `${grade_level.teachers.length}`
+        },
+        {
+            title: `Subjects`,
+            info: `${grade_level.subjects.length}`
+        }
+    ]
+
+    return (
+        <div>
+            <Crumbs url={`admindashboard/console/grades`} title={'all grades'} heading={`grade ${grade}`}/>
+            <PageHeading title={`Grade ${grade}`} subheading={`classes`}/>
+            <MultipleMenu menu={subject_info}/>         
+            <SingleMenuLink title={`Register Classes`} icon={`register-class`} border={true} url={`/admindashboard/console/grades/${grade}/registerclasses`} />
+            <p className="py-4"></p>
+            <p className="pt-4 pb-1  pl-2 text-sm text-gray-400">classes by subjects</p>
+            <Grade_subject dashbaord={`admin`} section={`console/grades/${grade}`} subjects={grade_level.subjects} teacher={false} />
+            <SingleMenuLink title={`Add Subject`} icon={`add-subject`} border={true} url={`/admindashboard/console/grades/${grade}/registerclasses`} />
+            <p className="py-7 text-center text-sm text-gray-400">that&apos;s all subjects</p>
+        </div>
+    )
 };
 
-export default MyPerformance;
+export default GradeLevel;

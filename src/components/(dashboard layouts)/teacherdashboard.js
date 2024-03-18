@@ -9,15 +9,6 @@ const teacherdashboardmenulinks = [
   {
     section : [
       {
-        title: 'Performance',
-        icon: 'performance',
-        url: '/teacherdashboard/performance',
-      }
-    ]
-  },
-  {
-    section : [
-      {
         title: 'Classes',
         icon: 'classes',
         url: '/teacherdashboard/classes',
