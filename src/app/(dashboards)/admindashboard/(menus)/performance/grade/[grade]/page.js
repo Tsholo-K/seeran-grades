@@ -7,7 +7,6 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import Aligner from "@/components/(general components)/aligner";
 import Grade_subject from "@/components/(performance components)/grade_subjects";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import PageHeading from "@/components/(general components)/pageheading";
@@ -42,8 +41,7 @@ const GradeLevel = () => {
 
     return (
         <div>
-            <Aligner/>
-            <Crumbs url={`admindashboard/performance`} title={'all grades'} heading={`grade ${grade_id}`}/>
+            <Crumbs url={`admindashboard/performance`} title={'all grades'} heading={`grade ${grade_id} performance`}/>
             <PageHeading title={`Grade ${grade_id}`} subheading={`performance by subject`}/>
             <MultipleMenu menu={subject_info}/>
             <p className="pt-8  pl-2 text-sm text-gray-400">subjects</p>

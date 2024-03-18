@@ -8,7 +8,6 @@ import data from '@/app/(dashboards)/dummydata.json'
 // components
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
-import SingleMenuLink from "@/components/(general components)/signlemenulink";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 
 
@@ -55,10 +54,6 @@ const ID = () => {
       <PageHeading title={'ID'} />
       {/* personal infomation */}
       <MultipleMenu menu={menus}/>
-      {/* communication preferance */}
-      <div className="text-red-600 pt-16">
-        <SingleMenuLink title={'Communication Prefferance'} icon={''} url={`/studentdashboard/profile/user/${student_id}/communication`} border={true}/>
-      </div>
     </div>
   )
 };

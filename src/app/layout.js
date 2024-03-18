@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${lato.className} font-bold antialiased bg-gray-100  text-base`}>
+      <body className={`${lato.className} font-bold antialiased bg-gray-100 text-base`}>
         {children}
       </body>
     </html>

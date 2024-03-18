@@ -19,7 +19,6 @@ const StudentCreationFrom = () => {
 
     function handleNationality(event) {
         setNationality(event.target.value)
-        console.log(event.target.value)
     };
 
     function idNumber(event) {

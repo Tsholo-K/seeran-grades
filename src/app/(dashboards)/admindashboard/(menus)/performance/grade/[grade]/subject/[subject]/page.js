@@ -7,7 +7,6 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import Aligner from "@/components/(general components)/aligner";
 import PageHeading from "@/components/(general components)/pageheading";
 import Classes from "@/components/(classes components)/classes";
 
@@ -34,9 +33,8 @@ const GradeSubject = () => {
 
     return (
         <div>
-            <Aligner/>
-            <Crumbs url={`admindashboard/performance/grade/${grade_id}`} title={`grade ${grade_id}`} heading={`${subject.subject} classes`}/>
-            <PageHeading title={`${subject.subject.charAt(0).toUpperCase() + subject.subject.slice(1)}`} subheading={`Grade ${grade_id} classes`} />
+            <Crumbs url={`admindashboard/performance/grade/${grade_id}`} title={`grade ${grade_id}`} heading={`${subject.subject}`}/>
+            <PageHeading title={`${subject.subject.charAt(0).toUpperCase() + subject.subject.slice(1)}`} subheading={`Grade ${grade_id}, ${subject.subject} classes`} />
             <p className="pl-2 text-sm text-gray-400">classes</p>
             <Classes dashbaord={`admin`} section={`performance/grade/${grade_id}/subject/${subject_id}/class`} classrooms={data.classes}  grade={false} subject={false} teacher={false} />
             <p className="py-7 text-center text-sm text-gray-400">that&apos;s all subjects</p>

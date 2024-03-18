@@ -63,10 +63,6 @@ const ID = () => {
       <PageHeading title={'ID'} />
       {/* personal infomation */}
       <MultipleMenu menu={menus}/>
-      {/* communication preferance */}
-      <div className="text-red-600 pt-16">
-        <SingleMenuLink title={'Communication Prefferance'} icon={''} url={`/teacherdashboard/profile/user/${teacher_id}/communication`} border={true}/>
-      </div>
     </div>
   )
 };
