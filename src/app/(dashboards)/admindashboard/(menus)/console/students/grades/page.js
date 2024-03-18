@@ -4,7 +4,7 @@ import PageHeading from "@/components/(general components)/pageheading";
 import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
 
 
-const MyPerformance = () => {
+const GradeLevels = () => {
 
   const grades = {
     section : [
@@ -57,4 +57,4 @@ const MyPerformance = () => {
   )
 };
 
-export default MyPerformance;
+export default GradeLevels;
