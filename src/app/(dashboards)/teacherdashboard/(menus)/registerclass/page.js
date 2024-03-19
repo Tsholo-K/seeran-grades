@@ -43,16 +43,15 @@ const MyRegisterClass = () => {
             icon : `eye`
         }
     ]
-}
+  }
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
-      <Aligner/>
       <Crumbs url={`teacherdashboard`} title={'dashboard'} hide={true}  heading={`register class`}/>
       {/* transcripts */}
       <Classes classrooms={register_classroom} teacher={false} subject={false} url={false}/>
       <MultipleMenuLinks menu={menus} />
-      <p className='text-sm text-gray-400 mt-6 pl-2'>students</p>
+      <p className='text-sm text-gray-400 mt-3 pl-2'>students</p>
       <div className='mt-3 py-1 rounded-xl bg-white'>
         <UserMenu all_users={students} dashboard={'teacher'} section={'registerclass/student'} grade={false}/>
       </div>

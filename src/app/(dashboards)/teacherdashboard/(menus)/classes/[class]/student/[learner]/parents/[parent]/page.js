@@ -58,7 +58,7 @@ const ParentProfile = () => {
       <Crumbs title={'parents'} url={`teacherdashboard/classes/${class_id}/student/${student_id}/parents`} hide={true} heading={`parent profile`}/>
       {/* profile info section */}
       <UserImage image={parent.image} name={parent.name} surname={parent.surname} email={parent.email}/>
-      <p className="py-4"></p>
+      <p className="py-1"></p>
       {/* menu links section */}
       <div className="relative">
         {

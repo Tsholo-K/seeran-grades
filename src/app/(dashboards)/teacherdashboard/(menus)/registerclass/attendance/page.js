@@ -6,6 +6,7 @@ import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import AttendanceCard from '@/components/(general components)/attendancecard';
 import Aligner from '@/components/(general components)/aligner';
+import Button from '@/components/(general components)/button';
 
 
 const Attendance = () => {
@@ -33,6 +34,8 @@ const Attendance = () => {
             <Aligner/>
             <Crumbs url={`teacherdashboard/registerclass`} title={'register class'} heading={`attendance register`}/>
             <PageHeading title={`Attendance Register`} subheading={`class ${register.grade}${register.group}`} />
+            <Button title={`submit`} />
+            <p className='pb-4 pt-1 text-center text-sm text-gray-400'>you can only submit this form once(1) a day</p>
             <p className='text-sm text-gray-400 mt-6 pl-2'>students</p>
             {
                 students.map( (learner, index) => (
