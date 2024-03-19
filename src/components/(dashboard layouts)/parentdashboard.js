@@ -12,6 +12,11 @@ const parentdashboardmenulinks = [
           title: 'Family',
           icon: 'family',
           url: '/parentdashboard/family',
+        },
+        {
+          title: 'Fees',
+          icon: 'wallet',
+          url: '/parentdashboard/fees',
         }
       ]
     },
@@ -43,11 +48,6 @@ const parentdashboardmenulinks = [
           url: '/parentdashboard/notifications',
         },
         {
-          title: 'Fees',
-          icon: 'wallet',
-          url: '/parentdashboard/fees',
-        },
-        {
           title: 'Help Desk',
           icon: 'help-desk',
           url: '/parentdashboard/helpdesk',
@@ -74,9 +74,7 @@ const Parentdashboard = () => {
       {/* menu links */}
       {
         parentdashboardmenulinks.map( ( item,index ) => (
-          <>
-            <MultipleMenuLinks key={index} menu={item} />
-          </>
+          <MultipleMenuLinks key={index} menu={item} />
         ))
       }
     </div>
