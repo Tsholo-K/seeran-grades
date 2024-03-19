@@ -54,7 +54,7 @@ const MyRegisterClass = () => {
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
-      <Crumbs url={`admindashboard/console/grades/${grade}/registerclasses`} title={'register classes'} hide={true}  heading={`register class`}/>
+      <Crumbs url={`admindashboard/console/grades/${grade}/registerclasses`} title={'register classes'} heading={`register class`}/>
       {/* transcripts */}
       <Classes classrooms={register_classroom} teacher={false} subject={false} url={false}/>
       <MultipleMenuLinks menu={menus} />

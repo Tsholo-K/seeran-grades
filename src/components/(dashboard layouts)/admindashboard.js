@@ -9,7 +9,7 @@ const admindashboardmenulinks = [
   {
     section : [
       {
-        title: 'Accounts Management',
+        title: 'Admin Console',
         icon: 'management',
         url: '/admindashboard/console',
       },
