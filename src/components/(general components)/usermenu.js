@@ -17,9 +17,9 @@ const UserMenu = ({ all_users, dashboard, section, grade=true, url=true, }) => {
                             {
                                 grade 
                                 ?
-                                <p className="text-sm text-gray-500">grade: {user.grade}</p>
+                                <p className="text-sm text-gray-400">grade: {user.grade}</p>
                                 :
-                                <p className="text-sm text-gray-500"> {user.id}</p>
+                                <p className="text-sm text-gray-400"> {user.id}</p>
                             }
                             
                         </div>

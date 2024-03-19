@@ -46,9 +46,9 @@ const GradeLevel = () => {
             <PageHeading title={`Grade ${grade}`} subheading={`classes`}/>
             <MultipleMenu menu={grade_info}/>         
             <SingleMenuLink title={`Register Classes`} icon={`register-class`} border={true} url={`/admindashboard/console/grades/${grade}/registerclasses`} />
-            <p className="pt-8 pb-2  pl-2 text-sm text-gray-400">classes by subjects</p>
+            <p className="pt-8 pb-3  pl-2 text-sm text-gray-400">classes by subjects</p>
             <SingleMenuLink title={`Add Subject`} icon={`add-subject`} border={true} url={`/admindashboard/console/grades/${grade}/addsubject`} />
-            <p className="py-1"></p>
+            <p className="py-3"></p>
             <Grade_subject dashbaord={`admin`} section={`console/grades/${grade}`} subjects={grade_level.subjects} teacher={false} />
             <p className="py-7 text-center text-sm text-gray-400">that&apos;s all subjects</p>
         </div>

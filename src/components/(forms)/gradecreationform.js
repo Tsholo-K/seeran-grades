@@ -15,7 +15,7 @@ const GradeCreationFrom = () => {
         <div>
             {/* grade */}
             <div className="py-2 mt-6">
-                <p className="text-sm text-gray-400 pl-2 py-1">Grade</p>
+                <p className="text-sm text-gray-400 pl-2 py-1">grade</p>
                 <select value={grade} onChange={handleGrade} className='bg-white rounded-xl h-9 w-full'>
                     <option disabled className='text-center' >--- Grade ---</option>
                     <option value={`RR`} className='text-center'>RR</option>
