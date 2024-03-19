@@ -30,7 +30,7 @@ const admindashboardmenulinks = [
       {
         title: 'Messages',
         icon: 'admin',
-        url: '/admindashboard/helpdesk',
+        url: '/admindashboard/messages',
       },
       {
         title: 'Complaints',

@@ -7,9 +7,10 @@ import Aligner from "@/components/(general components)/aligner";
 const MessagesPage = () => {
   return (
     <div>
-      <Crumbs url={`parentdashboard`} title={`dashboard`} hide={true} heading={`chats`}/>
+      <Aligner/>
+      <Crumbs url={`admindashboard`} title={`dashboard`} hide={true} heading={`chats`}/>
       <PageHeading title={'Chats'} />
-      <Messages dashboard={'parent'}/>
+      <Messages dashboard={'admin'}/>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10">all caught up..</p>
     </div>
   )
