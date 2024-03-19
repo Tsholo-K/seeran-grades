@@ -1,3 +1,7 @@
+'use client'
+
+import { useParams } from "next/navigation";
+
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
@@ -5,12 +9,14 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import AttendanceCard from '@/components/(general components)/attendancecard';
-import Aligner from '@/components/(general components)/aligner';
 
 
 const Attendance = () => {
 
-    const classroom_id = data.teachers[0].register_class
+    const params = useParams();
+    const classroom_id = params.class
+    const grade = params.grade
+    const subject = params.subject
 
     let register
     data.register_classes.forEach( cls => {
@@ -30,8 +36,7 @@ const Attendance = () => {
 
     return (
         <div>
-            <Aligner/>
-            <Crumbs url={`teacherdashboard/registerclass`} title={'register class'} heading={`attendance register`}/>
+            <Crumbs url={`admindashboard/console/grades/${grade}/${subject}/${classroom_id}/`} title={'register class'} heading={`attendance register`}/>
             <PageHeading title={`Attendance Register`} subheading={`class ${register.grade}${register.group}`} />
             <p className='text-sm text-gray-400 mt-6 pl-2'>students</p>
             {

@@ -1,3 +1,7 @@
+'use client'
+
+import { useParams } from "next/navigation";
+
 // dummy data
 import data from '@/app/(dashboards)/dummydata.json'
 
@@ -9,11 +13,16 @@ import Aligner from '@/components/(general components)/aligner';
 
 const ActivitiesPage = () => {
 
+  const params = useParams();
+  const classroom_id = params.class
+  const grade = params.grade
+  const subject = params.subject
+
   return (
     <>
       <div>
         <Aligner/>
-        <Crumbs title={'register class'} url={'teacherdashboard/registerclass'} heading={`logs`}/>
+        <Crumbs title={'register class'} url={`admindashboard/console/grades/${grade}/${subject}/${classroom_id}`} heading={`logs`}/>
         <PageHeading title={'Logs'} subheading={'a record of all captured activities'} />
         {/* accounts section */}
         <Activities dashboard={`teacher`} section={`registerclass/activities`} activities={data.activities}/>

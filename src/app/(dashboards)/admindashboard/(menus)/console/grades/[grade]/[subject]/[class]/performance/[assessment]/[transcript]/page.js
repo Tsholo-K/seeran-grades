@@ -15,9 +15,9 @@ import MultipleMenu from "@/components/(general components)/multiplemenu";
 const Transcript = () => {
 
   const params = useParams();
-  const class_id = params.class;
-  const subject_id = params.subject;
-  const grade_id = params.grade;
+  const classroom_id = params.class;
+  const subject = params.subject;
+  const grade = params.grade;
   const assessment_id = params.assessment;
   const transcript_id = params.transcript;
 
@@ -52,7 +52,7 @@ const Transcript = () => {
 
   return (
     <div>
-      <Crumbs url={`admindashboard/performance/grade/${grade_id}/subject/${subject_id}/class/${class_id}/${assessment_id}`} title={'assessment'} heading={`transcript`}/>
+      <Crumbs url={`admindashboard/console/grades/${grade}/${subject}/${classroom_id}/performance/${assessment_id}`} title={'assessment'} heading={`transcript`}/>
       {/* score */}
       <Score score={transcript.score} total={transcript.total}/>
       {/* subject */}

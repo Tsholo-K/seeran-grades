@@ -5,58 +5,49 @@ import MultipleMenuLinks from "../(general components)/multiplemenulinks";
 import AccountMenu from "./accountmenu";
 
 
-const admindashboardmenulinks = [
-    {
-      section : [
-        {
-          title: 'Performance',
-          icon: 'performance',
-          url: '/admindashboard/performance',
-        }
-      ]
-    },
-    {
-      section : [
-        {
-          title: 'Announcements',
-          icon: 'megaphone',
-          url: '/admindashboard/announcements',
-        },
-        {
-          title: 'Messages',
-          icon: 'admin',
-          url: '/admindashboard/helpdesk',
-        },
-        {
-          title: 'Complaints',
-          icon: 'mailbox',
-          url: '/admindashboard/helpdesk',
-        }
-      ]
-    },
-    {
-      section : [
-        {
-          title: 'Accounts Management',
-          icon: 'management',
-          url: '/admindashboard/console',
-        },
-        {
-          title: 'Fees',
-          icon: 'wallet',
-          url: '/admindashboard/fees',
-        }
-      ]
-    },
-    {
-      section : [
-        {
-          title: 'Settings',
-          icon: 'settings',
-          url : '/admindashboard/settings'
-        }
-      ]
-    }
+const admindashboardmenulinks = [ 
+  {
+    section : [
+      {
+        title: 'Accounts Management',
+        icon: 'management',
+        url: '/admindashboard/console',
+      },
+      {
+        title: 'Fees',
+        icon: 'wallet',
+        url: '/admindashboard/fees',
+      }
+    ]
+  },
+  {
+    section : [
+      {
+        title: 'Announcements',
+        icon: 'megaphone',
+        url: '/admindashboard/announcements',
+      },
+      {
+        title: 'Messages',
+        icon: 'admin',
+        url: '/admindashboard/helpdesk',
+      },
+      {
+        title: 'Complaints',
+        icon: 'mailbox',
+        url: '/admindashboard/helpdesk',
+      }
+    ]
+  },
+  {
+    section : [
+      {
+        title: 'Settings',
+        icon: 'settings',
+        url : '/admindashboard/settings'
+      }
+    ]
+  }
 ]
 
 const Admindashboard = () => {

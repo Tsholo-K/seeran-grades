@@ -42,25 +42,24 @@ const Class = () => {
     section : [
       {
         title : 'Performance',
-        url : `/teacherdashboard/registerclass/activities`,
+        url : `/admindashboard/console/grades/${grade}/${subject}/${classroom_id}/performance`,
         icon : `performance`
       },
       {
           title : 'Activities',
-          url : `/teacherdashboard/registerclass/activities`,
+          url : `/admindashboard/console/grades/${grade}/${subject}/${classroom_id}/activities`,
           icon : `eye`
       },
       {
         title : 'Assessments',
-        url : `/teacherdashboard/registerclass/activities`,
+        url : `/admindashboard/console/grades/${grade}/${subject}/${classroom_id}/assessments`,
         icon : `calendar-clock`
       },
     ]
-}
+  }
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
-      <Aligner/>
       <Crumbs url={`admindashboard/console/grades/${grade}/${subject}`} title={'dashboard'} hide={true}  heading={`register class`}/>
       {/* transcripts */}
       <Classes classrooms={classroom} teacher={false} subject={false} url={false}/>
@@ -69,7 +68,7 @@ const Class = () => {
       <p className='text-sm text-gray-400 mt-6 pl-2 pb-2'>students</p>
       <SingleMenuLink title={`Add Student`} border={true} icon={`users`} />
       <div className='mt-3 py-1 rounded-xl bg-white'>
-        <UserMenu all_users={students} dashboard={'admin'} section={'registerclass/student'} grade={false}/>
+        <UserMenu all_users={students} dashboard={'admin'} section={`console/grades/${grade}/${subject}/${classroom_id}/student`} grade={false}/>
       </div>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10"></p>
     </div>
