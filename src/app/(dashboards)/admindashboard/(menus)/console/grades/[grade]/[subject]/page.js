@@ -17,7 +17,7 @@ const Grade = () => {
 
   const params = useParams();
   const grade = params.grade;
-  const subject = params.subject;
+  const subject_id = params.subject;
 
   let grade_level
   data.grade.forEach( (level) => {
@@ -28,7 +28,7 @@ const Grade = () => {
 
   let subject_name
   grade_level.subjects.forEach( sub => {
-    if ( sub.id === subject ) {
+    if ( sub.id === subject_id ) {
       subject_name = sub.subject
     }
   });
@@ -51,12 +51,13 @@ const Grade = () => {
   return (
     <div className="w-full">
       <Crumbs url={`admindashboard/console/grades/${grade}`} title={`grade ${grade}`} heading={`${subject_name} classes`} />
-      <PageHeading title={`${subject_name}`} subheading={`grade ${grade}`}/>
+      <PageHeading title={`Grade ${grade}`} subheading={`${subject_name}`}/>
       <MultipleMenu menu={subject_info}/>
-      <SingleMenuLink title={`Set Assessment`} icon={`calendar-clock`} border={true}/>
-      <p className="pt-8 pl-2 text-sm text-gray-400">classes</p>
-      <Classes dashbaord={`admin`} section={`console/grades/${grade}/${subject}`} classrooms={data.classes} subject={false} teacher={false} grade={false}/>
-      <SingleMenuLink title={`Add Class`} icon={`class`} border={true}/>
+      <SingleMenuLink title={`Set Assessment`} url={`/admindashboard/console/grades/${grade}/${subject_id}/setassessment`} icon={`calendar-clock`} border={true}/>
+      <p className="pt-8 pb-2 pl-2 text-sm text-gray-400">classes</p>
+      <SingleMenuLink title={`Add Class`} icon={`class`} url={`/admindashboard/console/grades/${grade}/${subject_id}/addclass`} border={true}/>
+      <p className="py-1"></p>
+      <Classes dashbaord={`admin`} section={`console/grades/${grade}/${subject_id}`} classrooms={data.classes} subject={false} teacher={false} grade={false}/>
       <p className=" text-sm w-[80%] text-gray-400 text-center mx-auto py-10">that&apos;s all subjects</p>
     </div>
   )

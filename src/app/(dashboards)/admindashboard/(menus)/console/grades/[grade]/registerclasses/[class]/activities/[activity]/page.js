@@ -11,17 +11,14 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import UserMenu from "@/components/(general components)/usermenu";
-import Aligner from "@/components/(general components)/aligner";
 
 
 const Activity = () => {
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [])
-
-  const param = useParams();
-  const activity_id = param.activity
+  const params = useParams();
+  const activity_id = params.activity
+  const grade = params.grade
+  const class_id = params.class
 
   let log
   data.activities.forEach( activity => {
@@ -57,8 +54,7 @@ const Activity = () => {
 
   return (
     <div>
-      <Aligner/>
-      <Crumbs title={'logs'} url={'teacherdashboard/registerclass/activities'}/>
+      <Crumbs title={'logs'} url={`admindashboard/console/grades/${grade}/registerclasses/${class_id}/activities`} heading={`activity`}/>
       <Image priority src={`/${log.icon}.svg`} alt="profile icon" width={30} height={30} className="h-36 w-auto lg:h-52 mx-auto" />
       <p className="text-sm lg:text-base text-gray-500 pt-3 w-full text-center">{log.activity}</p>
       <div className="py-4 mb-10">

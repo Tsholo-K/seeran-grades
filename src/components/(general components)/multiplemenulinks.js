@@ -5,7 +5,7 @@ const MultipleMenuLinks = ({ menu }) => {
   const menulength = menu.section.length
 
   return (
-    <div className="rounded-xl my-7 bg-white">
+    <div className="rounded-xl my-4 bg-white">
       {
         menu.section.map( ( item, index ) => (
           <div key={index}>

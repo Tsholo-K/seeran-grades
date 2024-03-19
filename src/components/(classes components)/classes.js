@@ -54,7 +54,7 @@ const Classes = ({ dashbaord, section, classrooms, subject=true, url=true, info=
         <>
             {
                 classrooms.map( ( classroom, index) => (
-                    <div key={index} className="pb-6 pt-2 lg:pb-12">
+                    <div key={index} className="pb-6 pt-2 lg:pb-8">
                         {
                             grade &&
                             <div className="flex pl-2 pb-2">

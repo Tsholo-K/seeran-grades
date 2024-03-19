@@ -2,68 +2,6 @@
 
 import { useState } from 'react';
 
-// components 
-import ToggleMenu from '../(general components)/togglemenu';
-
-
-const subjects = [
-    {
-        title: "Physical Sciences",
-        icon: "physics"
-    },
-    {
-        title: "Mathematics",
-        icon: "maths"
-    },
-    {
-        title: "Life Sciences",
-        icon: "life-science"
-    },
-    {
-        title: "Geography",
-        icon: "geography"
-    },
-    {
-        title: "Accounting",
-        icon: "accounting"
-    },
-    {
-        title: "Business Studies",
-        icon: "business-studies"
-    },
-    {
-        title: "Biology",
-        icon: "biology"
-    },
-    {
-        title: "Natural Sciences",
-        icon: "natural-science"
-    },
-    {
-        title: "Social Sciences",
-        icon: "social-science"
-    },
-    {
-        title: "English",
-        icon: "language"
-    },
-    {
-        title: "Afrikaans",
-        icon: "language"
-    },
-    {
-        title: "Zulu",
-        icon: "language"
-    },
-    {
-        title: "Sepedi",
-        icon: "language"
-    },
-    {
-        title: "French",
-        icon: "language"
-    }
-]
 
 const GradeCreationFrom = () => {
 
@@ -95,17 +33,6 @@ const GradeCreationFrom = () => {
                     <option value={`11`} className='text-center'>11</option>
                     <option value={`12`} className='text-center'>12</option>
                 </select>
-            </div>
-            {/* subjects */}
-            <div className="py-2 mt-6">
-                <p className="text-sm text-gray-400 pl-2 pb-1">Subjects</p>
-                {
-                    subjects.map(( subject, index ) => (
-                        <div key={index} className='mb-4 bg-white py-1 px-3 rounded-xl'>
-                            <ToggleMenu menu={subject} checked={false}/>
-                        </div>
-                    ))
-                }
             </div>
             <p className='py-4'></p>
             <button 

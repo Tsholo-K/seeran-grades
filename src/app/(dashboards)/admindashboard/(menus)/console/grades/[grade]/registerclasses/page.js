@@ -37,9 +37,10 @@ const GradeLevel = () => {
             <Crumbs url={`admindashboard/console/grades/${grade}`} title={'all classes'} heading={`register classes`}/>
             <PageHeading title={`Grade ${grade}`} subheading={`register classes`}/>
             <MultipleMenu menu={grade_info}/> 
-            <p className="pb-1  pl-2 text-sm text-gray-400">classes</p>
+            <p className="pb-2 pl-2 text-sm text-gray-400">classes</p>
+            <SingleMenuLink title={`Add Class`} icon={`register-class`} border={true} url={`/admindashboard/console/grades/${grade}/registerclasses`} />
+            <p className="py-1 text-sm text-gray-400"></p>
             <Classes dashbaord={`admin`} section={`console/grades/${grade}/registerclasses`} classrooms={data.classes} subject={false} grade={false} />
-            <SingleMenuLink title={`Add Subject`} icon={`add-subject`} border={true} url={`/admindashboard/console/grades/${grade}/registerclasses`} />
             <p className="py-7 text-center text-sm text-gray-400">that&apos;s all subjects</p>
         </div>
     )

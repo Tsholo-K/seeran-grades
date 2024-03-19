@@ -59,9 +59,11 @@ const MyRegisterClass = () => {
       {/* transcripts */}
       <Classes classrooms={register_classroom} teacher={false} subject={false} url={false}/>
       <MultipleMenuLinks menu={menus} />
-      <p className='text-sm text-gray-400 mt-3 pl-2'>students</p>
+      <p className='text-sm text-gray-400 mt-3 pl-2 pb-2'>students</p>
+      <SingleMenuLink title={`Add Student`} border={true} icon={`users`} />
+      <p className="pt-1"></p>
       <div className='mt-3 py-1 rounded-xl bg-white'>
-        <UserMenu all_users={students} dashboard={'admindashboard'} section={`console/grades/${grade}/registerclasses/${class_id}`} grade={false}/>
+        <UserMenu all_users={students} dashboard={'admin'} section={`console/grades/${grade}/registerclasses/${class_id}/student`} grade={false}/>
       </div>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10"></p>
     </div>
