@@ -54,11 +54,11 @@ const Grades = () => {
     <div>
       <Crumbs title={'console'} url={'admindashboard/console'} heading={`grades`} />
       <PageHeading title={`Grades`} subheading={`manage grades`}/>
-      <SingleMenuLink title={`Add Grade`} border={true} url={`/admindashboard/console/grades/addgrade`}/>
-      <p className="py-4"></p>
+      <p className="py-1"></p>
       <Menu border={true} title={`Grades`} info={`${data.grade.length}`}/>
-      <p className="py-2"></p>
+      <p className="py-3"></p>
       <MultipleMenuLinks icon={true} menu={grades} />
+      <SingleMenuLink title={`Add Grade`} border={true} url={`/admindashboard/console/grades/addgrade`}/>
     </div>
   )
 };

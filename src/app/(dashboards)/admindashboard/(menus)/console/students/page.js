@@ -5,30 +5,60 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Menu from "@/components/(general components)/menu";
 import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
 import PageHeading from "@/components/(general components)/pageheading";
-import SingleMenuLink from "@/components/(general components)/signlemenulink";
 import Crumbs from "@/components/crumbs";
 
 const Admins = () => {
-
-  const menulinks = {
-    section: [
+  
+  const grades = {
+    section : [
       {
-        title: "Students",
-        icon: "users",
-        url: "/admindashboard/console/students/grades"
+        title: "Grade 1",
+        url: `/admindashboard/console/students/grades/1`,
+        icon: `grade-level`
+      },
+      {
+        title: "Grade 2",
+        url: `/admindashboard/console/students/grades/2`,
+        icon: `grade-level`
+      },
+      {
+        title: "Grade 3",
+        url: `/admindashboard/console/students/grades/3`,
+        icon: `grade-level`
+      },
+      {
+        title: "Grade 4",
+        url: `/admindashboard/console/students/grades/4`,
+        icon: `grade-level`
+      },
+      {
+        title: "Grade 5",
+        url: `/admindashboard/console/students/grades/5`,
+        icon: `grade-level`
+      },
+      {
+        title: "Grade 6",
+        url: `/admindashboard/console/students/grades/6`,
+        icon: `grade-level`
+      },
+      {
+        title: "Grade 7",
+        url: `/admindashboard/console/students/grades/7`,
+        icon: `grade-level`
       }
     ]
   }
 
   return (
     <div>
-      <Crumbs title={'console'} url={'admindashboard/console'} heading={`students`} />
+      <Crumbs title={'console'} url={'admindashboard/console'} heading={`all students`} />
       <PageHeading title={`Students`} subheading={`manage student accounts`}/>
-      <SingleMenuLink title={`Add Student Account`} border={true} url={`/admindashboard/console/students/addaccount`}/>
-      <p className="py-4"></p>
+      <p className="py-1"></p>
       <Menu border={true} title={`Student Accounts`} info={`${data.students.length}`}/>
+      <p className="py-3"></p>
+      <MultipleMenuLinks icon={true} menu={grades} />
       <p className="text-sm text-gray-400 pl-2 pb-2 pt-6"></p>
-      <MultipleMenuLinks menu={menulinks}/>
+
     </div>
   )
 };

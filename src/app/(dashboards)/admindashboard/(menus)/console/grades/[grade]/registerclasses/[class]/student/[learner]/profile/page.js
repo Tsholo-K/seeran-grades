@@ -16,9 +16,6 @@ const ChildId = () => {
 
   const params = useParams();
   const student_id = params.learner
-  const classroom_id = params.class
-  const grade = params.grade
-  const subject = params.subject
 
   let student 
   data.students.forEach( child => {
@@ -57,7 +54,8 @@ const ChildId = () => {
 
   return (
     <div>
-      <Crumbs url={`admindashboard/console/grades/${grade}/${subject}/${classroom_id}/student/${student_id}`} title={'student'}/>
+      <Aligner/>
+      <Crumbs url={`teacherdashboard/registerclass/student/${student_id}`} title={'student'}/>
       <PageHeading title={'ID'}  />
       {/* child information */}
       <MultipleMenu menu={student_info} />

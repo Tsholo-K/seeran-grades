@@ -20,11 +20,8 @@ const Activity = () => {
     window.scrollTo(0, 0);
   }, [])
 
-  const params = useParams();
-  const activity_id = params.activity
-  const classroom_id = params.class
-  const grade = params.grade
-  const subject = params.subject
+  const param = useParams();
+  const activity_id = param.activity
 
   let log
   data.activities.forEach( activity => {
@@ -61,7 +58,7 @@ const Activity = () => {
   return (
     <div>
       <Aligner/>
-      <Crumbs title={'logs'} url={`admindashboard/console/grades/${grade}/${subject}/${classroom_id}/activities`}/>
+      <Crumbs title={'logs'} url={'teacherdashboard/registerclass/activities'}/>
       <Image priority src={`/${log.icon}.svg`} alt="profile icon" width={30} height={30} className="h-36 w-auto lg:h-52 mx-auto" />
       <p className="text-sm lg:text-base text-gray-500 pt-3 w-full text-center">{log.activity}</p>
       <div className="py-4 mb-10">

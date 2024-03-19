@@ -38,7 +38,7 @@ const Class = () => {
     });
   });
 
-  const menus = {
+  const menulinks = {
     section : [
       {
         title : 'Performance',
@@ -49,22 +49,17 @@ const Class = () => {
           title : 'Activities',
           url : `/admindashboard/console/grades/${grade}/${subject}/${classroom_id}/activities`,
           icon : `eye`
-      },
-      {
-        title : 'Assessments',
-        url : `/admindashboard/console/grades/${grade}/${subject}/${classroom_id}/assessments`,
-        icon : `calendar-clock`
-      },
+      }
     ]
   }
 
   return (
     <div className="w-full relative grid grid-cols-1 place-content-center">
-      <Crumbs url={`admindashboard/console/grades/${grade}/${subject}`} title={'dashboard'} hide={true}  heading={`register class`}/>
+      <Crumbs url={`admindashboard/console/grades/${grade}/${subject}`} title={'classes'} heading={`${classroom[0].subject}, group ${classroom[0].group}`}/>
       {/* transcripts */}
       <Classes classrooms={classroom} teacher={false} subject={false} url={false}/>
       <Subject title={`subject`} subject={`${classroom[0].subject}`} icon={`${classroom[0].icon}`} />
-      <MultipleMenuLinks menu={menus} />
+      <MultipleMenuLinks menu={menulinks} />
       <p className='text-sm text-gray-400 mt-6 pl-2 pb-2'>students</p>
       <SingleMenuLink title={`Add Student`} border={true} icon={`users`} />
       <div className='mt-3 py-1 rounded-xl bg-white'>

@@ -1,16 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Class_info = ({ classroom, teacher, subject, info  }) => {
+const Class_info = ({ classroom, subject, info  }) => {
     return (
         <div className={`relative rounded-xl cursor-pointer bg-white py-7 px-3 lg:px-8`} >
-            {   
-                teacher &&
-                <div className="flex gap-2 w-full justify-center">
-                    <Image src={'/user-round-blue.svg'} alt='try it button' width={10} height={10} className="w-8 lg:w-10"/>
-                    <p className="text-sm lg:text-lg text-gray-500 pt-1">{classroom.teacher}</p>
-                </div>
-            }
             {
                 subject 
                 ?
@@ -56,7 +49,7 @@ const Class_info = ({ classroom, teacher, subject, info  }) => {
     )
 }
 
-const Classes = ({ dashbaord, section, classrooms, teacher=true, subject=true, url=true, info=true, grade=true }) => {
+const Classes = ({ dashbaord, section, classrooms, subject=true, url=true, info=true, grade=true }) => {
     return (
         <>
             {
@@ -75,11 +68,11 @@ const Classes = ({ dashbaord, section, classrooms, teacher=true, subject=true, u
                             url
                             ?
                                 <Link href={`/${dashbaord}dashboard/${section}/${classroom.id}`}>
-                                    <Class_info classroom={classroom} teacher={teacher} subject={subject} info={info} />
+                                    <Class_info classroom={classroom} subject={subject} info={info} />
                                 </Link>
                             :
                                 <div>
-                                    <Class_info classroom={classroom} teacher={teacher} subject={subject} info={info} />
+                                    <Class_info classroom={classroom} subject={subject} info={info} />
                                 </div>
                         }
                     </div>

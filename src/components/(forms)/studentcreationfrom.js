@@ -13,7 +13,6 @@ const StudentCreationFrom = () => {
     const [email, setEmail] = useState('');
     const [confirmationemail, setConfirmationEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
-    const [grade, setGrade] = useState('');
 
     var saIdParser = require('south-african-id-parser');
 
@@ -53,10 +52,6 @@ const StudentCreationFrom = () => {
 
     function handlePhoneNumberChange(event) {
         setPhoneNumber(event.target.value)
-    };
-
-    function handleGradeChange(event) {
-        setGrade(event.target.value)
     };
 
     return (
@@ -153,18 +148,6 @@ const StudentCreationFrom = () => {
                     onChange={handlePhoneNumberChange}
                     className="w-full text-base rounded-xl h-10 px-4 focus:outline-none resize-none"
                     value={phoneNumber}
-                    />
-                </div>
-            </div>
-            {/* grade */}
-            <div className="py-2">
-                <p className="text-sm text-gray-400 pl-2 py-1">Grade</p>
-                <div className="rounded-xl bg-white mb-1">
-                    <input
-                    type={`number`}
-                    onChange={handleGradeChange}
-                    className="w-full text-base rounded-xl h-10 px-4 focus:outline-none resize-none"
-                    value={grade}
                     />
                 </div>
             </div>

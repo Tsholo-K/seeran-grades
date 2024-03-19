@@ -7,10 +7,10 @@ import data from '@/app/(dashboards)/dummydata.json'
 
 // components
 import Crumbs from "@/components/crumbs";
-import Grade_subject from "@/components/(performance components)/grade_subjects";
 import MultipleMenu from "@/components/(general components)/multiplemenu";
 import PageHeading from "@/components/(general components)/pageheading";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
+import Classes from "@/components/(classes components)/classes";
 
 
 const GradeLevel = () => {
@@ -27,27 +27,18 @@ const GradeLevel = () => {
 
     const grade_info = [
         {
-            title: `Learners`,
-            info: `${grade_level.learners.length}`
-        },
-        {
-            title: `Teachers`,
-            info: `${grade_level.teachers.length}`
-        },
-        {
-            title: `Subjects`,
+            title: `Groups`,
             info: `${grade_level.subjects.length}`
         }
     ]
 
     return (
         <div>
-            <Crumbs url={`admindashboard/console/grades`} title={'all grades'} heading={`grade ${grade}`}/>
-            <PageHeading title={`Grade ${grade}`} subheading={`classes`}/>
-            <MultipleMenu menu={grade_info}/>         
-            <SingleMenuLink title={`Register Classes`} icon={`register-class`} border={true} url={`/admindashboard/console/grades/${grade}/registerclasses`} />
-            <p className="pt-8 pb-1  pl-2 text-sm text-gray-400">classes by subjects</p>
-            <Grade_subject dashbaord={`admin`} section={`console/grades/${grade}`} subjects={grade_level.subjects} teacher={false} />
+            <Crumbs url={`admindashboard/console/grades/${grade}`} title={'all classes'} heading={`register classes`}/>
+            <PageHeading title={`Grade ${grade}`} subheading={`register classes`}/>
+            <MultipleMenu menu={grade_info}/> 
+            <p className="pb-1  pl-2 text-sm text-gray-400">classes</p>
+            <Classes dashbaord={`admin`} section={`console/grades/${grade}/registerclasses`} classrooms={data.classes} subject={false} grade={false} />
             <SingleMenuLink title={`Add Subject`} icon={`add-subject`} border={true} url={`/admindashboard/console/grades/${grade}/registerclasses`} />
             <p className="py-7 text-center text-sm text-gray-400">that&apos;s all subjects</p>
         </div>

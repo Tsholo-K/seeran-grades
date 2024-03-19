@@ -23,30 +23,28 @@ const Activities = ({ activities, dashboard, section }) => {
         <>
             {
                 activities.map(( activity, index ) => (
-                    <>
-                        <div key={index} className="py-4 lg:py-6">
-                            <div className="flex pl-2 pb-2">
-                                <div className="grid grid-cols-1 place-content-center">
-                                    <Image src={'/cctv.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-7"/>
-                                </div>
-                                <SubmittedBy student_id={activity.student}/>
+                    <div key={index} className="py-4 lg:py-6">
+                        <div className="flex pl-2 pb-2">
+                            <div className="grid grid-cols-1 place-content-center">
+                                <Image src={'/cctv.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-7"/>
                             </div>
-                            <Link href={`/${dashboard}dashboard/${section}/${activity.id}`}>
-                            <div className="rounded-xl bg-white py-3">
-                                <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{activity.activity}</p>
-                                <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer">
-                                    <Image priority src={`/${activity.icon}.svg`} alt="profile icon" width={30} height={30} className="w-8 lg:w-14" />
-                                </div>
-                                <div className="flex w-full pl-3 pt-2">
-                                    <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-6"/>
-                                    <div className="grid grid-cols-1 place-content-center">
-                                        <p className=" text-sm pl-2 text-gray-500">Logged : {activity.date_logged}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            </Link>
+                            <SubmittedBy student_id={activity.student}/>
                         </div>
-                    </>
+                        <Link href={`/${dashboard}dashboard/${section}/${activity.id}`}>
+                        <div className="rounded-xl bg-white py-3">
+                            <p className="text-sm lg:text-lg text-gray-500 pt-1 w-full text-center">{activity.activity}</p>
+                            <div className="flex justify-center py-2 gap-1 px-3 w-full cursor-pointer">
+                                <Image priority src={`/${activity.icon}.svg`} alt="profile icon" width={30} height={30} className="w-8 lg:w-14" />
+                            </div>
+                            <div className="flex w-full pl-3 pt-2">
+                                <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-6"/>
+                                <div className="grid grid-cols-1 place-content-center">
+                                    <p className=" text-sm pl-2 text-gray-500">Logged : {activity.date_logged}</p>
+                                </div>
+                            </div>
+                        </div>
+                        </Link>
+                    </div>
                 ))
             }
             
