@@ -1,15 +1,14 @@
-'use client'
+'use client';
 
 import { useParams } from "next/navigation";
 
 // dummy data
-import data from '@/app/(dashboards)/dummydata.json'
+import data from '@/app/(dashboards)/dummydata.json';
 
 // components
 import Crumbs from "@/components/crumbs";
 import Classes from '@/components/(classes components)/classes';
 import UserMenu from '@/components/(general components)/usermenu';
-import Aligner from '@/components/(general components)/aligner';
 import MultipleMenuLinks from '@/components/(general components)/multiplemenulinks';
 import Subject from '@/components/(general components)/subject';
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
@@ -18,13 +17,13 @@ import SingleMenuLink from "@/components/(general components)/signlemenulink";
 const Class = () => {
 
   const params = useParams();
-  const classroom_id = params.class
+  const class_id = params.class
   const grade = params.grade
   const subject = params.subject
   
   let classroom = []
   data.classes.forEach( (classroo )=> {
-    if ( classroo.id ===  classroom_id ) {
+    if ( classroo.id ===  class_id ) {
       classroom.push(classroo)
     }  
   } )
@@ -42,12 +41,12 @@ const Class = () => {
     section : [
       {
         title : 'Performance',
-        url : `/admindashboard/console/grades/${grade}/${subject}/${classroom_id}/performance`,
+        url : `/admindashboard/console/grades/${grade}/${subject}/${class_id}/performance`,
         icon : `performance`
       },
       {
           title : 'Activities',
-          url : `/admindashboard/console/grades/${grade}/${subject}/${classroom_id}/activities`,
+          url : `/admindashboard/console/grades/${grade}/${subject}/${class_id}/activities`,
           icon : `eye`
       }
     ]
@@ -61,9 +60,9 @@ const Class = () => {
       <Subject title={`subject`} subject={`${classroom[0].subject}`} icon={`${classroom[0].icon}`} />
       <MultipleMenuLinks menu={menulinks} />
       <p className='text-sm text-gray-400 mt-6 pl-2 pb-2'>students</p>
-      <SingleMenuLink title={`Add Student`} border={true} icon={`users`} />
+      <SingleMenuLink title={`Add Student`} border={true} icon={`users`} url={`/admindashboard/console/grades/${grade}/${subject}/${class_id}/addstudent`} />
       <div className='mt-3 py-1 rounded-xl bg-white'>
-        <UserMenu all_users={students} dashboard={'admin'} section={`console/grades/${grade}/${subject}/${classroom_id}/student`} grade={false}/>
+        <UserMenu all_users={students} dashboard={'admin'} section={`console/grades/${grade}/${subject}/${class_id}/student`} grade={false}/>
       </div>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10"></p>
     </div>

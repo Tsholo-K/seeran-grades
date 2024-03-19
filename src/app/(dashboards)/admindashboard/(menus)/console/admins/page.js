@@ -16,7 +16,7 @@ const Admins = () => {
       <SingleMenuLink title={`Add Admin Account`} border={true} url={`/admindashboard/console/admins/addaccount`}/>
       <p className="py-4"></p>
       <Menu border={true} title={`Admin Accounts`} info={`${data.admins.length}`}/>
-      <p className="text-sm text-gray-400 pl-2 pb-2 pt-10">admins</p>
+      <p className="text-sm text-gray-400 pl-2 pb-3 pt-10">admins</p>
       <div className="bg-white rounded-xl">
         <UserMenu all_users={data.admins} dashboard={`admin`} grade={false} section={`console/admins/profile`}/>
       </div>

@@ -39,9 +39,9 @@ const MyPerformance = ({ searchParams, }) => {
       <PageHeading title={`Grade ${grade}`} subheading={`grade ${grade} students`}/>
       <Menu border={true} title={`Students`} info={`${data.students.length}`}/>
       <SearchComponent />
-      <p className="mt-2 pl-2 text-sm text-gray-400 pb-1 ">students</p>
+      <p className="mt-2 pl-2 text-sm text-gray-400 pb-3">students</p>
       <SingleMenuLink title={`Add Student Account`} icon={`users`} border={true} url={`/admindashboard/console/students/grades/${grade}/addaccount`}/>
-      <div className="bg-white rounded-xl mt-3">
+      <div className="bg-white rounded-xl mt-7">
         <UserMenu all_users={students} grade={false} dashboard={`admin`} section={`console/students/grades/${grade}/student`}/>
       </div>
       <p className=" text-sm w-[80%] text-gray-400 text-center mx-auto py-10">that&apos;s all students</p>

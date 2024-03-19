@@ -27,31 +27,14 @@ const StudentId = () => {
     }
   });
 
-  const menulinks = {
-    section : [
-      {
-        title: "Log activity",
-        url: `/teacherdashboard/registerclass/student/${student.id}/log`,
-        icon : "eye"
-      },
-      {
-        title: "Parents",
-        url: `/teacherdashboard/registerclass/student/${student.id}/parents`,
-        icon : "family"
-      },
-    ]
-  }
-
   return (
     <div>
       <Aligner/>
-      <Crumbs url={`admindashboard/console/grades/${grade}/registerclasses/${class_id}`} title={'class'} heading={`student profile`}/>
+      <Crumbs url={`admindashboard/console/grades/${grade}/registerclasses/${class_id}`} title={'register class'} heading={`student profile`}/>
       {/* child id */}
       <UserImage image={`${student.image}`} name={student.name} surname={student.surname}/>
-      <p className="text-center text-gray-400 text-sm w-[90%] mx-auto py-7"></p>
-      <SingleMenuLink title={'Student ID'} border={true} icon={'user-round-blue'} url={`/teacherdashboard/registerclass/student/${student.id}/profile`}/>
       <p className="text-center text-gray-400 text-sm w-[90%] mx-auto py-4"></p>
-      <MultipleMenuLinks menu={menulinks} />
+      <SingleMenuLink title={'Student ID'} border={true} icon={'user-round-blue'} url={`/admindashboard/console/grades/${grade}/registerclasses/${class_id}/student/${student_id}/id`}/>
     </div>
   )
 };

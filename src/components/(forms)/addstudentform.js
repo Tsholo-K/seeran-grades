@@ -43,7 +43,7 @@ const ToggleMenu = ({ menu, checked }) => {
     )
 };
 
-const AddStudentFrom = () => {
+const AddStudentFrom = ({ students }) => {
 
     return (
         <div>
@@ -51,7 +51,7 @@ const AddStudentFrom = () => {
             <div className="py-2 mt-6">
                 <p className="text-sm text-gray-400 pl-2 pb-3">students</p>
                 {
-                    data.students.map(( student, index ) => (
+                    students.map(( student, index ) => (
                         <div key={index} className='mb-4 bg-white py-2 px-3 rounded-xl'>
                             <ToggleMenu menu={student} checked={false}/>
                         </div>
