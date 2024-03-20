@@ -47,7 +47,7 @@ const Grades = () => {
 
   return (
     <div>
-      <Crumbs title={'dashboard'} url={'admindashboard'} hide={true} heading={`grades`} />
+      <Crumbs title={'dashboard'} url={'admindashboard'} hide={true} heading={`fees`} />
       <PageHeading title={`Fees`} subheading={`manage fees`}/>
       <MultipleMenuLinks icon={true} menu={grades} />
     </div>

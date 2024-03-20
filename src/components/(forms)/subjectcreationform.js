@@ -1,7 +1,3 @@
-'use client';
-
-import { useState } from 'react';
-
 // components 
 import ToggleMenu from '../(general components)/togglemenu';
 

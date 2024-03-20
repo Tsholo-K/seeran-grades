@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-const SingleMenuLink = ({ title, url, icon=null, border=false, chevron='blue' }) => {
+const SingleMenuLink = ({ title, url, icon=null, border=false, chevron='blue', info='' }) => {
     return (
         <>
             <div className={`rounded-xl ${ border ? ' bg-white' : ''}`}>
@@ -15,6 +15,7 @@ const SingleMenuLink = ({ title, url, icon=null, border=false, chevron='blue' })
                         : null
                     }
                     <p className={`w-full`}>{title}</p>
+                    <p className={`absolute right-10 text-gray-400`}>{info}</p>
                     {
                         chevron === 'blue'
                         ?

@@ -13,13 +13,13 @@ const MultipleMenuLinks = ({ menu }) => {
               ( menulength > 1 && index !== menulength - 1 )
               ? (
                 <>
-                  <SingleMenuLink key={index} title={item.title} url={item.url} icon={item.icon}/>
+                  <SingleMenuLink key={index} title={item.title} info={item.info} url={item.url} icon={item.icon}/>
                   <hr className="mx-5"></hr>
                 </>
               )
               : (
                 <>
-                  <SingleMenuLink key={index} title={item.title} url={item.url} icon={item.icon}/>
+                  <SingleMenuLink key={index} title={item.title} info={item.info} url={item.url} icon={item.icon}/>
                 </>
               )
             }

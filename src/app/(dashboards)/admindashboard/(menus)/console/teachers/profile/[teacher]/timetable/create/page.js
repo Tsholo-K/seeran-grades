@@ -6,10 +6,6 @@ import { useState } from "react";
 // components
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
-import Aligner from "@/components/(general components)/aligner";
-import Periods from "@/components/(timetable components)/periods";
-import Button from "@/components/(general components)/button";
-import Image from "next/image";
 
 
 const TimeTable = () => {
@@ -41,7 +37,6 @@ const TimeTable = () => {
 
     return (
         <div>
-            <Aligner/>
             <Crumbs title={`timetable`} url={`admindashboard/console/teachers/profile/${teacher_id}/timetable`} heading={``}/>
             <PageHeading title={`Create `} subheading={`time table`} />
             <button className={`w-full text-center border focus:bg-[#ffcf2e] focus:text-white hover:text-white active:bg-[#ffcf2e] hover:bg-[#ffcf2e] border-white rounded-md bg-[#d0f0e4] text-black transition-all duration-300 py-1`}>save</button>
@@ -60,7 +55,6 @@ const TimeTable = () => {
             <p className="w- full text-center py-3 px-4 bg-white rounded-xl text-gray-500">please use the 24-hour notation in the form hh:mm (for example 01:23)</p>
             <div id="periods" className="mb-8 pt-4">
             </div>
-            
             <button onClick={addPeriod} className={`w-full text-center border focus:bg-[#ffcf2e] focus:text-white hover:text-white active:bg-[#ffcf2e] hover:bg-[#ffcf2e] border-white rounded-md bg-[#d0f0e4] text-black transition-all duration-300 py-1`}>add session</button>
         </div>
     )

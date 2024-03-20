@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 // components
 import PageHeading from '@/components/(general components)/pageheading';
 import Crumbs from '@/components/crumbs';
-import StudentCreationFrom from '@/components/(forms)/studentcreationfrom';
+import StudentCreationFrom from '@/components/(forms)/studentcreationform';
 
 
 const AccountCreation = () => {

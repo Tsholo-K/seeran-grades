@@ -9,8 +9,6 @@ import data from '@/app/(dashboards)/dummydata.json'
 import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import Menu from "@/components/(general components)/menu";
-import MultipleMenu from "@/components/(general components)/multiplemenu";
-import Aligner from "@/components/(general components)/aligner";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
 
 
@@ -26,15 +24,28 @@ const Structure = () => {
 
   return (
     <div>
-      <Aligner/>
       <Crumbs title={'grade'} url={`admindashboard/fees/${grade}`} />
       <PageHeading title={'Structure'} subheading={`grade ${grade}`}/>
-      <MultipleMenu menu={data.fees[0].fee_structure} />
       <Menu title={'total'} info={total} border={true}/>
       <p className="mx-auto text-sm text-center text-gray-400 py-1 mb-8">total debitable/payable amount p/m</p>
-      <SingleMenuLink title={`Edit`} border={true} url={`/admindashboard/fees/${grade}/structure/edit`} />
+      <div className="bg-white rounded-xl mb-6">
+        {
+          data.fees[0].fee_structure.map( (fee, index) => (
+              ( data.fees[0].fee_structure.length > 1 && index !== data.fees[0].fee_structure.length - 1 )
+              ?
+              <>
+                <SingleMenuLink key={index} title={fee.title} info={`R ${fee.info}`} url={`/admindashboard/fees/${grade}/structure/${index}`} />
+                <hr className="mx-5"></hr>
+              </>
+              :
+              <SingleMenuLink key={index} title={fee.title} info={`R ${fee.info}`} url={`/admindashboard/fees/${grade}/structure/${index}`} />            
+          ))
+        }
+      </div>
+      <SingleMenuLink title={`Add Fee`} icon={`edit-structure`} border={true} url={`/admindashboard/fees/${grade}/structure/addfee`} />
     </div>
   )
 };
 
 export default Structure;
+
