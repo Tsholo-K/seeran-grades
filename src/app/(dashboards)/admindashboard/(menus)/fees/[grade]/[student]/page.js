@@ -28,6 +28,11 @@ const Balance = () => {
   const fee_info = {
       section : [
         {
+          title: 'Profile',
+          url: `/admindashboard/fees/${grade}/${student_id}/profile`,
+          icon: 'user-round-blue'
+        },
+        {
           title: 'Fees Structure',
           url: `/admindashboard/fees/${grade}/${student_id}/structure`,
           icon: 'layers'
@@ -59,7 +64,7 @@ const Balance = () => {
       </div>
       <p className="pl-2 pb-1 text-sm text-gray-400">student</p>
       <div className="rounded-xl bg-white">
-        <UserMenu all_users={student}/>
+        <UserMenu dashboard={`admin`} section={`fees/${grade}/${student_id}/profile`} all_users={student} url={false} />
       </div>
       <p className="py-2"></p>
       <MultipleMenuLinks menu={fee_info} />

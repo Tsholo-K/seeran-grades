@@ -33,7 +33,7 @@ const Children = ({ searchParams, }) => {
 
   return (
     <div>
-      <Crumbs title={'fees'} url={'admindashboard/fees'} heading={`balances`}/>
+      <Crumbs title={'all grades'} url={'admindashboard/fees'} heading={`balances`}/>
       {/* page heading */}
       <PageHeading title={'Students'} subheading={`grade ${grade} balances`} />
       <SingleMenuLink title={`Fee Structure`} url={`/admindashboard/fees/${grade}/structure`} icon={`fee-structure`} border={true}/>
