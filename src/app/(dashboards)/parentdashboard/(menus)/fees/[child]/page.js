@@ -9,7 +9,6 @@ import Crumbs from "@/components/crumbs";
 import PageHeading from "@/components/(general components)/pageheading";
 import SingleMenuLink from "@/components/(general components)/signlemenulink";
 import MultipleMenuLinks from "@/components/(general components)/multiplemenulinks";
-import Aligner from "@/components/(general components)/aligner";
 
 
 const Balance = () => {
@@ -41,17 +40,16 @@ const Balance = () => {
 
   return (
     <div>
-      <Aligner/>
       <Crumbs title={'fees'} url={'parentdashboard/fees'} heading={`balance`} />
       <PageHeading title={'Balance'} />
       {/* outstanding balance */}
       <div className="rounded-xl bg-white p-3 mb-7">
         <p className="text-sm text-gray-500 pl-3 pb-3 lg:text-base">outstanding balance :</p>
         <p className="mx-auto w-fit text-5xl lg:text-7xl py-4 lg:py-6 text-[#66b0f0] font-extrabold">R{fee.outstanding_blalnce}</p>
-        <div className="flex w-fit mx-auto">
+        <div className="flex">
           <Image src={'/date.svg'} alt='try it button' width={10} height={10} className="w-5 lg:w-7"/>
           <div className="grid grid-cols-1 place-content-center">
-            <p className=" text-sm pl-2 text-gray-500 lg:text-base">next debit order date : {fee.debit_order} march</p>
+            <p className=" text-sm pl-2 text-gray-500 lg:text-base">last updated : {fee.debit_order} march</p>
           </div>
         </div>
       </div>
