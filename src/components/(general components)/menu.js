@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Menu= ({ title, info, border=false, icon=false }) => {
+const Menu= ({ title, info, border=false, icon=false, money=false}) => {
     return (
         <>
             <div className={`rounded-xl  ${ border && 'bg-white'}`}>
@@ -9,14 +9,15 @@ const Menu= ({ title, info, border=false, icon=false }) => {
                     {
                         icon
                         ? (
-                            <>
-                                <p className={`text-gray-400 absolute right-10`}>{info}</p>
+                            <>  
+                                
+                                <p className={`text-gray-400 absolute right-10`}>{ money && 'R'}{info}</p>
                                 <Image src={'/chevron-right-black.svg'} alt='try it button' width={10} height={10} className="w-fit h-fit absolute right-3"/>
                             </>
                         )
                         : (
                             <>
-                                <p className={`text-gray-400 absolute right-4`}>{info}</p>
+                                <p className={`text-gray-400 absolute right-4`}>{ money && 'R'} {info}</p>
                             </>
                         )
                     }

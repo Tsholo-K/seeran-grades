@@ -42,9 +42,14 @@ const ClassAssessment = () => {
         {
           title: 'Assessment',
           info : `${assessment.assessment}`
-        },{
+        },
+        {
           title: `Total`,
           info : `${assessment.total}`
+        },
+        {
+          title: `Percent Towards Term Mark`,
+          info : `${assessment.total - 30}%`
         },
         {
           title: 'Average Score',

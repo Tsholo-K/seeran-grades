@@ -3,6 +3,10 @@
 import { useState } from 'react';
 
 
+// dummy data
+import data from '@/app/(dashboards)/dummydata.json'
+
+
 const ClassCreationFrom = () => {
 
     const [teacher, setTeacher] = useState(`--- Class Teacher ---`);
@@ -29,8 +33,11 @@ const ClassCreationFrom = () => {
                 <p className="text-sm text-gray-400 pl-2 py-1">teacher</p>
                 <select value={teacher} onChange={handleTeacherChange} className='bg-white rounded-xl h-9 w-full'>
                     <option disabled className='text-center' >--- Class Teacher ---</option>
-                    <option value={`yes`} className='text-center'>Yes</option>
-                    <option value={`no`} className='text-center'>no</option>
+                    {
+                        data.teachers.map( ( teacher, index ) => (
+                            <option key={index} value={`teacher.id`} className='text-center'>{teacher.name} {teacher.surname}</option>
+                        ))
+                    }
                 </select>
             </div>
             {/* group */}

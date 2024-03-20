@@ -59,9 +59,9 @@ const Class = () => {
       <Classes classrooms={classroom} teacher={false} subject={false} url={false}/>
       <Subject title={`subject`} subject={`${classroom[0].subject}`} icon={`${classroom[0].icon}`} />
       <MultipleMenuLinks menu={menulinks} />
-      <p className='text-sm text-gray-400 mt-6 pl-2 pb-2'>students</p>
+      <p className='text-sm text-gray-400 mt-6 pl-2 pb-3'>students</p>
       <SingleMenuLink title={`Add Student`} border={true} icon={`users`} url={`/admindashboard/console/grades/${grade}/${subject}/${class_id}/addstudent`} />
-      <div className='mt-3 py-1 rounded-xl bg-white'>
+      <div className='mt-6 py-1 rounded-xl bg-white'>
         <UserMenu all_users={students} dashboard={'admin'} section={`console/grades/${grade}/${subject}/${class_id}/student`} grade={false}/>
       </div>
       <p className=" text-sm w-[80%] text-gray-500 text-center mx-auto py-10"></p>

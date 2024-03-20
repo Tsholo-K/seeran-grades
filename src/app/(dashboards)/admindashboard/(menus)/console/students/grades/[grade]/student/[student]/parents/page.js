@@ -38,12 +38,13 @@ const StudentParents = () => {
     <div>
       <Crumbs url={`admindashboard/console/students/grades/${grade}/student/${student_id}`} title={'student profile'} heading={`parents`} />
       <PageHeading title={'Parents'} subheading={'these are all the parents linked to the students account'}/>
-      <SingleMenuLink title={`Link Parent`} icon={`link`} border={true}/>
-      <p className="text-sm text-gray-400 text-center mb-8 pt-1 w-[95%]">each student account can only link up to two(2) parents</p>
-      <p className="text-sm text-gray-400 pl-2 pt-4 pb-1">parents</p>
+      <SingleMenuLink title={`Link Parent`} icon={`link`} border={true} url={`/admindashboard/console/students/grades/${grade}/student/${student_id}/parents/linkparent`}/>
+      <p className="py-6"></p>
+      <p className="text-sm text-gray-400 pl-2 pb-1">parents</p>
       <div className="rounded-xl bg-white">
         <UserMenu all_users={parents} dashboard={'admin'} section={`console/students/grades/${grade}/student/${student_id}/parents`} grade={false} />
       </div>
+      <p className="text-sm text-gray-400 text-center mb-8 pt-1 w-[95%]">each student account can only link up to two(2) parents</p>
     </div>
   )
 };

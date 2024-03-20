@@ -31,6 +31,10 @@ const Performance = () => {
             {
               title: 'Average Score',
               info : `${`72%`}`
+            },
+            {
+                title: `Graded Assessments`,
+                info: `2`
             }
           ]
         }
@@ -39,13 +43,13 @@ const Performance = () => {
     return (
         <div>
             <Crumbs title={`class`} url={`admindashboard/console/grades/${grade}/${subject}/${classroom_id}`} heading={`performance`} />
-            <PageHeading title={`Performance`} subheading={`class performance`}/>
+            <PageHeading title={`Performance`} subheading={`overall class performance`}/>
             {
                 menuitems.map( ( item,index ) => (
                     <MultipleMenu key={index} menu={item.section} />
                 ))
             }
-            <p className="pl-2 pb-1 text-sm text-gray-400">graded assessments</p>
+            <p className="pl-2 pb-1 pt-4 text-sm text-gray-400">graded assessments</p>
             {
                 assessments.map( (ass, index) => (
                     <Assessments key={index} dashboard={`admin`} section={`console/grades/${grade}/${subject}/${classroom_id}/performance`} assessment={ass} date_title={`assessed`}  />

@@ -18,7 +18,7 @@ const AccountCreation = () => {
       <Crumbs title={'students'} url={`admindashboard/console/students/grades/${grade}`} heading={`account creation`} />
       <PageHeading title={`Add Account`} subheading={`student account creation`}/>
       <p className="pl-2 text-sm text-gray-400 pt-8 pb-1">notice</p>
-      <p className="w- full text-center py-3 px-4 bg-white rounded-xl text-gray-500">we use the ID/Passport number for identification purposes, as a child cannot be expected to have an email address and phone number</p>
+      <p className="w- full text-center py-3 lg:py-7 bg-white rounded-xl text-gray-500 px-6 lg:px-16">we use ID/Passport numbers for identification purposes, as a child cannot be expected to have an email address.</p>
       <StudentCreationFrom/>
       <p className='text-sm text-gray-400 text-center pt-1'>user needs to sign in to activate the account</p>
     </div>

@@ -42,11 +42,6 @@ const StudentId = () => {
       info: `${student.email}`
     },
     {
-      title: 'Phone Number',
-      icon: false,
-      info: `${student.phone_number}`
-    },
-    {
       title: 'Account ID',
       icon: false,
       info: student.id

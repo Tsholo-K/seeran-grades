@@ -42,7 +42,7 @@ const ParentProfile = () => {
         {
           title: 'Message',
           icon: 'admin',
-          url: `/teacherdashboard/messages/${parent.id}`,
+          url: `/admindashboard/messages/${parent.id}`,
         },
       ]
   };

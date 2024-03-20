@@ -54,7 +54,7 @@ const ChildId = () => {
 
   return (
     <div>
-      <Crumbs url={`admindashboard/fees/${grade}/${student_id}`} title={'student'}/>
+      <Crumbs url={`admindashboard/fees/${grade}/${student_id}`} title={'student'} heading={`student ID`}/>
       <PageHeading title={'ID'}  />
       {/* child information */}
       <MultipleMenu menu={student_info} />

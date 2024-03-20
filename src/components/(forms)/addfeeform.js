@@ -30,8 +30,9 @@ const AddFeeFrom = ({ existing_fee }) => {
             <button 
                 className={`w-full text-center border focus:bg-[#ffcf2e] focus:text-white lg:hover:text-white active:bg-[#ffcf2e] lg:hover:bg-[#ffcf2e] border-white rounded-md bg-[#d0f0e4] text-black   transition-all duration-300 py-1`}
             >
-                save
+                { existing_fee ? `save` : `add` }
             </button>
+            <p className="text-sm text-gray-400 text-center">this will notify every parent account</p>
             <p className="text-sm pl-2 text-gray-400 pt-8">fee</p>
             <input
                 onChange={handleFeeChange}
@@ -53,7 +54,7 @@ const AddFeeFrom = ({ existing_fee }) => {
             {
                 existing_fee &&
                 <button 
-                    className={`w-full text-center border focus:bg-[#ffcf2e] focus:text-white lg:hover:text-white active:bg-[#ffcf2e] lg:hover:bg-[#ffcf2e] border-white rounded-md bg-[#d0f0e4] text-black   transition-all duration-300 py-1`}
+                    className={`w-full text-center border focus:bg-red-500 focus:text-white lg:hover:text-white active:bg-red-500 lg:hover:bg-red-500 border-white rounded-md bg-[#d0f0e4] text-black   transition-all duration-300 py-1`}
                 >
                     remove
                 </button>

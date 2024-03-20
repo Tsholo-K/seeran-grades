@@ -2,6 +2,9 @@
 
 import { useParams } from "next/navigation";
 
+// dummy data
+import data from '@/app/(dashboards)/dummydata.json'
+
 // components
 import PageHeading from '@/components/(general components)/pageheading';
 import Crumbs from '@/components/crumbs';
