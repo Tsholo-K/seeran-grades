@@ -26,7 +26,7 @@ const Structure = () => {
     <div>
       <Crumbs title={'grade'} url={`admindashboard/fees/${grade}`} />
       <PageHeading title={'Structure'} subheading={`grade ${grade}`}/>
-      <Menu title={'total'} info={total} border={true}/>
+      <Menu title={'total'} info={total} money={true} border={true}/>
       <p className="mx-auto text-sm text-center text-gray-400 py-1 mb-8">total debitable/payable amount p/m</p>
       <div className="bg-white rounded-xl mb-6">
         {

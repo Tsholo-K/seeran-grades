@@ -35,7 +35,7 @@ const ProfileSettings = () => {
       <UserImage image={admin_user.image} name={admin_user.name} surname={admin_user.surname} email={admin_user.email}/>
       {/* menu links section */}
       <MultipleMenuLinks menu={menuitems} />
-      {/* sign out */}
+      <SingleMenuLink title={`School Settings`} url={`/admindashboard/profile/schoolsettings`} icon={`school-settings`} border={true}/>
       <p className="pt-7"></p>
       <SingleMenuLink title={'Sign Out'} chevron='red' icon={'log-out'} url={'/loggedout'} border={true}/>
     </div>

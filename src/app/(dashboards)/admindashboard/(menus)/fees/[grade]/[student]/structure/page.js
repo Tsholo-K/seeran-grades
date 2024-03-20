@@ -34,7 +34,7 @@ const Structure = () => {
     <div>
       <Crumbs title={'balance'} url={`admindashboard/fees/${grade}/${student_id}`} />
       <PageHeading title={'Structure'} />
-      <MultipleMenu menu={structure} />
+      <MultipleMenu menu={structure} money={true} />
       <Menu title={'total'} info={total} border={true} money={true}/>
       <p className="mx-auto text-sm text-center text-gray-400 py-1">total debitable amount p/m</p>
     </div>

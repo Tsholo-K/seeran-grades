@@ -32,7 +32,7 @@ const AddFeeFrom = ({ existing_fee }) => {
             >
                 { existing_fee ? `save` : `add` }
             </button>
-            <p className="text-sm text-gray-400 text-center">this will notify every parent account</p>
+            <p className="text-sm text-gray-400 text-center pt-1">this will notify every parent account</p>
             <p className="text-sm pl-2 text-gray-400 pt-8">fee</p>
             <input
                 onChange={handleFeeChange}
