@@ -14,7 +14,7 @@ const Signin = () => {
           <h1 className="text-center">login</h1>
           <LoginForm/>
         </div>
-        <Image priority src={'/login.svg'} alt="hero image" width={1000} height={1000} className="h-[50%] sm:h-[60%] w-full sm:w-fit absolute bottom-0 right-1"/>
+        <Image priority src={'/login.svg'} alt="hero image" width={1000} height={1000} className="h-[50%] sm:h-[60%] w-full sm:w-fit absolute bottom-0 left-1"/>
       </div>
     </>
   )

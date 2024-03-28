@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 
 import Link from "next/link";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import Image from "next/image";
 const Crumbs = ({ title, url, hide=false, heading, align=true }) => {
 
   const [scroll, setScroll] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   const ScrollTracker = () => {
 
@@ -38,12 +41,15 @@ const Crumbs = ({ title, url, hide=false, heading, align=true }) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    if ( align === true ) {
-      window.scrollTo(0, 0);
+    console.log(localStorage.getItem('Role'))
+    console.log(pathname)
+    if ( !pathname.startsWith(`/${localStorage.getItem('Role')}`) ) {
+      router.push(`/${localStorage.getItem('Role')}dashboard`);
     }
     setIsClient(true);
     setScroll(false);
-  }, [align]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   if (!isClient) {
     return null;
